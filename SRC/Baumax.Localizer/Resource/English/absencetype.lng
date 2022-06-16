@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="1200" keyname="CannotSaveAbsenceType">Cannot save the absence type.</value>
+  <value key="1201" keyname="CannotDeleteAbsenceType">Cannot delete the absence type.</value>
+  <value key="1202" keyname="SomeAbsenceTypesNotDeleted">Some absence type(s) were not deleted.</value>
+  <value key="1203" keyname="questiondeleteabsencetype">Are you sure to remove absence type(s)?</value>
+</items>

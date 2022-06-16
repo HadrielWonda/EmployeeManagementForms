@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+	<value key="10000" keyname="btnSavelog">Save log</value>
+	<value key="10001" keyname="btnImport">Import</value>
+	<value key="10002" keyname="frmText">Import</value>
+	<value key="10003" keyname="msgSameColumns">Import file has same columns</value>
+	<value key="10004" keyname="msgImportFileUnknown">Import file is unknown</value>
+	<value key="10005" keyname="msgImportTypeNotRealized">This import type '{0}' is not realized</value>
+	<value key="10006" keyname="LogFiles">Log files</value>
+	<value key="10007" keyname="AllFiles">All files</value>
+	<value key="10008" keyname="SavingOfRecords">Saving {0} of {1} records</value>
+	<value key="10009" keyname="ImportStarting">'{0}' import is starting at {1}.</value>
+	<value key="10010" keyname="ImportFileName">File: {0}</value>
+	<value key="10011" keyname="IncorrectDataInRow">Incorrect data in row: {0}</value>
+	<value key="10012" keyname="ImportCompleteSuccessfuly">Import completed successfuly</value>
+	<value key="10013" keyname="ImportCompleteError">Import complete with errors</value>
+	<value key="10014" keyname="At">{0} at {1}</value>
+	<value key="10015" keyname="CountryExists">Record {0}. Country with {1}: {2} allready exists in import file.</value>
+	<value key="10016" keyname="HWGRExists">Record {0}. HWGR with {1}: '{2}', {3}: '{4}' already exists in import file.</value>
+	<value key="10017" keyname="WorldNotExistsDB">Record {0}. World with {1}: '{2}' not exists in DB.</value>
+	<value key="10018" keyname="CountryNotExistsDB">Record {0}. Country with {1}: {2} not exists in DB.</value>
+	<value key="10019" keyname="RegiontExistsDB">Record {0}. Region '{1}' allready exists in DB.</value>
+	<value key="10021" keyname="StoreExists">Record {0}. Store with same {0}: '{1}' already exists in import file.</value>
+	<value key="10022" keyname="RegionNotExistsDB">Record {0}. Region with {1}: '{2}', {3}: '{4}' not exists in DB.</value>
+	<value key="10023" keyname="WGRExists">Record {0}. WGR with {1}: '{2}', {3}: '{4}', {5}: '{6}' already exists in import file.</value>
+	<value key="10024" keyname="HWGRNotExistsDB">Record {0}. HWGR with {1}: '{2}', {3}: '{4}' not exists in DB.</value>
+	<value key="10025" keyname="WorldExists">Record {0}. World with {1}: {2} allready exists in import file.</value>
+	<value key="10026" keyname="StoresNotExistsDB">Warning! Stores not exists in DB. Can't create relations between Worlds and Stores.</value>
+	<value key="10028" keyname="WorkingDayExistsDB">Record {0}.Working day allready exists in DB.</value>
+	<value key="10029" keyname="inCountries">Countries</value>
+	<value key="10030" keyname="inHWGRs">HWGRs</value>
+	<value key="10031" keyname="inRegions">Regions</value>
+	<value key="10032" keyname="inStories">Stories</value>
+	<value key="10033" keyname="inWGRs">WGRs</value>
+	<value key="10034" keyname="inWorlds">Worlds</value>
+	<value key="10035" keyname="inWorkingDays">Working days</value>
+	<value key="10036" keyname="ImportFileNotContainData">Import file does not contain '{0}' data</value>
+	<value key="10037" keyname="inFeasts">Feasts</value>
+  <value key="10038" keyname="FeastExists">Record {0}. Feasts with {1}: '{2}', {3}: '{4}' already exists in import file.</value>
+  <value key="10039" keyname="EmployeeExists">Record {0}. Employee with Personal-ID: '{1}' already exists in import file.</value>
+  <value key="10040" keyname="inEmployee">Employee</value>
+  <value key="10041" keyname="EmployeeNotAssignToStore">Record {0}. Employee with Personal-ID: '{1}' has't store to assign.</value>
+  <value key="10042" keyname="inLongTimeAbsence">Long time absence</value>
+  <value key="10043" keyname="LongTimeAbsenceExists">Record {0}. Long time absence with Personal-ID: '{1}', absence-code: '{2}', date: '{3}' - '{4}' already exists in import file.</value>
+  <value key="10044" keyname="LongTimeAbsenceNotAssignToEmployee">Record {0}. Employee with Personal-ID: '{1}' absent in DB.</value>
+  <value key="10045" keyname="importBtnClose">Close</value>
+  <value key="10046" keyname="inAbsence">Absences</value>
+  <value key="10047" keyname="AbsenceExists">Record {0}. Absence with AbwesenheitsID: '{1}' already exists in import file.</value>
+  <value key="10048" keyname="AbsenceNotImportedInDB">Record {0}. Absence with AbwesenheitsID: '{1}' not imported.</value>
+  <value key="10049" keyname="inTimePlanning">Time planning</value>
+  <value key="10050" keyname="TimePlanningExists">Record {0} with Personal-ID: '{1}', Datum: '{2}', AbwesenheitsID: '{3}', ArbeitsZeit_von: '{4}' , ArbeitsZeit_bis: '{5}' already exists in import file.</value>
+  <value key="10051" keyname="TimePlanningNotAssignToEmployee">Record {0}. Employee with Personal-ID: '{1}' not exists in DB.</value>
+  <value key="10052" keyname="inTimeRecording">Time recording</value>
+  <value key="10053" keyname="inActualBusinessVolume">Actual business volume</value>
+  <value key="10054" keyname="BVInformation">Import files must be in folder: {0}. File name must have this format: {1}. After successful import files will move in folder: {2}</value>
+  <value key="10055" keyname="inTargetBusinessVolume">Target business volume</value>
+  <value key="10056" keyname="inCashRegisterReceipt">Cash register receipt</value>
+  <value key="10057" keyname="EmployeeContractDateError">Record {0}. Employee with Personal-ID: '{1}'. 'Begin contract date: {2}' more then 'end contract date: {3}'.</value>
+  <value key="10058" keyname="EmployeeContractTimeError">Record {0}. Employee with Personal-ID: '{1}'. Contract time has invalid value: '{2}'.</value>
+  <value key="10059" keyname="EmployeeIEContractBeginChange">Record {0}. Employee with Personal-ID: '{1}'. 'Begin contract date: {2}'  can't be change.</value>
+  <value key="10060" keyname="EmployeeIEContractEndChangeAndLessImportDate">Record {0}. Employee with Personal-ID: '{1}'. 'End contract date: {2}' has been changed, but less than import date.</value>
+  <value key="10061" keyname="EmployeeImportFileOldVersion">You try to use old "employee import file".</value>
+  <value key="10062" keyname="NoFilesMatchSpec">No files that match the specification found in the import folder.</value>
+  <value key="10063" keyname="NumberFormatError">Record {0}. Number parse error: '{1}'. Check numbers format in record. Decimal separator must be "."</value>
+  <value key="10064" keyname="bvImportOK"> -OK</value>
+  <value key="10065" keyname="bvImportError">- Error</value>
+  <value key="10066" keyname="bvAboutErrorFilesInfo">Import files with errors moved into folder: {0}
+Data with errors are copied into error file. File name has this format: 'errorImportFileName'
+Additionally, a control file that has the extension .ERROR.txt is created. This references each row in the error file and provides error diagnostics.</value>
+  <value key="10067" keyname="bvDataConvertStart">Business volume data convert is starting</value>
+  <value key="10068" keyname="bvAlreadyRunning">'{0}' import is running now.</value>
+
+</items>

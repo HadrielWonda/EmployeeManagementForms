@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="21001" keyname="SelectHWGR">Select once available HWGR please.</value>
+	<value key="21002" keyname="ViewHistory">View history</value>
+	<value key="21003" keyname="HWGR">HWGR</value>
+	<value key="21004" keyname="HwgrHistory">Hwgr history</value>
+</items>

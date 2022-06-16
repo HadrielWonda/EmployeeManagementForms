@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="10" keyname="ok">Save</value>
+  <value key="11" keyname="cancel">Cancel</value>
+  <value key="12" keyname="Attention">Attention</value>
+  <value key="13" keyname="Confirm">Confirm</value>
+  <value key="14" keyname="Error">Error</value>
+  <value key="15" keyname="ExpandedAll">Expanded All</value>
+  <value key="16" keyname="CollapseAll">Collapse All</value>
+  <value key="17" keyname="New">Create</value>
+  <value key="18" keyname="Close">Close</value>
+
+  <value key="20" keyname="Monday">Monday</value>
+  <value key="21" keyname="Tuesday">Tuesday</value>
+  <value key="22" keyname="Wednesday">Wednesday</value>
+  <value key="23" keyname="Thursday">Thursday</value>
+  <value key="24" keyname="Friday">Friday</value>
+  <value key="25" keyname="Saturday">Saturday</value>
+  <value key="26" keyname="Sunday">Sunday</value>
+  <value key="27" keyname="DayOfWeek">Day of week</value>
+
+  <value key="30" keyname="BeginTime">Start Date</value>
+  <value key="31" keyname="EndTime">End Date</value>
+
+  <value key="40" keyname="January">January</value>
+  <value key="41" keyname="February">February</value>
+  <value key="42" keyname="March">March</value>
+  <value key="43" keyname="April">April</value>
+  <value key="44" keyname="May">May</value>
+  <value key="45" keyname="June">June</value>
+  <value key="46" keyname="July">July</value>
+  <value key="47" keyname="August">August</value>
+  <value key="48" keyname="September">September</value>
+  <value key="49" keyname="October">October</value>
+  <value key="50" keyname="November">November</value>
+  <value key="51" keyname="December">December</value>
+
+  <value key="60" keyname="ErrorDateRange">Start date can't be greater than end date!</value>
+  <value key="61" keyname="Import">Import</value>
+  <value key="62" keyname="FilterByDate">Filter by date</value>
+  <value key="63" keyname="Apply">Apply</value>
+  <value key="64" keyname="Date">Date </value>
+
+  <value key="65" keyname="BeginDate">Begin Date</value>
+  <value key="66" keyname="EndDate">End Date </value>
+  <value key="67" keyname="Save">Save </value>
+  <value key="68" keyname="InvalidValue">Invalid Value</value>
+  <value key="69" keyname="View">Ansicht</value>
+  <value key="70" keyname="To">To</value>
+  <value key="71" keyname="FilterByYear">Filter by year</value>
+
+  <value key="72" keyname="Refresh">Refresh</value>
+  <value key="73" keyname="SetDefaultValue">Set default value</value>
+
+  <value key="74" keyname="ImportWorld">Import World</value>
+  <value key="75" keyname="ImportHWGR">Import HWGR</value>
+  <value key="76" keyname="ImportWGR">Import WGR</value>
+  <value key="77" keyname="ImportEmployee">Import Employee</value>
+  <value key="78" keyname="ImportFeast">Import Feast</value>
+  <value key="79" keyname="ImportClosedDay">Import Closed Day</value>
+  <value key="80" keyname="ImportLongTimeAbsence">ImportLong Time Absence</value>
+  <value key="81" keyname="Name">Name</value>
+
+  <value key="82" keyname="NotificationService">Notification service</value>
+  <value key="83" keyname="AnalyzingData">Analyzing data</value>
+
+  <value key="84" keyname="Week">Week</value>
+  
+  <value key="85" keyname="ImportCashRegisterReceipt">Import Cash Register Receipt</value>
+  <value key="86" keyname="ImportTargetBusinessVolume">Import Target Business Volume</value>
+  <value key="87" keyname="ImportBusinessVolume">Import Business Volume</value>
+
+  <value key="88" keyname="MainWindowCaption">PEM Personal Management System</value>
+  <value key="89" keyname="From">From</value>
+  <value key="90" keyname="Select">Select</value>
+  
+  <value key="91" keyname="Today">Today</value>
+  <value key="92" keyname="Clear">Clear</value>
+
+  <value key="93" keyname="CheckPreconditions">Check Preconditions</value>
+
+  <value key="94" keyname="None">None</value>
+  <value key="95" keyname="Current">Current</value>
+  <value key="96" keyname="HostURL">Host URL</value>
+
+  <value key="97" keyname="Empty"><![CDATA[<None>]]></value>
+
+  
+
+</items>

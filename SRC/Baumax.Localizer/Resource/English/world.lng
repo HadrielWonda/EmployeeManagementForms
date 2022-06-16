@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<items>
+	<value key="30049" keyname="World">World</value>
+  <value key="30050" keyname="Year">Year</value>
+  <value key="30053" keyname="MinMaxLarge">Maximum value must be greater minimun value.</value>
+  <value key="30054" keyname="AddPersonMinMax">Add new person min / max values</value>
+  <value key="30055" keyname="EditPersonMinMax">Edit person min / max values</value>
+  <value key="30056" keyname="DeletePersonMinMax">Delete person min / max values</value>
+  <value key="30057" keyname="NotDeletePast">You can`t delete record at past date.</value>
+  <value key="30058" keyname="IntervalIntersect">A temporal interval intersects with already existing. Push button "View history".</value>
+  <value key="30059" keyname="AvailableWTH">Available work-time-hours</value>
+  <value key="30060" keyname="CurrentlyAvailableBuffer">Currently available buffer</value>
+  <value key="30061" keyname="BusinessVolumeHours">Business volume hours</value>
+	<value key="30062" keyname="TargetedBusinessVolume">Targeted business volume</value>
+	<value key="30063" keyname="NetBusinessVolume">Net business volume</value>
+	<value key="30064" keyname="NetBusinessVolumeWithoutBuffer">Net business volume without buffer</value>
+	<value key="30065" keyname="BenchmarkBusinessVolumePerHour">Benchmark business volume per hour</value>
+	<value key="30066" keyname="MinPer">Minimum persons</value>
+	<value key="30067" keyname="MaxPer">Maximum persons</value>
+	<value key="30068" keyname="YearExist">This year is already exist</value>
+	<value key="30069" keyname="MinMaxPersons">Minimum and maximum persons</value>
+	<value key="30070" keyname="ViewMinMax">View min \ max persons</value>
+	<value key="30071" keyname="ViewInTable">View in table</value>
+	<value key="30072" keyname="ViewInCards">View in cards</value>
+	<value key="30074" keyname="WorldName">World name</value>
+	<value key="30075" keyname="ViewInVerticalTable">View in vertical table</value>
+
+  <value key="30076" keyname="AssignWGR">Assign WGR</value>
+  <value key="30077" keyname="AssignHWGR">Assign HWGR</value>
+  <value key="30078" keyname="ApplyYear">Apply</value>
+	
+	
+</items>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="30001" keyname="NameShouldBeNotEmpty">Name should be not empty.</value>
+  <value key="30002" keyname="SelectWGR">Select once available WGR please.</value>
+	<value key="30003" keyname="ThisWgrToHWGR">Assign WGR to HWGR</value>
+	<value key="30004" keyname="ThisHwgrToWorld">Assign HWGR to World</value>
+	<value key="30005" keyname="HwgrWgrDisable">HWGR to WGR time interval</value>
+	<value key="30007" keyname="WorldHwgrDisable">World to HWGR time interval</value>
+	<value key="30008" keyname="WGR">WGR</value>
+	<value key="30009" keyname="WgrHistory">Wgr history</value>
+</items>

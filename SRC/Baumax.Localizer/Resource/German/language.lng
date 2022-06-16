@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="100" keyname="newlanguage">Neue Sprache anlegen</value>
+  <value key="101" keyname="editlanguage">Editiere Sprache</value>
+  <value key="102" keyname="deletelanguage">Lösche Sprache</value>
+  <value key="103" keyname="listlanguage">Sprachenauflistung</value>
+  <value key="104" keyname="refreshlanguages">Sprachen aktualisieren</value>
+  <value key="105" keyname="languagename">Sprachen Bezeichnung</value>
+  <value key="106" keyname="languagecode">Sprachen Code</value>
+  <value key="107" keyname="language">Sprache</value>
+  <value key="108" keyname="languages">Sprachen</value>
+  <value key="109" keyname="languagemanager">Sprachen-Manager</value>
+
+  <value key="110" keyname="languagenameexists">Sprachenbezeichnung existiert bereits.</value>
+  <value key="111" keyname="enterlanguagename">Geben Sie die Sprachenbezeichnung an.</value>
+  <value key="112" keyname="questiondeletelanguage">Sind Sie sicher, dass Sie diese Sprache löschen wollen?</value>
+  <value key="113" keyname="translateui">Userinterface übersetzen</value>
+  <value key="114" keyname="SomeLanguagesNotDeleted">Einige / Eine Sprache(n) wurde(n) nicht gelöscht. Vermutlich ist Sie einer VL einem User bereits zugeordnet.</value>
+  <value key="115" keyname="LanguageAssignedToCountry">Die Applikation kann diese Sprache nicht löschen, da Sie bereits einer VL oder einem User zugeordnet ist.</value>
+  <value key="116" keyname="CannotDeleteLanguage">Diese Sprache kann nicht gelöscht werden.</value>
+  <value key="117" keyname="CannotSaveLanguage">Diese Sprache kann nicht gespeichert werden.</value>
+  <value key="118" keyname="CannotDeleteDefaultLanguage">Die Standard-Sprache kann nicht gelöscht werden.</value>
+
+</items>
+

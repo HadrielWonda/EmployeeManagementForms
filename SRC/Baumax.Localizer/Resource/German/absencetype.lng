@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="1200" keyname="CannotSaveAbsenceType">Der Abwesenheitstyp kann nicht gespeichert werden.</value>
+  <value key="1201" keyname="CannotDeleteAbsenceType">Der Abwesenheitstyp kann nicht gelöscht werden.</value>
+  <value key="1202" keyname="SomeAbsenceTypesNotDeleted">Einige Abwesenheitstypen konnten nicht gelöscht werden.</value>
+  <value key="1203" keyname="questiondeleteabsencetype">Sind Sie sicher, dass Sie den Abwesenheitstyp löschen wollen?</value>
+</items>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="50000" keyname="PlannedCashDeskUnits">Geplante Personeneinheiten:</value>
+  <value key="50001" keyname="TargetedCashDeskUnits">Vorgabe Personeneinheiten:</value>
+  <value key="50002" keyname="TargetedReceipt">Vorgabe Kassabonpositionen:</value>
+  <value key="50003" keyname="DifferenceTargetedPlanned">Differenz:</value>
+  <value key="50004" keyname="DifferenceTargetedPlannedPercent">Differenz (Prozent):</value>
+
+  <value key="50005" keyname="PlannedCashDeskPeopleUnitsPerDay">Geplante Personeneinheiten pro Tag</value>
+  <value key="50006" keyname="PlannedCashDeskPeopleUnitsPerHour">Verplante Personeneinheiten pro Stunde</value>
+  <value key="50007" keyname="TargetedCashDeskPeopleUnitsPerDay">Vorgabe Personeneinheiten pro Tag</value>
+  <value key="50008" keyname="TargetedCashDeskPeopleUnitsPerHour">Vorgabe Personeneinheiten pro Stunde</value>
+  <value key="50009" keyname="TotalCashRegisterReceiptPerDay">Summe Kassabonpositionen</value>
+  <value key="50010" keyname="AverageCashRegisterReceiptPerHour">Durchschnittliche Kassabonpositionen pro Stunde</value>
+
+  <value key="50011" keyname="DifferencePerDayTotal">Summe Differenz pro Tag (total)</value>
+  <value key="50012" keyname="AbsoluteDifferencePerDay">Summe Differenz pro Tag (absolut)</value>
+  <value key="50013" keyname="DifferencePerDayTotalPercent">Summe Difference per day (total in Prozent)</value>
+  <value key="50014" keyname="AbsoluteDifferencePerDayPercent">Summe Difference per day (absolut in Prozent)</value>
+
+  <value key="50015" keyname="TargetedNetPerformancePerHour">Geplante Netto-Stundenleistung:</value>
+
+  <value key="50016" keyname="DifferenceToBenchmark">Differenz zum Benchmark:</value>
+  <value key="50017" keyname="Benchmark2">Benchmark:</value>
+
+  <value key="50018" keyname="QuestionRunCashDeskEstimate">Wollen Sie die Vorgabeberechung für die Kassa starten?</value>
+
+  <value key="50019" keyname="DontRunEstimateCashDesk">Die Vorgabeberechnung für die Kassa kann nicht gestartet werden. Es sind noch unzureichend Daten vorhanden.</value>
+  <value key="50020" keyname="RunCashDeskEstimate">Vorgabeberechung Kassa starten</value>
+  <value key="50021" keyname="QuestionEstimateWorkingHours">Wollen Sie die Vorgabeberechung für die Welten starten?</value>
+  <value key="50022" keyname="DontEstimateWorkingHours">Die Vorgabeberechnung für die Welten kann nicht gestartet werden. Es sind noch unzureichend Daten vorhanden</value>
+  <value key="50023" keyname="RunWorkingTimeEstimate">Vorgabeberechung Welten starten</value>
+
+  <value key="50024" keyname="TimeRecording">Ist-Zeit-Erfassung</value>
+  <value key="50025" keyname="ShowHidePlannedRow">Planungs-Reihe ein/ausblenden</value>
+  <value key="50026" keyname="CopyFromPlanned">Kopiere Daten aus der Planung</value>
+  <value key="50027" keyname="CopyAllFromPlanned">Kopiere Daten aus der Planung (alle Mitarbeiter)</value>
+  
+  <value key="50028" keyname="ShowHideWorkingModelMessages">Arbeitszeitmodell-Benachrichtigungen anzeigen</value>
+  <value key="50029" keyname="ListOfModelMessage">Liste der Arbeitszeitmodell-Benachrichtigungen</value>
+  <value key="50030" keyname="SelectAbsence">Abwesenheit auswählen</value>
+
+  <value key="50031" keyname="AddPlannedAbsence">Neue geplante Abwesenheit hinzufügen</value>
+  <value key="50032" keyname="AddLongAbsence">Neue Langzeitabwesenheit hinzufügen</value>
+  <value key="50033" keyname="DeletePlannedAbsence">Lösche geplante Abwesenheit</value>
+  <value key="50034" keyname="ViewHolidaysHistory">Abwesenheits-History</value>
+  <value key="50035" keyname="Action">Abwesenheiten</value>
+  <value key="50036" keyname="EmployeeHolidaysHistory">Mitarbeiter Abwesenheits-History</value>
+
+  
+  <value key="50037" keyname="PlannedCashDeskPeopleUnitsPerWeek">Geplante Personeneinheiten pro Woche</value>
+  
+  
+  <value key="50038" keyname="AvgPlannedCashDeskPeopleUnitsPerDay">Geplante Personeneinheiten pro Tag (Durchschnitt)</value>  
+
+  <value key="50039" keyname="TargetedCashDeskPeopleUnitsPerWeek">Vorgabe Personeneinheiten pro Woche</value>
+
+  <value key="50040" keyname="AvgTargetedCashDeskPeopleUnitsPerDay">Vorgabe Personeneinheiten pro Tag (Durchschnitt)</value>
+
+  <value key="50041" keyname="CashRegisterReceiptPerWeek">Kassa-Bons pro Woche (Total)</value>
+  <value key="50042" keyname="AvgCashRegisterReceiptPerDay">Kassa-Bons pro Tag (Durchschnitt)</value>
+
+  <value key="50043" keyname="AvgDiffPerDayTotal">Durchschnittliche Differenz pro Tag (Total)</value>
+  <value key="50044" keyname="AvgAbsDiffPerDayTotal">Durchschnittliche Differenz pro Tag (Absolut)</value>
+
+  <value key="50045" keyname="AvgDiffPerDayTotalPercent">Durchschnittliche Differenz pro Tag (Total in Prozent)</value>
+  <value key="50046" keyname="AvgAbsDiffPerDayTotalPercent">Durchschnittliche Differenz pro Tag (Absolut in Prozent)</value>
+
+  <value key="50047" keyname="PrintPlanningValues">Geplante Stunden ausdrucken</value>
+
+  <value key="50048" keyname="QuestionSavePlannigData">Wollen Sie die Planungszeiten-Daten speichern?</value>
+  <value key="50049" keyname="QuestionSaveRecordingData">Wollen Sie die Ist-Zeiten-Erfassungsdaten speichern?</value>
+
+
+
+  <value key="50050" keyname="ATRPlannedAndActualWorkingHours">Plan- / Ist-Stunden</value>
+  - <!--  instead of SummPlannedWorkingHours 
+  -->
+  <value key="50051" keyname="ATRSummActualWorkingHours">Ist-Stunden:</value>
+  - <!--  instead of TargetedHours (dont forget it in daily view!!!)
+  -->
+  <value key="50052" keyname="ATRPlannedHours">Geplante Stunden:</value>
+  - <!--  instead of SummTargetedHours 
+  -->
+  <value key="50053" keyname="ATRSummActualHours">Summe der Plan-Stunden</value>
+  - <!--  instead of TargetedNetPerformancePerHour 
+  -->
+  <value key="50054" keyname="ATRActualNetPerformancePerHour">Ist-Netto-Stundenleistung:</value>
+  - <!--  Cash Desk  
+  -->
+  <value key="50055" keyname="ATRActualCashDeskUnits">Ist Personeneinheiten:</value>
+  <value key="50056" keyname="ATRPlannedCashDeskUnits">Geplante Personeneinheiten:</value>
+  - <!--  We DONT NEED key="50002" keyname="TargetedReceipt" LINE IN ACTUAL TIME RECORDING! REMOVE IT PLEASE! 
+  -->
+  <value key="50057" keyname="ATRActualCashDeskPeopleUnitsPerWeek">Ist-Personeneinheiten pro Woche</value>
+  <value key="50058" keyname="ATRAvgActualCashDeskPeopleUnitsPerDay">Ist- Personeneinheiten pro Tag (Durchschnitt)</value>
+  <value key="50059" keyname="ATRPlannedCashDeskPeopleUnitsPerWeek">Geplante Personeneinheiten pro Woche</value>
+  <value key="50060" keyname="ATRAvgPlannedCashDeskPeopleUnitsPerDay">Geplante Personeneinheiten pro Tag (Durchschnitt)</value>
+  - <!--  We DONT NEED key="50041" and "50042"  LINE IN ACTUAL TIME RECORDING! REMOVE IT PLEASE! 
+  -->
+  - <!--  Cash Desk  daily view. I am not sure wether those are needed any longer (cause it seem to be removed from daily view)
+  -->
+  <value key="50061" keyname="ATRActualCashDeskPeopleUnitsPerDay">Ist- Personeneinheiten pro Tag</value>
+  <value key="50062" keyname="ATRActualCashDeskPeopleUnitsPerHour">Ist- Personeneinheiten pro Stunde</value>
+  <value key="50063" keyname="ATRAcPlannedCashDeskPeopleUnitsPerDay">Geplante Personeneinheiten pro Tag</value>
+  <value key="50064" keyname="ATRAcPlannedCashDeskPeopleUnitsPerHour">Geplante Personeneinheiten pro Stunde</value>
+
+  <value key="50065" keyname="NumberOfPeoplePerHourPlan">Geplante Mitarbeiter</value>
+  <value key="50066" keyname="NumberOfPeoplePerHourRec">Ist-Zeit-Erfasste-Mitarbeiter</value>
+
+  <value key="50067" keyname="PlannedCashDeskHoursPerWeek">Geplante Stunden pro Woche</value>
+  <value key="50068" keyname="TargetedCashDeskHoursPerWeek">Vorgabestunden pro Woche</value>
+  <value key="50069" keyname="DiffPerWeekInPercent">Abweichung in % pro Woche</value>
+  <value key="50070" keyname="DiffInPercent">Differenz in %</value>
+
+  <value key="50071" keyname="PlannedCashDeskHoursPerDay">Geplante Stunden pro Tag</value>
+  <value key="50072" keyname="TargetedCashDeskHoursPerDay">Vorgabestunden pro Tag</value>
+  <value key="50073" keyname="DiffPerDayInPercent">Abweichung in % pro Tag</value>
+  
+  <value key="50074" keyname="WarningDaysCome">Es wurde seit {0} Tagen keine Ist-Zeit-Erfassung durchgeführt</value>
+
+</items>

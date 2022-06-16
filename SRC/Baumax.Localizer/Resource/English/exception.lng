@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="31001" keyname="InvalidTimeRange1">Time should be not intersect.</value>
+  <value key="31002" keyname="InvalidInsert">Sorry, record wisn`t add.</value>
+</items>

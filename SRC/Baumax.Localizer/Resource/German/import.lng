@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="10000" keyname="btnSavelog">Speichere Logfile</value>
+  <value key="10001" keyname="btnImport">Import</value>
+  <value key="10002" keyname="frmText">Import</value>
+  <value key="10003" keyname="msgSameColumns">Import File hat die gleiche Spalten.</value>
+  <value key="10004" keyname="msgImportFileUnknown">Import File hat ein unbekanntes Format.</value>
+  <value key="10005" keyname="msgImportTypeNotRealized">Der Import Typ '{0}' wird nicht erkannt.</value>
+  <value key="10006" keyname="LogFiles">Log Files</value>
+  <value key="10007" keyname="AllFiles">Alle Files</value>
+  <value key="10008" keyname="SavingOfRecords">Speichere {0} von {1} Datensätzen</value>
+  <value key="10009" keyname="ImportStarting">'{0}' Import startet am {1}.</value>
+  <value key="10010" keyname="ImportFileName">File: {0}</value>
+  <value key="10011" keyname="IncorrectDataInRow">Inkorrekte Daten in Zeile: {0}</value>
+  <value key="10012" keyname="ImportCompleteSuccessfuly">Import erfolgreich abgeschlossen</value>
+  <value key="10013" keyname="ImportCompleteError">Import mit Fehlern abgeschlossen</value>
+  <value key="10014" keyname="At">{0} am {1}</value>
+  <value key="10015" keyname="CountryExists">Datensatz {0}. VL mit {1}: {2} existiert bereits im Import File.</value>
+  <value key="10016" keyname="HWGRExists">Datensatz {0}. HWGR mit {1}: '{2}', {3}: '{4}' existiert bereits im Import File.</value>
+  <value key="10017" keyname="WorldNotExistsDB">Datensatz {0}. Welt mit {1}: '{2}' existiert nicht in der Datenbank.</value>
+  <value key="10018" keyname="CountryNotExistsDB">Datensatz {0}. VL mit {1}: {2} existiert nicht in der Datenbank.</value>
+  <value key="10019" keyname="RegiontExistsDB">Datensatz {0}. Region '{1}' existiert bereits in der Datenbank.</value>
+  <value key="10021" keyname="StoreExists">Datensatz {0}. Markt mit gleichem/r {0}: '{1}' existiert bereits im Import File.</value>
+  <value key="10022" keyname="RegionNotExistsDB">Datensatz {0}. Region mit {1}: '{2}', {3}: '{4}' existiert nicht in der Datenbank.</value>
+  <value key="10023" keyname="WGRExists">Datensatz {0}. WGR with {1}: '{2}', {3}: '{4}', {5}: '{6}' existiert bereits im Import File.</value>
+  <value key="10024" keyname="HWGRNotExistsDB">Datensatz {0}. HWGR mit {1}: '{2}', {3}: '{4}' existiert nicht in der Datenbank.</value>
+  <value key="10025" keyname="WorldExists">Datensatz {0}. Welt mit {1}: {2} existiert bereits im Import File.</value>
+  <value key="10026" keyname="StoresNotExistsDB">Achtung! Märkte / Markt exitstieren / existiert nicht in der Datenbank. Verbindung zwischen Markt und Welten kann nicht aufgebaut werden.</value>
+  <value key="10028" keyname="WorkingDayExistsDB">Datensatz {0}. Geschlossener Tag existiert bereits in der Datenbank.</value>
+  <value key="10029" keyname="inCountries">VL</value>
+  <value key="10030" keyname="inHWGRs">HWGR</value>
+  <value key="10031" keyname="inRegions">Regionen</value>
+  <value key="10032" keyname="inStories">Märkte</value>
+  <value key="10033" keyname="inWGRs">WGR</value>
+  <value key="10034" keyname="inWorlds">Welten</value>
+  <value key="10035" keyname="inWorkingDays">Geschlossene Tage</value>
+  <value key="10036" keyname="ImportFileNotContainData">Import File enthält gewisse Daten nicht: '{0}'.</value>
+  <value key="10037" keyname="inFeasts">Feiertage</value>
+  <value key="10038" keyname="FeastExists">Datensatz {0}. Feiertage mit {1}: '{2}', {3}: '{4}' existiert bereits im Import File.</value>
+  <value key="10039" keyname="EmployeeExists">Datensatz {0}. Mitarbeiter mit der Personal-ID: '{1}' existiert bereits im Import File.</value>
+  <value key="10040" keyname="inEmployee">Mitarbeiter</value>
+  <value key="10041" keyname="EmployeeNotAssignToStore">Datensatz {0}. Mitarbeiter mit der Personal-ID: '{1}' hat keinen zugeordneten Markt.</value>
+  <value key="10042" keyname="inLongTimeAbsence">Langzeitabwesenheit</value>
+  <value key="10043" keyname="LongTimeAbsenceExists">Datensatz {0}. Langzeitabwesenheit mit der Personal-ID: '{1}', Abwesenheits-Code: '{2}', Datum: '{3}' - '{4}' existiert bereits im Import File.</value>
+  <value key="10044" keyname="LongTimeAbsenceNotAssignToEmployee">Datensatz {0}. Mitarbeiter mit der Personal-ID: '{1}' existiert nicht in der Datenbank.</value>
+  <value key="10045" keyname="importBtnClose">Schließen</value>
+  <value key="10046" keyname="inAbsence">Abwesenheiten</value>
+  <value key="10047" keyname="AbsenceExists">Datensatz {0}. Abwesenheiten mit der AbwesenheitsID: '{1}' existiert bereits im Import File.</value>
+  <value key="10048" keyname="AbsenceNotImportedInDB">Datensatz {0}. Abwesenheiten mit der AbwesenheitsID: '{1}' wurden nicht importiert.</value>
+  <value key="10049" keyname="inTimePlanning">Zeitplanung</value>
+  <value key="10050" keyname="TimePlanningExists">Datensatz {0} mit Personen ID: '{1}', Datum: '{2}', AbwesenheitsID: '{3}', ArbeitsZeit_von: '{4}' , ArbeitsZeit_bis: '{5}' existiert bereits im Import File.</value>
+  <value key="10051" keyname="TimePlanningNotAssignToEmployee">Datensatz {0}. Mitarbeiter mit der Personen ID: '{1}' existiert nicht in der Datenbank.</value>
+  <value key="10052" keyname="inTimeRecording">Zeiteintragung</value>
+  <value key="10053" keyname="inActualBusinessVolume">Ist-Umsatz</value>
+  <value key="10054" keyname="BVInformation">Die Import Files müssen im Ordner {0} sein! Das File muss folgendes Format haben: {1}. Nach einem erfolgreichen Import werden die Files in den Ordner {2} verschoben.</value>
+  <value key="10055" keyname="inTargetBusinessVolume">Vorgabe-Umsatz</value>
+  <value key="10056" keyname="inCashRegisterReceipt">Bon Positionen</value> 
+  <value key="10057" keyname="EmployeeContractDateError">Datensatz {0}. Mitarbeiter mit der Personal ID: '{1}'. Arbeitsvertrag Startdatum '{2}' ist größer als das Arbeitsvertrag Enddatum '{3}'.</value>
+  <value key="10058" keyname="EmployeeContractTimeError">Datensatz {0}. Mitarbeiter mit der Personal ID: '{1}'. Arbeitsvertragzeit hat einen ungültigen Wert: '{2}'.</value>
+  <value key="10059" keyname="EmployeeIEContractBeginChange">Datensatz {0}. Mitarbeiter mit der Personal ID: '{1}'. Arbeitsvertrag Startdatum '{2}' kann nicht verändert werden.</value>
+  <value key="10060" keyname="EmployeeIEContractEndChangeAndLessImportDate">Datensatz {0}. Mitarbeiter mit der PersonalID: '{1}'. Arbeitsvertrag Enddatum '{2}' wurde verändert, ist aber kleiner als das Importdatum.</value>
+  <value key="10061" keyname="EmployeeImportFileOldVersion">Achtung! Sie verwenden ein Mitarbeiter-Import-File vom alten Format.</value>  
+  <value key="10062" keyname="NoFilesMatchSpec">Keine Files, die den Spezifikationen entsprechen im Import Ordner gefunden.</value>
+  <value key="10063" keyname="NumberFormatError">Datensatz {0}. Nummer-Parsing-Error: '{1}'. Überprüfen Sie das Nummern-Format im Datensatz. Dezimalstellenseperator muss "." sein.</value>
+  <value key="10064" keyname="bvImportOK"> -OK</value>
+  <value key="10065" keyname="bvImportError">- Fehler!</value>
+  <value key="10066" keyname="bvAboutErrorFilesInfo">Fehlerhafte Import Files wurden in den Ordner {0}
+verschoben. Daten mit Fehlern wurden in das Error File Kopiert. Der File Name hat das Format und den Namen:'errorImportFileName'
+Zusätzlich ein Kontrollfile mit der Endung .ERROR.txt  wurde erstellt. Dieses zeigt jede Reihe im Error File und ermöglicht Diagnose und Fehlerkorrektur.</value>
+  <value key="10067" keyname="bvDataConvertStart">Umsatzdaten Konvertierung startet...</value>
+  <value key="10068" keyname="bvAlreadyRunning">'{0}' Der Importvorgang wurde gestartet.</value>
+
+</items>

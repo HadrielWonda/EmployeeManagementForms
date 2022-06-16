@@ -1,0 +1,135 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D7ABC5C-C00E-4B86-9E4C-80FDD86D3C72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baumax.Localizer</RootNamespace>
+    <AssemblyName>Baumax.Localizer</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseSetup|AnyCPU' ">
+    <OutputPath>bin\ReleaseSetup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="DefaultDiction.cs" />
+    <Compile Include="Localizer.cs" />
+    <Compile Include="UIConst.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\common.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\language.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\country.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\region.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\import.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\login.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\employee.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\user.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\absencetype.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\colouring.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\store.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\German\absencetype.lng" />
+    <EmbeddedResource Include="Resource\German\colouring.lng" />
+    <EmbeddedResource Include="Resource\German\common.lng" />
+    <EmbeddedResource Include="Resource\German\country.lng" />
+    <EmbeddedResource Include="Resource\German\employee.lng" />
+    <EmbeddedResource Include="Resource\German\import.lng" />
+    <EmbeddedResource Include="Resource\German\language.lng" />
+    <EmbeddedResource Include="Resource\German\login.lng" />
+    <EmbeddedResource Include="Resource\German\region.lng" />
+    <EmbeddedResource Include="Resource\German\user.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\hwgr.lng" />
+    <EmbeddedResource Include="Resource\English\wgr.lng" />
+    <EmbeddedResource Include="Resource\German\hwgr.lng" />
+    <EmbeddedResource Include="Resource\German\store.lng" />
+    <EmbeddedResource Include="Resource\German\wgr.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\devex.lng" />
+    <None Include="Resource\English\exception.lng" />
+    <EmbeddedResource Include="Resource\German\printout.lng" />
+    <EmbeddedResource Include="Resource\German\devex.lng" />
+    <EmbeddedResource Include="Resource\English\planning.lng" />
+    <EmbeddedResource Include="Resource\German\planning.lng" />
+    <EmbeddedResource Include="Resource\English\world.lng" />
+    <EmbeddedResource Include="Resource\English\absenceplanning.lng" />
+    <EmbeddedResource Include="Resource\German\exception.lng" />
+    <EmbeddedResource Include="Resource\German\absenceplanning.lng" />
+    <EmbeddedResource Include="Resource\German\world.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\English\printout.lng" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

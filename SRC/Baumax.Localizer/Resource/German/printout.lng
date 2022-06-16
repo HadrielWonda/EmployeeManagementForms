@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+	<value key="22000" keyname="PrintWorldsTimeRecording">Ist-Zeit-Erfassung ausdrucken</value>
+	<value key="22001" keyname="PrintAbsenceTimePlanning">Abwesenheitsplanung ausdrucken</value>
+	<value key="22002" keyname="Yearly">Jährlich</value>
+	<value key="22003" keyname="Monthly">Monatlich</value>
+
+	<value key="22004" keyname="Old">Alt</value>
+	<value key="22005" keyname="New2">Neu</value>
+	<value key="22006" keyname="Excl">Exkl</value>
+	<value key="22007" keyname="Incl">Inkl</value>
+	<value key="22009" keyname="Avail">Ges</value>
+	<value key="22010" keyname="Used">Verb</value>
+ 
+</items>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="900" keyname="WrongLoginOrPassword">Wrong login name or password.</value>
+  <value key="901" keyname="UserIsInactive">Username is no longer valid. Please inform the administrators.</value>
+  <value key="902" keyname="ServerIsUnavailable">Server is unavailable. Check your settings.</value>
+  <value key="903" keyname="WaitPlease">Wait please...</value>
+  <value key="904" keyname="Login">Login</value>
+  <value key="905" keyname="Exit">Exit</value>
+  
+  <value key="906" keyname="CheckingServerPresence">Checking server presence. Wait please.</value>
+  <value key="907" keyname="ServerReady">Server Ready. Press login button.</value>
+  <value key="908" keyname="ServerStarting">Server starting. Wait please.</value>
+  <value key="909" keyname="WrongVersion">It is not possible to login to the application server. Client has wrong version {0}. Client must have version {1}. Please, inform your system administrator.</value>
+</items>

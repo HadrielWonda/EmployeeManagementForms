@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+	<value key="22000" keyname="PrintWorldsTimeRecording">Print world`s time recording</value>
+	<value key="22001" keyname="PrintAbsenceTimePlanning">Print absence time planning</value>
+	<value key="22002" keyname="Yearly">Yearly</value>
+	<value key="22003" keyname="Monthly">Monthly</value>
+	
+	<value key="22004" keyname="Old">Old</value>
+	<value key="22005" keyname="New2">New</value>
+	<value key="22006" keyname="Excl">Excl</value>
+	<value key="22007" keyname="Incl">Incl</value>
+	<value key="22009" keyname="Avail">Avail</value>
+	<value key="22010" keyname="Used">Used</value>
+</items>

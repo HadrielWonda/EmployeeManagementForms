@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="1100" keyname="CannotSaveUser">User kann nicht gespeichert werden.</value>
+  <value key="1101" keyname="CannotDeleteUser">User kann nicht gelöscht werden.</value>
+  <value key="1102" keyname="SomeUsersNotDeleted">Einige User konnten nicht gelöscht werden.</value>
+  <value key="1103" keyname="questiondeleteuser">Sind Sie sicher, dass Sie den User löschen wollen?</value>
+  <value key="1104" keyname="questionDeleteCountry">Sind Sie sicher, dass Sie die Länder / das Land löschen wollen?</value>
+  <value key="1106" keyname="questionDeleteStore">Sind Sie sicher, dass Sie die Märkte / den Markt löschen wollen?</value>
+  <value key="1107" keyname="User">User</value>
+  <value key="1108" keyname="Active">Aktiv</value>
+  <value key="1109" keyname="LoginName">Login</value>
+  <value key="1110" keyname="Password">Passwort</value>
+  <value key="1112" keyname="Employee">Mitarbeiter</value>
+  <value key="1113" keyname="Role">Rolle</value>
+  <value key="1116" keyname="Stores">Märkte</value>
+  <value key="1117" keyname="InvalidLogin">Login-Name muss aus mehr als 4 und weniger als 50 Zeichen bestehen.</value>
+  <value key="1118" keyname="UserExist">Der User existiert bereits.</value>
+  <value key="1119" keyname="InvalidPassword">Das Passwort muss mehr als 4 Zeichen haben</value>
+  <value key="1120" keyname="UserManager">User Manager</value>
+
+  <value key="1121" keyname="NewUser">Neuen User anlegen</value>
+  <value key="1122" keyname="EditUser">Editiere User</value>
+  <value key="1123" keyname="DeleteUser">Lösche User</value>
+  
+  <value key="1124" keyname="SelectCountries">Vertirebslinien auswählen</value>
+  <value key="1125" keyname="SelectRegions">Regionen auswählen</value>
+  <value key="1126" keyname="SelectStores">Märkte auswählen</value>
+
+  <value key="1127" keyname="ButtonSelect">Auswählen</value>
+  <value key="1128" keyname="ShouldChangePassword">Bitte ändern Sie Ihr Passwort.</value>
+  <value key="1129" keyname="OldNewPasswordShouldDiffer">Das alte und das neue Passwort sollten sich unterscheiden.</value>
+  <value key="1130" keyname="PasswordShouldIdentical">Die Passwörter müssen ident sein.</value>
+  <value key="1131" keyname="OldPassword">Altes Passwort</value>
+  <value key="1132" keyname="NewPassword">Neues Passwort</value>
+  <value key="1133" keyname="RetypeNewPassword">Neues Passwort (Wiederholung)</value>
+
+  <value key="1134" keyname="GlobalAdmin">Zentrale Administration</value>
+  <value key="1135" keyname="Controlling">Controlling</value>
+  <value key="1136" keyname="CountryAdmin">Vertriebslinien Administration</value>
+  <value key="1137" keyname="RegionAdmin">Regionen Administration</value>
+  <value key="1138" keyname="StoreAdmin">Markt Administration</value>
+
+  <value key="1139" keyname="ChangePasswordAtNextLogin">Passwort soll beim ersten Einloggen geändern werden</value>  
+  <value key="1140" keyname="GroupByRole">Gruppiere nach Rolle</value>
+
+</items>

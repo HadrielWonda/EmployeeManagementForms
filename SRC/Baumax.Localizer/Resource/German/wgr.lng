@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="30001" keyname="NameShouldBeNotEmpty">Der Name darf nicht leer sein.</value>
+  <value key="30002" keyname="SelectWGR">Selektieren Sie eine WGR bitte.</value>
+  <value key="30003" keyname="ThisWgrToHWGR">WGR einer HWGR zuweisen</value>
+  <value key="30004" keyname="ThisHwgrToWorld">HWGR einer Welt zuweisen</value>
+  <value key="30005" keyname="HwgrWgrDisable">WGR - HWGR Zeit-Intervall</value>
+  <value key="30007" keyname="WorldHwgrDisable">HWGR - Welt Zeit-Intervall</value>
+	<value key="30008" keyname="WGR">WGR</value>
+	<value key="30009" keyname="WgrHistory">WGR History</value>
+</items>

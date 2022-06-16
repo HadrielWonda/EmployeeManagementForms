@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="1300" keyname="CannotSaveColouring">Cannot save the colouring.</value>
+  <value key="1301" keyname="CannotDeleteColouring">Cannot delete the colouring.</value>
+  <value key="1302" keyname="SomeColouringsNotDeleted">Some colouring(s) were not deleted.</value>
+  <value key="1303" keyname="questiondeleteColouring">Are you sure to remove colouring(s)?</value>
+</items>

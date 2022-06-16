@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="800" keyname="RegionManager">Region Manager</value>
+  <value key="801" keyname="Region">Region</value>
+  <value key="802" keyname="Regions">Regions</value>
+
+  <value key="803" keyname="RegionName">Region Name</value>
+  <value key="804" keyname="NewRegion">New region</value>
+  <value key="805" keyname="EditRegion">Edit region</value>
+  <value key="806" keyname="DeleteRegion">Delete region</value>
+
+  <value key="807" keyname="GroupByCountry">Group by Country</value>
+  <value key="808" keyname="RefreshRegions">Refresh regions</value>
+  <value key="809" keyname="RegionGroup">Region group</value>
+  <value key="810" keyname="RegionDetails">Region Details</value>
+  <value key="811" keyname="ImportRegion">Import region</value>
+
+  <value key="820" keyname="QuestionDeleteRegion">Are you sure you want to delete region?</value>
+  <value key="821" keyname="ErrorBenchmarkDontExists">Error of update benchmark value! Record don't exists</value>
+  <value key="822" keyname="ErrorSelectWorld">Select world</value>
+  <value key="823" keyname="ErrorInvalidDateRange">Invalid date range - Begin date must less than End date</value>
+  <value key="824" keyname="TrendCorrection">Trend correction</value>
+  <value key="825" keyname="DefineTrendCorrection">Define trend correction</value>
+  <value key="826" keyname="EditTrendCorrection">Edit trend correction</value>
+
+  <value key="827" keyname="InvalidTimeRange">Invalid time range.</value>
+  <value key="828" keyname="WorldYearBufferHoursExist">For world and year exists buffer-hour value.</value>
+  <value key="829" keyname="BufferHoursNotExist">Db error. Buffer-hour don't exists.</value>
+  <value key="830" keyname="ChooseWorld">Choose the world please.</value>
+  <value key="831" keyname="WorldYearBenchmarkExist">Benchmark for this world and year exists</value>
+
+  <value key="832" keyname="NewTrendCorrection">Neue Trend Korrektur</value>
+  <value key="833" keyname="DeleteTrendCorrection">Lösche Trend Korrektur</value>
+  <value key="834" keyname="CantDeleteTrendCorrection">Error delete Trend Korrektur</value>
+  <value key="835" keyname="QuestionDeleteTrendCorrection">Are you sure to remove trend correction?</value>
+  <value key="836" keyname="ErrorTrendCorrectionRangeIntersect">Current trend correction date range intersect with another data range</value>
+  <value key="837" keyname="BufferHours">Buffer hours</value>
+  <value key="838" keyname="Benchmark">Benchmark</value>
+  
+  <value key="839" keyname="DefineBufferHours">Define buffer-hours</value>
+  <value key="840" keyname="DefineBenchmarks">Define benchmarks</value>
+  <value key="841" keyname="DefineTrendcorrections">Define trend-corrections</value>
+
+  <value key="842" keyname="NewBufferHours">New buffer-hours</value>
+  <value key="843" keyname="EditBufferHours">Edit buffer-hours</value>
+
+  <value key="844" keyname="NewBenchmark">New benchmark</value>
+  <value key="845" keyname="EditBenchmark">Edit benchmark</value>
+  <value key="846" keyname="DeleteBenchmark">Delete benchmark</value>
+
+  <value key="847" keyname="QuestionDeleteBenchmark">Are you sure you want to remove current benchmark?</value>
+
+  <value key="848" keyname="DeleteBufferHours">Delete buffer-hours</value>
+  <value key="849" keyname="QuestionDeleteBufferHours">Are you sure to remove buffer-hours?</value>
+  <value key="850" keyname="CantDeleteBufferHours">Error delete buffer-hours</value>
+</items>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="20000" keyname="ErrorDateRangeIntersect">Date range of open-close hours intersect with another date range.</value>
+  <value key="20001" keyname="SelectRegion">Select region.</value>
+  <value key="20002" keyname="EnterStoreName">Enter Store Name.</value>
+  <value key="20003" keyname="EnterCity">Enter City.</value>
+  <value key="20004" keyname="EnterAddress">Enter address.</value>
+  <value key="20005" keyname="EnterPostCode">Enter post code.</value>
+  <value key="20006" keyname="EnterArea">Enter Area.</value>
+  
+  <value key="20010" keyname="Store">Store</value>
+  <value key="20011" keyname="StoreName">Store name</value>
+  <value key="20012" keyname="City">City</value>
+  <value key="20013" keyname="Address">Address</value>
+  <value key="20014" keyname="PostCode">PostCode</value>
+  <value key="20015" keyname="Area">Area</value>
+  <value key="20016" keyname="ListOfStores">List of stores</value>
+  <value key="20017" keyname="ImportStore">Import store</value>
+  <value key="20018" keyname="StoreDetail">Store details</value>
+  <value key="20019" keyname="OpenCloseHours">Open-close hours</value>
+  <value key="20020" keyname="NewAssignHwgrToWorld">New assign Hwgr to world</value>
+  <value key="20021" keyname="EditAssignHwgrToWorld">Edit assign Hwgr to world</value>
+  <value key="20022" keyname="ErrorCantNewOpenCloseOutOfRange">Can not create new Open-close time, because full date range is occupied</value>
+  <value key="20023" keyname="CantDeleteOpenClose-EntityInUsed">Can not delete open-close range. This open-lose range is in used.</value>
+
+  <value key="20024" keyname="NewOpenCloseRange">New open-close range</value>
+  <value key="20025" keyname="DeleteOpenCloseRange">Delete open-close range</value>
+  <value key="20026" keyname="QuestionRemoveStoreOpenClose">Are you sure you want to remove open-close range?</value>
+  <value key="20027" keyname="StoreManager">Store manager</value>
+  <value key="20028" keyname="StructureManager">Structure manager</value>
+  <value key="20029" keyname="NewAssignWgrToHwgr">Assign Wgr to HWgr</value>
+  <value key="20030" keyname="EditAssignWgrToHwgr">Edit Wgr to HWgr</value>
+  <value key="20031" keyname="ErrorYearMinMaxExists">Min/Max for this world and year exists</value>
+  <value key="20032" keyname="ErrorMinMaxPerson">Min can not be greater than Max</value>
+  <value key="20033" keyname="EmployeeWorkingHistory">Mitarbeiter History</value>
+
+  <value key="20034" keyname="NewOpenCloseTimeRange">New open-close time-range</value>
+  <value key="20035" keyname="SaveOpenCloseTimeRange">Save open-close time-range</value>
+  
+  <value key="20036" keyname="WarningNoTimeRangeToEternity">Warning: It is recommended that at least one time range should last until 6.6.2079</value>
+  <value key="20037" keyname="WarnNoOpenCloseTime">Opening times are not defined for some stores (expand to see the list)</value>
+
+  <value key="20038" keyname="ExpandOpenCloseHours">Expand open-close hours</value>
+  <value key="20039" keyname="ExpandNext">Extend next range</value>
+  <value key="20040" keyname="ExpandPrevious">Extend previous range</value>
+  <value key="20041" keyname="LeaveRangesUnchanged">Leave ranges unchanged</value>
+
+  <value key="20042" keyname="DeleteOpenCloseTimeRange">Delete open-close time-range</value>
+  <value key="20043" keyname="WarnNeedMergeEmployees">There are unmigrated external employees in some stores (expand to see the list)</value>
+  <value key="20044" keyname="WarnEstimationNotPossible">Estimation can't be started because insufficient data is supplied</value>
+  
+  <value key="20045" keyname="ViewEstimateData">View Estimate Data</value>
+  <value key="20046" keyname="ClearAllEstimate">Clear All Estimate</value>
+
+
+
+
+  <value key="20047" keyname="CopyBValue">Copy business data</value>
+  <value key="20048" keyname="Copybusinessdatafromotherstores">Copy business data from other stores</value>
+  <value key="20049" keyname="FromStore">From store</value>
+  <value key="20050" keyname="Tostore">To store</value>
+  <value key="20051" keyname="MonthBegin">Start month</value>
+  <value key="20052" keyname="MonthEnd">End month</value>
+  <value key="20053" keyname="Definetimerangetocopy">Define time range to copy</value>
+  <value key="20054" keyname="actualBusinessVol">Actual Business Value</value>
+  <value key="20055" keyname="CashDeskVol">Cash desk value</value>
+  <value key="20056" keyname="Targetvol">Target value</value>
+  <value key="20057" keyname="Selectcountrydestination">Select country-destination</value>
+  <value key="20058" keyname="Selectcountrysource">Select country-source</value>
+  <value key="20059" keyname="Datafortheselectedtimerangeexistsalready">Data for the selected time range  exists already</value>
+  <value key="20060" keyname="Nodatatocopy">No data to copy</value>
+  <value key="20061" keyname="Copyingcompletedsuccessfully">Copying completed successfully</value>
+  <value key="20062" keyname="Startyear">Start year</value>
+  <value key="20063" keyname="Endyear">End year</value>
+
+  <value key="20064" keyname="NotExistsOpenTime">The store open-close hours are not defined</value>
+  
+</items>

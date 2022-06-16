@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="1100" keyname="CannotSaveUser">Cannot save the user.</value>
+  <value key="1101" keyname="CannotDeleteUser">Cannot delete the user.</value>
+  <value key="1102" keyname="SomeUsersNotDeleted">Some user(s) were not deleted.</value>
+  <value key="1103" keyname="questiondeleteuser">Are you sure you want to remove user?</value>
+  <value key="1104" keyname="questionDeleteCountry">Are you sure you want to remove country?</value>
+  <value key="1106" keyname="questionDeleteStore">Are you sure you want to remove store?</value>
+  <value key="1107" keyname="User">User</value>
+  <value key="1108" keyname="Active">Active</value>
+  <value key="1109" keyname="LoginName">Login</value>
+  <value key="1110" keyname="Password">Password</value>
+  <value key="1112" keyname="Employee">Employee</value>
+  <value key="1113" keyname="Role">Role</value>
+  <value key="1116" keyname="Stores">Stores</value>
+  <value key="1117" keyname="InvalidLogin">Login should be greater than 4 symbols and lesser than 50 symbols.</value>
+  <value key="1118" keyname="UserExist">User already exist.</value>
+  <value key="1119" keyname="InvalidPassword">Password should be greater than 4 symbols.</value>
+  <value key="1120" keyname="UserManager">User manager</value>
+
+  <value key="1121" keyname="NewUser">New user</value>
+  <value key="1122" keyname="EditUser">Edit user</value>
+  <value key="1123" keyname="DeleteUser">Delete user</value>
+
+  <value key="1124" keyname="SelectCountries">Select Countries</value>
+  <value key="1125" keyname="SelectRegions">Select Regions</value>
+  <value key="1126" keyname="SelectStores">Select Stores</value>
+
+  <value key="1127" keyname="ButtonSelect">Select</value>
+  <value key="1128" keyname="ShouldChangePassword">You should change the password.</value>
+  <value key="1129" keyname="OldNewPasswordShouldDiffer">Old and new passwords should differ.</value>
+  <value key="1130" keyname="PasswordShouldIdentical">Passwords should be identical.</value>
+  <value key="1131" keyname="OldPassword">Old Password.</value>
+  <value key="1132" keyname="NewPassword">New Password.</value>
+  <value key="1133" keyname="RetypeNewPassword">Retype New Password.</value>
+
+  <value key="1134" keyname="GlobalAdmin">Central Administration</value>
+  <value key="1135" keyname="Controlling">Controlling</value>
+  <value key="1136" keyname="CountryAdmin">Country Adminstration</value>
+  <value key="1137" keyname="RegionAdmin">Region Administration</value>
+  <value key="1138" keyname="StoreAdmin">Chain Store Leader</value>
+
+  <value key="1139" keyname="ChangePasswordAtNextLogin">Change password at next login</value>
+  <value key="1140" keyname="GroupByRole">Group by Role</value>
+  
+
+</items>

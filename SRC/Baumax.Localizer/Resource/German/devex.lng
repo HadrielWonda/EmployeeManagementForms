@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="60000" keyname="PreviewStringId.MenuItem_File">File</value>
+  <value key="60001" keyname="PreviewStringId.MenuItem_View" >Ansicht</value>
+  <value key="60002" keyname="PreviewStringId.MenuItem_Background">Hintergrund</value>
+  <value key="60003" keyname="PreviewStringId.MenuItem_PageSetup">Seite einrichten</value>
+  <value key="60004" keyname="PreviewStringId.MenuItem_Print">Drucken...</value>
+  <value key="60005" keyname="PreviewStringId.MenuItem_PrintDirect">Drucken</value>
+  <value key="60006" keyname="PreviewStringId.MenuItem_Export">Exportiere nach</value>
+  <value key="60007" keyname="PreviewStringId.MenuItem_Send">Senden als</value>
+  <value key="60008" keyname="PreviewStringId.MenuItem_Exit">Beenden</value>
+  <value key="60009" keyname="PreviewStringId.MenuItem_ViewToolbar">Toolbar</value>
+  <value key="60010" keyname="PreviewStringId.MenuItem_ViewStatusbar">Statusbar</value>
+  <value key="60011" keyname="PreviewStringId.MenuItem_ViewContinuous">Fortsetzend</value>
+  <value key="60012" keyname="PreviewStringId.MenuItem_ViewFacing">Ausrichtung</value>
+  <value key="60013" keyname="PreviewStringId.MenuItem_BackgrColor">Farbe...</value>
+  <value key="60014" keyname="PreviewStringId.MenuItem_Watermark">Wasserzeichen...</value>
+  <value key="60015" keyname="PreviewStringId.MenuItem_PdfDocument">PDF File</value>
+  <value key="60016" keyname="PreviewStringId.MenuItem_TxtDocument">Text File</value>
+  <value key="60017" keyname="PreviewStringId.MenuItem_CsvDocument">CSV File</value>
+  <value key="60018" keyname="PreviewStringId.MenuItem_XlsDocument">Excel File</value>
+  <value key="60019" keyname="PreviewStringId.MenuItem_RtfDocument">RTF File</value>
+  <value key="60020" keyname="PreviewStringId.MenuItem_HtmDocument">HTML File</value>
+  <value key="60021" keyname="PreviewStringId.MenuItem_GraphicDocument">Image File</value>
+  <value key="60022" keyname="PreviewStringId.MenuItem_ZoomPageWidth">Seitenbreite</value>
+  <value key="60023" keyname="PreviewStringId.MenuItem_ZoomTextWidth">Textbreite</value>
+  <value key="60024" keyname="PreviewStringId.MenuItem_ZoomWholePage">Ganze Seite</value>
+  <value key="60025" keyname="PreviewStringId.MenuItem_ZoomTwoPages">Zwei Seiten</value>
+  <value key="60026" keyname="PreviewStringId.MenuItem_PageLayout">Seiten Layout</value>
+  <value key="60027" keyname="PreviewStringId.Button_Ok">OK</value>
+  <value key="60028" keyname="PreviewStringId.Button_Help">Hilfe</value>
+  <value key="60029" keyname="PreviewStringId.PreviewForm_Caption">Voransicht</value>
+  <value key="60030" keyname="PreviewStringId.TB_TTip_Customize">Anpassen</value>
+  <value key="60031" keyname="PreviewStringId.TB_TTip_PrintDirect">Schnelldruck</value>
+  <value key="60032" keyname="PreviewStringId.TB_TTip_PageSetup">Seiten-Setup</value>
+  <value key="60033" keyname="PreviewStringId.TB_TTip_Magnifier">Vergrößerer</value>
+  <value key="60034" keyname="PreviewStringId.TB_TTip_ZoomIn">Hinein-Zoomen</value>
+  <value key="60035" keyname="PreviewStringId.TB_TTip_ZoomOut">Hinaus-Zoomen</value>
+  <value key="60036" keyname="PreviewStringId.TB_TTip_Zoom">Zoom</value>
+  <value key="60037" keyname="PreviewStringId.TB_TTip_Search">Suchen</value>
+  <value key="60038" keyname="PreviewStringId.TB_TTip_FirstPage">Erste Seite</value>
+  <value key="60039" keyname="PreviewStringId.TB_TTip_PreviousPage">Vorhergehende Seite</value>
+  <value key="60040" keyname="PreviewStringId.TB_TTip_NextPage">Nächste Seite</value>
+  <value key="60041" keyname="PreviewStringId.TB_TTip_LastPage">Letzte Seite</value>
+  <value key="60042" keyname="PreviewStringId.TB_TTip_MultiplePages">Multiple Seiten</value>
+  <value key="60043" keyname="PreviewStringId.TB_TTip_Backgr">Hintergrund</value>
+  <value key="60044" keyname="PreviewStringId.TB_TTip_EditPageHF">Kopf und Fußzeile</value>
+  <value key="60045" keyname="PreviewStringId.TB_TTip_HandTool">Hand Tool</value>
+  <value key="60046" keyname="PreviewStringId.TB_TTip_Export">Exportiere Dokument...</value>
+  <value key="60047" keyname="PreviewStringId.TB_TTip_Send">Sende via E-Mail...</value>
+  <value key="60048" keyname="PreviewStringId.TB_TTip_Map">Dokumenten Map</value>
+  <value key="60049" keyname="PreviewStringId.TB_TTip_Watermark">Wasserzeichen</value>
+  <value key="60050" keyname="PreviewStringId.TB_TTip_Scale">Skalieren</value>
+  <value key="60051" keyname="PreviewStringId.SB_TotalPageNo">Gesamtseitenanzahl: </value>
+  <value key="60052" keyname="PreviewStringId.SB_CurrentPageNo">Aktuelle Seitenzahl: </value>
+  <value key="60053" keyname="PreviewStringId.SB_ZoomFactor">Zoom Faktor: </value>
+  <value key="60054" keyname="PreviewStringId.SB_PageNone">keiner</value>
+  <value key="60055" keyname="PreviewStringId.SB_PageInfo">{0} von {1}</value>
+  <value key="60056" keyname="PreviewStringId.Msg_EmptyDocument">Das Dokument enthält keine Seiten.</value>
+  <value key="60057" keyname="PreviewStringId.Msg_CreatingDocument">Erstelle das Dokument...</value>
+  <value key="60058" keyname="PreviewStringId.MPForm_Lbl_Pages">Seiten</value>
+  <value key="60059" keyname="PreviewStringId.Msg_UnavailableNetPrinter">Der Netzwerkdrucker ist nicht erreichbar.</value>
+  <value key="60060" keyname="PreviewStringId.Msg_NeedPrinter">Kein Drucker installiert.</value>
+  <value key="60061" keyname="PreviewStringId.Msg_WrongPrinter">Der Druckername ist ungültig. Bitte überprüfen Sie die Druckereinstellungen.</value>
+  <value key="60062" keyname="PreviewStringId.Msg_WrongPageSettings">Der ausgewähle Drucker unterstützt diese Papiergröße nicht.\r\nWollen Sie trotzdem drucken?</value>
+  <value key="60063" keyname="PreviewStringId.Msg_CustomDrawWarning">Warnung!</value>
+  <value key="60064" keyname="PreviewStringId.Msg_PageMarginsWarning">Eine oder mehrere Ränder liegen außerhalb des druckbaren Bereichs. Weitermachen?</value>
+  <value key="60065" keyname="PreviewStringId.Margin_Inch">Inch</value>
+  <value key="60066" keyname="PreviewStringId.Msg_IncorrectPageRange">Das ist kein gültiger Seitenbereich</value>
+  <value key="60067" keyname="PreviewStringId.Msg_FontInvalidNumber">Die Schriftgröße kann nicht 0 oder negativ sein</value>
+  <value key="60068" keyname="PreviewStringId.Msg_NotSupportedFont">Diese Schriftart wird nciht unterstützt.</value>
+  <value key="60069" keyname="PreviewStringId.Msg_IncorrectZoomFactor">Die Nummer muss zwischen {0} und {1} sein.</value>
+  <value key="60070" keyname="PreviewStringId.Msg_InvalidMeasurement">Das ist kein gültiges Maß.</value>
+  <value key="60071" keyname="PreviewStringId.Msg_CannotAccessFile">Der Prozess kann nicht auf das File \"{0}\" zugreifen, weil es von einem andere Prozess gesperrt ist.</value>
+  <value key="60072" keyname="PreviewStringId.Msg_FileReadOnly">File \"{0}\" ist read-only, verwenden Sie einen anderen File-Namen.</value>
+  <value key="60073" keyname="PreviewStringId.Msg_OpenFileQuestion">Wollen Sie dieses File öffnen?</value>
+  <value key="60074" keyname="PreviewStringId.Msg_OpenFileQuestionCaption">Export</value>
+  <value key="60075" keyname="PreviewStringId.Msg_CantFitBarcodeToControlBounds">Kontroll grenzen sind zu schmal für den Barcode</value>
+  <value key="60076" keyname="PreviewStringId.Msg_InvalidBarcodeText">Es existieren ungültige Zeichen im Text</value>
+  <value key="60077" keyname="PreviewStringId.Msg_InvalidBarcodeTextFormat">Ungültiges Textformat</value>
+  <value key="60078" keyname="PreviewStringId.Msg_SearchDialogFinishedSearching">Die Suche durch das Dokument ist beendet</value>
+  <value key="60079" keyname="PreviewStringId.Msg_SearchDialogTotalFound">Gefunden (total): </value>
+  <value key="60080" keyname="PreviewStringId.Msg_SearchDialogReady">Bereit</value>
+  <value key="60081" keyname="PreviewStringId.Margin_Millimeter">mm</value>
+  <value key="60082" keyname="PreviewStringId.Margin_TopMargin">Oberer Rand</value>
+  <value key="60083" keyname="PreviewStringId.Margin_BottomMargin">Unterer Rand</value>
+  <value key="60084" keyname="PreviewStringId.Margin_LeftMargin">Linker Rand</value>
+  <value key="60085" keyname="PreviewStringId.Margin_RightMargin">Rechter Rand</value>
+  <value key="60086" keyname="PreviewStringId.ScrollingInfo_Page">Seite</value>
+  <value key="60087" keyname="PreviewStringId.WMForm_PictureDlg_Title">Bild auswählen</value>
+  <value key="60088" keyname="PreviewStringId.WMForm_ImageStretch">Stretchen</value>
+  <value key="60089" keyname="PreviewStringId.WMForm_ImageClip">Abschneiden</value>
+  <value key="60090" keyname="PreviewStringId.WMForm_ImageZoom">Zoomen</value>
+  <value key="60091" keyname="PreviewStringId.WMForm_Watermark_Asap">ASAP</value>
+  <value key="60092" keyname="PreviewStringId.WMForm_Watermark_Confidential">GEHEIM</value>
+  <value key="60093" keyname="PreviewStringId.WMForm_Watermark_Copy">COPY</value>
+  <value key="60094" keyname="PreviewStringId.WMForm_Watermark_DoNotCopy">NICHT KOPIEREN</value>
+  <value key="60095" keyname="PreviewStringId.WMForm_Watermark_Draft">ENTWURF</value>
+  <value key="60096" keyname="PreviewStringId.WMForm_Watermark_Evaluation">EVALUIERUNG</value>
+  <value key="60097" keyname="PreviewStringId.WMForm_Watermark_Original">ORIGINAL</value>
+  <value key="60098" keyname="PreviewStringId.WMForm_Watermark_Personal">PERSÖNLICH</value>
+  <value key="60099" keyname="PreviewStringId.WMForm_Watermark_Sample">BEISPIEL</value>
+  <value key="60100" keyname="PreviewStringId.WMForm_Watermark_TopSecret">TOP SECRET</value>
+  <value key="60101" keyname="PreviewStringId.WMForm_Watermark_Urgent">DRINGEND</value>
+  <value key="60102" keyname="PreviewStringId.WMForm_Direction_Horizontal">Horizontal</value>
+  <value key="60103" keyname="PreviewStringId.WMForm_Direction_Vertical">Vertikal</value>
+  <value key="60104" keyname="PreviewStringId.WMForm_Direction_BackwardDiagonal">RückwärtsDiagonal</value>
+  <value key="60105" keyname="PreviewStringId.WMForm_Direction_ForwardDiagonal">VorwärtsDiagonal</value>
+  <value key="60106" keyname="PreviewStringId.WMForm_VertAlign_Bottom">Unten</value>
+  <value key="60107" keyname="PreviewStringId.WMForm_VertAlign_Middle">Mitte</value>
+  <value key="60108" keyname="PreviewStringId.WMForm_VertAlign_Top">Pben</value>
+  <value key="60109" keyname="PreviewStringId.WMForm_HorzAlign_Left">Links</value>
+  <value key="60110" keyname="PreviewStringId.WMForm_HorzAlign_Center">Zentrum</value>
+  <value key="60111" keyname="PreviewStringId.WMForm_HorzAlign_Right">Rechts</value>
+  <value key="60112" keyname="PreviewStringId.WMForm_ZOrderRgrItem_InFront">Im Vordergrund</value>
+  <value key="60113" keyname="PreviewStringId.WMForm_ZOrderRgrItem_Behind">Im Hintergrund</value>
+  <value key="60114" keyname="PreviewStringId.WMForm_PageRangeRgrItem_All">Alles</value>
+  <value key="60115" keyname="PreviewStringId.WMForm_PageRangeRgrItem_Pages">Seiten></value>
+  <value key="60116" keyname="PreviewStringId.SaveDlg_FilterPdf">PDF Dokument</value>
+  <value key="60117" keyname="PreviewStringId.SaveDlg_FilterTxt">Text Dokument</value>
+  <value key="60118" keyname="PreviewStringId.SaveDlg_FilterCsv">CSV Dokument</value>
+  <value key="60119" keyname="PreviewStringId.SaveDlg_FilterMht">MHT Dokument</value>
+  <value key="60120" keyname="PreviewStringId.SaveDlg_FilterXls">Excel Dokument</value>
+  <value key="60121" keyname="PreviewStringId.SaveDlg_FilterRtf">Rich Text Dokument</value>
+  <value key="60122" keyname="PreviewStringId.SaveDlg_FilterHtm">HTML Dokument</value>
+  <value key="60123" keyname="PreviewStringId.SaveDlg_FilterBmp">BMP Bitmap Format</value>
+  <value key="60124" keyname="PreviewStringId.SaveDlg_FilterGif">GIF Graphics Interchange Format</value>
+  <value key="60125" keyname="PreviewStringId.SaveDlg_FilterJpeg">JPEG File Interchange Format</value>
+  <value key="60126" keyname="PreviewStringId.SaveDlg_FilterPng">PNG Portable Network Graphics Format</value>
+  <value key="60127" keyname="PreviewStringId.SaveDlg_FilterTiff">TIFF Tag Image File Format</value>
+  <value key="60128" keyname="PreviewStringId.SaveDlg_FilterEmf">EMF Enhanced Windows Metafile</value>
+  <value key="60129" keyname="PreviewStringId.SaveDlg_FilterWmf">WMF Windows Metafile</value>
+  <value key="60130" keyname="PreviewStringId.SaveDlg_Title">Speichern unter</value>
+  <value key="60131" keyname="PreviewStringId.PageInfo_PageNumber">[Seite #]</value>
+  <value key="60132" keyname="PreviewStringId.PageInfo_PageNumberOfTotal">[Seite # von #]</value>
+  <value key="60133" keyname="PreviewStringId.PageInfo_PageDate">[Druckdatum]</value>
+  <value key="60134" keyname="PreviewStringId.PageInfo_PageTime">[Zeit der Ausdrucks]</value>
+  <value key="60135" keyname="PreviewStringId.PageInfo_PageUserName">[User Name]</value>
+  <value key="60136" keyname="PreviewStringId.EMail_From">Von</value>
+  <value key="60137" keyname="PreviewStringId.BarText_Toolbar">Toolbar</value>
+  <value key="60138" keyname="PreviewStringId.BarText_MainMenu">haupt Menu</value>
+  <value key="60139" keyname="PreviewStringId.BarText_StatusBar">Status Bar</value>
+  <value key="60140" keyname="PreviewStringId.ScalePopup_GroupText">Skalieren</value>
+  <value key="60141" keyname="PreviewStringId.ScalePopup_AdjustTo">Anpassen an: </value>
+  <value key="60142" keyname="PreviewStringId.ScalePopup_NormalSize">% normale Größe</value>
+  <value key="60143" keyname="PreviewStringId.ScalePopup_FitTo">Anpassen an</value>
+  <value key="60144" keyname="PreviewStringId.ScalePopup_PagesWide">Seitenbreite</value>
+  <value key="60145" keyname="PreviewStringId.ExportOption_PdfPageRange">Seitenbereich: </value>
+  <value key="60146" keyname="PreviewStringId.ExportOption_PdfCompressed">Komprimiert</value>
+  <value key="60147" keyname="PreviewStringId.ExportOption_PdfNeverEmbeddedFonts">Diese Fonts sind nicht eingebunden: </value>
+  <value key="60148" keyname="PreviewStringId.ExportOption_PdfImageQuality">Bilder Qualität: </value>
+  <value key="60149" keyname="PreviewStringId.ExportOption_PdfImageQuality_Lowest">Niedrigste</value>
+  <value key="60150" keyname="PreviewStringId.ExportOption_PdfImageQuality_Low">Niedrig</value>
+  <value key="60151" keyname="PreviewStringId.ExportOption_PdfImageQuality_Medium">Mittel</value>
+  <value key="60152" keyname="PreviewStringId.ExportOption_PdfImageQuality_High">Hoch</value>
+  <value key="60153" keyname="PreviewStringId.ExportOption_PdfImageQuality_Highest">Höchste</value>
+  <value key="60154" keyname="PreviewStringId.ExportOption_PdfDocumentAuthor">Autor: </value>
+  <value key="60155" keyname="PreviewStringId.ExportOption_PdfDocumentApplication">Anwendung: </value>
+  <value key="60156" keyname="PreviewStringId.ExportOption_PdfDocumentTitle">Titel: </value>
+  <value key="60157" keyname="PreviewStringId.ExportOption_PdfDocumentSubject">Betreff: </value>
+  <value key="60158" keyname="PreviewStringId.ExportOption_PdfDocumentKeywords">Stichworte: </value>
+  <value key="60159" keyname="PreviewStringId.ExportOption_HtmlExportMode">Export mode: </value>
+  <value key="60160" keyname="PreviewStringId.ExportOption_HtmlExportMode_SingleFile">Einfaches File</value>
+  <value key="60161" keyname="PreviewStringId.ExportOption_HtmlExportMode_SingleFilePageByPage">Einfaches File Seite-per-Seite</value>
+  <value key="60162" keyname="PreviewStringId.ExportOption_HtmlExportMode_DifferentFiles">Unterschiedliche Files</value>
+  <value key="60163" keyname="PreviewStringId.ExportOption_HtmlCharacterSet">Character set: </value>
+  <value key="60164" keyname="PreviewStringId.ExportOption_HtmlTitle">Titel: </value>
+  <value key="60165" keyname="PreviewStringId.ExportOption_HtmlRemoveSecondarySymbols">Entferne CarriageReturns</value>
+  <value key="60166" keyname="PreviewStringId.ExportOption_HtmlPageRange">Seitenbereich: </value>
+  <value key="60167" keyname="PreviewStringId.ExportOption_HtmlPageBorderWidth">Seitenrandbreite: </value>
+  <value key="60168" keyname="PreviewStringId.ExportOption_HtmlPageBorderColor">Seitenrandfarbe: </value>
+  <value key="60169" keyname="PreviewStringId.ExportOption_TextSeparator">Text Separator: </value>
+  <value key="60170" keyname="PreviewStringId.ExportOption_TextSeparator_TabAlias">TAB</value>
+  <value key="60171" keyname="PreviewStringId.ExportOption_TextEncoding">Encodieren: </value>
+  <value key="60172" keyname="PreviewStringId.ExportOption_XlsShowGridLines">Zeige GRID-Linien</value>
+  <value key="60173" keyname="PreviewStringId.ExportOption_XlsUseNativeFormat">Exportiere Werte in ihrem Format</value>
+  <value key="60174" keyname="PreviewStringId.ExportOption_ImageFormat">Bild Format: </value>
+  <value key="60175" keyname="PreviewStringId.FolderBrowseDlg_ExportDirectory">Wählen Sie den Ordner für das zu exportierende Dokument:</value>
+  <value key="60176" keyname="PreviewStringId.ExportOptionsForm_CaptionPdf">PDF Export Optionen</value>
+  <value key="60177" keyname="PreviewStringId.ExportOptionsForm_CaptionXls">XLS Export Optionen</value>
+  <value key="60178" keyname="PreviewStringId.ExportOptionsForm_CaptionTxt">Text Export Optionen</value>
+  <value key="60179" keyname="PreviewStringId.ExportOptionsForm_CaptionCsv">CSV Export Optionen</value>
+  <value key="60180" keyname="PreviewStringId.ExportOptionsForm_CaptionImage">Image Export Optionen</value>
+  <value key="60181" keyname="PreviewStringId.ExportOptionsForm_CaptionHtml">HTML Export Optionen</value>
+  <value key="60182" keyname="PreviewStringId.ExportOptionsForm_CaptionMht">MHT Export Optionen</value>
+  <value key="60183" keyname="PreviewStringId.ExportOptionsForm_CaptionRtf">RTF Export Optionen</value>
+  <value key="60184" keyname="PreviewStringId.RibbonPreview_PageText">Druckvoransicht</value>
+  <value key="60185" keyname="PreviewStringId.RibbonPreview_PageGroup_PageSetup">Seitensetup</value>
+  <value key="60186" keyname="PreviewStringId.RibbonPreview_PageGroup_Navigation">Navigation</value>
+  <value key="60187" keyname="PreviewStringId.RibbonPreview_PageGroup_Zoom">Zoom</value>
+  <value key="60188" keyname="PreviewStringId.RibbonPreview_PageGroup_Background">Seitenhintergrund</value>
+  <value key="60189" keyname="PreviewStringId.RibbonPreview_PageGroup_Export">Export</value>
+  <value key="60190" keyname="PreviewStringId.RibbonPreview_DocumentMap_Caption">Bookmarks</value>
+  <value key="60191" keyname="PreviewStringId.RibbonPreview_Find_Caption">Finden</value>
+  <value key="60192" keyname="PreviewStringId.RibbonPreview_Pointer_Caption">Anzeiger-Pointer</value>
+  <value key="60193" keyname="PreviewStringId.RibbonPreview_HandTool_Caption">Hand Tool</value>
+  <value key="60194" keyname="PreviewStringId.RibbonPreview_Customize_Caption">Optionen</value>
+  <value key="60195" keyname="PreviewStringId.RibbonPreview_PrintDirect_Caption">Schnelldruck</value>
+  <value key="60196" keyname="PreviewStringId.RibbonPreview_PageSetup_Caption">Benutzerdefinierte Ränder...</value>
+  <value key="60197" keyname="PreviewStringId.RibbonPreview_EditPageHF_Caption">Kopfzeile/Fußzeile</value>
+  <value key="60198" keyname="PreviewStringId.RibbonPreview_Magnifier_Caption">Lupe</value>
+  <value key="60199" keyname="PreviewStringId.RibbonPreview_ZoomOut_Caption">Hinaus-Zoomen</value>
+  <value key="60200" keyname="PreviewStringId.RibbonPreview_ZoomIn_Caption">Hinein-Zoomen</value>
+  <value key="60201" keyname="PreviewStringId.RibbonPreview_ZoomExact_Caption">Exakt: </value>
+  <value key="60202" keyname="PreviewStringId.RibbonPreview_ShowFirstPage_Caption">Erste Seite</value>
+  <value key="60203" keyname="PreviewStringId.RibbonPreview_ShowPrevPage_Caption">Vorhergehende Seite</value>
+  <value key="60204" keyname="PreviewStringId.RibbonPreview_ShowNextPage_Caption">Nächste Seite</value>
+  <value key="60205" keyname="PreviewStringId.RibbonPreview_ShowLastPage_Caption">Letzte Seite</value>
+  <value key="60206" keyname="PreviewStringId.RibbonPreview_MultiplePages_Caption">Viele Seiten</value>
+  <value key="60207" keyname="PreviewStringId.RibbonPreview_FillBackground_Caption">Seitenfarbe</value>
+  <value key="60208" keyname="PreviewStringId.RibbonPreview_Watermark_Caption">Wasserzeichen</value>
+  <value key="60209" keyname="PreviewStringId.RibbonPreview_ExportFile_Caption">Exportiere nach</value>
+  <value key="60210" keyname="PreviewStringId.RibbonPreview_SendFile_Caption">E-Mail als</value>
+  <value key="60211" keyname="PreviewStringId.RibbonPreview_ClosePreview_Caption">Druckansicht schließen</value>
+  <value key="60212" keyname="PreviewStringId.RibbonPreview_Scale_Caption">Skalieren</value>
+  <value key="60213" keyname="PreviewStringId.RibbonPreview_PageOrientation_Caption">Orientatierung</value>
+  <value key="60214" keyname="PreviewStringId.RibbonPreview_PaperSize_Caption">Größe</value>
+  <value key="60215" keyname="PreviewStringId.RibbonPreview_PageMargins_Caption">Seiten-Ränder</value>
+  <value key="60216" keyname="PreviewStringId.RibbonPreview_Zoom_Caption">Zoomen</value>
+  <value key="60217" keyname="PreviewStringId.RibbonPreview_DocumentMap_STipTitle">Dokumenten Mappe</value>
+  <value key="60218" keyname="PreviewStringId.RibbonPreview_Find_STipTitle">Finde</value>
+  <value key="60219" keyname="PreviewStringId.RibbonPreview_Pointer_STipTitle">Maus Pointer</value>
+  <value key="60220" keyname="PreviewStringId.RibbonPreview_HandTool_STipTitle">Hand Tool</value>
+  <value key="60221" keyname="PreviewStringId.RibbonPreview_Customize_STipTitle">Optionen</value>
+  <value key="60222" keyname="PreviewStringId.RibbonPreview_Print_STipTitle">Drucken</value>
+  <value key="60223" keyname="PreviewStringId.RibbonPreview_PrintDirect_STipTitle">Schnelldruck</value>
+  <value key="60224" keyname="PreviewStringId.RibbonPreview_PageSetup_STipTitle">Seite einrichten</value>
+  <value key="60225" keyname="PreviewStringId.RibbonPreview_EditPageHF_STipTitle">Kopfzeile und Fußzeile</value>
+  <value key="60226" keyname="PreviewStringId.RibbonPreview_Magnifier_STipTitle">Lupe</value>
+  <value key="60227" keyname="PreviewStringId.RibbonPreview_ZoomOut_STipTitle">Hinaus-Zoomen</value>
+  <value key="60228" keyname="PreviewStringId.RibbonPreview_ZoomIn_STipTitle">Hinein-Zoomen</value>
+  <value key="60229" keyname="PreviewStringId.RibbonPreview_ShowFirstPage_STipTitle">Erste Seite</value>
+  <value key="60230" keyname="PreviewStringId.RibbonPreview_ShowPrevPage_STipTitle">Vorhergehende Seite</value>
+  <value key="60231" keyname="PreviewStringId.RibbonPreview_ShowNextPage_STipTitle">Nächste Seite</value>
+  <value key="60232" keyname="PreviewStringId.RibbonPreview_ShowLastPage_STipTitle">Letzte Seite</value>
+  <value key="60233" keyname="PreviewStringId.RibbonPreview_MultiplePages_STipTitle">Viele Seiten sehen</value>
+  <value key="60234" keyname="PreviewStringId.RibbonPreview_FillBackground_STipTitle">Hintergrundfarbe</value>
+  <value key="60235" keyname="PreviewStringId.RibbonPreview_Watermark_STipTitle">Wasserzeichen</value>
+  <value key="60236" keyname="PreviewStringId.RibbonPreview_ExportFile_STipTitle">Exportiere nach</value>
+  <value key="60237" keyname="PreviewStringId.RibbonPreview_SendFile_STipTitle">E-Mail als...</value>
+  <value key="60238" keyname="PreviewStringId.RibbonPreview_ClosePreview_STipTitle">Druckansicht schließen</value>
+  <value key="60239" keyname="PreviewStringId.RibbonPreview_Scale_STipTitle">Skalieren</value>
+  <value key="60240" keyname="PreviewStringId.RibbonPreview_PageOrientation_STipTitle">Seiten Orientatierung</value>
+  <value key="60241" keyname="PreviewStringId.RibbonPreview_PaperSize_STipTitle">Seiten Größe</value>
+  <value key="60242" keyname="PreviewStringId.RibbonPreview_PageMargins_STipTitle">Seiten-Ränder</value>
+  <value key="60243" keyname="PreviewStringId.RibbonPreview_Zoom_STipTitle">Zoomen</value>
+  <value key="60244" keyname="PreviewStringId.RibbonPreview_PageGroup_PageSetup_STipTitle">Seite einrichten</value>
+  <value key="60245" keyname="PreviewStringId.RibbonPreview_DocumentMap_STipContent">Öffnen Sie die Dokumentenmappen, um eine Strukturansicht des Dokuments zu erhalten.</value>
+  <value key="60246" keyname="PreviewStringId.RibbonPreview_Find_STipContent">Zeigt den Suchdialog um Text im Dokument zu suchen.</value>
+  <value key="60247" keyname="PreviewStringId.RibbonPreview_Pointer_STipContent">Zeigt den Mauspointer.</value>
+  <value key="60248" keyname="PreviewStringId.RibbonPreview_HandTool_STipContent">Verwenden Sie das Hand-Tool um manuell durch die Seiten zu scrollen.</value>
+  <value key="60249" keyname="PreviewStringId.RibbonPreview_Customize_STipContent">Öffnet den Druckerkomponeten Editor Dialog, in dem Sie die Druck-optionen ändern können.</value>
+  <value key="60250" keyname="PreviewStringId.RibbonPreview_Print_STipContent">Wählen Sie einen Drucker, Anzahl der Kopien und anderes vor dem Druck.</value>
+  <value key="60251" keyname="PreviewStringId.RibbonPreview_PrintDirect_STipContent">Sendet das Dokument direkt zum Standarddrucker ohne Änderungen.</value>
+  <value key="60252" keyname="PreviewStringId.RibbonPreview_PageSetup_STipContent">Zeigt den Seiten einrichten Dialog.</value>
+  <value key="60253" keyname="PreviewStringId.RibbonPreview_EditPageHF_STipContent">Editiert die Kopf und Fußzeilen des Dokuments.</value>
+  <value key="60254" keyname="PreviewStringId.RibbonPreview_Magnifier_STipContent">Startet das Lupen-Tool.</value>
+  <value key="60255" keyname="PreviewStringId.RibbonPreview_ZoomOut_STipContent">Hinaus-Zoomen um mehr vom Dokument zu sehen.</value>
+  <value key="60256" keyname="PreviewStringId.RibbonPreview_ZoomIn_STipContent">Hinein-Zoomen um mehr Details vom Dokument zu sehen.</value>
+  <value key="60257" keyname="PreviewStringId.RibbonPreview_ShowFirstPage_STipContent">Navigiere zur ersten Seite des Dokuments.</value>
+  <value key="60258" keyname="PreviewStringId.RibbonPreview_ShowPrevPage_STipContent">Navigiere zur vorhergehenden Seite des Dokuments.</value>
+  <value key="60259" keyname="PreviewStringId.RibbonPreview_ShowNextPage_STipContent">Navigiere zur nächsten Seite des Dokuments.</value>
+  <value key="60260" keyname="PreviewStringId.RibbonPreview_ShowLastPage_STipContent">Navigiere zur letzten Seite des Dokuments.</value>
+  <value key="60261" keyname="PreviewStringId.RibbonPreview_MultiplePages_STipContent">Wählt das Pagelayout.</value>
+  <value key="60262" keyname="PreviewStringId.RibbonPreview_FillBackground_STipContent">Wählt eine Farbe für den Hintergrund der Seiten.</value>
+  <value key="60263" keyname="PreviewStringId.RibbonPreview_Watermark_STipContent">Fügt einen durchsichtigen Text als Hintergrundbild ein.</value>
+  <value key="60264" keyname="PreviewStringId.RibbonPreview_ExportFile_STipContent">Exportiert das aktuelle Dokument in die verfügbaren Formate und speichert es.</value>
+  <value key="60265" keyname="PreviewStringId.RibbonPreview_SendFile_STipContent">Exportiert das aktuelle Dokument in die verfügbaren Formate und versendet es via E-mail.</value>
+  <value key="60266" keyname="PreviewStringId.RibbonPreview_ClosePreview_STipContent">Schließe Druckansicht des Dokuments.</value>
+  <value key="60267" keyname="PreviewStringId.RibbonPreview_Scale_STipContent">Verändert die Ausdrucksgröße zu einem Prozentsatz der aktuellen Größe.</value>
+  <value key="60268" keyname="PreviewStringId.RibbonPreview_PageOrientation_STipContent">Ändert das Seitenlayout zwischen Hochformat und Querformat.</value>
+  <value key="60269" keyname="PreviewStringId.RibbonPreview_PaperSize_STipContent">Wähle die Papiergröße.</value>
+  <value key="60270" keyname="PreviewStringId.RibbonPreview_PageMargins_STipContent">Wählt die Seitenrändergrößen.\r\n\r\nUm benutzerdefinierte Seitenränder zu verwenden, drücken Sie auf Benutzerdefinierte Seiten-Ränder.</value>
+  <value key="60271" keyname="PreviewStringId.RibbonPreview_Zoom_STipContent">Zoom in der Voransicht verändern. </value>
+  <value key="60272" keyname="PreviewStringId.RibbonPreview_PageGroup_PageSetup_STipContent">Zeige "Seiten Einrichten" Dialog an.</value>
+  <value key="60273" keyname="PreviewStringId.RibbonPreview_ExportPdf_Caption">PDF Datei</value>
+  <value key="60274" keyname="PreviewStringId.RibbonPreview_ExportHtm_Caption">HTML Datei</value>
+  <value key="60275" keyname="PreviewStringId.RibbonPreview_ExportTxt_Caption">Text Datei</value>
+  <value key="60276" keyname="PreviewStringId.RibbonPreview_ExportCsv_Caption">CSV Datei</value>
+  <value key="60277" keyname="PreviewStringId.RibbonPreview_ExportMht_Caption">MHT Datei</value>
+  <value key="60278" keyname="PreviewStringId.RibbonPreview_ExportXls_Caption">Excel Datei</value>
+  <value key="60279" keyname="PreviewStringId.RibbonPreview_ExportRtf_Caption">RTF Datei</value>
+  <value key="60280" keyname="PreviewStringId.RibbonPreview_ExportGraphic_Caption">Image Datei</value>
+  <value key="60281" keyname="PreviewStringId.RibbonPreview_SendPdf_Caption">PDF Datei</value>
+  <value key="60282" keyname="PreviewStringId.RibbonPreview_SendTxt_Caption">Text Datei</value>
+  <value key="60283" keyname="PreviewStringId.RibbonPreview_SendCsv_Caption">CSV Datei</value>
+  <value key="60284" keyname="PreviewStringId.RibbonPreview_SendMht_Caption">MHT Datei</value>
+  <value key="60285" keyname="PreviewStringId.RibbonPreview_SendXls_Caption">Excel Datei</value>
+  <value key="60286" keyname="PreviewStringId.RibbonPreview_SendRtf_Caption">RTF Datei</value>
+  <value key="60287" keyname="PreviewStringId.RibbonPreview_SendGraphic_Caption">Image Datei</value>
+  <value key="60288" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageOrientationPortrait_Caption">Hochformat</value>
+  <value key="60289" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageOrientationLandscape_Caption">Querformat</value>
+  <value key="60290" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageMarginsNormal_Caption">Normal</value>
+  <value key="60291" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageMarginsNarrow_Caption">Eng</value>
+  <value key="60292" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageMarginsModerate_Caption">Moderat</value>
+  <value key="60293" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageMarginsWide_Caption">Breit</value>
+  <value key="60294" keyname="PreviewStringId.RibbonPreview_ExportPdf_Description">Adobe PDF</value>
+  <value key="60295" keyname="PreviewStringId.RibbonPreview_ExportHtm_Description">Web Page</value>
+  <value key="60296" keyname="PreviewStringId.RibbonPreview_ExportTxt_Description">Nur Text</value>
+  <value key="60297" keyname="PreviewStringId.RibbonPreview_ExportCsv_Description">Comma-Separated Values Text</value>
+  <value key="60298" keyname="PreviewStringId.RibbonPreview_ExportMht_Description">Single File Web Page</value>
+  <value key="60299" keyname="PreviewStringId.RibbonPreview_ExportXls_Description">Microsoft Excel Workbook</value>
+  <value key="60300" keyname="PreviewStringId.RibbonPreview_ExportRtf_Description">Rich Text Format</value>
+  <value key="60301" keyname="PreviewStringId.RibbonPreview_ExportGraphic_Description">BMP, GIF, JPEG, PNG, TIFF, EMF, WMF</value>
+  <value key="60302" keyname="PreviewStringId.RibbonPreview_SendPdf_Description">Adobe Portable Document Format</value>
+  <value key="60303" keyname="PreviewStringId.RibbonPreview_SendTxt_Description">Nur Text</value>
+  <value key="60304" keyname="PreviewStringId.RibbonPreview_SendCsv_Description">Comma-Separated Values Text</value>
+  <value key="60305" keyname="PreviewStringId.RibbonPreview_SendMht_Description">Simple Web Page</value>
+  <value key="60306" keyname="PreviewStringId.RibbonPreview_SendXls_Description">Microsoft Excel Workbook</value>
+  <value key="60307" keyname="PreviewStringId.RibbonPreview_SendRtf_Description">Rich Text Format</value>
+  <value key="60308" keyname="PreviewStringId.RibbonPreview_SendGraphic_Description">BMP, GIF, JPEG, PNG, TIFF, EMF, WMF</value>
+  <value key="60309" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageOrientationPortrait_Description"> </value>
+  <value key="60310" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageOrientationLandscape_Description"> </value>
+  <value key="60311" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageMarginsNormal_Description">Normal</value>
+  <value key="60312" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageMarginsNarrow_Description">Eng</value>
+  <value key="60313" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageMarginsModerate_Description">Moderat</value>
+  <value key="60314" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageMarginsWide_Description">Breit</value>
+  <value key="60315" keyname="PreviewStringId.RibbonPreview_ExportPdf_STipTitle">Exportieren nach PDF</value>
+  <value key="60316" keyname="PreviewStringId.RibbonPreview_ExportHtm_STipTitle">Exportieren nach HTML</value>
+  <value key="60317" keyname="PreviewStringId.RibbonPreview_ExportTxt_STipTitle">Exportieren nach Text</value>
+  <value key="60318" keyname="PreviewStringId.RibbonPreview_ExportCsv_STipTitle">Exportieren nach CSV</value>
+  <value key="60319" keyname="PreviewStringId.RibbonPreview_ExportMht_STipTitle">Exportieren nach MHT</value>
+  <value key="60320" keyname="PreviewStringId.RibbonPreview_ExportXls_STipTitle">Exportieren nach XLS</value>
+  <value key="60321" keyname="PreviewStringId.RibbonPreview_ExportRtf_STipTitle">Exportieren nach RTF</value>
+  <value key="60322" keyname="PreviewStringId.RibbonPreview_ExportGraphic_STipTitle">Exportieren nach Image</value>
+  <value key="60323" keyname="PreviewStringId.RibbonPreview_SendPdf_STipTitle">E-Mail als PDF</value>
+  <value key="60324" keyname="PreviewStringId.RibbonPreview_SendTxt_STipTitle">E-Mail als Text</value>
+  <value key="60325" keyname="PreviewStringId.RibbonPreview_SendCsv_STipTitle">E-Mail als CSV</value>
+  <value key="60326" keyname="PreviewStringId.RibbonPreview_SendMht_STipTitle">E-Mail als MHT</value>
+  <value key="60327" keyname="PreviewStringId.RibbonPreview_SendXls_STipTitle">E-Mail als XLS</value>
+  <value key="60328" keyname="PreviewStringId.RibbonPreview_SendRtf_STipTitle">E-Mail als RTF</value>
+  <value key="60329" keyname="PreviewStringId.RibbonPreview_SendGraphic_STipTitle">E-Mail als Image</value>
+  <value key="60330" keyname="PreviewStringId.RibbonPreview_ExportPdf_STipContent">Dokument nach PDF exportieren und abspeichern.</value>
+  <value key="60331" keyname="PreviewStringId.RibbonPreview_ExportHtm_STipContent">Dokument nach HTML exportieren und abspeichern.</value>
+  <value key="60332" keyname="PreviewStringId.RibbonPreview_ExportTxt_STipContent">Dokuemnt nach Text exportieren und abspeichern.</value>
+  <value key="60333" keyname="PreviewStringId.RibbonPreview_ExportCsv_STipContent">Dokument nach CSV exportieren und abspeichern.</value>
+  <value key="60334" keyname="PreviewStringId.RibbonPreview_ExportMht_STipContent">Dokument nach MHT exportieren und abspeichern.</value>
+  <value key="60335" keyname="PreviewStringId.RibbonPreview_ExportXls_STipContent">Dokument nach XLS exportieren und abspeichern.</value>
+  <value key="60336" keyname="PreviewStringId.RibbonPreview_ExportRtf_STipContent">Dokument nach RTF exportieren und abspeichern.</value>
+  <value key="60337" keyname="PreviewStringId.RibbonPreview_ExportGraphic_STipContent">Dokument nach Image exportieren und abspeichern.</value>
+  <value key="60338" keyname="PreviewStringId.RibbonPreview_SendPdf_STipContent">Dokument nach PDF exportieren und als E-Mail versenden.</value>
+  <value key="60339" keyname="PreviewStringId.RibbonPreview_SendTxt_STipContent">Dokument nach Text und als E-Mail versenden.</value>
+  <value key="60340" keyname="PreviewStringId.RibbonPreview_SendCsv_STipContent">Dokument nach CSV exportieren und als E-Mail versenden.</value>
+  <value key="60341" keyname="PreviewStringId.RibbonPreview_SendMht_STipContent">Dokument nach MHT exportieren und als E-Mail versenden.</value>
+  <value key="60342" keyname="PreviewStringId.RibbonPreview_SendXls_STipContent">Dokument nach XLS exportieren und als E-Mail versenden.</value>
+  <value key="60343" keyname="PreviewStringId.RibbonPreview_SendRtf_STipContent">Dokument nach RTF exportieren und als E-Mail versenden.</value>
+  <value key="60344" keyname="PreviewStringId.RibbonPreview_SendGraphic_STipContent">Dokument nach Image exportieren und als E-Mail versenden.</value>
+  <value key="60345" keyname="PreviewStringId.RibbonPreview_GalleryItem_PageMargins_Description">Oben:\t\t{0}\t\tUnten:\t\t{1}\r\nLinks:\t\t {2}\t\tRechts:\t\t   {3}</value>
+  <value key="60346" keyname="PreviewStringId.RibbonPreview_GalleryItem_PaperSize_Description">{0} x {1}</value>
+  <value key="60347" keyname="PreviewStringId.MenuItem_MhtDocument">MHT File</value>
+
+  <value key="60348" keyname="StringId.DateEditToday">Heute</value>
+  <value key="60349" keyname="StringId.DateEditClear">Löschen</value>
+
+  <value key="60350" keyname="GridStringId.GridGroupPanelText">Ziehen Sie die Spalten hierher um nach ihnen zu gruppieren</value>
+  <value key="60351" keyname="GridStringId.MenuFooterCount">Anzahl</value>
+  <value key="60352" keyname="GridStringId.MenuFooterCountGroupFormat">Anzahl={0}</value>
+</items>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="1300" keyname="CannotSaveColouring">Die Einfärbung kann nicht gespeichert werden.</value>
+  <value key="1301" keyname="CannotDeleteColouring">Die Einfärbung kann nicht gelöscht werden.</value>
+  <value key="1302" keyname="SomeColouringsNotDeleted">Einige Einfärbungen konnten nicht gelöscht werden.</value>
+  <value key="1303" keyname="questiondeleteColouring">Sind Sie sicher, dass Sie die Einfärbung löschen wollen?</value>
+</items>

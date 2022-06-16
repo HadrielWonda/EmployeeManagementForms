@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="200" keyname="newcountry">Neue VL anlegen</value>
+  <value key="201" keyname="editcountry">Editiere VL</value>
+  <value key="202" keyname="deletecountry">Lösche VL</value>
+  <value key="203" keyname="refreshlistofcountries">VL aktualisieren</value>
+  <value key="204" keyname="countrygroup">VL</value>
+  <value key="205" keyname="countrymanager">VL Manager</value>
+  <value key="206" keyname="country">VL</value>
+  <value key="207" keyname="countries">VL</value>
+  <value key="208" keyname="countryname">VL-Name</value>
+  <value key="209" keyname="systemid1">Code 1 </value>
+  <value key="210" keyname="systemid2">Code 2</value>
+  <value key="211" keyname="ImportCountry">Importiere VL</value>
+  <value key="212" keyname="CountryDetails">VL-Details</value>
+
+  <value key="220" keyname="errorcountryname">Geben Sie den VL-Namen ein.</value>
+  <value key="221" keyname="querydeletecountry">Sind Sie sicher, dass Sie diese VL löschen wollen?</value>
+  <value key="222" keyname="CannotSaveCountry">Diese VL kann nicht gelöscht werden.</value>
+
+
+  <value key="300" keyname="yearappearance">Jahr</value>
+  <value key="301" keyname="avgweeks">Durchschnittliche jährliche Anwesenheit in Wochen</value>  
+  <value key="302" keyname="avgcontracttimes">Durchschnittliche Arbeitsdauer pro Tag in Stunden</value>
+  <value key="303" keyname="avgcashdeskamount">Standard Kassa-Bon Anzahlsreferenzwert</value>
+  <value key="304" keyname="newyearlyappearance">Neue VL-Einstellungen für den Import definieren</value>
+  <value key="305" keyname="edityearlyappearance">VL-Einstellungen für den Import editieren </value>
+  <value key="306" keyname="deleteyearlyappearance">Lösche VL-Einstellungen für den Import</value>
+  <value key="307" keyname="yearlyappearance">VL-Einstellungen für den Import</value>
+  <value key="308" keyname="ErrorImportPropExistsForYear">VL-Einstellungen für den Import existieren bereits für dieses Jahr</value>
+  <value key="309" keyname="CantDeleteYearlyAppearance">VL-Einstellungen für den Import kann nicht gelöscht werden</value>
+
+  <value key="400" keyname="feast">Feiertag</value>
+  <value key="401" keyname="feasts">Feiertage</value>
+  <value key="402" keyname="feastdate">Feiertagsdatum</value>
+  <value key="403" keyname="newfeast">Neuer Feiertag</value>
+  <value key="404" keyname="deletefeast">Lösche Feiertag</value>
+  <value key="405" keyname="yearlyandfeast">Jährliche Anwesenheitstage und Feiertage</value>
+  <value key="406" keyname="questiondeletefeast">Sind Sie sicher, dass Sie diesen Feiertag löschen wollen?</value>
+  <value key="407" keyname="SomeFeastsNotDeleted">Einige / Ein Feiertag(e) wurde(n) nicht gelöscht.</value>
+
+  <value key="500" keyname="absence">Abwesenheit</value>
+  <value key="501" keyname="absences">Abwesenheiten</value>
+  <value key="502" keyname="newabsence">Neue Abwesenheit anlegen</value>
+  <value key="503" keyname="editabsence">Editiere Abwesenheit</value>
+  <value key="504" keyname="deleteabsence">Lösche Abwesenheit</value>
+  <value key="505" keyname="holiday">Urlaub</value>
+  <value key="506" keyname="holidays">Urlaub</value>
+  <value key="507" keyname="newholiday">Neuen Urlaub anlegen</value>
+  <value key="508" keyname="editholiday">Editiere Urlaub</value>
+  <value key="509" keyname="deleteholiday">Lösche Urlaub</value>
+
+  <value key="510" keyname="abbreviation">Abkürzung</value>
+  <value key="511" keyname="absencename">Abwesenheitsbezeichnung</value>
+  <value key="512" keyname="absenceaction">Aktion</value>
+  <value key="513" keyname="absencetype">Abwesenheitstyp</value>
+  <value key="514" keyname="absencealiquottime">Zähle aliquote Zeit</value>
+  <value key="515" keyname="absencecountfixedamount">Zähle fixen Betrag</value>
+  <value key="516" keyname="absencecolor">Farbe</value>
+  <value key="517" keyname="refreshabsences">Abwesenheiten aktualisieren</value>
+
+  <value key="518" keyname="err_enter_absence_name">Geben Sie den Abwesenheitsbezeichnung ein</value>
+  <value key="519" keyname="err_enter_abbreviation">Geben Sie die Abwesenheitsabkürzung ein</value>
+  <value key="520" keyname="err_absence_select_country">Wählen Sie die VL für die Abkürzung</value>
+  <value key="521" keyname="questiondeleteabsence">Sind Sie sicher, dass Sie diese Abweseneheit löschen wollen?</value>
+  <value key="522" keyname="questiondeleteholiday">Sind Sie sicher, dass Sie diesen Urlaub löschen wollen?</value>
+  <value key="523" keyname="questiondeleteillness">Sind Sie sicher, dass Sie diese Krankheit löschen wollen?</value>
+  <value key="524" keyname="CannotSaveAbsence">Die Abwesenheit kann nicht gespeichert werden.</value>
+  <value key="525" keyname="ErrorUniqueAbsenceNameOrAbb">Die Abwesenheitsbezeichnung oder die Abwesenheitsabkürzung ist nicht eindeutig und kommt bereits vor.</value>
+  <value key="526" keyname="CantDeleteAbsence">Die Abwesenheit kann nicht gelöscht werden.</value>
+  <value key="527" keyname="err_enter_absence_colour">Man kann die weisse oder schwarze Farbe auf dem Hintergrund schwer erkennen. Wir empfehlen eine andere Farbe zu wählen.</value>
+
+  <value key="530" keyname="Illness">Krankheit</value>
+  <value key="531" keyname="Illnesses">Krankheiten</value>
+  <value key="532" keyname="newillness">Neue Krankheit anlegen</value>
+  <value key="533" keyname="editillness">Editiere Krankheit</value>
+  <value key="534" keyname="deleteillness">Lösche Krankheit</value>
+
+
+  <value key="600" keyname="workingmodel">Arbeitszeitmodell</value>
+  <value key="601" keyname="workingmodels">Arbeitszeitmodelle</value>
+  <value key="602" keyname="newworkingmodel">Neues Arbeitszeitmodell anlegen</value>
+  <value key="603" keyname="editworkingmodel">Editiere Arbeitszeitmodell</value>
+  <value key="604" keyname="deleteworkingmodel">Lösche Arbeitszeitmodell</value>
+  <value key="605" keyname="refreshworkingmodel">Arbeitszeitmodelle aktualisieren</value>
+  <value key="606" keyname="workingmodelname">Arbeitszeitmodellbezeichnung</value>
+
+  <value key="607" keyname="wmconditionstate">Status</value>
+  <value key="608" keyname="wmconditionname">Kondition</value>
+  <value key="609" keyname="wmconditionvalue">Wert</value>
+  <value key="610" keyname="workingmodelmessage">Benachrichtigung</value>
+  <value key="611" keyname="workingmodelmultiplyfactor">Multipliziere Arbeitszeit mit einem Faktor</value>
+  <value key="612" keyname="workingmodelsubadd">Additiere / Subtrahiere einen bestimmten Zeitbetrag</value>
+  <value key="613" keyname="applyadditionalcharge">Wende dies als Zuschlag an</value>
+  <value key="614" keyname="workingmodelaction">Aktion</value>
+
+  <value key="615" keyname="err_enter_model_name">Geben Sie die Bezeichnung für das Arbeitszeitmodells an</value>
+  <value key="616" keyname="err_select_conditions">Wählen Sie die Konditionen</value>
+
+  <value key="617" keyname="CantDeleteWorkingModel">Das Arbeitszeitmodell kann kann nicht gelöscht werden.</value>
+  <value key="618" keyname="QuestionDeleteWorkingModel">Sind Sie sicher, dass Sie dieses Arbeitszeitmodell löschen wollen?</value>
+  <value key="619" keyname="CantSaveWorkingModel">Das Arbeitszeitmodell kann kann nicht gespeichert werden.</value>
+
+  <value key="620" keyname="durationofworkingtime">Dauer der Arbeitszeit</value>
+  <value key="621" keyname="durationofworkingtimesingleday">Dauer der Arbeitszeit an einem Tag</value>
+  <value key="622" keyname="durationofworkingtimebyweek">Dauer der Arbeitszeit in einer Woche</value>
+  <value key="623" keyname="durationofworkingtimebymonth">Dauer der Arbeitszeit in einem Monat</value>
+  <value key="624" keyname="durationofworkingday">Arbeitstage hintereinander</value>
+  <value key="625" keyname="timebetweenpreviousdayworkingtime">Zeit zwischen dem Vortag und dem folgenden Arbeitstag</value>
+  <value key="626" keyname="workingtimeoutofopeningtimeofstore">Arbeitszeit außerhalb der Marktöffnungszeiten</value>
+  <value key="627" keyname="workingtimebetweenseveralhours">Arbeitszeit innerhalb gewisser Öffnungs-Stunden</value>
+
+  <value key="628" keyname="workingonspecialweekdays">Arbeit an bestimmten Wochentagen</value>
+  <value key="629" keyname="workingoveremployeecontracttime">Arbeit über der Mitarbeiter-Vertragszeit</value>
+  <value key="630" keyname="workingoveremployeecurrentbalancehours">Arbeit über den Saldo Stunden</value>
+  <value key="631" keyname="balancehoursreachescertainamount">Saldo Stunden erreichen ein gewissen Niveau</value>
+  <value key="632" keyname="balancehoursmustbezeroeveryweekmonthyear">Saldo muss 0 sein</value>
+  <value key="633" keyname="workingonfeast">Arbeit an Feiertagen</value>
+
+  <value key="634" keyname="EveryWeek">Alle x Wochen</value>
+  <value key="635" keyname="EveryMonth">Alle x Monate</value>
+  <value key="636" keyname="EveryYear">Jedes Jahr</value>
+
+  <value key="700" keyname="sumofadditionalcharges">Summe der Zuschläge pro Mitarbeiter</value>
+  <value key="701" keyname="sumofstillavailableworkinghours">Summe von noch verfügbaren Arbeitsstunden pro Mitarbeiter</value>
+  <value key="702" keyname="sumofcurrentemployeebalancehours">Summe des Saldos pro Mitarbeiter</value>
+  <value key="703" keyname="sumofadditionalchargesoverallemployee">Summe von Zuschlägen über alle Mitarbeiter</value>
+  <value key="704" keyname="sumofstillavailableworkinghoursoverallemployee">Summe der noch zur Verfügung stehenden Arbeitsstunden über alle Mitarbeiter</value>
+  <value key="705" keyname="sumofcurrentemployeebalancehoursoverallemployee">Summe der Salden über alle Mitarbeiter</value>
+  <value key="706" keyname="differenceinpercentbetweenactualplannedhoursandestimatedhours">Differenz in Prozent zwischen Vorgabe-Stunden und Verplanten-Stunden</value>
+  <value key="707" keyname="benchmarkdifference">Benchmark Differenz</value>
+  <value key="708" keyname="absinpercentforestimatedworkingamount">Prozent (absolut) für Vorgabe-Plan-Differenzen</value>
+  <value key="709" keyname="totalinpercentforestimatedworkingamount">Prozent (total) für Vorgabe-Plan-Differenzen</value>
+  <value key="710" keyname="actualabsinpercentforestimatedworkingamount">Prozent (absolut) Vorgabe-Ist-Differenzen</value>
+  <value key="711" keyname="actualtotalinpercentforestimatedworkingamount">Prozent (total) Vorgabe-Ist-Differenzen</value>
+  <value key="712" keyname="actualabsinpercentforplannedworkingamount">Gesamtsumme in Prozent (absolut) für Plan-Ist-Differenzen</value>
+  <value key="713" keyname="actualtotalinpercentforplannedworkingamount">Gesamtsumme in Prozent (total) für Plan-Ist-Differenzen</value>
+
+  <value key="720" keyname="lowcriticalcolor">Niedriger-Kritisch Farbe</value>
+  <value key="721" keyname="lowcolor">Niedriger Farbe</value>
+  <value key="722" keyname="normalcolor">Normale Farbe</value>
+  <value key="723" keyname="highcolor">Höher Farbe</value>
+  <value key="724" keyname="highcriticalcolor">Höher-Kritisch Farbe</value>
+  <value key="725" keyname="lowvalue">Niedrigerer Wert</value>
+  <value key="726" keyname="normalxvalue">X-Intervall Wert (Normalbereich)</value>
+  <value key="727" keyname="normalyvalue">Y-Intervall Wert (Normalbereich)</value>
+  <value key="728" keyname="highvalue">Erhöhter Wert</value>
+  <value key="729" keyname="colorname">Farbschema Bezeichnung</value>
+  <value key="730" keyname="modifycountrycolor">Editiere Länder-Farbschema</value>
+  <value key="731" keyname="CountryColor">Farbe</value>
+
+  <value key="741" keyname="MaxTimeRangeRecording">Maximalen Ist-Zeit-Eintragungszeitraum</value>
+  <value key="742" keyname="WarningDays">Anzahl der Tage, nach der eine Warnung bez. Ist-Zeit-Erfassung erscheint</value>
+  <value key="743" keyname="Criticaldays">Anzahl der Tage, innerhalb der die Ist-Zeit-Erfassung erfolgen darf</value>
+
+  <value key="744" keyname="SureToRemoveYearAppearance">Sind Sie sicher, dass Sie das durchschnittliches Erscheinen in Wochen löschen wollen?</value>
+  <value key="745" keyname="ErrorWarningCriticalDays">Die Anzahl der Warnungs-Tage muss kleiner sein, als die des maximalen Eintragungszeitraums.</value>
+  <value key="746" keyname="ErrorSelectLanguage">Wählen Sie eine Sprache</value>
+
+  <value key="747" keyname="LessThan">Kleiner als</value>
+  <value key="748" keyname="GreaterThan">Größer als</value>
+  <value key="749" keyname="ErrorAddingPropExistsForYearlyWorkingDay">Fehler. Der geschlossene Tag kann nicht gespeichert werden.</value>
+
+  <value key="754" keyname="ClosedDays">Geschlossene Tage</value>
+  <value key="755" keyname="NewClosedDays">Neuen geschlossenen Tag anlegen</value>
+  <value key="756" keyname="DeleteClosedDays">Lösche geschlossenen Tag</value>
+  <value key="757" keyname="ClosedDaysDate">Geschlossener Tag Datum</value>
+  <value key="758" keyname="SureToRemoveClosedDay">Sind Sie sicher, dass Sie diesen geschlossenen Tag löschen wollen?</value>
+  <value key="759" keyname="ErrorSaveYearlyClosedDay">Der neue geschlossene Tag konnte nicht gespeichert werden.</value>
+
+  <value key="760" keyname="LongTimeAbsences">Langzeitabwesenheit</value>
+
+  <value key="761" keyname="AverageWorkingDayInWeek">Durchschnittliche Arbeitstage in der Woche</value>
+  <value key="762" keyname="NewAverageDaysInWeek">Durchschnittliche Arbeitstage in der Woche definieren</value>
+  <value key="763" keyname="EditAverageDaysInWeek">Editiere durchschnittliche Arbeitstage in der Woche</value>
+  <value key="764" keyname="DeleteAverageDaysInWeek">Lösche durchschnittliche Arbeitstage in der Woche</value>
+  <value key="765" keyname="CannotDeleteAverageDaysInWeek">Der Wert für die durchschnittliche Arbeitstage in der Woche kann nicht gelöschen werden, da dieser bereits für die Plan-Kalkulation verwendet wurde</value>
+  <value key="766" keyname="QuestionRemoveEverageDaysInweek">Sind Sie sicher, dass Sie diesen Wert für die durchschnittlichen Arbeitstage in der Woche löschen wollen?</value>
+  <value key="767" keyname="CannotAddAverageDaysInWeek">Das Programm kann die durchschnittliche Arbeitstage in der Woche nicht hinzufügem, da der Wert für dieses Jahr bereits existiert.</value>
+   
+  <value key="768" keyname="Add">Hinzufügen</value>
+  <value key="769" keyname="Delete">Löschen</value>
+  <value key="770" keyname="WithoutFixedTime">Ohne fixen Zeitbetrag</value>
+  <value key="771" keyname="aliquoteabsenceentered">Die aliqote Abwesenheit wurde für dieses Jahr eingetragen.</value>
+
+  <value key="772" keyname="WarnNoWorkingDaysFeasts">Achtung: Die Geschlossenen Tage und / oder die Feiertage sind nicht für alle Vertriebslinien definiert. Erweitern Sie das Interface durch Klicken auf +, um eine Auflistung der betroffenen Vertriebslinien zu sehen.</value>
+
+  <value key="773" keyname="UseAsWorkingTime">Zählt als Arbeitszeit</value>
+  
+  <value key="774" keyname="UnAddHours">Unvermeidbare Zuschläge</value>
+  <value key="775" keyname="NewUAAH">Neue unvermeidbare Zuschläge definieren</value>
+  <value key="776" keyname="EditUAAH">Editiere unvermeidbare Zuschläge</value>
+  <value key="777" keyname="DeleteUAAH">Lösche unvermeidbare Zuschläge</value>
+ 
+  <value key="778" keyname="QuestionRemoveCountryAdditionalHour">Sind Sie sicher, dass Sie diese unvermeidbaren Zuschlagstunden löschen wollen?</value>
+  <value key="779" keyname="CannotDeleteCountryAdditionalHour">Diese unvermeidbaren Zuschlagsstunden können nicht mehr gelöscht werden, da diese bereits für die Plan-Kalkulation verwendet werden.</value>
+  <value key="781" keyname="WarningTime">Achtung! Beginn Zeit bis zum Ende der Öffnungszeit muss nach der Beginn Zeit bis zum Anfang der Öffnungszeit sein.</value> 
+  <value key="782" keyname="StartTime">Startpunkt Uhrzeit für den Zeitraum bis zum Beginn der Öffnungszeit</value>
+  <value key="783" keyname="FinishTime">Startpunkt Uhrzeit für den Zeitraum bis zum Ende der Öffnungszeit</value>
+  <value key="784" keyname="Factor">Zuschlags-Faktor</value>
+ 
+  <value key="785" keyname="SelectDay">Wochentag wählen!</value>
+  <value key="786" keyname="FactorBegin">Faktor für Stunden bis zum Beginn der Öffnungszeit</value>
+  <value key="787" keyname="FactorEnd">Faktor für Stunden bis zum Ende der Öffnungszeit</value>
+  <value key="788" keyname="WarningEndTime">Achtung! Startpunkt Uhrzeit für den Zeitraum bis zum Ende der Öffnungszeit muss größer sein als der Startpunkt Uhrzeit für den Zeitraum bis zum Beginn der Öffnungszeit</value>
+  <value key="789" keyname="CountryAdditionalHourExist">Das Programm kann die unvermeidbaren Zuschlagstunden nicht hinzufügem, da der Wert für dieses Jahr bereits existiert.</value>
+  <value key="790" keyname="ErrorAddCountryAdditionalHourExist">Fehler. Die unvermeidbaren Zuschlagstunden können nicht gespeichert werden.</value>
+  
+
+
+  <value key="791" keyname="UseInRecording">Dieses AZM wird auch in der Ist-Erfassung verwendet</value>
+
+  <value key="792" keyname="EstimateActualBVExists">Flatfile des Umsatzes der letzten drei Jahre muss existieren</value>
+  <value key="793" keyname="EstimateTargetBVExists">Flatfile für den Zielumsatz des zu berechnenden Jahres muss existieren</value>
+  <value key="794" keyname="EstimateEmployeeAssigned">Mindestens ein Mitarbeiter muss jeder Welt zugeordnet sein im zu berechnenden Jahr. Es sollten alle Mitarbeiterzuordnungsplanungen zu den Welten für das ganze Jahr bereits existieren</value>
+  <value key="795" keyname="EstimateCountryPropExists">Ländereinstellungen für den Import und Errechnung der Zielvorgaben des zu berechnenden Jahres muss existieren (durchschnittliche Anwesenheit in Wochen, Mittagspausen,...)</value>
+  <value key="796" keyname="EstimateBufferHoursExists">Bufferstunden für die Welten im zu berechnendem Jahr müssen existieren</value>
+  <value key="797" keyname="EstimateYearlyWorkTimeExists">Jährliche Geschlossene Tage- Definition des zu berechnenden Jahres muss existieren</value>
+  <value key="798" keyname="EstimateEveryWGRAssignedToWorld">(Ist Umsatz) - Jede WGR / HWGR, die im Import-File ist, muss einer Welt zugeordnet sein</value>
+  <value key="799" keyname="EstimateAddHoursCalcExista">Unvermeidbare Zuschlagsfaktoren aufgrund der Öffnungszeiten müssen definiert sein</value>
+  <value key="800800" keyname="EstimatePreconditions">Voraussetzungen für die Vorgabe Berechnungen</value>
+  <value key="800801" keyname="EstimateButton">Start der Vorgabeberechnung</value>
+  <value key="800802" keyname="EstimateMuchTime">Warnung! Die Vorgabeberechnung benötigt sehr viel Zeit und kann bis zu mehreren Stunden dauern!</value>
+
+  <value key="800803" keyname="AvgRestingTime">Durchschnittliche Mittagspause in Minuten</value>
+
+  <value key="800804" keyname="EstimateMinPeopleExists">Mindestbesetzung pro Welt des zu berechnenden Jahres muss existieren</value>
+  <value key="800805" keyname="EstimateOpeningTimesExists">Öffnungszeiten müssen definiert sein.</value>
+  <value key="800806" keyname="EstimateCashDeskActualBVExists">Importfile der Bon-Positionen der letzten drei Jahre vor dem Berechnungsjahr muss existieren</value>
+
+  <value key="800807" keyname="EstimateEstimating">Berechne Vorgabewerte</value>
+  <value key="800808" keyname="EstimateEstimationInProgress">Bitte warten. Vorgabeberechnung in Arbeit</value>
+  <value key="800809" keyname="EstimateEstimationDone">Vorgabeberechnung ist beendet.</value>
+
+  <value key="800810" keyname="EstimateAvgWorkingDaysExists">Durchschnittliche Arbeitstage in der Woche müssen definiert sein</value>
+  <value key="800811" keyname="EstimateEveryWGRAssignedToWorldTargetBV">(Ziel Umsatz) - Jede WGR / HWGR, die im Import-File ist, muss einer Welt zugeordnet sein</value> 
+  <value key="800812" keyname="NoValueProvidedForWorld">Für diese Berechnungen sind (teilweise) keine Daten definiert. Es wird für die fehlenden Daten folgender Wert angenommen:</value>
+
+  <value key="800813" keyname="WorkingOnSunday">Innerhalb eines Monats X Mal an einem Sonntag</value>
+  <value key="800814" keyname="WorkingOnSaturdayOrSunday">Innerhalb eines Monats X Mal an einem Samstag oder Sonntag</value>
+  <value key="800815" keyname="System">System</value>
+  <value key="800816" keyname="About">Über die Software</value>
+  <value key="800817" keyname="InstalledComponent">Installierte Komponeten:</value>
+  <value key="800818" keyname="ClientVer">Client Version </value>
+  <value key="800819" keyname="AppserVer">Application Server Version </value>
+  <value key="800820" keyname="DBVer">Datenbank Version </value>
+  <value key="800821" keyname="Estimate">Vorgabeberechnung</value>
+  
+  <value key="800822" keyname="err_systemid_must_be_unique">Abwesenheitssystem ID muss eindeutig sein</value>
+  <value key="800823" keyname="NotExistsAvgDaysPerWeek">Durchschnittliche Arbeitstage pro Woche sind nicht definiert</value>
+
+
+  <value key="800824" keyname="NewLunch">Neues Mittagspausenmodell anlegen</value>
+  <value key="800825" keyname="editLunch">Editiere Mittagspausenmodell</value>
+  <value key="800826" keyname="deleteLunch">Lösche Mittagspausenmodell</value>
+  <value key="800827" keyname="LunchModelName">Mittagspausenmodellbezeichnung</value>
+  <value key="800828" keyname="lunchModel">Mittagspausenmodell</value>
+  <value key="800829" keyname="typeLunchModel">Mittagspausenmodell-Typus</value>
+  <value key="800830" keyname="DurationTime">Durchgehende Dauer einer Arbeitszeit</value>
+  <value key="800831" keyname="DurationWorkingDay">Dauer der Arbeitszeit an einem Tag</value>
+  <value key="800832" keyname="lunchHour">Dauer der Mittagspause in Stunden</value>
+  <value key="800833" keyname="condition">Kondition</value>
+  <value key="800834" keyname="err_enter_lunch_name">Geben Sie die Bezeichnung für das Mittagspausenmodells an</value>
+  <value key="800835" keyname="CantSaveLunchModel">Das Mittagspausenmodells kann kann nicht gespeichert werden.</value>
+  <value key="800836" keyname="QuestionDeleteLunchModel">Sind Sie sicher, dass Sie dieses Mittagspausenmodell löschen wollen?</value>
+  <value key="800837" keyname="CantDeleteLunchModel">Das Mittagspausenmodell kann kann nicht gelöscht werden.</value>
+  <value key="800838" keyname="Lunchmodelwithsameparametrsexist">Ein Mittagspausenmodell mit denselben Parametern existiert bereits.</value>
+	
+	<value key="800839" keyname="SaldoOnCertainWeeks">Saldo must be zero on certain weeks</value>
+
+  
+  <value key="800840" keyname="availablein">Auswahlbar in:</value>
+  <value key="800841" keyname="PlanningTimeRecording">Planung / Ist-Zeit-Erfassung</value>
+  <value key="800842" keyname="PlanningOnly">Nur Planung</value>
+  <value key="800843" keyname="TimeRecordingOnly">Nur Ist-Zeit-Erfassung</value>
+  <value key="800844" keyname="AvailableNone">Nicht auswahlbar</value>
+  <value key="800845" keyname="CountAsOneDay">Als ganzen Tag zählen</value>
+  <value key="800846" keyname="lunchModels">Mittagspausenmodelle</value>
+</items>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="31001" keyname="InvalidTimeRange1">Dieser Zeitraum überschneidet sich mit einem existierendem. Ändern Sie den anderen Zeitraum zuerst!</value>
+  <value key="31002" keyname="InvalidInsert">Der Datensatz wurde NICHT hinzugefügt.</value>
+</items>

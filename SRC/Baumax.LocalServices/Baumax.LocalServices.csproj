@@ -1,0 +1,167 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26FFEB42-2EA8-4448-A7EE-29937BD3EAA3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baumax.LocalServices</RootNamespace>
+    <AssemblyName>Baumax.LocalServices</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseSetup|AnyCPU' ">
+    <OutputPath>bin\ReleaseSetup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.0.2.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="GenuineChannels, Version=2.5.9.5, Culture=neutral, PublicKeyToken=65fda4a3fde44959, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\GenuineChannels\GenuineChannels.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=1.0.4.0, Culture=neutral, PublicKeyToken=154fdcb44c4484fc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.1.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.1.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data, Version=1.1.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate, Version=1.1.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Data.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Services, Version=1.1.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="LocalAbsenceService.cs" />
+    <Compile Include="LocalAbsenceTimePlanningService.cs" />
+    <Compile Include="LocalAbsenceTimeRecordingService.cs" />
+    <Compile Include="LocalAuthorizationService.cs" />
+    <Compile Include="LocalAvgAmountService.cs" />
+    <Compile Include="LocalAvgWorkingDaysInWeekService.cs" />
+    <Compile Include="LocalBaseCachingService.cs" />
+    <Compile Include="LocalBaseService.cs" />
+    <Compile Include="LocalBenchmarkService.cs" />
+    <Compile Include="LocalBufferHourAvailableService.cs" />
+    <Compile Include="LocalBufferHoursService.cs" />
+    <Compile Include="LocalColouringService.cs" />
+    <Compile Include="LocalCountryAdditionalHourService.cs" />
+    <Compile Include="LocalCountryService.cs" />
+    <Compile Include="LocalEmployeeAllInService.cs" />
+    <Compile Include="LocalEmployeeContractService.cs" />
+    <Compile Include="LocalEmployeeDayStatePlanningService.cs" />
+    <Compile Include="LocalEmployeeDayStateRecordingService.cs" />
+    <Compile Include="LocalEmployeeHolidaysInfoService.cs" />
+    <Compile Include="LocalEmployeeLongTimeAbsenceService.cs" />
+    <Compile Include="LocalEmployeePlanningWorkingModelService.cs" />
+    <Compile Include="LocalEmployeeRecordingWorkingModelService.cs" />
+    <Compile Include="LocalEmployeeRelationService.cs" />
+    <Compile Include="LocalEmployeeService.cs" />
+    <Compile Include="LocalEmployeeTimeService.cs" />
+    <Compile Include="LocalEmployeeWeekTimePlanningService.cs" />
+    <Compile Include="LocalEmployeeWeekTimeRecordingService.cs" />
+    <Compile Include="LocalFeastService.cs" />
+    <Compile Include="LocalHWGRService.cs" />
+    <Compile Include="LocalHwgrToWgrService.cs" />
+    <Compile Include="LocalLanguageService.cs" />
+    <Compile Include="LocalLongTimeAbsenceService.cs" />
+    <Compile Include="LocalPersonMinMaxService.cs" />
+    <Compile Include="LocalRegionService.cs" />
+    <Compile Include="LocalRoleService.cs" />
+    <Compile Include="LocalService.cs" />
+    <Compile Include="LocalStoreAdditionalHourService.cs" />
+    <Compile Include="LocalStoreService.cs" />
+    <Compile Include="LocalStoreToWorldService.cs" />
+    <Compile Include="LocalStoreWorkingTimeService.cs" />
+    <Compile Include="LocalTrendCorrectionService.cs" />
+    <Compile Include="LocalUserService.cs" />
+    <Compile Include="LocalWGRService.cs" />
+    <Compile Include="LocalWorkingTimePlanningService.cs" />
+    <Compile Include="LocalWorkingTimeRecordingService.cs" />
+    <Compile Include="LocalWorldService.cs" />
+    <Compile Include="LocalWorldToHwgrService.cs" />
+    <Compile Include="LocalYearlyWorkingDayService.cs" />
+    <Compile Include="LocalWorkingModelService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Baumax.Contract\Baumax.Contract.csproj">
+      <Project>{4EF2D774-5A51-41D1-8C9C-C0E6A64A8E48}</Project>
+      <Name>Baumax.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.EntityListManager\Baumax.EntityListManager.csproj">
+      <Project>{6720E098-D9AE-4FDF-BFBF-6B443B5D0AF3}</Project>
+      <Name>Baumax.EntityListManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BauMax.Environment\Baumax.Environment.csproj">
+      <Project>{C6FC3B60-10EB-4E8D-A58F-D6B1B8A804E6}</Project>
+      <Name>Baumax.Environment</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

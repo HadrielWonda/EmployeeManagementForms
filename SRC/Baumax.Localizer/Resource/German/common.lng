@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="10" keyname="ok">Speichern</value>
+  <value key="11" keyname="cancel">Abbrechen</value>
+  <value key="12" keyname="Attention">Achtung</value>
+  <value key="13" keyname="Confirm">Bestätigen</value>
+  <value key="14" keyname="Error">Fehler</value>
+  <value key="15" keyname="ExpandedAll">Alles ausklappen</value>
+  <value key="16" keyname="CollapseAll">Alles einklappen</value>
+  <value key="17" keyname="New">Erstelle</value>
+  <value key="18" keyname="Close">Schließen</value>
+
+
+  <value key="20" keyname="Monday">Montag</value>
+  <value key="21" keyname="Tuesday">Dienstag</value>
+  <value key="22" keyname="Wednesday">Mittwoch</value>
+  <value key="23" keyname="Thursday">Donnerstag</value>
+  <value key="24" keyname="Friday">Freitag</value>
+  <value key="25" keyname="Saturday">Samstag</value>
+  <value key="26" keyname="Sunday">Sonntag</value>
+  <value key="27" keyname="DayOfWeek">Wochentag</value>
+
+  <value key="30" keyname="BeginTime">Datum Beginn</value>
+  <value key="31" keyname="EndTime">Datum Ende</value>
+
+  <value key="40" keyname="January">Jänner</value>
+  <value key="41" keyname="February">Februar</value>
+  <value key="42" keyname="March">März</value>
+  <value key="43" keyname="April">April</value>
+  <value key="44" keyname="May">Mai</value>
+  <value key="45" keyname="June">Juni</value>
+  <value key="46" keyname="July">July</value>
+  <value key="47" keyname="August">August</value>
+  <value key="48" keyname="September">September</value>
+  <value key="49" keyname="October">Oktober</value>
+  <value key="50" keyname="November">November</value>
+  <value key="51" keyname="December">Dezember</value>
+
+  <value key="60" keyname="ErrorDateRange">Ungültige Datumseingabe - Beginn-Datum muss vor dem End-Datum sein.</value>
+
+  <value key="61" keyname="Import">Import</value>
+  <value key="62" keyname="FilterByDate">Nach Datum filtern</value>
+  <value key="63" keyname="Apply">Bestätigen</value>
+  <value key="64" keyname="Date">Datum</value>
+
+  <value key="65" keyname="BeginDate">Startdatum</value>
+  <value key="66" keyname="EndDate">Enddatum</value>
+  <value key="67" keyname="Save">Speichern</value>
+  <value key="68" keyname="InvalidValue">Unzulässiger Wert</value>
+
+  <value key="69" keyname="View">Ansicht</value>
+  <value key="70" keyname="To">bis</value>
+  <value key="71" keyname="FilterByYear">Nach Jahren filtern</value>
+
+  <value key="72" keyname="Refresh">Aktualisieren</value>
+	<value key="73" keyname="SetDefaultValue">Setze Default-Wert</value>
+
+  <value key="74" keyname="ImportWorld">Importiere Welten</value>
+  <value key="75" keyname="ImportHWGR">Importiere HWGR</value>
+  <value key="76" keyname="ImportWGR">Importiere WGR</value>
+  <value key="77" keyname="ImportEmployee">Importiere Mitarbeiter</value>
+  <value key="78" keyname="ImportFeast">Importiere Feiertage</value>
+  <value key="79" keyname="ImportClosedDay">Importiere geschlossene Tage</value>
+  <value key="80" keyname="ImportLongTimeAbsence">Importiere Langzeitabwesenheiten</value>
+  
+  <value key="81" keyname="Name">Name</value>
+  
+  <value key="82" keyname="NotificationService">Benachrichtungsdienst</value>
+  <value key="83" keyname="AnalyzingData">Analysiere vorhandene Daten...</value>
+
+  <value key="84" keyname="Week">Woche</value>
+ 
+  <value key="85" keyname="ImportCashRegisterReceipt">Importiere Kassa-Bonpositionen</value>
+  <value key="86" keyname="ImportTargetBusinessVolume">Importiere Ziel-Umsatz</value>
+  <value key="87" keyname="ImportBusinessVolume">Importiere Umsatz</value>
+
+  <value key="88" keyname="MainWindowCaption">PEM Personaleinsatz Management System</value>
+  <value key="89" keyname="From">Von</value>
+  <value key="90" keyname="Select">Auswählen</value>
+  <value key="91" keyname="Today">Heute</value>
+  <value key="92" keyname="Clear">Löschen</value>
+
+  <value key="93" keyname="CheckPreconditions">Voraussetzungen überprüfen</value>
+
+		
+	<value key="94" keyname="None">Keiner</value>
+	<value key="95" keyname="Current">Aktueller Datensatz</value>
+  <value key="96" keyname="HostURL">Host URL</value>
+
+  <value key="97" keyname="Empty"><![CDATA[<Keine>]]></value>
+</items>

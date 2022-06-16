@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="900" keyname="WrongLoginOrPassword">Falscher Loginname oder ungültiges Passwort.</value>
+  <value key="901" keyname="UserIsInactive">Dieser Username wurde deaktiviert. Bitte informieren Sie Ihren Ansprechpartner für die Applikation.</value>
+  <value key="902" keyname="ServerIsUnavailable">Der Server ist derzeit nicht erreichbar. Überprüfen Sie Ihre Einstellungen bzw informieren Sie Ihren Ansprechpartner für die Applikation.</value>
+  <value key="903" keyname="WaitPlease">Bitte warten...</value>
+  <value key="904" keyname="Login">Login</value>
+  <value key="905" keyname="Exit">Beenden</value>
+
+  <value key="906" keyname="CheckingServerPresence">Überprüfe Serververfügbarkeit. Bitte warten.</value>
+  <value key="907" keyname="ServerReady">Server verfügbar. Bitte loggen Sie sich ein.</value>
+  <value key="908" keyname="ServerStarting">Server startet. Bitte warten.</value>
+  <value key="909" keyname="WrongVersion">ACHTUNG: Ihr PEM Client ist veraltet! Ihr aktueller PEM Client hat die Version {0}. Es ist leider nicht möglich sich mit dieser Version zum Server zu verbinden. Sie benötigen die Version {1}. Bitte informieren Sie daher Ihren IT-Support, so dass Sie eine neue Version erhalten.</value>
+</items>

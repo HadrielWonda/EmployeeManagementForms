@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="1000" keyname="CannotSaveEmployee">Cannot save the employee.</value>
+  <value key="1001" keyname="CannotDeleteEmployee">Cannot delete the employee.</value>
+  <value key="1002" keyname="SomeEmployeesNotDeleted">Some employee(s) were not deleted.</value>
+  <value key="1003" keyname="QuestionDeleteEmployee">Are you sure to remove employee(s)?</value>
+
+
+  <value key="1010" keyname="PersonID">PersID</value>
+  <value key="1011" keyname="FirstName">First name</value>
+  <value key="1012" keyname="LastName">Last name</value>
+  <value key="1013" keyname="HomeStore">Main store</value>
+  <value key="1014" keyname="AssignedStore">Assigned store</value>
+  <value key="1015" keyname="ContractWorkingHours">Contract working hours</value>
+  <value key="1016" keyname="OldHolidays">Old holidays</value>
+  <value key="1017" keyname="NewHolidays">New holidays</value>
+  <value key="1018" keyname="AlreadyUsedHolidays">Already used holidays</value>
+  <value key="1019" keyname="SpareHolidaysExc">Spare holidays(Exc)</value>
+  <value key="1020" keyname="SpareHolidaysInc">Spare holidays(Inc)</value>
+  <value key="1021" keyname="EmployeeBalanceHours">Employee balance hours</value>
+  
+  <value key="1022" keyname="ContractInfo">Contract information</value>
+
+  <value key="1023" keyname="ImportEmployees">Import employees</value>
+  <value key="1024" keyname="Assigntoworld">Assign to world</value>
+  <value key="1025" keyname="Delegatetostore">Delegate to store</value>
+  <value key="1026" keyname="EnterLongTimeAbsence">Enter long-time absence</value>
+  <value key="1027" keyname="NewExternalEmployee">New external employee</value>
+  <value key="1028" keyname="EditExternalEmployee">Edit external employee</value>
+  <value key="1029" keyname="DeleteExternalEmployee">Delete external employee</value>
+  <value key="1030" keyname="AssignToEmployee">Assign extr. employee to employee data</value>
+  
+  <value key="1031" keyname="FirstNameShouldBeNotEmpty">First Name should be not empty.</value>
+  <value key="1032" keyname="SecondNameShouldBeNotEmpty">Second Name should be not empty.</value>
+  <value key="1033" keyname="PersonalIdShouldBeNotEmpty">Personal ID should be not empty.</value>
+  <value key="1034" keyname="PersonalIdShouldBeNumber">Personal ID should be a number.</value>
+  <value key="1035" keyname="ErrorEnterHoursPerWeek">Enter hours per week</value>
+  <value key="1036" keyname="QuestionDeleteExtEmployee">Are you sure you want to delete employee?</value>
+
+
+  <value key="1037" keyname="QuestionRemoveEmplLongTimeAbsence">Are you sure you want to remove this absence?</value>
+  <value key="1038" keyname="CantDeleteEmployeeLongTimeAbsence">Long-time absence can not remove</value>
+
+  <value key="1039" keyname="ViewEmployeeHasLongAbsenceToday">View today</value>
+  <value key="1040" keyname="ViewAllEmplHadLongAbsence">View all</value>
+
+  <value key="1041" keyname="LongTimeAbsenceName">Absence name</value>
+  <value key="1042" keyname="ErrorLongTimeAbsenceRange">Long-time absence intersect with another long-time absence</value>
+
+
+  <value key="1043" keyname="NewLongTimeAbsence">New long-time absence</value>
+  <value key="1044" keyname="EditLongTimeAbsence">Edit long-time absence</value>
+  <value key="1045" keyname="DeleteLongTimeAbsence">Delete long-time absence</value>
+  <value key="1046" keyname="ViewLongTimeAbsences">View long-time absence</value>
+  <value key="1047" keyname="AbsenceCode">Code</value>
+
+  <value key="1048" keyname="Employees">Mitarbeiter</value>
+  <value key="1049" keyname="EmployeeName">Mitarbeiter</value>
+  <value key="1050" keyname="ViewEmployeesHasLongTimeAbsence">View employees has long-time absence</value>
+
+  <value key="1051" keyname="NewEmplLongTimeAbsence">New empl. absence</value>
+  <value key="1052" keyname="EditEmplLongTimeAbsence">Edit empl. absence</value>
+  <value key="1053" keyname="DeleteEmplLongTimeAbsence">Delete empl. absence</value>
+
+  <value key="1054" keyname="ErrorAssignToWorldDateRangeIntersect">New date range intersect at another date range</value>
+  <value key="1055" keyname="InvalidDateRange">End date must be greater than or equal to start date</value>
+  <value key="1056" keyname="QuestionDeleteEmployeeWorld">Are you sure you want to remove current item?</value>
+  <value key="1057" keyname="ErrorCantDeleteExtEmployee">Can't delete external employee</value>
+  <value key="1058" keyname="ErrorLongTimeAbsenceNameExists">Long-time absence name exists</value>
+  <value key="1059" keyname="QuestionDeleteLongTimeAbsence">Are you sure you want to remove long-time absence?</value>
+  <value key="1060" keyname="CantDeleteLongTimeAbsence">Can not delete long-time absence. Long-time absence is being used.</value>
+  <value key="1061" keyname="ErrorSelectLongTimeAbsence">Select long-time absence</value>
+
+
+  <value key="1062" keyname="LongTimeAbsence">Long-time absence</value>
+  <value key="1063" keyname="EmployeeManager">Employee manager</value>
+  <value key="1064" keyname="NewAssignEmplToWorld">New employee assignment to a world</value>
+  <value key="1065" keyname="EditAssignEmplToWorld">Employee editing in the world </value>
+  <value key="1066" keyname="DeleteAssignEmplToWorld">Employee deletion from the world</value>
+  <value key="1067" keyname="ErrorCantMergeEmployees">Does not merge employees. Internal employees has planning times or another data</value>
+  <value key="1068" keyname="QuestionAssignExternalEmployee">Are you you want assign external employee to employee?</value>
+  <value key="1069" keyname="ErrorSelectStore">Select store</value>
+
+  <value key="1070" keyname="ContractBeginTime">Vertrags-Start</value>
+  <value key="1071" keyname="ContractEndTime">Vertrags-Ende</value>
+  <value key="1072" keyname="CreateDate">Erstellungsdatum</value>
+  <value key="1074" keyname="AvailableHolidays">Gesamturlaub</value>
+  
+  <value key="1075" keyname="EmployeeLongTimeAbsenceManager">Long-time absences</value>
+  <value key="1076" keyname="ExternalEmployeeManager">External employee</value>
+
+  <value key="1077" keyname="ContractInformation">Contract information</value>
+  <value key="1078" keyname="WorkingPlace">Working place</value>
+  <value key="1079" keyname="EmployeeInfo">Employee info</value>
+  <value key="1080" keyname="EmployeeState">Employee state</value>
+
+  <value key="1081" keyname="ErrorRelationOutsideContractTime">The specific date range doesnt fit the employee's contract time</value>
+  <value key="1082" keyname="ErrorTimePlanningAlreadyDefined">Time planning is already defined the specified dates range</value>
+  <value key="1083" keyname="ErrorNewContractTimeInvalid">Contract time can not be changed</value>
+
+  <value key="1084" keyname="PersNumber">Personal number</value>
+
+  <value key="1085" keyname="MergeEmployee">Merge Employees</value>  
+  <value key="1086" keyname="persinfo">Personal infomation</value>
+
+  <value key="1087" keyname="SpareHolidays">Spare holidays</value>
+  <value key="1088" keyname="UsedHolidays">Used holidays</value>
+
+  <value key="1089" keyname="AllIn">All in</value>
+  <value key="1090" keyname="ErrorChangingAllInInPast">It is impossible change AllIn property in past</value>
+  <value key="1091" keyname="QuestionChangeAllIn">Are you sure you want to change AllIn value?</value>
+
+  <value key="1092" keyname="AssignEmployeeToHWGR">Assign to HWGR</value>
+
+  <value key="1093" keyname="NextInt">Next</value>
+  <value key="1094" keyname="NextExt">Next</value>
+
+  <value key="1095" keyname="ShowHWGR">Show/Hide HWGR</value>
+  <value key="1096" keyname="SortByHWGR">Sort by HWGR</value>
+
+  <value key="100907" keyname="ContractWorkingHours_Tip">Soll-Std Arbeitsstunden laut Vertrag</value>
+  <value key="100908" keyname="OldHolidays_Tip">Urlaub (Alt) (Enter descriprtion here!)</value>
+  <value key="100909" keyname="NewHolidays_Tip">Urlaub aliquot (Neu) (Enter descriprtion here!)</value>
+  <value key="100910" keyname="AlreadyUsedHolidays_Tip">Verbrauchter Urlaub (Enter descriprtion here!)</value>
+  <value key="100911" keyname="SpareHolidaysExc_Tip">Resturlaub aliquot (exklusive geplantem Urlaub) (Enter descriprtion here!)</value>
+  <value key="100912" keyname="SpareHolidaysInc_Tip">Resturlaub aliquot (inklusive geplantem Urlaub) (Enter descriprtion here!)</value>
+  <value key="100913" keyname="EmployeeBalanceHours_Tip">Saldo - Ist die Anzahl an Stunden die der Mitarbeiter kumuliert (aufs Jahr) unter oder über seinen Arbeitsvertrag gearbeitet hat. Zuschläge werden mitgerechnet.</value>
+
+</items>

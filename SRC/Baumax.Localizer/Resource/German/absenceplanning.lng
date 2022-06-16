@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+	<value key="40001" keyname="MonthlyView">Monatsansicht</value>
+	<value key="40002" keyname="WeeklyView">Wochenansicht</value>
+	<value key="40003" keyname="YearlyView">Jahresansicht</value>
+	<value key="40004" keyname="DaylyView">Tagesansicht</value>
+
+  <value key="40100" keyname="AllreadyPlannedWorkingHours">Geplante Stunden</value>
+  <value key="40101" keyname="SummOfAdditionalCharges">Zuschläge</value>
+  <value key="40102" keyname="PlusMinusHours">(+/-) Stunden</value>
+
+  <value key="40103" keyname="MinimumPresence">Minimum Anwesenheit:</value>
+  <value key="40104" keyname="MaximumPresence">Maximum Anwesenheit:</value>
+  <value key="40105" keyname="TargetedHours">Vorgabe Stunden:</value>
+  <value key="40106" keyname="Difference">Differenz:</value>
+  <value key="40107" keyname="AvailableWorldBufferHours">Verfügbare Bufferstunden der Welt:</value>
+
+  <value key="40108" keyname="TimePlanning">Zeiten-Planung</value>
+  <value key="40109" keyname="AbsencePlanning">Abwesenheitsplanung</value>
+
+  <value key="40110" keyname="MarkAsWorkingTime">Arbeitszeit</value>
+  <value key="40111" keyname="ClearTime">Löschen</value>
+
+	<value key="40201" keyname="NewAliquotHolidays">Urlaub aliquot (Neu)</value>
+	<value key="40203" keyname="AliquotSpareHolydaysExcluding">Resturlaub aliquot (exklusive geplantem Urlaub)</value>
+	<value key="40204" keyname="AliquotSpareHolydaysIncluding">Resturlaub aliquot (inklusive geplantem Urlaub)</value>
+
+  <value key="40301" keyname="SummPlannedWorkingHours">Geplante Stunden:</value>
+  <value key="40302" keyname="DifferenceInPercent">Differenz (Prozent):</value>
+  
+  <value key="40303" keyname="SummTargetedHours">Summe der Vorgabe-Stunden</value>
+  <value key="40304" keyname="SummDifference">Summe Differenz</value>
+  <value key="40305" keyname="AbsoluteSummDifference">Summe Differenz (absolut)</value>
+  <value key="40306" keyname="SummDifferenceInPercent">Summe Differenz (Prozent)</value>
+  <value key="40307" keyname="AbsoluteSummDifferenceInPercent">Summe Differenz (absolut in Prozent)</value>
+  
+  <value key="40320" keyname="Copy">Kopieren</value>
+  <value key="40321" keyname="Paste">Einfügen</value>
+  <value key="40322" keyname="MarkAsAbsence">Gewählte Zellen als Abwesenheit markieren</value>
+  <value key="40323" keyname="Print">Drucken</value>
+  <value key="40324" keyname="FillAllAsWorkingTime">Gesamte Öffnungszeit als Arbeitszeit markieren</value>
+
+  <value key="40325" keyname="EnterWorkingTime">Arbeitszeitraum eingeben</value>
+  <value key="40326" keyname="EnterAbsenceTime">Abwesenheitraum eingeben</value>
+
+  <value key="40327" keyname="PrintManpowerTimePlanning">Zeitenplanung drucken</value>
+  <value key="40328" keyname="AllWorlds">Alle Welten</value>
+  <value key="40329" keyname="AddManualFilling">Zusatzzeilen für manuelles Ausfüllen</value>
+  <value key="40330" keyname="ManualFillingOnly">Nur manuelles Ausfüllen</value>
+  <value key="40331" keyname="HideReportSums">Summen verstecken</value>
+
+  <value key="40332" keyname="AddAbsences">Neue geplante Abwesenheit hinzufügen</value>
+  <value key="40333" keyname="AddLongTimeAbsence">Neue Langzeitabwesenheit hinzufügen</value>
+  <value key="40334" keyname="DeleteAbsences">Lösche geplante Abwesenheit</value>
+  <value key="40335" keyname="LongAbsencesColor">Langzeitabwesenheiten-Farbe</value>
+
+	<value key="40336" keyname="IgnoreFeasts">Ignoriere Feiertage</value>
+	<value key="40337" keyname="IgnoreClosedDays">Ignoriere geschlossene Tage</value>
+	<value key="40338" keyname="IgnoredDays">Ignorierte Tage</value>
+
+  <value key="40339" keyname="ActualWorkingHours">Arbeitsstunden</value>
+  <value key="40340" keyname="PlannedHours">Geplante Stunden:</value>
+  <value key="40341" keyname="planning">Planung</value>
+
+  <value key="40342" keyname="SelectMachAbsence">Wählen Sie eine der Abwesenheiten.</value>
+  <value key="40343" keyname="CalculateForNexYear">Nächstes Jahr berechnen</value>
+
+  <value key="40344" keyname="QuickAddAbsence">Häufigste aliquote Abwesenheiten</value>
+
+  <value key="40345" keyname="AllreadyPlannedWorkingHours_Tip">Std Geplante Anwesenheisstunden ohne Berücksichtigung der Mittagsstunde. Mittagstunde wird nur in der Wochen-ansicht Berücksichtigt.</value>
+  <value key="40346" keyname="SummOfAdditionalCharges_Tip">Zuschläge Anzahl der Stunden, die ein MA für diese Woche zusätzlich zu den gearbeiteten Std bekommt, weil er in Zeiten gearbeitet hat, die zuschlagpflichtig sind oder über 9 Std usw.</value>
+  <value key="40347" keyname="PlusMinusHours_Tip">(+/-) Stunden Ist die Anzahl der Stunden die der Mitarbeiter unter oder über seinen Arbeitsvertrag gplant wurde. Zuschläge werden mitgerechnet.</value>
+
+  <value key="40348" keyname="QuestionToMoveSpareHolidaysFromLastYear">Sind Sie sicher, dass Sie den Rest-Urlaub aus dem letzten Jahr übertragen wollen?</value>
+</items>

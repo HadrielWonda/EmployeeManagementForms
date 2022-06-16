@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="20000" keyname="ErrorDateRangeIntersect">Der gewählte Zeitraum für diese Öffnungszeiten überschneidet sich mit einem bereits existierendem Zeitraum.</value>
+  <value key="20001" keyname="SelectRegion">Region wählen</value>
+  <value key="20002" keyname="EnterStoreName">Geben Sie den Marktnamen ein</value>
+  <value key="20003" keyname="EnterCity">Geben Sie den Stand-Ort ein</value>
+  <value key="20004" keyname="EnterAddress">Geben Sie die Adresse ein</value>
+  <value key="20005" keyname="EnterPostCode">Geben Sie die Postleitzahl ein</value>
+  <value key="20006" keyname="EnterArea">Geben Sie die Fläche ein</value>
+
+  <value key="20010" keyname="Store">Markt</value>
+  <value key="20011" keyname="StoreName">Markt-Bezeichnung</value>
+  <value key="20012" keyname="City">Standort</value>
+  <value key="20013" keyname="Address">Adresse</value>
+  <value key="20014" keyname="PostCode">Post-Code</value>
+  <value key="20015" keyname="Area">Fläche</value>
+  <value key="20016" keyname="ListOfStores">Markt-Liste</value>
+  <value key="20017" keyname="ImportStore">Importiere Märkte</value>
+  <value key="20018" keyname="StoreDetail">Markt Details</value>
+  <value key="20019" keyname="OpenCloseHours">Öffnungszeiten</value>
+
+  <value key="20020" keyname="NewAssignHwgrToWorld">HWGR einer Welt zuordnen</value>
+  <value key="20021" keyname="EditAssignHwgrToWorld">Editiere HWGR-Welten Zuordnung</value>
+  <value key="20022" keyname="ErrorCantNewOpenCloseOutOfRange">Dieser Öffnungszeit-Raum kann nicht erstellt werden, da der Zeitraum mit einem anderen kollidiert.</value>
+  <value key="20023" keyname="CantDeleteOpenClose-EntityInUsed">Die Applikation kann diesen Öffnungszeitraum nicht löschen, da er bereits in Verwendung ist / war.</value>
+
+  <value key="20024" keyname="NewOpenCloseRange">Neuer Öffnungszeitraum</value>
+  <value key="20025" keyname="DeleteOpenCloseRange">Lösche Öffnungszeitraum</value>
+  <value key="20026" keyname="QuestionRemoveStoreOpenClose">Sind Sie sicher, dass Sie diesen Öffnungszeitraum löschen wollen?</value>
+  <value key="20027" keyname="StoreManager">Markt Manager</value>
+  <value key="20028" keyname="StructureManager">Struktur Manager</value>
+
+  <value key="20029" keyname="NewAssignWgrToHwgr">WGR einer HWGR zuordnen</value>
+  <value key="20030" keyname="EditAssignWgrToHwgr">Editiere WGR - HWGR Zurodnung</value>
+  <value key="20031" keyname="ErrorYearMinMaxExists">Min/Max- Werte für diese Welt und dieses Jahr existieren bereits.</value>
+  <value key="20032" keyname="ErrorMinMaxPerson">Min-Wert darf nicht größer Max-Wert sein.</value>
+  <value key="20033" keyname="EmployeeWorkingHistory">Mitarbeiter History</value>
+
+  <value key="20034" keyname="NewOpenCloseTimeRange">Neuen Öffnungszeitraum anlegen</value>
+  <value key="20035" keyname="SaveOpenCloseTimeRange">Öffnungszeitraum speichern</value>
+
+  <value key="20036" keyname="WarningNoTimeRangeToEternity">Warnung: Es ist empfohlen, dass mindestens ein Zeitraum bis zum 6.6.2079 andauert</value>
+  <value key="20037" keyname="WarnNoOpenCloseTime">Achtung: Die Öffnungszeiten sind nicht für alle Märkte definiert. Erweitern Sie das Interface hier, um eine Auflistung der betroffenen Märkte zu sehen.</value>
+
+  <value key="20038" keyname="ExpandOpenCloseHours">Öffnungszeiten erweitern</value>
+  <value key="20039" keyname="ExpandNext">Folgenden Zeitraum erweitern</value>
+  <value key="20040" keyname="ExpandPrevious">Vorhergehenden Zeitraum erweitern</value>
+  <value key="20041" keyname="LeaveRangesUnchanged">Zeiträume unverändert lassen</value> 
+
+  <value key="20042" keyname="DeleteOpenCloseTimeRange">Öffnungszeitraum Löschen</value>
+  <value key="20043" keyname="WarnNeedMergeEmployees">Achtung: Es können einige externe Mitarbeiter mit der Datenbank migriert werden. Erweitern Sie das Interface hier, um eine Auflistung der betroffenen Mitarbeiter zu sehen.</value>
+  <value key="20044" keyname="WarnEstimationNotPossible">Vorgabeberechung kann nicht gestartet werden, da derzeit noch unzureichend Daten vorhanden sind.</value>
+
+  <value key="20045" keyname="ViewEstimateData">Vorgabe-Berechnungsdaten zeigen</value>
+  <value key="20046" keyname="ClearAllEstimate">Vorgabe-Berechnungsdaten löschen</value>
+
+  <value key="20047" keyname="CopyBValue">Kopiere Umsatzdaten</value>
+  <value key="20048" keyname="Copybusinessdatafromotherstores">Kopiere Umsatzdaten aus anderen Märkten</value>
+  <value key="20049" keyname="FromStore">Von Markt</value>
+  <value key="20050" keyname="Tostore">Nach Markt</value>
+  <value key="20051" keyname="MonthBegin">Beginn Monat</value>
+  <value key="20052" keyname="MonthEnd">Ende Monat</value>
+  <value key="20053" keyname="Definetimerangetocopy">Definiere Zeitraum, der kopiert werden soll</value>
+  <value key="20054" keyname="actualBusinessVol">Ist-Umsatz</value>
+  <value key="20055" keyname="CashDeskVol">Kassa Wert</value>
+  <value key="20056" keyname="Targetvol">Ziel Wert</value>
+  <value key="20057" keyname="Selectcountrydestination">Wähle Ziel-Vertriebslinie</value>
+  <value key="20058" keyname="Selectcountrysource">Wähle Ursprungs-Vertriebslinie</value>
+  <value key="20059" keyname="Datafortheselectedtimerangeexistsalready">Daten für den gewählten Zeitraum existieren bereits</value>
+  <value key="20060" keyname="Nodatatocopy">Keine Daten zum Kopieren vorhanden</value>
+  <value key="20061" keyname="Copyingcompletedsuccessfully">Kopieren erfolgreich abgeschlossen</value>
+  <value key="20062" keyname="Startyear">Beginn Jahr</value>
+  <value key="20063" keyname="Endyear">Ende Jahr</value>  
+  <value key="20064" keyname="NotExistsOpenTime">Die Öffnungszeiten für den Markt sind nicht definiert</value>
+</items>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+	<value key="30049" keyname="World">Welt</value>
+  <value key="30050" keyname="Year">Jahr</value>
+	<value key="30053" keyname="MinMaxLarge">Der Maximum-Wert muss größer sein als der Minimum-Wert.</value>
+	<value key="30054" keyname="AddPersonMinMax">Neue Minimum/Maximum-Anwesenheiten definieren</value>
+	<value key="30055" keyname="EditPersonMinMax">Editiere Minimum/Maximum-Anwesenheiten</value>
+	<value key="30056" keyname="DeletePersonMinMax">Lösche Minimum/Maximum-Anwesenheiten</value>
+	<value key="30057" keyname="NotDeletePast">Der Datensatz kann nicht gelöscht werden, da das Gültigkeits-Datum bereits in der Vergangenheit ist.</value>
+	<value key="30058" keyname="IntervalIntersect">Das gewählte Zeitintervall überschneidet sich mit einem bereits existierendem Zeitintervall (siehe History).</value>
+	<value key="30059" keyname="AvailableWTH">Verfügbare Arbeitsstunden</value>
+	<value key="30060" keyname="CurrentlyAvailableBuffer">Derzeit verfügbare Pufferstunden</value>
+	<value key="30061" keyname="BusinessVolumeHours">Umsatzstunden</value>
+	<value key="30062" keyname="TargetedBusinessVolume">Ziel-Umsatz</value>
+	<value key="30063" keyname="NetBusinessVolume">Netto-Stundenleitung (inklusive Bufferstunden)</value>
+	<value key="30064" keyname="NetBusinessVolumeWithoutBuffer">Netto-Stundenleistung (ohne Bufferstunden)</value>
+	<value key="30065" keyname="BenchmarkBusinessVolumePerHour">Benchmarkleistung pro Stunde</value>
+	<value key="30066" keyname="MinPer">Minimum Anwesenheit in Personen</value>
+	<value key="30067" keyname="MaxPer">Maximum Anwesenheit in Personen</value>
+	<value key="30068" keyname="YearExist">Die Werte für dieses Jahr existieren bereits.</value>
+	<value key="30069" keyname="MinMaxPersons">Minimum und Maximum Anwesenheit in Personen</value>
+	<value key="30070" keyname="ViewMinMax">Minimum und Maximum Anwesenheiten</value>
+  <value key="30071" keyname="ViewInTable">Tabellenansicht</value>
+  <value key="30072" keyname="ViewInCards">Boxenansicht</value>
+  <value key="30074" keyname="WorldName">Weltenname</value>
+  <value key="30075" keyname="ViewInVerticalTable">Vertikale Tabellenansicht</value>
+
+  <value key="30076" keyname="AssignWGR">WGR einer HWGR zuweisen</value>
+  <value key="30077" keyname="AssignHWGR">HWGR einer Welt zuweisen</value>
+  <value key="30078" keyname="ApplyYear">Aktualisieren</value>
+  
+</items>

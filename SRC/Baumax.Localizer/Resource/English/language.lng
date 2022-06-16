@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <value key="100" keyname="newlanguage">New language</value>
+  <value key="101" keyname="editlanguage">Edit language</value>
+  <value key="102" keyname="deletelanguage">Delete language</value>
+  <value key="103" keyname="listlanguage">List of languages</value>
+  <value key="104" keyname="refreshlanguages">Refresh of languages</value>
+  <value key="105" keyname="languagename">Language Name</value>
+  <value key="106" keyname="languagecode">Language Code</value>
+  <value key="107" keyname="language">Language</value>
+  <value key="108" keyname="languages">Languages</value>
+  <value key="109" keyname="languagemanager">Language manager</value>
+  
+  <value key="110" keyname="languagenameexists">Language name exists</value>
+  <value key="111" keyname="enterlanguagename">Enter language name</value>
+  <value key="112" keyname="questiondeletelanguage">Are you sure to remove language? </value>
+  <value key="113" keyname="translateui">Translate UI</value>
+  <value key="114" keyname="SomeLanguagesNotDeleted">Some language(s) were not deleted. Most likely they are assigned to existing countries.</value>
+  <value key="115" keyname="LanguageAssignedToCountry">Cannot delete the language. It is already assigned to some country.</value>
+  <value key="116" keyname="CannotDeleteLanguage">Cannot delete the language.</value>
+  <value key="117" keyname="CannotSaveLanguage">Cannot save the language.</value>
+  <value key="118" keyname="CannotDeleteDefaultLanguage">Cannot delete default language.</value>
+
+</items>
