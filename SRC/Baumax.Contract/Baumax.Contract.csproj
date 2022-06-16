@@ -1,0 +1,344 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4EF2D774-5A51-41D1-8C9C-C0E6A64A8E48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baumax.Contract</RootNamespace>
+    <AssemblyName>Baumax.Contract</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseSetup|AnyCPU' ">
+    <OutputPath>bin\ReleaseSetup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.0.2.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Absences\AbsenceController.cs" />
+    <Compile Include="Absences\AbsenceManager.cs" />
+    <Compile Include="Absences\AbsenceProcessor.cs" />
+    <Compile Include="Absences\AbsenceSource.cs" />
+    <Compile Include="Absences\BaseAbsenceContext.cs" />
+    <Compile Include="Absences\EmployeeCoefficientManager.cs" />
+    <Compile Include="Absences\EmployeeComparer.cs" />
+    <Compile Include="Absences\EmployeeManager.cs" />
+    <Compile Include="Absences\Enums.cs" />
+    <Compile Include="Absences\HolidayClasses\EmplAbsenceDay.cs" />
+    <Compile Include="Absences\HolidayClasses\EmplAbsenceDayDiction.cs" />
+    <Compile Include="Absences\HolidayClasses\EmplAbsenceWeek.cs" />
+    <Compile Include="Absences\HolidayClasses\EmployeeSource.cs" />
+    <Compile Include="Absences\HolidayClasses\EmployeeSourceAu.cs" />
+    <Compile Include="Absences\HolidayClasses\YearApperance.cs" />
+    <Compile Include="Absences\HolidayClasses\YearWrapper.cs" />
+    <Compile Include="Absences\LongTimeAbsenceManager.cs" />
+    <Compile Include="Absences\PlanColor.cs" />
+    <Compile Include="Absences\PrinArgs.cs" />
+    <Compile Include="Absences\Services.cs" />
+    <Compile Include="Absences\TransferClasses.cs" />
+    <Compile Include="AccessType.cs" />
+    <Compile Include="BaumaxDayOfWeek.cs" />
+    <Compile Include="ChangeReceiver.cs" />
+    <Compile Include="ColouringCountryEnum.cs" />
+    <Compile Include="CountryColors\CountryColorManager.cs" />
+    <Compile Include="DateTimeHelper.cs" />
+    <Compile Include="DateTimeSqlMinMax.cs" />
+    <Compile Include="Domain\Absence.cs" />
+    <Compile Include="Domain\AbsenceName.cs" />
+    <Compile Include="Domain\AbsenceTimePlanning.cs" />
+    <Compile Include="Domain\AbsenceTimeRecording.cs" />
+    <Compile Include="Domain\AvgAmounts.cs" />
+    <Compile Include="Domain\AvgWorkingDaysInWeek.cs" />
+    <Compile Include="Domain\BaseEntity.cs" />
+    <Compile Include="Domain\Benchmark.cs" />
+    <Compile Include="Domain\BufferHourAvailable.cs" />
+    <Compile Include="Domain\BufferHours.cs" />
+    <Compile Include="Domain\BusinessVolumeActual.cs" />
+    <Compile Include="Domain\CashDeskPeoplePerHourEstimate.cs" />
+    <Compile Include="Domain\Colouring.cs" />
+    <Compile Include="Domain\Country.cs" />
+    <Compile Include="Domain\CountryAdditionalHours.cs" />
+    <Compile Include="Domain\CountryName.cs" />
+    <Compile Include="Domain\IDepartment.cs" />
+    <Compile Include="Domain\Utills.cs" />
+    <Compile Include="Domain\Employee.cs" />
+    <Compile Include="Domain\EmployeeAllIn.cs" />
+    <Compile Include="Domain\EmployeeContract.cs" />
+    <Compile Include="Domain\EmployeeDayStatePlanning.cs" />
+    <Compile Include="Domain\EmployeeDayStateRecording.cs" />
+    <Compile Include="Domain\EmployeeHolidaysInfo.cs" />
+    <Compile Include="Domain\EmployeePlanningWorkingModel.cs" />
+    <Compile Include="Domain\EmployeeRecordingWorkingModel.cs" />
+    <Compile Include="Domain\EmployeeShortView.cs" />
+    <Compile Include="Domain\EmployeeWeekTimePlanning.cs" />
+    <Compile Include="Domain\EmployeeWeekTimeRecording.cs" />
+    <Compile Include="Domain\Employee_LongTimeAbsence.cs" />
+    <Compile Include="Domain\Employee_Relations.cs" />
+    <Compile Include="Domain\Feasts.cs" />
+    <Compile Include="Domain\HWGR.cs" />
+    <Compile Include="Domain\HwgrToWgr.cs" />
+    <Compile Include="Domain\HWGR_Name.cs" />
+    <Compile Include="Domain\Language.cs" />
+    <Compile Include="Domain\LongTimeAbsence.cs" />
+    <Compile Include="Domain\PersonMinMax.cs" />
+    <Compile Include="Domain\PKGenEntity.cs" />
+    <Compile Include="Domain\Region.cs" />
+    <Compile Include="Domain\RegionName.cs" />
+    <Compile Include="Domain\ServiceList.cs" />
+    <Compile Include="Domain\Store.cs" />
+    <Compile Include="Domain\StoreAdditionalHour.cs" />
+    <Compile Include="Domain\StoreName.cs" />
+    <Compile Include="Domain\StoreShort.cs" />
+    <Compile Include="Domain\StoreToWorld.cs" />
+    <Compile Include="Domain\StoreWorkingTime.cs" />
+    <Compile Include="Domain\StoreWTWeekday.cs" />
+    <Compile Include="Domain\TrendCorrection.cs" />
+    <Compile Include="Domain\UIResources.cs" />
+    <Compile Include="Domain\User.cs" />
+    <Compile Include="Domain\UserCountry.cs" />
+    <Compile Include="Domain\UserRegion.cs" />
+    <Compile Include="Domain\UserRole.cs" />
+    <Compile Include="Domain\UserRoleName.cs" />
+    <Compile Include="Domain\UserRole_ServiceList.cs" />
+    <Compile Include="Domain\UserStore.cs" />
+    <Compile Include="Domain\WGR.cs" />
+    <Compile Include="Domain\WGR_Name.cs" />
+    <Compile Include="Domain\WorkingModel.cs" />
+    <Compile Include="Domain\WorkingModelName.cs" />
+    <Compile Include="Domain\WorkingTimePlanning.cs" />
+    <Compile Include="Domain\WorkingTimeRecording.cs" />
+    <Compile Include="Domain\World.cs" />
+    <Compile Include="Domain\WorldName.cs" />
+    <Compile Include="Domain\WorldToHwgr.cs" />
+    <Compile Include="Domain\YearlyClosedDays.cs" />
+    <Compile Include="Domain\YearlyWorkingDays.cs" />
+    <Compile Include="EmployeeLongTimeAbsenceProcessor.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Estimate\BusinessVolumeCRR.cs" />
+    <Compile Include="Estimate\BusinessVolumeCRRSum.cs" />
+    <Compile Include="Estimate\BusinessVolumeTargActSum.cs" />
+    <Compile Include="Estimate\BVActualByYearInfo.cs" />
+    <Compile Include="Estimate\BVCcrByYearInfo.cs" />
+    <Compile Include="Estimate\BVTargetByYearInfo.cs" />
+    <Compile Include="Estimate\EstWorldDiffData.cs" />
+    <Compile Include="Exceptions\AnotherImportRunning.cs" />
+    <Compile Include="Exceptions\AuthorizationExceptions.cs" />
+    <Compile Include="Exceptions\EntityExceptions\DBDuplicateKeyException.cs" />
+    <Compile Include="Exceptions\EntityExceptions\DBReferenceConstraintConflictedException.cs" />
+    <Compile Include="Exceptions\EntityExceptions\DBValidationException.cs" />
+    <Compile Include="Exceptions\EntityExceptions\DeleteException.cs" />
+    <Compile Include="Exceptions\EntityExceptions\EmployeeMergeException.cs" />
+    <Compile Include="Exceptions\EntityExceptions\EntityException.cs" />
+    <Compile Include="Exceptions\EntityExceptions\LoadException.cs" />
+    <Compile Include="Exceptions\EntityExceptions\SaveException.cs" />
+    <Compile Include="Exceptions\EntityExceptions\SaveOrUpdateException.cs" />
+    <Compile Include="Exceptions\EntityExceptions\UpdateException.cs" />
+    <Compile Include="Exceptions\EntityExceptions\ValidationException.cs" />
+    <Compile Include="Exceptions\NotLoggedinException.cs" />
+    <Compile Include="Exceptions\UserServiceExceptions.cs" />
+    <Compile Include="Exceptions\WrongClientVersionException.cs" />
+    <Compile Include="Exceptions\WrongDBVersionException.cs" />
+    <Compile Include="Import\Enums.cs" />
+    <Compile Include="Import\ImportAbsenceData.cs" />
+    <Compile Include="Import\ImportDaysData.cs" />
+    <Compile Include="Import\ImportEmployeeData.cs" />
+    <Compile Include="Import\ImportHWGRData.cs" />
+    <Compile Include="Import\ImportLongTimeAbsenceData.cs" />
+    <Compile Include="Import\ImportTimeData.cs" />
+    <Compile Include="Import\ServerImportFoldersInfo.cs" />
+    <Compile Include="InheritedContextAsyncStarter.cs" />
+    <Compile Include="InheritedContextThreadRunner.cs" />
+    <Compile Include="interfaces.cs" />
+    <Compile Include="Interfaces\IAbsenceService.cs" />
+    <Compile Include="Interfaces\IAbsenceTimePlanningService.cs" />
+    <Compile Include="Interfaces\IAbsenceTimeRecordingService.cs" />
+    <Compile Include="Interfaces\IAuthorizationService.cs" />
+    <Compile Include="Interfaces\IAvgAmountService.cs" />
+    <Compile Include="Interfaces\IAvgWorkingDaysInWeekService.cs" />
+    <Compile Include="Interfaces\IBaseEntityService.cs" />
+    <Compile Include="Interfaces\IBaseService.cs" />
+    <Compile Include="Interfaces\IBenchmarkService.cs" />
+    <Compile Include="Interfaces\IBufferHourAvailableService.cs" />
+    <Compile Include="Interfaces\IBufferHoursService.cs" />
+    <Compile Include="Interfaces\IChangeReceiver.cs" />
+    <Compile Include="Interfaces\IColouringService.cs" />
+    <Compile Include="Interfaces\ICountryAdditionalHourService.cs" />
+    <Compile Include="Interfaces\ICountryService.cs" />
+    <Compile Include="Interfaces\IEmployeeAllInService.cs" />
+    <Compile Include="Interfaces\IEmployeeContractService.cs" />
+    <Compile Include="Interfaces\IEmployeeDayStatePlanningService.cs" />
+    <Compile Include="Interfaces\IEmployeeDayStateRecordingService.cs" />
+    <Compile Include="Interfaces\IEmployeeHolidaysInfoService.cs" />
+    <Compile Include="Interfaces\IEmployeeLongTimeAbsenceService.cs" />
+    <Compile Include="Interfaces\IEmployeePlanningWorkingModelService.cs" />
+    <Compile Include="Interfaces\IEmployeeRecordingWorkingModelService.cs" />
+    <Compile Include="Interfaces\IEmployeeRelationService.cs" />
+    <Compile Include="Interfaces\IEmployeeTimeService.cs" />
+    <Compile Include="Interfaces\IEmployeeWeekTimePlanningService.cs" />
+    <Compile Include="Interfaces\IEmployeeWeekTimeRecordingService.cs" />
+    <Compile Include="Interfaces\IFeastService.cs" />
+    <Compile Include="Interfaces\IHWGRService.cs" />
+    <Compile Include="Interfaces\IEmployeeService.cs" />
+    <Compile Include="Interfaces\IHwgrToWgrService.cs" />
+    <Compile Include="Interfaces\IInvalidateWholeCacheReceiver.cs" />
+    <Compile Include="Interfaces\IKey.cs" />
+    <Compile Include="Interfaces\ILanguageService.cs" />
+    <Compile Include="Interfaces\ILongTimeAbsenceService.cs" />
+    <Compile Include="Interfaces\IMessageInfoReceiver.cs" />
+    <Compile Include="Interfaces\IOperationCompleteReceiver.cs" />
+    <Compile Include="Interfaces\IPersonMinMaxService.cs" />
+    <Compile Include="Interfaces\IQueryCacheDao.cs" />
+    <Compile Include="Interfaces\IRegionService.cs" />
+    <Compile Include="Interfaces\IRoleService.cs" />
+    <Compile Include="Interfaces\IServerFacade.cs" />
+    <Compile Include="Interfaces\IStoreAdditionalHourService.cs" />
+    <Compile Include="Interfaces\IStoreService.cs" />
+    <Compile Include="Interfaces\IStoreWorkingTimeService.cs" />
+    <Compile Include="Interfaces\IStoreToWorldService.cs" />
+    <Compile Include="Interfaces\ITrendCorrectionService.cs" />
+    <Compile Include="Interfaces\IUserService.cs" />
+    <Compile Include="Interfaces\IWGRService.cs" />
+    <Compile Include="Interfaces\IWorkingModelService.cs" />
+    <Compile Include="Interfaces\IWorkingTimePlanningService.cs" />
+    <Compile Include="Interfaces\IWorkingTimeRecordingService.cs" />
+    <Compile Include="Interfaces\IWorldService.cs" />
+    <Compile Include="Interfaces\IWorldToHwgrService.cs" />
+    <Compile Include="Interfaces\IYearlyWorkingDayService.cs" />
+    <Compile Include="InvalidateWholeCacheReceiver.cs" />
+    <Compile Include="LunchBrakeModelManager.cs" />
+    <Compile Include="LunchModelEnum.cs" />
+    <Compile Include="MessageInfoReceiver.cs" />
+    <Compile Include="MessageStringInfo.cs" />
+    <Compile Include="OperationCompleteReceiver.cs" />
+    <Compile Include="PlanningAndRecording\ActualWeekTimeInfo.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeContractIndexer.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeDay.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeDayView.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeDebugInfo.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeLongTimeAbsenceIndexer.cs" />
+    <Compile Include="PlanningAndRecording\EmployeePlanningDay.cs" />
+    <Compile Include="PlanningAndRecording\EmployeePlanningWeek.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeRecordingDay.cs" />
+    <Compile Include="PlanningAndRecording\EmployeesRelationIndex.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeTimeRange.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeWeek.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeWeekSrv.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeWeekView.cs" />
+    <Compile Include="PlanningAndRecording\EmployeeWorkingModel.cs" />
+    <Compile Include="PlanningAndRecording\EntitiesList\ListEmployeeWeekTimePlanning.cs" />
+    <Compile Include="PlanningAndRecording\EntitiesList\ListEmployeeWeekTimeRecording.cs" />
+    <Compile Include="PlanningAndRecording\Interfaces.cs" />
+    <Compile Include="PlanningAndRecording\RecordingDayView.cs" />
+    <Compile Include="PlanningAndRecording\StoreDaysList.cs" />
+    <Compile Include="PlanningAndRecording\StoreTimeEnvironment.cs" />
+    <Compile Include="PlanningAndRecording\StoreWorldPlanningInfo.cs" />
+    <Compile Include="PlanningAndRecording\StoreWorldWeekPlanningState.cs" />
+    <Compile Include="PlanningAndRecording\StoreWorldWeekState.cs" />
+    <Compile Include="PlanningAndRecording\TextParser.cs" />
+    <Compile Include="PlanningAndRecording\Utils.cs" />
+    <Compile Include="PlanningAndRecording\WeeklyDaysSum.cs" />
+    <Compile Include="QueryResult\AssignResult.cs" />
+    <Compile Include="QueryResult\CanEstimateCashDeskPeopleResult.cs" />
+    <Compile Include="QueryResult\CanEstimateWorkingHoursResult.cs" />
+    <Compile Include="QueryResult\CashDeskPeoplePerHourEstimateShort.cs" />
+    <Compile Include="QueryResult\common.cs" />
+    <Compile Include="QueryResult\EmlpoyeeHolidaysSumInfo.cs" />
+    <Compile Include="QueryResult\EmployeeDayTimeResult.cs" />
+    <Compile Include="QueryResult\EstimatedWorkingHoursPerWorld.cs" />
+    <Compile Include="QueryResult\EstimateResult.cs" />
+    <Compile Include="QueryResult\HWGR_WGR_SysValues.cs" />
+    <Compile Include="QueryResult\HWGR_WGR_SysValuesShort.cs" />
+    <Compile Include="QueryResult\ImportBusinessValuesResult.cs" />
+    <Compile Include="QueryResult\ImportEmployeeResult.cs" />
+    <Compile Include="QueryResult\SaveDataResult.cs" />
+    <Compile Include="QueryResult\StoreDelayInfo.cs" />
+    <Compile Include="QueryResult\StoreStructure.cs" />
+    <Compile Include="QueryResult\StoreWorldDetail.cs" />
+    <Compile Include="QueryResult\World_HWGR_SysValues.cs" />
+    <Compile Include="QueryUtils.cs" />
+    <Compile Include="SessionId.cs" />
+    <Compile Include="SharedConsts.cs" />
+    <Compile Include="SharedEnums.cs" />
+    <Compile Include="SimpleArrays.cs" />
+    <Compile Include="StoreWorldManager.cs" />
+    <Compile Include="TimePlanningResult.cs" />
+    <Compile Include="WeekManager.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WorkingModelConditions\ConditionBalanceHoursMustBeZeroEveryWeekMonthYear.cs" />
+    <Compile Include="WorkingModelConditions\ConditionBalanceHoursReachesCertainAmount.cs" />
+    <Compile Include="WorkingModelConditions\ConditionBase.cs" />
+    <Compile Include="WorkingModelConditions\ConditionDurationOfWorkingDaysInRow.cs" />
+    <Compile Include="WorkingModelConditions\ConditionDurationOfWorkingTime.cs" />
+    <Compile Include="WorkingModelConditions\ConditionDurationOfWorkingTimeOnSingleDay.cs" />
+    <Compile Include="WorkingModelConditions\ConditionDurationOfWorkingTimeOnWeek.cs" />
+    <Compile Include="WorkingModelConditions\ConditionSaldoMustBeZeroOnCertainWeeks.cs" />
+    <Compile Include="WorkingModelConditions\ConditionTimeBetweenPreviousDayWorkingTime.cs" />
+    <Compile Include="WorkingModelConditions\ConditionWorkingOnFeast.cs" />
+    <Compile Include="WorkingModelConditions\ConditionWorkingOnSpecialWeekdays.cs" />
+    <Compile Include="WorkingModelConditions\ConditionWorkingOnSunday.cs" />
+    <Compile Include="WorkingModelConditions\ConditionWorkingOnSundayOrSaturday.cs" />
+    <Compile Include="WorkingModelConditions\ConditionWorkingOverEmployeeContractTime.cs" />
+    <Compile Include="WorkingModelConditions\ConditionWorkingOverEmployeeCurrentBalanceHours.cs" />
+    <Compile Include="WorkingModelConditions\ConditionWorkingTimeBetweenSeveralHours.cs" />
+    <Compile Include="WorkingModelConditions\ConditionWorkingTimeOutOfOpeningStore.cs" />
+    <Compile Include="WorkingModelConditions\DurationOfWorkingTimeOnMonth.cs" />
+    <Compile Include="WorkingModelConditions\WorkingModelWrapper.cs" />
+    <Compile Include="WorkingModelManager.cs" />
+    <Compile Include="YearWrapper.cs" />
+    <Compile Include="ZLib\IZEntity.cs" />
+    <Compile Include="ZLib\ZEntity.cs" />
+    <Compile Include="ZLib\ZLib.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dao\" />
+    <Folder Include="DBConsts\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
