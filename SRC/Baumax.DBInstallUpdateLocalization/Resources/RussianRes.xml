@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CantConnect>Не могу соединиться с SQL Server</CantConnect>
+	<DBInstallSuccess>Установка базы данных выполнена успешно</DBInstallSuccess>
+	<DBInstallError>Установка базы данных выполнена с ошибками</DBInstallError>
+	<DBInstallStarted>Началась установка базы данных</DBInstallStarted>
+	<DBUpdated>База данных уже обновлена</DBUpdated>
+	<DBCantUpdated>База данных не может быть обновлена</DBCantUpdated>
+	<DBCantUpdateToVersion>Невозможно обновить с версии {0} до версии {1}</DBCantUpdateToVersion>
+	<DBUpdateStarted>Началось обновление базы данных</DBUpdateStarted>
+	<DBExceptionWhenRollback>Произошла ошибка во время отката транзакции</DBExceptionWhenRollback>
+	<DBUpdateSuccess>Обновление базы данных завершилось успешно</DBUpdateSuccess>
+	<DBUpdateError>Обновление базы данных завершилось с ошибками</DBUpdateError>
+	<CreatingType>Создание типа</CreatingType>
+	<CreatingTypes>Создание типов</CreatingTypes>
+	<CreatingDB>Создание базы данных</CreatingDB>
+	<CreatingTable>Создание таблицы</CreatingTable>
+	<CreatingTables>Создание таблиц</CreatingTables>
+	<DropingDB>Удаление базы данных </DropingDB>
+	<SetDBVersion>Установка версии базы данных</SetDBVersion>
+	<CreatingRel>Создание связей</CreatingRel>
+	<CreatingProcedure>Создание процедуры</CreatingProcedure>
+	<CreatingView>Создание представления</CreatingView>
+	<CreatingFunction>Создание функции</CreatingFunction>
+	<UpdateDBToVer>Обновление базы данных до версии</UpdateDBToVer>
+	<DBNameCantBeEmpty>Имя БД не может быть пустым</DBNameCantBeEmpty>
+	<Error>Ошибка</Error>
+	<CreateUserOperation>Операция создания пользователя</CreateUserOperation>
+	<CreateUserRole>Создание пользовательской роли</CreateUserRole>
+	<ConnectUrOper>Соединение пользовательских ролей и операций</ConnectUrOper>
+	<CreateUsers>Создание пользователей</CreateUsers>
+	<AddDBConsts>Добавление констант в БД</AddDBConsts>
+	<CreatingIndexes>Создание индексов</CreatingIndexes>
+	<CreatingIndex>Создается индекс</CreatingIndex>
+  <CreatingTriggers>Создание триггеров</CreatingTriggers>
+  <CreatingTrigger>Создается триггер</CreatingTrigger>
+  <UIResDataInserting>Добавляются данные для пользовательского интерфейса</UIResDataInserting>
+  <UIDefaultBaumaxDataInserting>Добавляются данные по умолчанию для bauMax</UIDefaultBaumaxDataInserting>
+
+  <FrmMain_Text>Установка БД</FrmMain_Text>
+	<FrmMainl_cLanguage>Язык:</FrmMainl_cLanguage>
+	<FrmMain_sbInstall>Установить БД</FrmMain_sbInstall>
+	<FrmMain_sbSaveLog>Сохранить лог</FrmMain_sbSaveLog>
+	<FrmMain_allFiles>Все файлы</FrmMain_allFiles>
+	<FrmMain_logFiles>Лог файлы</FrmMain_logFiles>
+	<FrmMain_installDBErrorMsg>Ошибка при установке БД. Сохранить лог файл ?</FrmMain_installDBErrorMsg>
+	<FrmMain_installDBErrorMsgCaption>Ошибка при установке БД</FrmMain_installDBErrorMsgCaption>
+	<FrmMain_ServerName>Имя сервера:</FrmMain_ServerName>
+	<FrmMain_DBName>Имя БД:</FrmMain_DBName>
+	<FrmMain_UserName>Имя пользователя:</FrmMain_UserName>
+	<FrmMain_Password>Пароль:</FrmMain_Password>
+	<FrmMain_IntegratedSecurity>Безопасность windows</FrmMain_IntegratedSecurity>
+	<DBUpdate>Обновить БД</DBUpdate>
+	<Versions>Версии:</Versions>
+	<Connect>Соединиться</Connect>
+	<Disconnect>Разъединиться</Disconnect>
+	<ConnectedToServer>Присодинился к серверу: {0}, БД: {1}, версия БД: {2}</ConnectedToServer>
+	<ConnectionError>Ошибка соединения. Проверьте имя сервера, имя БД, пользователя, пароль</ConnectionError>
+	<Disconnected>Разъединился с сервером</Disconnected>
+	<MustConnect>Вы должны присоединиться к серверу перед обновлением БД</MustConnect>
+
+</Resources>

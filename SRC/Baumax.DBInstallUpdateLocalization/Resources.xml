@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+	<locale desc="German" path="Resources\GermanRes.xml"/>
+	<locale desc="English" path="Resources\EnglishRes.xml"/>
+	<locale desc="Russian" path="Resources\RussianRes.xml"/>
+</resources>

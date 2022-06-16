@@ -1,0 +1,109 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA2D725C-9A5F-494E-ABFA-39447704176A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baumax.DBInstallUpdateForms</RootNamespace>
+    <AssemblyName>Baumax.DBInstallUpdateForms</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseSetup|AnyCPU' ">
+    <OutputPath>bin\ReleaseSetup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="UI\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmDBInstall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmDBInstall.Designer.cs">
+      <DependentUpon>FrmDBInstall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmDBUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmDBUpdate.Designer.cs">
+      <DependentUpon>FrmDBUpdate.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmDBUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDBUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Baumax.DBInstaller\Baumax.DBInstaller.csproj">
+      <Project>{2E7CEEF0-E54D-47DC-B3F2-55FBE367F995}</Project>
+      <Name>Baumax.DBInstaller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.DBInstallUpdateLocalization\Baumax.DBIULocalization.csproj">
+      <Project>{DCA99149-F572-4280-98D7-2EDD2071095F}</Project>
+      <Name>Baumax.DBIULocalization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.DBUpdater\Baumax.DBUpdater.csproj">
+      <Project>{8295AEAD-99AC-4D47-9ACA-0766DCDF7FA4}</Project>
+      <Name>Baumax.DBUpdater</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

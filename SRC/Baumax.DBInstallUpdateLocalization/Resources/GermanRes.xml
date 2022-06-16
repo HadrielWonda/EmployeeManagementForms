@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CantConnect>Die Verbindung mit SQL Server kann nicht erstellt werden</CantConnect>
+	<DBInstallSuccess>Die Datenbankinstallation ist erfolgreich durchgefuhrt</DBInstallSuccess>
+	<DBInstallError>Die Datenbankinstallation ist mit Fehler durchgefuhrt</DBInstallError>
+	<DBInstallStarted>Die Datenbankinstallation hat begonnen</DBInstallStarted>
+	<DBUpdated>Die Datenbanke sind bereits erneuert</DBUpdated>
+	<DBCantUpdated>Die Datenbank kann nicht erneuert werden</DBCantUpdated>
+	<DBCantUpdateToVersion>Es ist unmoglich, die Erneuerung von der Version {0} auf  die Version {1} durchzufuhren</DBCantUpdateToVersion>
+	<DBUpdateStarted>Die Erneuerung der Datenbank hat begonnen</DBUpdateStarted>
+	<DBExceptionWhenRollback>Bei dem Transaktionsrucklauf ist ein Fehler aufgetreten</DBExceptionWhenRollback>
+	<DBUpdateSuccess>Die Erneuerung der Datenbank ist erfolgreich beendet</DBUpdateSuccess>
+	<DBUpdateError>Die Erneuerung der Datenbank ist mit Fehler beendet</DBUpdateError>
+	<CreatingType>Typ erschaffen</CreatingType>
+	<CreatingTypes>Typen erschaffen</CreatingTypes>
+	<CreatingDB>Datenbank erschaffen</CreatingDB>
+	<CreatingTable>Tabelle anlegen</CreatingTable>
+	<CreatingTables>Tabellen anlegen</CreatingTables>
+	<DropingDB>Datenbank entfernen</DropingDB>
+	<SetDBVersion>Erneuerung der Datenbank</SetDBVersion>
+	<CreatingRel>Verbindungen erschaffen</CreatingRel>
+	<CreatingProcedure>Prozeduren erschaffen</CreatingProcedure>
+	<CreatingView>Darstellung erschaffen</CreatingView>
+	<CreatingFunction>Funktion erschaffen</CreatingFunction>
+	<UpdateDBToVer>Die Erneuerung der Datenbank auf Version</UpdateDBToVer>
+	<DBNameCantBeEmpty>Datenbankname darf nicht leer sein</DBNameCantBeEmpty>
+	<Error>Fehler</Error>
+	<CreateUserOperation>Benutzeroperation erstellen</CreateUserOperation>
+	<CreateUserRole>Benutzerrolle erstellen</CreateUserRole>
+	<ConnectUrOper>Verbindung benutzerrolle zu operationen</ConnectUrOper>
+	<CreateUsers>Benutzer erstellen</CreateUsers>
+	<AddDBConsts>Datenbank konstante hinzufügen</AddDBConsts>
+	<CreatingIndexes>Indexe erstellen</CreatingIndexes>
+	<CreatingIndex>Index erstellen</CreatingIndex>
+  <CreatingTriggers>Triggers erstellen</CreatingTriggers>
+  <CreatingTrigger>Trigger erstellen</CreatingTrigger>
+  <UIResDataInserting>UI Ressourcen Dateien werden eingefügt</UIResDataInserting>
+  <UIDefaultBaumaxDataInserting>Zugrundeliegende bauMax Daten werden eingefügt</UIDefaultBaumaxDataInserting>
+
+  <FrmMain_Text>Datenbankinstallation</FrmMain_Text>
+	<FrmMainl_cLanguage>Sprache:</FrmMainl_cLanguage>
+	<FrmMain_sbInstall>Instalieren</FrmMain_sbInstall>
+	<FrmMain_sbSaveLog>Log speichern</FrmMain_sbSaveLog>
+	<FrmMain_allFiles>Alle Dateien</FrmMain_allFiles>
+	<FrmMain_logFiles>Logdateien</FrmMain_logFiles>
+	<FrmMain_installDBErrorMsg>Bei der Datenbankinstallation ist ein Fehler aufgetreten. Logdatei speichern?</FrmMain_installDBErrorMsg>
+	<FrmMain_installDBErrorMsgCaption>Fehler bei der Datenbankinstallation</FrmMain_installDBErrorMsgCaption>
+	<FrmMain_ServerName>Servername:</FrmMain_ServerName>
+	<FrmMain_DBName>Datenbankname:</FrmMain_DBName>
+	<FrmMain_UserName>Benutzername</FrmMain_UserName>
+	<FrmMain_Password>Kennwort:</FrmMain_Password>
+	<FrmMain_IntegratedSecurity>Windows Authentifizierung</FrmMain_IntegratedSecurity>
+	<DBUpdate>Datenbank erneuern</DBUpdate><Versions>Versionen:</Versions>
+	<Connect>Verbindung herstellen</Connect>
+	<Disconnect>Verbindung abbrechen</Disconnect>
+	<ConnectedToServer>Die Verbindung mit Server: {0}, Datenbank: {1}, Datenbank Version: {2}ist hergestellt</ConnectedToServer>
+	<ConnectionError>Verbindungsfehler. Prufen Sie den Servernamen, den Datenbanknamen, den Benutzernamen und das Kennwort nach!</ConnectionError>
+	<Disconnected>Die Verbindung mit dem Server ist abgebrochen</Disconnected>
+	<MustConnect>Vor der Datenbankerneuerung soll die Verbindung mit dem Server herstellt werden</MustConnect>
+</Resources>

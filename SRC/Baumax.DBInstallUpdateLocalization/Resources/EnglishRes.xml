@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CantConnect>Can't connect to SQL Server</CantConnect>
+	<DBInstallSuccess>Database installation completed successfully</DBInstallSuccess>
+	<DBInstallError>Database installation completed with errors</DBInstallError>
+	<DBInstallStarted>Database installation started</DBInstallStarted>
+	<DBUpdated>Database is updated</DBUpdated>
+	<DBCantUpdated>Database can't be updated</DBCantUpdated>
+	<DBCantUpdateToVersion>Can't update from version {0} to version {1}</DBCantUpdateToVersion>
+	<DBUpdateStarted>Database updating started</DBUpdateStarted>
+	<DBExceptionWhenRollback>An exception was encountered while attempting to roll back the transaction</DBExceptionWhenRollback>
+	<DBUpdateSuccess>Database update completed successfully</DBUpdateSuccess>
+	<DBUpdateError>Database update completed with errors</DBUpdateError>
+	<CreatingType>Creating type</CreatingType>
+	<CreatingTypes>Creating types</CreatingTypes>
+	<CreatingDB>Creating database</CreatingDB>
+	<CreatingTable>Creating table</CreatingTable>
+	<CreatingTables>Creating tables</CreatingTables>
+	<DropingDB>Droping database</DropingDB>
+	<SetDBVersion>Set DB version</SetDBVersion>
+	<CreatingRel>Creating relationships</CreatingRel>
+	<CreatingProcedure>Creating procedure</CreatingProcedure>
+	<CreatingView>Creating view</CreatingView>
+	<CreatingFunction>Creating function</CreatingFunction>
+	<UpdateDBToVer>Updating database to version</UpdateDBToVer>
+	<DBNameCantBeEmpty>DB name can't be empty</DBNameCantBeEmpty>
+	<Error>Error</Error>
+	<CreateUserOperation>Create user operation</CreateUserOperation>
+	<CreateUserRole>Create user role</CreateUserRole> 
+	<ConnectUrOper>Connect user role and operations</ConnectUrOper> 
+	<CreateUsers>Create users</CreateUsers> 
+	<AddDBConsts>Add db consts</AddDBConsts>
+	<CreatingIndexes>Creating indexes</CreatingIndexes> 
+	<CreatingIndex>Creating index</CreatingIndex>
+  <CreatingTriggers>Creating triggers</CreatingTriggers>
+  <CreatingTrigger>Creating trigger</CreatingTrigger>
+  <UIResDataInserting>UI resources data is been inserting</UIResDataInserting>
+  <UIDefaultBaumaxDataInserting>Default bauMax data is been inserting</UIDefaultBaumaxDataInserting>
+
+  <FrmMain_Text>DB install</FrmMain_Text>
+	<FrmMainl_cLanguage>Language:</FrmMainl_cLanguage>
+	<FrmMain_sbInstall>DB install</FrmMain_sbInstall>
+	<FrmMain_sbSaveLog>Save log</FrmMain_sbSaveLog>
+	<FrmMain_allFiles>All files</FrmMain_allFiles>
+	<FrmMain_logFiles>Log files</FrmMain_logFiles>
+	<FrmMain_installDBErrorMsg>Install db error. Do you whant save log file ?</FrmMain_installDBErrorMsg>
+	<FrmMain_installDBErrorMsgCaption>Install db error</FrmMain_installDBErrorMsgCaption>
+	<FrmMain_ServerName>Server name:</FrmMain_ServerName>
+	<FrmMain_DBName>DB name:</FrmMain_DBName>
+	<FrmMain_UserName>User name:</FrmMain_UserName>
+	<FrmMain_Password>Password:</FrmMain_Password>
+	<FrmMain_IntegratedSecurity>Integrated security</FrmMain_IntegratedSecurity>
+	<DBUpdate>DB Update</DBUpdate>
+	<Versions>Versions:</Versions>
+	<Connect>Connect</Connect>
+	<Disconnect>Disconnect</Disconnect>
+	<ConnectedToServer>Connected to server: {0}, db: {1}, DB version: {2}</ConnectedToServer>
+	<ConnectionError>Connection error. Check server name, db name, user name, password</ConnectionError>
+	<Disconnected>Disconnected from server</Disconnected>
+	<MustConnect>You must connect to server before update version</MustConnect>
+
+</Resources>
