@@ -1,0 +1,187 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E7CEEF0-E54D-47DC-B3F2-55FBE367F995}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baumax.DBInstaller</RootNamespace>
+    <AssemblyName>Baumax.DBInstaller</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseSetup|AnyCPU' ">
+    <OutputPath>bin\ReleaseSetup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="DBInstallManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\db\db_Drop.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\db\db_Create.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\run\runDBVersionSet.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Baumax.DBInstallUpdateLocalization\Baumax.DBIULocalization.csproj">
+      <Project>{DCA99149-F572-4280-98D7-2EDD2071095F}</Project>
+      <Name>Baumax.DBIULocalization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.DBIUCommonRes\Baumax.DBIUCommon.csproj">
+      <Project>{C1F3FD53-4D66-460D-94AD-B646A7310F8C}</Project>
+      <Name>Baumax.DBIUCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\data\db_AddUsers.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwCountry.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwStore.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwRegion.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwWorld.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwHWGR.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwWGR.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\data\addDBConsts.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwUserRole.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwWorkingModel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwAbsence.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwHWGR_WGR.sql" />
+    <EmbeddedResource Include="Scripts\views\vwWorld_HWGR.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwStoreStructure.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\views\vwEmployeeRelations.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\UIResources.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\dataImportSp\UResourcesGetDataFromDB.sql" />
+    <EmbeddedResource Include="Scripts\run\run4BVACovertQueryIndStat.sql" />
+    <EmbeddedResource Include="Scripts\run\runAddbauMaxYearData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\Country.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\CountryName.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\Region.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\RegionName.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\Store.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\StoreName.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\Feasts.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\YearlyWorkingDays.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\Absence.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\AbsenceName.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\LongTimeAbsence.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\WorkingModel.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\WorkingModelName.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\StoreWorkingTime.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\StoreWTWeekday.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\CountryPersShowMode.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\dataImportSp\CountryReportingIdentifier.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

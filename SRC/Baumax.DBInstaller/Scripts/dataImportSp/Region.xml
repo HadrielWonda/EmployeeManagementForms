@@ -1,0 +1,18 @@
+﻿<Root>
+  <Region RegionID="1138" RegionSysID="AT Reg.1 Nord" CountryID="1003" Import="1" />
+  <Region RegionID="1139" RegionSysID="AT Reg.2 Ost" CountryID="1003" Import="1" />
+  <Region RegionID="1140" RegionSysID="AT Reg.3 Süd" CountryID="1003" Import="1" />
+  <Region RegionID="1141" RegionSysID="AT Reg.4 West" CountryID="1003" Import="1" />
+  <Region RegionID="1142" RegionSysID="AT Reg.5 Süd-West" CountryID="1003" Import="1" />
+  <Region RegionID="1143" RegionSysID="AT Reg.6 Mitte" CountryID="1003" Import="1" />
+  <Region RegionID="1144" RegionSysID="CZ Reg.1" CountryID="1018" Import="1" />
+  <Region RegionID="1145" RegionSysID="CZ Reg.2" CountryID="1018" Import="1" />
+  <Region RegionID="1146" RegionSysID="CZ Reg.3" CountryID="1018" Import="1" />
+  <Region RegionID="1147" RegionSysID="HU Reg.1" CountryID="1033" Import="1" />
+  <Region RegionID="1148" RegionSysID="HU Reg.2" CountryID="1033" Import="1" />
+  <Region RegionID="1149" RegionSysID="HR Reg.1" CountryID="1048" Import="1" />
+  <Region RegionID="1150" RegionSysID="SK Reg.1" CountryID="1063" Import="1" />
+  <Region RegionID="1151" RegionSysID="SK Reg.2" CountryID="1063" Import="1" />
+  <Region RegionID="1152" RegionSysID="SL Reg.1" CountryID="1078" Import="1" />
+  <Region RegionID="1153" RegionSysID="RO Reg.1" CountryID="1108" Import="1" />
+</Root>

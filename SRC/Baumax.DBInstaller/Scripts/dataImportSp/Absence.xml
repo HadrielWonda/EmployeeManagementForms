@@ -1,0 +1,10 @@
+﻿<Root>
+  <Absence AbsenceID="1679" CountryID="1003" AbsenceTypeID="1" Color="-16192" CharID="Ms" UseInCalck="0" IsFixed="1" Value="0.000000000000000e+000" WithoutFixedTime="0" Import="0" />
+  <Absence AbsenceID="1680" CountryID="1003" AbsenceTypeID="1" Color="-8355840" CharID="Wd" UseInCalck="0" IsFixed="1" Value="0.000000000000000e+000" WithoutFixedTime="0" Import="0" />
+  <Absence AbsenceID="1681" CountryID="1123" AbsenceTypeID="1" Color="-4128832" CharID="F" UseInCalck="0" IsFixed="1" Value="0.000000000000000e+000" WithoutFixedTime="0" Import="0" />
+  <Absence AbsenceID="1682" CountryID="1123" AbsenceTypeID="3" Color="-32768" CharID="K" UseInCalck="0" IsFixed="1" Value="0.000000000000000e+000" WithoutFixedTime="0" Import="0" />
+  <Absence AbsenceID="1683" CountryID="1123" AbsenceTypeID="2" Color="-4194112" CharID="SU" UseInCalck="0" IsFixed="1" Value="0.000000000000000e+000" WithoutFixedTime="0" Import="0" />
+  <Absence AbsenceID="1684" CountryID="1123" AbsenceTypeID="2" Color="-16776961" CharID="U" UseInCalck="0" IsFixed="1" Value="0.000000000000000e+000" WithoutFixedTime="0" Import="0" />
+  <Absence AbsenceID="1685" CountryID="1123" AbsenceTypeID="1" Color="-65536" CharID="UA" UseInCalck="0" IsFixed="1" Value="0.000000000000000e+000" WithoutFixedTime="0" Import="0" />
+  <Absence AbsenceID="1686" CountryID="1123" AbsenceTypeID="2" Color="-128" CharID="UU" UseInCalck="0" IsFixed="1" Value="0.000000000000000e+000" WithoutFixedTime="0" Import="0" />
+</Root>

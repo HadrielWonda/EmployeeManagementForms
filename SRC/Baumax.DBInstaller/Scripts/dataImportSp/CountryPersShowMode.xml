@@ -1,0 +1,10 @@
+﻿<Root>
+  <CountryPersShowMode CountryID="1003" PersShowMode="1" />
+  <CountryPersShowMode CountryID="1018" PersShowMode="2" />
+  <CountryPersShowMode CountryID="1033" PersShowMode="1" />
+  <CountryPersShowMode CountryID="1048" PersShowMode="2" />
+  <CountryPersShowMode CountryID="1063" PersShowMode="2" />
+  <CountryPersShowMode CountryID="1078" PersShowMode="2" />
+  <CountryPersShowMode CountryID="1108" PersShowMode="1" />
+  <CountryPersShowMode CountryID="1123" PersShowMode="2" />
+</Root>

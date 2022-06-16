@@ -1,0 +1,10 @@
+﻿<Root>
+  <CountryName Id="1003" CountryID="1003" LanguageID="1" Name="bauMax Österreich AG" />
+  <CountryName Id="1004" CountryID="1018" LanguageID="1" Name="bauMax CR S.R.O" />
+  <CountryName Id="1005" CountryID="1033" LanguageID="1" Name="bauMax Magyar.Ker  R" />
+  <CountryName Id="1006" CountryID="1048" LanguageID="1" Name="bauMax Zagreb d.o.o." />
+  <CountryName Id="1007" CountryID="1063" LanguageID="1" Name="bauMax SR SPOL S.R.O" />
+  <CountryName Id="1008" CountryID="1078" LanguageID="1" Name="bauMax D.O.O. Ljubla" />
+  <CountryName Id="1010" CountryID="1108" LanguageID="1" Name="bauMax Romania S.R.L" />
+  <CountryName Id="1011" CountryID="1123" LanguageID="1" Name="bauMax Bulgarien" />
+</Root>

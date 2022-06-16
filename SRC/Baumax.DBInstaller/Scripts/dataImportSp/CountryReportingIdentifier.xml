@@ -1,0 +1,10 @@
+﻿<Root>
+  <CountryReportingIdentifier CountryID="1003" ReportID="100" ReportName="AustrianMain" />
+  <CountryReportingIdentifier CountryID="1018" ReportID="200" ReportName="CzechMain" />
+  <CountryReportingIdentifier CountryID="1033" ReportID="300" ReportName="HungarianMain" />
+  <CountryReportingIdentifier CountryID="1048" ReportID="400" ReportName="CroatianMain" />
+  <CountryReportingIdentifier CountryID="1063" ReportID="500" ReportName="SlovakMain" />
+  <CountryReportingIdentifier CountryID="1078" ReportID="600" ReportName="SlovenianMain" />
+  <CountryReportingIdentifier CountryID="1108" ReportID="700" ReportName="RomanianMain" />
+  <CountryReportingIdentifier CountryID="1123" ReportID="800" ReportName="BulgarianMain" />
+</Root>

@@ -1,0 +1,10 @@
+﻿<Root>
+  <AbsenceName Id="1687" AbsenceID="1679" LanguageID="1" Name="mutterschutz" />
+  <AbsenceName Id="1688" AbsenceID="1680" LanguageID="1" Name="Wehrdienst" />
+  <AbsenceName Id="1689" AbsenceID="1681" LanguageID="1" Name="Своб.ден" />
+  <AbsenceName Id="1690" AbsenceID="1682" LanguageID="1" Name="Болест" />
+  <AbsenceName Id="1691" AbsenceID="1683" LanguageID="1" Name="Извънр. о." />
+  <AbsenceName Id="1692" AbsenceID="1684" LanguageID="1" Name="Платен о." />
+  <AbsenceName Id="1693" AbsenceID="1685" LanguageID="1" Name="Самоотл." />
+  <AbsenceName Id="1694" AbsenceID="1686" LanguageID="1" Name="Неплатен о." />
+</Root>

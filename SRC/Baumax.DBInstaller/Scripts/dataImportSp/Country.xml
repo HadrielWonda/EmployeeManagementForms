@@ -1,0 +1,11 @@
+﻿<Root>
+  <Country CountryID="1003" SystemID1="1" SystemID2="AT" LanguageID="1" Import="1" WarningDays="0" MaxDays="0" />
+  <Country CountryID="1018" SystemID1="2" SystemID2="CZ" LanguageID="1" Import="1" WarningDays="0" MaxDays="0" />
+  <Country CountryID="1033" SystemID1="3" SystemID2="HU" LanguageID="1" Import="1" WarningDays="0" MaxDays="0" />
+  <Country CountryID="1048" SystemID1="4" SystemID2="HR" LanguageID="1" Import="1" WarningDays="0" MaxDays="0" />
+  <Country CountryID="1063" SystemID1="5" SystemID2="SK" LanguageID="1" Import="1" WarningDays="0" MaxDays="0" />
+  <Country CountryID="1078" SystemID1="6" SystemID2="SI" LanguageID="1" Import="1" WarningDays="0" MaxDays="0" />
+  <Country CountryID="1108" SystemID1="8" SystemID2="RO" LanguageID="1" Import="1" WarningDays="0" MaxDays="0" />
+  <Country CountryID="1123" SystemID1="9" SystemID2="BG" LanguageID="1" Import="1" WarningDays="0" MaxDays="0" />
+</Root>
+

@@ -1,0 +1,18 @@
+﻿<Root>
+  <RegionName Id="1138" RegionID="1138" LanguageID="1" Name="AT Reg.1 Nord" />
+  <RegionName Id="1139" RegionID="1139" LanguageID="1" Name="AT Reg.2 Ost" />
+  <RegionName Id="1140" RegionID="1140" LanguageID="1" Name="AT Reg.3 Süd" />
+  <RegionName Id="1141" RegionID="1141" LanguageID="1" Name="AT Reg.4 West" />
+  <RegionName Id="1142" RegionID="1142" LanguageID="1" Name="AT Reg.5 Süd-West" />
+  <RegionName Id="1143" RegionID="1143" LanguageID="1" Name="AT Reg.6 Mitte" />
+  <RegionName Id="1144" RegionID="1144" LanguageID="1" Name="CZ Reg.1" />
+  <RegionName Id="1145" RegionID="1145" LanguageID="1" Name="CZ Reg.2" />
+  <RegionName Id="1146" RegionID="1146" LanguageID="1" Name="CZ Reg.3" />
+  <RegionName Id="1147" RegionID="1147" LanguageID="1" Name="HU Reg.1" />
+  <RegionName Id="1148" RegionID="1148" LanguageID="1" Name="HU Reg.2" />
+  <RegionName Id="1149" RegionID="1149" LanguageID="1" Name="HR Reg.1" />
+  <RegionName Id="1150" RegionID="1150" LanguageID="1" Name="SK Reg.1" />
+  <RegionName Id="1151" RegionID="1151" LanguageID="1" Name="SK Reg.2" />
+  <RegionName Id="1152" RegionID="1152" LanguageID="1" Name="SL Reg.1" />
+  <RegionName Id="1153" RegionID="1153" LanguageID="1" Name="RO Reg.1" />
+</Root>

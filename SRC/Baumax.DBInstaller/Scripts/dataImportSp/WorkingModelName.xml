@@ -1,0 +1,28 @@
+﻿<Root>
+  <WorkingModelName Id="1721" WorkingModelID="1695" LanguageID="1" Name="Празничен труд" />
+  <WorkingModelName Id="1722" WorkingModelID="1696" LanguageID="1" Name="Максимално дневно работно време" />
+  <WorkingModelName Id="1723" WorkingModelID="1697" LanguageID="1" Name="Максимално седмично работно време" />
+  <WorkingModelName Id="1724" WorkingModelID="1698" LanguageID="1" Name="Почивка между 2 работни дни" />
+  <WorkingModelName Id="1725" WorkingModelID="1699" LanguageID="1" Name="Салдо" />
+  <WorkingModelName Id="1726" WorkingModelID="1700" LanguageID="1" Name="Максимален брой последователни работни дни" />
+  <WorkingModelName Id="1727" WorkingModelID="1701" LanguageID="1" Name="Работно време" />
+  <WorkingModelName Id="1728" WorkingModelID="1702" LanguageID="1" Name="Извънредни часове" />
+  <WorkingModelName Id="1729" WorkingModelID="1703" LanguageID="1" Name="Nerovnomerné rozvrhnutie pracovného času" />
+  <WorkingModelName Id="1730" WorkingModelID="1704" LanguageID="1" Name="Dan" />
+  <WorkingModelName Id="1731" WorkingModelID="1705" LanguageID="1" Name="Teden" />
+  <WorkingModelName Id="1732" WorkingModelID="1706" LanguageID="1" Name="Popoldansko delo" />
+  <WorkingModelName Id="1733" WorkingModelID="1707" LanguageID="1" Name="Max del. dni" />
+  <WorkingModelName Id="1734" WorkingModelID="1708" LanguageID="1" Name="počitek med dvema dnevoma" />
+  <WorkingModelName Id="1735" WorkingModelID="1709" LanguageID="1" Name="Praznik" />
+  <WorkingModelName Id="1736" WorkingModelID="1710" LanguageID="1" Name="Nedelja" />
+  <WorkingModelName Id="1737" WorkingModelID="1711" LanguageID="1" Name="nadure" />
+  <WorkingModelName Id="1738" WorkingModelID="1712" LanguageID="1" Name="+ ure teden" />
+  <WorkingModelName Id="1739" WorkingModelID="1713" LanguageID="1" Name="Dan" />
+  <WorkingModelName Id="1740" WorkingModelID="1714" LanguageID="1" Name="Teden" />
+  <WorkingModelName Id="1741" WorkingModelID="1715" LanguageID="1" Name="+ sati tjedan" />
+  <WorkingModelName Id="1742" WorkingModelID="1716" LanguageID="1" Name="Odmor izmedju 2 radna dana" />
+  <WorkingModelName Id="1743" WorkingModelID="1717" LanguageID="1" Name="nadure" />
+  <WorkingModelName Id="1744" WorkingModelID="1718" LanguageID="1" Name="Nedelja" />
+  <WorkingModelName Id="1745" WorkingModelID="1719" LanguageID="1" Name="praznik" />
+  <WorkingModelName Id="1746" WorkingModelID="1720" LanguageID="1" Name="max. del. dni" />
+</Root>
