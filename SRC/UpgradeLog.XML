@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Baumax">
+</Property><Property Name="Solution File" Value="D:\DEV\Baumax\Src\Baumax.sln">
+</Property><Property Name="Date" Value="27 октября 2009 г.">
+</Property><Property Name="Time" Value="13:33">
+</Property></Properties><Event ErrorLevel="0" Project="Baumax.Dao" Source="Baumax.Dao\Baumax.Dao.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Dao" Source="Baumax.Dao\Baumax.Dao.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Dao.NHibernate" Source="Baumax.Dao.NHibernate\Baumax.Dao.NHibernate.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Dao.NHibernate" Source="Baumax.Dao.NHibernate\Baumax.Dao.NHibernate.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Services" Source="Baumax.Services\Baumax.Services.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Services" Source="Baumax.Services\Baumax.Services.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Contract" Source="Baumax.Contract\Baumax.Contract.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Contract" Source="Baumax.Contract\Baumax.Contract.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.TestClient" Source="Baumax.TestClient\Baumax.TestClient.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.TestClient" Source="Baumax.TestClient\Baumax.TestClient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.AppServer.Console" Source="Baumax.AppServer.Console\Baumax.AppServer.Console.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.AppServer.Console" Source="Baumax.AppServer.Console\Baumax.AppServer.Console.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.AppServer" Source="Baumax.AppServer\Baumax.AppServer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.AppServer" Source="Baumax.AppServer\Baumax.AppServer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Util" Source="Baumax.Util\Baumax.Util.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Util" Source="Baumax.Util\Baumax.Util.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.DBInstaller" Source="Baumax.DBInstaller\Baumax.DBInstaller.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.DBInstaller" Source="Baumax.DBInstaller\Baumax.DBInstaller.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.DBIULocalization" Source="Baumax.DBInstallUpdateLocalization\Baumax.DBIULocalization.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.DBIULocalization" Source="Baumax.DBInstallUpdateLocalization\Baumax.DBIULocalization.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.DBUpdater" Source="Baumax.DBUpdater\Baumax.DBUpdater.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.DBUpdater" Source="Baumax.DBUpdater\Baumax.DBUpdater.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.DBInstallGUI" Source="Baumax.DBInstallGUI\Baumax.DBInstallGUI.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.DBInstallGUI" Source="Baumax.DBInstallGUI\Baumax.DBInstallGUI.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.DBInstallUpdateForms" Source="Baumax.DBInstallUpdateForms\Baumax.DBInstallUpdateForms.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.DBInstallUpdateForms" Source="Baumax.DBInstallUpdateForms\Baumax.DBInstallUpdateForms.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.DBUpdateGUI" Source="Baumax.DBUpdateGUI\Baumax.DBUpdateGUI.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.DBUpdateGUI" Source="Baumax.DBUpdateGUI\Baumax.DBUpdateGUI.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Import" Source="Baumax.Import\Baumax.Import.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Import" Source="Baumax.Import\Baumax.Import.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Import.Test" Source="Baumax.Import.Test\Baumax.Import.Test.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Import.Test" Source="Baumax.Import.Test\Baumax.Import.Test.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.LocalServices" Source="Baumax.LocalServices\Baumax.LocalServices.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.LocalServices" Source="Baumax.LocalServices\Baumax.LocalServices.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.EntityListManager" Source="Baumax.EntityListManager\Baumax.EntityListManager.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.EntityListManager" Source="Baumax.EntityListManager\Baumax.EntityListManager.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Templates" Source="Baumax.Templates\Baumax.Templates.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Templates" Source="Baumax.Templates\Baumax.Templates.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Environment" Source="BauMax.Environment\Baumax.Environment.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Environment" Source="BauMax.Environment\Baumax.Environment.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Client" Source="Baumax.Client\Baumax.Client.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Client" Source="Baumax.Client\Baumax.Client.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.ClientUI" Source="Baumax.ClientUI\Baumax.ClientUI.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.ClientUI" Source="Baumax.ClientUI\Baumax.ClientUI.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Localization" Source="Baumax.Localizer\Baumax.Localization.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Localization" Source="Baumax.Localizer\Baumax.Localization.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Server.Configurator" Source="Baumax.Server.Configurator\Baumax.Server.Configurator.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Server.Configurator" Source="Baumax.Server.Configurator\Baumax.Server.Configurator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Client.Configurator" Source="Baumax.Client.Configurator\Baumax.Client.Configurator.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Client.Configurator" Source="Baumax.Client.Configurator\Baumax.Client.Configurator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Scheduler" Source="Baumax.Scheduler\Baumax.Scheduler.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Scheduler" Source="Baumax.Scheduler\Baumax.Scheduler.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.AppServer.Service" Source="Baumax.AppServer.Service\Baumax.AppServer.Service.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.AppServer.Service" Source="Baumax.AppServer.Service\Baumax.AppServer.Service.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Setup.UI" Source="Baumax.Setup.UI\Baumax.Setup.UI.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Setup.UI" Source="Baumax.Setup.UI\Baumax.Setup.UI.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Server.Service.Configurator" Source="Baumax.Server.Service.Configurator\Baumax.Server.Service.Configurator.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Server.Service.Configurator" Source="Baumax.Server.Service.Configurator\Baumax.Server.Service.Configurator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.HQLTest" Source="Baumax.HQLTest\Baumax.HQLTest.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.HQLTest" Source="Baumax.HQLTest\Baumax.HQLTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.AppServer.Environment" Source="Baumax.AppServer.Environment\Baumax.AppServer.Environment.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.AppServer.Environment" Source="Baumax.AppServer.Environment\Baumax.AppServer.Environment.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Printouts" Source="Baumax.Printouts\Baumax.Printouts.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Printouts" Source="Baumax.Printouts\Baumax.Printouts.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.ServerState" Source="Baumax.ServerState\Baumax.ServerState.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.ServerState" Source="Baumax.ServerState\Baumax.ServerState.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.DBIUCommon" Source="Baumax.DBIUCommonRes\Baumax.DBIUCommon.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.DBIUCommon" Source="Baumax.DBIUCommonRes\Baumax.DBIUCommon.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Import.Scheduler" Source="Baumax.Import.Scheduler\Baumax.Import.Scheduler.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Import.Scheduler" Source="Baumax.Import.Scheduler\Baumax.Import.Scheduler.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Cache" Source="Baumax.Cache\Baumax.Cache.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Cache" Source="Baumax.Cache\Baumax.Cache.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.Tester" Source="Baumax.Tester\Baumax.Tester.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Baumax.Tester" Source="Baumax.Tester\Baumax.Tester.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Baumax.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Baumax.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Baumax.DBInstaller" Source="Baumax.DBInstaller\Baumax.DBInstaller.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.DBIULocalization" Source="Baumax.DBInstallUpdateLocalization\Baumax.DBIULocalization.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.DBUpdater" Source="Baumax.DBUpdater\Baumax.DBUpdater.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.DBInstallGUI" Source="Baumax.DBInstallGUI\Baumax.DBInstallGUI.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.DBInstallUpdateForms" Source="Baumax.DBInstallUpdateForms\Baumax.DBInstallUpdateForms.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.DBUpdateGUI" Source="Baumax.DBUpdateGUI\Baumax.DBUpdateGUI.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.DBIUCommon" Source="Baumax.DBIUCommonRes\Baumax.DBIUCommon.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Import" Source="Baumax.Import\Baumax.Import.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Import.Test" Source="Baumax.Import.Test\Baumax.Import.Test.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Import.Scheduler" Source="Baumax.Import.Scheduler\Baumax.Import.Scheduler.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Dao" Source="Baumax.Dao\Baumax.Dao.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Dao.NHibernate" Source="Baumax.Dao.NHibernate\Baumax.Dao.NHibernate.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Services" Source="Baumax.Services\Baumax.Services.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.AppServer.Console" Source="Baumax.AppServer.Console\Baumax.AppServer.Console.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.AppServer" Source="Baumax.AppServer\Baumax.AppServer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Util" Source="Baumax.Util\Baumax.Util.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Scheduler" Source="Baumax.Scheduler\Baumax.Scheduler.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.AppServer.Service" Source="Baumax.AppServer.Service\Baumax.AppServer.Service.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.HQLTest" Source="Baumax.HQLTest\Baumax.HQLTest.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.AppServer.Environment" Source="Baumax.AppServer.Environment\Baumax.AppServer.Environment.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Tester" Source="Baumax.Tester\Baumax.Tester.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Contract" Source="Baumax.Contract\Baumax.Contract.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Localization" Source="Baumax.Localizer\Baumax.Localization.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.ServerState" Source="Baumax.ServerState\Baumax.ServerState.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Cache" Source="Baumax.Cache\Baumax.Cache.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.TestClient" Source="Baumax.TestClient\Baumax.TestClient.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.LocalServices" Source="Baumax.LocalServices\Baumax.LocalServices.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.EntityListManager" Source="Baumax.EntityListManager\Baumax.EntityListManager.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Templates" Source="Baumax.Templates\Baumax.Templates.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Environment" Source="BauMax.Environment\Baumax.Environment.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Client" Source="Baumax.Client\Baumax.Client.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Printouts" Source="Baumax.Printouts\Baumax.Printouts.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Server.Configurator" Source="Baumax.Server.Configurator\Baumax.Server.Configurator.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Client.Configurator" Source="Baumax.Client.Configurator\Baumax.Client.Configurator.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Setup.UI" Source="Baumax.Setup.UI\Baumax.Setup.UI.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.Server.Service.Configurator" Source="Baumax.Server.Service.Configurator\Baumax.Server.Service.Configurator.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Baumax.ClientUI" Source="Baumax.ClientUI\Baumax.ClientUI.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

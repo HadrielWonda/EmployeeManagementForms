@@ -1,0 +1,1070 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.User.FormUser">
+      <Item value="Show" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList&lt;Baumax.Domain.Country&gt;">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo">
+      <Item value="RowHandle" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.WorkingModel">
+      <Item value="HoursLunch" priority="3" />
+      <Item value="WorkingModelType" priority="0" />
+      <Item value="IsDurationTime" priority="2" />
+      <Item value="CountryID" priority="0" />
+      <Item value="BeginTime" priority="1" />
+      <Item value="ConditionTime" priority="3" />
+      <Item value="AddCharges" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Environment.ClientEnvironment.AbsenceService">
+      <Item value="GetCountryAbsences" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.StoreToWorld">
+      <Item value="IsCashDesk" priority="0" />
+      <Item value="IsAdministration" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;Baumax.Domain.CountryAdditionalHour&gt;">
+      <Item value="Add" priority="0" />
+      <Item value="AddRange" priority="1" />
+      <Item value="Count" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Contract.DateTimeHelper.BaumaxDayOfWeekString">
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:bool">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;Baumax.Domain.StoreAdditionalHour&gt;">
+      <Item value="AddRange" priority="0" />
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.Interfaces.ICountryService">
+      <Item value="CountryAdditionalHourService" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraGrid.GridControl">
+      <Item value="Text" priority="0" />
+      <Item value="DataSource" priority="3" />
+      <Item value="ContextMenuStrip" priority="13" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.ECadditionHours">
+      <Item value="FactorB" priority="1" />
+      <Item value="Year" priority="0" />
+      <Item value="FactorE" priority="2" />
+      <Item value="EndTime" priority="0" />
+      <Item value="FillWeekControls" priority="0" />
+      <Item value="Bind" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.Admin.UserInfo">
+      <Item value="Login" priority="2" />
+      <Item value="User" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.AvgWorkingDaysInWeek">
+      <Item value="DaysCount" priority="1" />
+      <Item value="CountryID" priority="0" />
+      <Item value="Year" priority="12" />
+      <Item value="ID" priority="2" />
+      <Item value="IsNew" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.LocalServices.LocalStoreService">
+      <Item value="CalculateAdditionalHoursForYearInStore" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.Interfaces.IYearlyWorkingDayService">
+      <Item value="GetYearlyWorkingDaysFiltered" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Domain.StoreAdditionalHour">
+      <Item value="CopyTo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax">
+      <Item value="AppServer.Environment" priority="0" />
+      <Item value="Contract" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit">
+      <Item value="DataSource" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.ClosedDayList">
+      <Item value="Clear" priority="0" />
+      <Item value="RemoveAt" priority="0" />
+      <Item value="Count" priority="0" />
+      <Item value="Remove" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable&lt;System.DateTime&gt;">
+      <Item value="ToString" priority="0" />
+      <Item value="Value" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.TimePlanning.WorldPlanningContext">
+      <Item value="SaveContext2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.Utils.SuperToolTip">
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.DateEdit">
+      <Item value="Properties" priority="0" />
+      <Item value="ForeColor" priority="1" />
+      <Item value="BackColor" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.Admin.UserGridCtrl">
+      <Item value="FixEdit" priority="0" />
+      <Item value="OnNotifyEmptyChangeUser" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;short&gt;">
+      <Item value="Count" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.ListBoxControl">
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.Absence">
+      <Item value="IsFixed" priority="0" />
+      <Item value="IsShow" priority="2" />
+      <Item value="ID" priority="3" />
+      <Item value="IsNew" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.AvgAmount">
+      <Item value="CountryID" priority="2" />
+      <Item value="Year" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;Baumax.Domain.Benchmark&gt;">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.RadioButton">
+      <Item value="Text" priority="1" />
+      <Item value="Enabled" priority="1" />
+      <Item value="Checked" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DevExpress.Utils">
+      <Item value="FormatType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:short[]">
+      <Item value="Length" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.Interfaces.IStoreWorkingTimeService">
+      <Item value="CreateEntity" priority="0" />
+      <Item value="GetWorkingTimeFiltered" priority="0" />
+      <Item value="FindById" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraBars.BarItemLinkCollection">
+      <Item value="Clear" priority="0" />
+      <Item value="Add" priority="17" />
+      <Item value="Remove" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.FormUnavoidableAddHours">
+      <Item value="Amount" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Type">
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Domain.StoreWorkingTime">
+      <Item value="CopyTo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ContextMenuStrip">
+      <Item value="Text" priority="1" />
+      <Item value="Items" priority="0" />
+      <Item value="Enabled" priority="2" />
+      <Item value="Visible" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraTreeList.TreeList">
+      <Item value="ContextMenuStrip" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Configuration.AppSettingsSection">
+      <Item value="Settings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Configuration">
+      <Item value="AppSettingsSection" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.AbsenceForm">
+      <Item value="EntityUsed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Templates.BindingTemplate&lt;Baumax.Domain.CountryAdditionalHour&gt;">
+      <Item value="Add" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DevExpress.Utils.FormatType">
+      <Item value="Numeric" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.SimpleButton">
+      <Item value="Text" priority="1" />
+      <Item value="Width" priority="0" />
+      <Item value="BorderStyle" priority="0" />
+      <Item value="Enabled" priority="7" />
+      <Item value="Visible" priority="6" />
+      <Item value="Font" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList&lt;Baumax.Domain.UserRole&gt;">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="Text" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.TimeEdit">
+      <Item value="Focus" priority="0" />
+      <Item value="EditValue" priority="3" />
+      <Item value="ErrorText" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DayOfWeek">
+      <Item value="Saturday" priority="0" />
+      <Item value="Monday" priority="2" />
+      <Item value="Sunday" priority="0" />
+      <Item value="Friday" priority="1" />
+      <Item value="Tuesday" priority="0" />
+      <Item value="Thursday" priority="0" />
+      <Item value="Wednesday" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Environment.ClientEnvironment.AvgWorkingDaysInWeekService">
+      <Item value="FindByNamedParam" priority="0" />
+      <Item value="DeleteByID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;Baumax.Domain.AvgWorkingDaysInWeek&gt;">
+      <Item value="Count" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Month" priority="0" />
+      <Item value="MinValue" priority="1" />
+      <Item value="Hour" priority="0" />
+      <Item value="Year" priority="36" />
+      <Item value="ToString" priority="1" />
+      <Item value="Day" priority="0" />
+      <Item value="Date" priority="2" />
+      <Item value="Minute" priority="0" />
+      <Item value="DayOfWeek" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Templates.BindingTemplate&lt;Baumax.ClientUI.Admin.UserInfo&gt;">
+      <Item value="IndexOf" priority="0" />
+      <Item value="GetIndexOfEntity" priority="1" />
+      <Item value="GetIds" priority="0" />
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@AssemblyInfo.Version">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.EntityStore.UCGetValueFromStore">
+      <Item value="IsCashDesk" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraGrid.Views.Base.CustomColumnDataEventArgs">
+      <Item value="Value" priority="0" />
+      <Item value="Column" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Templates.BindingTemplate&lt;Baumax.Domain.YearlyWorkingDay&gt;">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraBars.BarLargeButtonItem">
+      <Item value="CaptionAlignment" priority="0" />
+      <Item value="Visibility" priority="2" />
+      <Item value="Border" priority="5" />
+      <Item value="Enabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.ClientUI.FormEntities.Country.CalculationAdditionalHours.listStoreAdditionalHour">
+      <Item value="Add" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.TimePlanning.AbsencePlanning.AbsencePlanningContext">
+      <Item value="EmployeeContext" priority="0" />
+      <Item value="EnableModifyAbsence" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.IList">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format" priority="0" />
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.RadioGroup">
+      <Item value="SelectedIndex" priority="8" />
+      <Item value="Properties" priority="12" />
+      <Item value="ImeMode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.Country">
+      <Item value="Name" priority="0" />
+      <Item value="ID" priority="21" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.EntityStore.UCGetValueFromStore.TimeRange">
+      <Item value="DateBegin" priority="0" />
+      <Item value="DateEnd" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.AvgWorkingDaysInWeekForm">
+      <Item value="Amount" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraGrid.Columns.GridColumn">
+      <Item value="VisibleIndex" priority="4" />
+      <Item value="FieldName" priority="0" />
+      <Item value="Visible" priority="6" />
+      <Item value="GroupIndex" priority="2" />
+      <Item value="DisplayFormat" priority="2" />
+      <Item value="AppearanceCell" priority="1" />
+      <Item value="GroupFormat" priority="0" />
+      <Item value="OptionsColumn" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.Feast">
+      <Item value="FeastDate" priority="7" />
+      <Item value="Equals" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.Interfaces.ICountryAdditionalHourService">
+      <Item value="FindById" priority="0" />
+      <Item value="CreateEntity" priority="0" />
+      <Item value="FindByIDList" priority="0" />
+      <Item value="FindByNamedParam" priority="0" />
+      <Item value="SaveOrUpdate" priority="0" />
+      <Item value="GetIDList" priority="0" />
+      <Item value="GetCountryAdditionalHourFiltered" priority="6" />
+      <Item value="Save" priority="0" />
+      <Item value="SaveList" priority="0" />
+      <Item value="FindAll" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraBars.BarSubItem">
+      <Item value="Visibility" priority="3" />
+      <Item value="Alignment" priority="0" />
+      <Item value="Caption" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraBars.BarManager">
+      <Item value="Items" priority="0" />
+      <Item value="Categories" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.EntityStore.StoreEstimatioPreconditionForm">
+      <Item value="Init" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit">
+      <Item value="DataSource" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.LabelControl">
+      <Item value="Text" priority="12" />
+      <Item value="Enabled" priority="0" />
+      <Item value="Visible" priority="2" />
+      <Item value="ForeColor" priority="0" />
+      <Item value="Font" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.CheckState">
+      <Item value="Checked" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;Baumax.Domain.AvgAmount&gt;">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.Utils.FormatInfo">
+      <Item value="FormatType" priority="3" />
+      <Item value="FormatString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Environment.ClientEnvironment.StoreAdditionalHourService">
+      <Item value="FindAll" priority="0" />
+      <Item value="SaveOrUpdate" priority="0" />
+      <Item value="GetHashCode" priority="0" />
+      <Item value="GetStoreAdditionalHourFiltered" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.UCCountryEdit">
+      <Item value="countryID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraBars.Bar">
+      <Item value="ItemLinks" priority="20" />
+      <Item value="ClearLinks" priority="7" />
+      <Item value="OptionsBar" priority="1" />
+      <Item value="Visible" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing">
+      <Item value="Color" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Templates.BindingTemplate&lt;Baumax.Domain.Feast&gt;">
+      <Item value="Clear" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.EntityStore.CopyingWaitForm">
+      <Item value="endDate" priority="0" />
+      <Item value="fromStoreID" priority="0" />
+      <Item value="toStoreID" priority="0" />
+      <Item value="beginDate" priority="0" />
+      <Item value="mode" priority="0" />
+      <Item value="error" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraNavBar.NavBarItem">
+      <Item value="Enabled" priority="2" />
+      <Item value="Visible" priority="13" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:decimal">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.CountryAdditionalHour">
+      <Item value="CountryID" priority="5" />
+      <Item value="BeginDay" priority="4" />
+      <Item value="BeginTime" priority="5" />
+      <Item value="FactorEarly" priority="2" />
+      <Item value="Year" priority="6" />
+      <Item value="EndTime" priority="5" />
+      <Item value="Factor" priority="5" />
+      <Item value="EndDay" priority="6" />
+      <Item value="WeekDay" priority="3" />
+      <Item value="FactorLate" priority="6" />
+      <Item value="IsNew" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.GridLookUpEdit">
+      <Item value="EditValue" priority="1" />
+      <Item value="Properties" priority="1" />
+      <Item value="Enabled" priority="0" />
+      <Item value="ProcessNewValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList&lt;Baumax.Domain.Store&gt;">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.BVcopyFromStoreResult">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DevExpress.XtraEditors">
+      <Item value="Controls" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime.Today">
+      <Item value="DayOfWeek" priority="0" />
+      <Item value="Date" priority="1" />
+      <Item value="Year" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.Controls.ListBoxItemCollection">
+      <Item value="Add" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.ClientUI.FormEntities.Country.UCCountryEdit.stores">
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Templates.BindingTemplate&lt;Baumax.Domain.AvgWorkingDaysInWeek&gt;">
+      <Item value="CopyList" priority="1" />
+      <Item value="Clear" priority="0" />
+      <Item value="GetIndexOfEntity" priority="0" />
+      <Item value="ResetItemById" priority="0" />
+      <Item value="Remove" priority="0" />
+      <Item value="GetItemByID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.Interfaces.IStoreAdditionalHourService">
+      <Item value="SaveList" priority="0" />
+      <Item value="GetStoreAdditionalHourFiltered" priority="0" />
+      <Item value="SaveOrUpdateList" priority="0" />
+      <Item value="DeleteByID" priority="0" />
+      <Item value="DeleteListByID" priority="0" />
+      <Item value="CreateEntity" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;long&gt;">
+      <Item value="Add" priority="1" />
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Keys">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.Utils.AppearanceObjectEx">
+      <Item value="Options" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string[]">
+      <Item value="Length" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraNavBar.NavBarGroup">
+      <Item value="Visible" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraVerticalGrid.Rows.VGridRows">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.DialogResult">
+      <Item value="Cancel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Environment.ClientEnvironment.AbsenceTimePlanningService">
+      <Item value="FindAll" priority="0" />
+      <Item value="FindByNamedParam" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;Baumax.Domain.BufferHours&gt;">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.UCBaseEntity">
+      <Item value="GetLocalized" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.IDataReader">
+      <Item value="GetInt64" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.ClosedDayEntityControl">
+      <Item value="IsListEmpty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripMenuItem">
+      <Item value="Text" priority="4" />
+      <Item value="Enabled" priority="8" />
+      <Item value="Visible" priority="6" />
+      <Item value="Checked" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.User">
+      <Item value="UserRoleID" priority="3" />
+      <Item value="ToString" priority="1" />
+      <Item value="ID" priority="5" />
+      <Item value="LoginName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.StoreWTWeekday">
+      <Item value="Weekday" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.UCAvgWorkingDaysInWeek">
+      <Item value="Entity" priority="0" />
+      <Item value="Parent" priority="0" />
+      <Item value="Dock" priority="0" />
+      <Item value="Show" priority="0" />
+      <Item value="EntityCountry" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.LunchBrakes.FormLunchModel">
+      <Item value="Text" priority="0" />
+      <Item value="lb_lunchModel" priority="0" />
+      <Item value="setReadOnlyTypeLunch" priority="1" />
+      <Item value="isNew" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Environment.ClientEnvironment.StoreService">
+      <Item value="BVCopyFromStoreAsync" priority="0" />
+      <Item value="BVCopyFromStoreComplete" priority="0" />
+      <Item value="BVCcrYearInfoGet" priority="0" />
+      <Item value="BVActualByYearInfoGet" priority="0" />
+      <Item value="StoreWorkingTimeService" priority="2" />
+      <Item value="EstimateWorkingHours" priority="1" />
+      <Item value="GetStoresByCountryId" priority="0" />
+      <Item value="DeleteCalculatedCountryAdditionalHours" priority="4" />
+      <Item value="BVTargetByYearInfoGet" priority="0" />
+      <Item value="GetYearsWithCountryAdditinalHourByStoreID" priority="0" />
+      <Item value="StoreAdditionalHourService" priority="0" />
+      <Item value="GetCalculatedYears" priority="0" />
+      <Item value="EstimationWorkingHoursExists" priority="0" />
+      <Item value="CalculateAdditionalHoursForYearInStore" priority="2" />
+      <Item value="CalculateAdditionalHoursForAllTime" priority="1" />
+      <Item value="FindAll" priority="0" />
+      <Item value="GetCountryByStoreId" priority="0" />
+      <Item value="CalculateAdditionalHoursForYear" priority="2" />
+      <Item value="PersonMinMaxService" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.Repository.RepositoryItemMarqueeProgressBar">
+      <Item value="Stopped" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;Baumax.Domain.LongTimeAbsence&gt;">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.Controls.RadioGroupItemCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.Interfaces.IFeastService">
+      <Item value="SaveList" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.Interfaces.IStoreService">
+      <Item value="GetCountryByStoreId" priority="0" />
+      <Item value="GetYearsWithCountryAdditinalHourByStoreID" priority="0" />
+      <Item value="DeleteCalculatedCountryAdditionalHours" priority="1" />
+      <Item value="CalculateAdditionalHoursForYear" priority="0" />
+      <Item value="CalculateAdditionalHoursForYearInStore" priority="0" />
+      <Item value="CalculateAdditionalHoursForAllTime" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.LookUpEdit">
+      <Item value="ItemIndex" priority="0" />
+      <Item value="EditValue" priority="4" />
+      <Item value="Properties" priority="4" />
+      <Item value="ErrorText" priority="1" />
+      <Item value="Focus" priority="1" />
+      <Item value="Focused" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;Baumax.Domain.WorkingModel&gt;">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Contract.DateTimeHelper">
+      <Item value="ConvertWindowsToBaumaxDayOfWeek" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;int&gt;">
+      <Item value="Add" priority="1" />
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.AbsenceTimePlanning">
+      <Item value="AbsenceID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.ProgressBarControl">
+      <Item value="IsLoading" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DevExpress.XtraGrid">
+      <Item value="GridControl" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.AvgWorkingDaysInWeekEntitycontrol">
+      <Item value="Country" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.AccessType">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.StoreViewList">
+      <Item value="Add" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit">
+      <Item value="MaxValue" priority="0" />
+      <Item value="EditorTypeName" priority="0" />
+      <Item value="MinValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.KeyPressEventArgs">
+      <Item value="KeyChar" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.Interfaces.IAvgWorkingDaysInWeekService">
+      <Item value="GetAvgWorkingDaysInWeekFiltered" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.Interfaces.IAvgAmountService">
+      <Item value="GetCountryAvgAmounts" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.QueryResult.CanEstimateWorkingHoursResult">
+      <Item value="Condition" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Contract">
+      <Item value="DateTimeHelper" priority="0" />
+      <Item value="AccessType" priority="0" />
+      <Item value="BaumaxDayOfWeek" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.Utils.FormatType">
+      <Item value="Custom" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.Repository.RepositoryItemRadioGroup">
+      <Item value="Items" priority="11" />
+      <Item value="Enabled" priority="0" />
+      <Item value="ReadOnly" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.Assembly">
+      <Item value="GetAssembly" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraVerticalGrid.Rows.RowProperties">
+      <Item value="Caption" priority="0" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.StoreWorkingTime">
+      <Item value="BeginTime" priority="1" />
+      <Item value="EndTime" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.AbsenceListControl">
+      <Item value="Entity" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:double">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.ClientUI.FormEntities.Country.UCCountryEdit.listEstimationYears">
+      <Item value="Clear" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.ColorEdit">
+      <Item value="Focus" priority="0" />
+      <Item value="EditValue" priority="0" />
+      <Item value="BackColor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraGrid.Columns.OptionsColumn">
+      <Item value="AllowEdit" priority="1" />
+      <Item value="ReadOnly" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color">
+      <Item value="Black" priority="1" />
+      <Item value="Red" priority="1" />
+      <Item value="Empty" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.XtraUserControl">
+      <Item value="GetType" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.ImageListBoxControl">
+      <Item value="SelectedIndex" priority="0" />
+      <Item value="Items" priority="1" />
+      <Item value="SelectedValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DevExpress.XtraEditors.Controls">
+      <Item value="BorderStyles" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:int">
+      <Item value="ToString" priority="17" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Contract.BaumaxDayOfWeek">
+      <Item value="Empty" priority="0" />
+      <Item value="Monday" priority="1" />
+      <Item value="Saturday" priority="1" />
+      <Item value="Sunday" priority="1" />
+      <Item value="Tuesday" priority="1" />
+      <Item value="Friday" priority="1" />
+      <Item value="Thursday" priority="1" />
+      <Item value="Wednesday" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Font">
+      <Item value="Style" priority="0" />
+      <Item value="Unit" priority="1" />
+      <Item value="Clone" priority="0" />
+      <Item value="Bold" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraBars.BarOptions">
+      <Item value="DisableCustomization" priority="0" />
+      <Item value="AllowQuickCustomization" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color.White">
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.CountryFeastList">
+      <Item value="Clear" priority="0" />
+      <Item value="Contains" priority="0" />
+      <Item value="Count" priority="0" />
+      <Item value="Remove" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.BVActualByYearInfo">
+      <Item value="Year" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.Interfaces.IAuthorizationService">
+      <Item value="GetAccess" priority="0" />
+      <Item value="GetCurrentUser" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Specialized.NameValueCollection">
+      <Item value="GetValues" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.Controls.ImageListBoxItemCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;Baumax.Domain.StoreToWorld&gt;">
+      <Item value="Remove" priority="2" />
+      <Item value="Add" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.AssemblyInformationalVersionAttribute">
+      <Item value="GetCustomAttribute" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Environment.ClientEnvironment.UserService">
+      <Item value="GetByLogin" priority="0" />
+      <Item value="GetRoles" priority="2" />
+      <Item value="GetUserStores" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@">
+      <Item value="AdditionalHours" priority="0" />
+      <Item value="BeginDay" priority="1" />
+      <Item value="StoreID" priority="1" />
+      <Item value="EndDate" priority="1" />
+      <Item value="Date" priority="2" />
+      <Item value="Factor" priority="1" />
+      <Item value="Opentime" priority="0" />
+      <Item value="Year" priority="5" />
+      <Item value="BeginTime" priority="1" />
+      <Item value="Closetime" priority="0" />
+      <Item value="Month" priority="1" />
+      <Item value="EndTime" priority="1" />
+      <Item value="EndDay" priority="1" />
+      <Item value="Weekday" priority="7" />
+      <Item value="ID" priority="4" />
+      <Item value="Add" priority="1" />
+      <Item value="BeginDate" priority="2" />
+      <Item value="Day" priority="1" />
+      <Item value="Count" priority="6" />
+      <Item value="WeekDay" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.UCUnavoidableAddHours">
+      <Item value="Parent" priority="0" />
+      <Item value="DoChangeLanguage" priority="0" />
+      <Item value="Dock" priority="0" />
+      <Item value="Show" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DayOfWeek.Monday">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Contract.EstimateCashDeskPeopleCondition">
+      <Item value="MinMaxPeopleExists" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:object">
+      <Item value="Equals" priority="0" />
+      <Item value="ToString" priority="8" />
+      <Item value="GetType" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DevExpress.XtraEditors.Controls.BorderStyles">
+      <Item value="Style3D" priority="0" />
+      <Item value="NoBorder" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.TextEdit">
+      <Item value="Text" priority="0" />
+      <Item value="BorderStyle" priority="0" />
+      <Item value="ForeColor" priority="3" />
+      <Item value="BackColor" priority="0" />
+      <Item value="Font" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Configuration.SectionInformation">
+      <Item value="Name" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.CheckedListBoxControl">
+      <Item value="SelectedValue" priority="0" />
+      <Item value="SelectedIndex" priority="0" />
+      <Item value="DataSource" priority="0" />
+      <Item value="Items" priority="5" />
+      <Item value="Enabled" priority="0" />
+      <Item value="Focused" priority="0" />
+      <Item value="ItemCount" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraBars.BarButtonItem">
+      <Item value="Down" priority="1" />
+      <Item value="PaintStyle" priority="3" />
+      <Item value="Alignment" priority="1" />
+      <Item value="Border" priority="11" />
+      <Item value="Visibility" priority="30" />
+      <Item value="SuperTip" priority="0" />
+      <Item value="Enabled" priority="42" />
+      <Item value="DropDownEnabled" priority="0" />
+      <Item value="CanDown" priority="0" />
+      <Item value="Glyph" priority="0" />
+      <Item value="Caption" priority="3" />
+      <Item value="Width" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Environment.ClientEnvironment.CountryService">
+      <Item value="AvgWorkingDaysInWeekService" priority="3" />
+      <Item value="AvgAmountService" priority="1" />
+      <Item value="FeastService" priority="0" />
+      <Item value="YearlyWorkingDayService" priority="1" />
+      <Item value="CountryAdditionalHourService" priority="9" />
+      <Item value="CreateEntity" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:long">
+      <Item value="ToString" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Contract.AccessType">
+      <Item value="Write" priority="0" />
+      <Item value="Read" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.MarqueeProgressBarControl">
+      <Item value="UseWaitCursor" priority="0" />
+      <Item value="Properties" priority="0" />
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Environment.ClientEnvironment.CountryAdditionalHourService">
+      <Item value="SaveList" priority="1" />
+      <Item value="GetCountryAdditionalHourFiltered" priority="0" />
+      <Item value="FindAll" priority="0" />
+      <Item value="CreateEntity" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Employee.EmployeeContext">
+      <Item value="CurrentEmployee" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.Benchmark">
+      <Item value="StoreWorldID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Version">
+      <Item value="Build" priority="0" />
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Contract.BaumaxDayOfWeek.Sunday">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string">
+      <Item value="Remove" priority="1" />
+      <Item value="Substring" priority="0" />
+      <Item value="LastIndexOf" priority="0" />
+      <Item value="Contains" priority="1" />
+      <Item value="Length" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.KeyEventArgs">
+      <Item value="KeyCode" priority="10" />
+      <Item value="KeyValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.Store">
+      <Item value="ID" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.Employee">
+      <Item value="FullName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.Environment.ClientEnvironment">
+      <Item value="CountryAdditionalHourService" priority="1" />
+      <Item value="ServerStateService" priority="0" />
+      <Item value="StoreService" priority="14" />
+      <Item value="FeastService" priority="0" />
+      <Item value="ColouringService" priority="0" />
+      <Item value="StoreToWorldService" priority="0" />
+      <Item value="CountryService" priority="5" />
+      <Item value="StoreAdditionalHourService" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.UCStoreList">
+      <Item value="FocusedEntity" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;Baumax.Domain.Absence&gt;">
+      <Item value="Add" priority="0" />
+      <Item value="Count" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ServerState.ServerStateData">
+      <Item value="TotalMemory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:T">
+      <Item value="Year" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.EventArgs">
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair&lt;int,string&gt;">
+      <Item value="Key" priority="0" />
+      <Item value="Value" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable&lt;long&gt;">
+      <Item value="Value" priority="4" />
+      <Item value="HasValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.YearlyWorkingDay">
+      <Item value="WorkingDay" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraBars.BarEditItem">
+      <Item value="Width" priority="3" />
+      <Item value="EditValue" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Country.LunchBrakes.ECLunchModel">
+      <Item value="Text" priority="0" />
+      <Item value="isTypeLunchReadOnly" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.OperationCompleteEventArgs">
+      <Item value="Param" priority="2" />
+      <Item value="Success" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.LocalServices">
+      <Item value="LocalStoreService" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection">
+      <Item value="AssemblyInformationalVersionAttribute" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:long[]">
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.BufferHours">
+      <Item value="StoreWorldID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.EntityStore.UCOpenCloseHours">
+      <Item value="StartDate" priority="0" />
+      <Item value="EndDateBeforeChange" priority="1" />
+      <Item value="EndDate" priority="0" />
+      <Item value="StartDateBeforeChange" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.SpinEdit">
+      <Item value="EditValue" priority="6" />
+      <Item value="Properties" priority="2" />
+      <Item value="Enabled" priority="9" />
+      <Item value="DisplayRectangle" priority="0" />
+      <Item value="Value" priority="5" />
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Contract.BVTargetByYearInfo">
+      <Item value="Year" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraScheduler.DateNavigator">
+      <Item value="Select" priority="1" />
+      <Item value="SelectionStart" priority="0" />
+      <Item value="Selection" priority="2" />
+      <Item value="DateTime" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.MouseEventArgs">
+      <Item value="X" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Baumax.ClientUI.FormEntities.Country.UCCountryEdit.ListEstimationWorkingHoursExistsInYear">
+      <Item value="ContainsKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;string&gt;">
+      <Item value="Add" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.CheckEdit">
+      <Item value="Text" priority="2" />
+      <Item value="Enabled" priority="4" />
+      <Item value="Checked" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Configuration.ConfigurationSection">
+      <Item value="SectionInformation" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary&lt;int,string&gt;">
+      <Item value="Keys" priority="3" />
+      <Item value="Values" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.ClientUI.FormEntities.Controls.StoreWorldLookUpCtrl">
+      <Item value="EntityList" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraVerticalGrid.VGridControl">
+      <Item value="Rows" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraGrid.Views.Grid.GridView">
+      <Item value="IsDataRow" priority="1" />
+      <Item value="CalcHitInfo" priority="0" />
+      <Item value="GroupCount" priority="0" />
+      <Item value="GetRowHandle" priority="0" />
+      <Item value="SourceRowHandle" priority="0" />
+      <Item value="CollapseAllDetails" priority="0" />
+      <Item value="ClearSelection" priority="0" />
+      <Item value="GetGroupRowValue" priority="0" />
+      <Item value="SelectedRowsCount" priority="2" />
+      <Item value="FocusedRowHandle" priority="3" />
+      <Item value="Columns" priority="0" />
+      <Item value="GetRow" priority="1" />
+      <Item value="GetDataRow" priority="4" />
+      <Item value="CollapseGroupRow" priority="0" />
+      <Item value="IsCellSelected" priority="0" />
+      <Item value="IsRowSelected" priority="0" />
+      <Item value="RowCount" priority="12" />
+      <Item value="CollapseMasterRow" priority="0" />
+      <Item value="CollapseAllGroups" priority="2" />
+      <Item value="ExpandAllGroups" priority="0" />
+      <Item value="ExpandGroupRow" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.GroupControl">
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Baumax.Domain.StoreAdditionalHour">
+      <Item value="EndDate" priority="0" />
+      <Item value="WeekDay" priority="0" />
+      <Item value="ID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DevExpress.XtraBars">
+      <Item value="BarItemVisibility" priority="3" />
+      <Item value="BarButtonStyle" priority="0" />
+      <Item value="BarToolbarsListItem" priority="0" />
+      <Item value="BarItem" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime.Now">
+      <Item value="Day" priority="1" />
+      <Item value="Month" priority="1" />
+      <Item value="Date" priority="15" />
+      <Item value="Year" priority="31" />
+      <Item value="DayOfWeek" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DevExpress.XtraBars.BarItemVisibility">
+      <Item value="Never" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Configuration.Configuration">
+      <Item value="AppSettings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevExpress.XtraEditors.Controls.DatesCollection">
+      <Item value="Clear" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <EditorManager>
+    <RecentFiles>
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:EntityStore/f:UCGetValueFromStore.cs" caret="1004" visual-x="0" visual-y="51" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/f:FormBaseEntity.cs" caret="1773" visual-x="0" visual-y="918" />
+      <File id="8F115011-AFC3-486B-8B4B-0638A5D338FE/f:MainForm.Designer.cs" caret="5177" visual-x="0" visual-y="1530" />
+      <File id="8F115011-AFC3-486B-8B4B-0638A5D338FE/f:MainForm.cs" caret="1647" visual-x="0" visual-y="527" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:Country/f:UCCountryEdit.Designer.cs" caret="0" visual-x="0" visual-y="2907" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:Country/d:LunchBrakes/f:FormLunchModel.Designer.cs" caret="325" visual-x="0" visual-y="1156" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:Country/d:UIAbsence/f:AbsenceForm.Designer.cs" caret="23005" visual-x="0" visual-y="0" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:Country/d:UIYearlyAppearance/f:YearAppearanceEntityControl.cs" caret="989" visual-x="0" visual-y="238" />
+      <File id="8D7ABC5C-C00E-4B86-9E4C-80FDD86D3C72/d:Resource/d:English/f:country.lng" caret="0" visual-x="0" visual-y="0" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:Country/d:UIAbsence/f:AbsenceForm.cs" caret="3108" visual-x="0" visual-y="1394" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:Country/d:LunchBrakes/f:FormLunchModel.cs" caret="1024" visual-x="0" visual-y="68" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:Country/d:UIAbsence/f:AbsenceListControl.cs" caret="13868" visual-x="0" visual-y="6137" />
+      <File id="4EF2D774-5A51-41D1-8C9C-C0E6A64A8E48/d:Domain/f:BaseEntity.cs" caret="222" visual-x="0" visual-y="170" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:User/f:FormUser.cs" caret="139" visual-x="0" visual-y="0" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:AbsencePlanning/f:SelectAbsenceForm.Designer.cs" caret="0" visual-x="0" visual-y="0" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:TimePlanning/f:FormSelectAbsence.Designer.cs" caret="2025" visual-x="0" visual-y="1564" />
+      <File id="8D7ABC5C-C00E-4B86-9E4C-80FDD86D3C72/f:DefaultDiction.cs" caret="5405" visual-x="0" visual-y="2652" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:EntityStore/f:UCStoreList.cs" caret="8935" visual-x="0" visual-y="4845" />
+      <File id="1E61CD4E-E08E-40B3-80A1-648A427CB15A/f:App.config" caret="1118" visual-x="0" visual-y="0" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/f:UCBaseEntity.cs" caret="5160" visual-x="0" visual-y="3247" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:Admin/f:UserListCtrl.cs" caret="817" visual-x="0" visual-y="544" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:Admin/f:UserGridCtrl.Designer.cs" caret="0" visual-x="0" visual-y="0" />
+      <File id="8D7ABC5C-C00E-4B86-9E4C-80FDD86D3C72/d:Resource/d:English/f:region.lng" caret="490" visual-x="0" visual-y="0" />
+      <File id="8D7ABC5C-C00E-4B86-9E4C-80FDD86D3C72/d:Resource/d:German/f:region.lng" caret="558" visual-x="0" visual-y="102" />
+      <File id="8D7ABC5C-C00E-4B86-9E4C-80FDD86D3C72/d:Resource/d:German/f:user.lng" caret="2990" visual-x="0" visual-y="0" />
+      <File id="8D7ABC5C-C00E-4B86-9E4C-80FDD86D3C72/d:Resource/d:English/f:user.lng" caret="896" visual-x="0" visual-y="0" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:Region/f:RegionListCtrl.cs" caret="2692" visual-x="0" visual-y="595" />
+      <File id="1E61CD4E-E08E-40B3-80A1-648A427CB15A/f:LoginFrm.cs" caret="2475" visual-x="0" visual-y="1122" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:Admin/f:UserGridCtrl.cs" caret="13900" visual-x="0" visual-y="6647" />
+      <File id="D8D00CA3-4FBD-4BCB-B658-F272E37F4D89/d:FormEntities/d:Region/f:UCRegionList.cs" caret="1466" visual-x="0" visual-y="0" />
+    </RecentFiles>
+  </EditorManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <ReFormatCode>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+    <DecorateModifiers>False</DecorateModifiers>
+  </ReFormatCode>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+</Configuration>
