@@ -1,0 +1,230 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D365F7D-405A-4A87-8373-224A5CA70CBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baumax.Printouts</RootNamespace>
+    <AssemblyName>Baumax.Printouts</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsencePlanningPrintout.cs">
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsencePlanningPrintout.Designer.cs">
+      <DependentUpon>AbsencePlanningPrintout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsencePlanningPrintoutA4.cs">
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsencePlanningPrintoutA4.Designer.cs">
+      <DependentUpon>AbsencePlanningPrintoutA4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceQartly.cs">
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceQartly.Designer.cs">
+      <DependentUpon>AbsenceQartly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceQuartlyA4.cs">
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceQuartlyA4.Designer.cs">
+      <DependentUpon>AbsenceQuartlyA4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceQuartlyAustria.cs">
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceQuartlyAustriaA4.cs">
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceWeekly.cs">
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceWeekly.Designer.cs">
+      <DependentUpon>AbsenceWeekly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceYearly.cs">
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceYearly.Designer.cs">
+      <DependentUpon>AbsenceYearly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceYearlyAustria.cs">
+    </Compile>
+    <Compile Include="AbsebcePlanning\AbsenceYearlyAustria.Designer.cs">
+      <DependentUpon>AbsenceYearlyAustria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsebcePlanning\DataTableFactory.cs" />
+    <Compile Include="AbsebcePlanning\MonthlyTableFactory.cs" />
+    <Compile Include="AbsebcePlanning\WeekTableFactory.cs" />
+    <Compile Include="AbsebcePlanning\YearTableFactory.cs" />
+    <Compile Include="ManpowerTimePlanning\ManpowerTimePlanningPrintout.cs">
+    </Compile>
+    <Compile Include="ManpowerTimePlanning\ManpowerTimePlanningPrintout.Designer.cs">
+      <DependentUpon>ManpowerTimePlanningPrintout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintoutConst.cs" />
+    <Compile Include="ManpowerTimePlanning\TimePlanningDaily.cs">
+    </Compile>
+    <Compile Include="ManpowerTimePlanning\TimePlanningDaily.Designer.cs">
+      <DependentUpon>TimePlanningDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManpowerTimePlanning\TimePlanningReportContext.cs" />
+    <Compile Include="ManpowerTimePlanning\TimePlanningWeelkyNoSummary.cs">
+    </Compile>
+    <Compile Include="ManpowerTimePlanning\TimePlanningWeelkyNoSummary.Designer.cs">
+      <DependentUpon>TimePlanningWeelkyNoSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBase.cs">
+    </Compile>
+    <Compile Include="ReportPainter.cs" />
+    <Compile Include="SortUtils.cs" />
+    <Compile Include="TimeRecording\WorldsTimeRecordingDaily.cs">
+    </Compile>
+    <Compile Include="TimeRecording\WorldsTimeRecordingDaily.Designer.cs">
+      <DependentUpon>WorldsTimeRecordingDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeRecording\WorldsTimeRecordingWeekly.cs">
+    </Compile>
+    <Compile Include="TimeRecording\WorldsTimeRecordingWeekly.Designer.cs">
+      <DependentUpon>WorldsTimeRecordingWeekly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewType.cs" />
+    <Compile Include="ManpowerTimePlanning\WeeklyPlanningPrintController.cs" />
+    <Compile Include="ManpowerTimePlanning\TimePlanningWeekly.cs">
+    </Compile>
+    <Compile Include="ManpowerTimePlanning\TimePlanningWeekly.Designer.cs">
+      <DependentUpon>TimePlanningWeekly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportLocalizer.cs" />
+    <Compile Include="TimeRecording\WorldsTimeRecordingPrintout.cs">
+    </Compile>
+    <Compile Include="TimeRecording\WorldsTimeRecordingPrintout.Designer.cs">
+      <DependentUpon>WorldsTimeRecordingPrintout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeRecording\WorldsTimeRecordingPrintoutContext.cs" />
+    <Compile Include="WorldComparer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbsebcePlanning\AbsencePlanningPrintout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AbsencePlanningPrintout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsebcePlanning\AbsencePlanningPrintoutA4.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AbsencePlanningPrintoutA4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsebcePlanning\AbsenceQartly.resx">
+      <DependentUpon>AbsenceQartly.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsebcePlanning\AbsenceQuartlyA4.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AbsenceQuartlyA4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsebcePlanning\AbsenceWeekly.resx">
+      <DependentUpon>AbsenceWeekly.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsebcePlanning\AbsenceYearly.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AbsenceYearly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsebcePlanning\AbsenceYearlyAustria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AbsenceYearlyAustria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManpowerTimePlanning\ManpowerTimePlanningPrintout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManpowerTimePlanningPrintout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManpowerTimePlanning\TimePlanningDaily.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimePlanningDaily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManpowerTimePlanning\TimePlanningWeelkyNoSummary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimePlanningWeelkyNoSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManpowerTimePlanning\TimePlanningWeekly.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimePlanningWeekly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeRecording\WorldsTimeRecordingDaily.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorldsTimeRecordingDaily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeRecording\WorldsTimeRecordingPrintout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorldsTimeRecordingPrintout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeRecording\WorldsTimeRecordingWeekly.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorldsTimeRecordingWeekly.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Baumax.Contract\Baumax.Contract.csproj">
+      <Project>{4EF2D774-5A51-41D1-8C9C-C0E6A64A8E48}</Project>
+      <Name>Baumax.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Dao\Baumax.Dao.csproj">
+      <Project>{621F016D-22E9-4AA5-8DFE-86C822DBC819}</Project>
+      <Name>Baumax.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BauMax.Environment\Baumax.Environment.csproj">
+      <Project>{C6FC3B60-10EB-4E8D-A58F-D6B1B8A804E6}</Project>
+      <Name>Baumax.Environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Localizer\Baumax.Localization.csproj">
+      <Project>{8D7ABC5C-C00E-4B86-9E4C-80FDD86D3C72}</Project>
+      <Name>Baumax.Localization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

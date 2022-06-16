@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="Detail.Name" xml:space="preserve">
+    <value>Detail</value>
+  </metadata>
+  <metadata name="tbDetail.Name" xml:space="preserve">
+    <value>tbDetail</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tbDetail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <metadata name="xrDetailRow.Name" xml:space="preserve">
+    <value>xrDetailRow</value>
+  </metadata>
+  <metadata name="gc_Employee.Name" xml:space="preserve">
+    <value>gc_Employee</value>
+  </metadata>
+  <data name="gc_Employee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gc_Employee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 24</value>
+  </data>
+  <data name="gc_Employee.Text" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <metadata name="gc_OldHolidays.Name" xml:space="preserve">
+    <value>gc_OldHolidays</value>
+  </metadata>
+  <data name="gc_OldHolidays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 6pt</value>
+  </data>
+  <data name="gc_OldHolidays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 0</value>
+  </data>
+  <data name="gc_OldHolidays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="gc_OldHolidays.Text" xml:space="preserve">
+    <value>Old Holidays</value>
+  </data>
+  <metadata name="gc_NewHolidays.Name" xml:space="preserve">
+    <value>gc_NewHolidays</value>
+  </metadata>
+  <data name="gc_NewHolidays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 6pt</value>
+  </data>
+  <data name="gc_NewHolidays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 0</value>
+  </data>
+  <data name="gc_NewHolidays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="gc_NewHolidays.Text" xml:space="preserve">
+    <value>New holidays</value>
+  </data>
+  <metadata name="gc_AvailableHolidays.Name" xml:space="preserve">
+    <value>gc_AvailableHolidays</value>
+  </metadata>
+  <data name="gc_AvailableHolidays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 6pt</value>
+  </data>
+  <data name="gc_AvailableHolidays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 0</value>
+  </data>
+  <data name="gc_AvailableHolidays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 24</value>
+  </data>
+  <data name="gc_AvailableHolidays.Text" xml:space="preserve">
+    <value>AvailableHolidays</value>
+  </data>
+  <metadata name="gc_january.Name" xml:space="preserve">
+    <value>gc_january</value>
+  </metadata>
+  <data name="gc_january.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 0</value>
+  </data>
+  <data name="gc_january.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 24</value>
+  </data>
+  <data name="gc_january.Text" xml:space="preserve">
+    <value>january</value>
+  </data>
+  <metadata name="gc_february.Name" xml:space="preserve">
+    <value>gc_february</value>
+  </metadata>
+  <data name="gc_february.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 0</value>
+  </data>
+  <data name="gc_february.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 24</value>
+  </data>
+  <data name="gc_february.Text" xml:space="preserve">
+    <value>february</value>
+  </data>
+  <metadata name="gc_march.Name" xml:space="preserve">
+    <value>gc_march</value>
+  </metadata>
+  <data name="gc_march.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 0</value>
+  </data>
+  <data name="gc_march.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 24</value>
+  </data>
+  <data name="gc_march.Text" xml:space="preserve">
+    <value>march</value>
+  </data>
+  <metadata name="gc_april.Name" xml:space="preserve">
+    <value>gc_april</value>
+  </metadata>
+  <data name="gc_april.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 0</value>
+  </data>
+  <data name="gc_april.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 24</value>
+  </data>
+  <data name="gc_april.Text" xml:space="preserve">
+    <value>april</value>
+  </data>
+  <metadata name="gc_may.Name" xml:space="preserve">
+    <value>gc_may</value>
+  </metadata>
+  <data name="gc_may.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 0</value>
+  </data>
+  <data name="gc_may.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 24</value>
+  </data>
+  <data name="gc_may.Text" xml:space="preserve">
+    <value>may</value>
+  </data>
+  <metadata name="gc_june.Name" xml:space="preserve">
+    <value>gc_june</value>
+  </metadata>
+  <data name="gc_june.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 0</value>
+  </data>
+  <data name="gc_june.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 24</value>
+  </data>
+  <data name="gc_june.Text" xml:space="preserve">
+    <value>june</value>
+  </data>
+  <metadata name="gc_july.Name" xml:space="preserve">
+    <value>gc_july</value>
+  </metadata>
+  <data name="gc_july.Location" type="System.Drawing.Point, System.Drawing">
+    <value>811, 0</value>
+  </data>
+  <data name="gc_july.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 24</value>
+  </data>
+  <data name="gc_july.Text" xml:space="preserve">
+    <value>july</value>
+  </data>
+  <metadata name="gc_august.Name" xml:space="preserve">
+    <value>gc_august</value>
+  </metadata>
+  <data name="gc_august.Location" type="System.Drawing.Point, System.Drawing">
+    <value>905, 0</value>
+  </data>
+  <data name="gc_august.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 24</value>
+  </data>
+  <data name="gc_august.Text" xml:space="preserve">
+    <value>august</value>
+  </data>
+  <metadata name="gc_september.Name" xml:space="preserve">
+    <value>gc_september</value>
+  </metadata>
+  <data name="gc_september.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1000, 0</value>
+  </data>
+  <data name="gc_september.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 24</value>
+  </data>
+  <data name="gc_september.Text" xml:space="preserve">
+    <value>september</value>
+  </data>
+  <metadata name="gc_october.Name" xml:space="preserve">
+    <value>gc_october</value>
+  </metadata>
+  <data name="gc_october.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1094, 0</value>
+  </data>
+  <data name="gc_october.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 24</value>
+  </data>
+  <data name="gc_october.Text" xml:space="preserve">
+    <value>october</value>
+  </data>
+  <metadata name="gc_november.Name" xml:space="preserve">
+    <value>gc_november</value>
+  </metadata>
+  <data name="gc_november.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1189, 0</value>
+  </data>
+  <data name="gc_november.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 24</value>
+  </data>
+  <data name="gc_november.Text" xml:space="preserve">
+    <value>november</value>
+  </data>
+  <metadata name="gc_december.Name" xml:space="preserve">
+    <value>gc_december</value>
+  </metadata>
+  <data name="gc_december.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1283, 0</value>
+  </data>
+  <data name="gc_december.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 24</value>
+  </data>
+  <data name="gc_december.Text" xml:space="preserve">
+    <value>december</value>
+  </data>
+  <metadata name="gc_UsedHolidays.Name" xml:space="preserve">
+    <value>gc_UsedHolidays</value>
+  </metadata>
+  <data name="gc_UsedHolidays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 6pt</value>
+  </data>
+  <data name="gc_UsedHolidays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1378, 0</value>
+  </data>
+  <data name="gc_UsedHolidays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="gc_UsedHolidays.Text" xml:space="preserve">
+    <value>Used holidays</value>
+  </data>
+  <metadata name="gc_SpareHolidaysExc.Name" xml:space="preserve">
+    <value>gc_SpareHolidaysExc</value>
+  </metadata>
+  <data name="gc_SpareHolidaysExc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 6pt</value>
+  </data>
+  <data name="gc_SpareHolidaysExc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1410, 0</value>
+  </data>
+  <data name="gc_SpareHolidaysExc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="gc_SpareHolidaysExc.Text" xml:space="preserve">
+    <value>Spare holidays exc</value>
+  </data>
+  <metadata name="gc_SpareHolidaysInc.Name" xml:space="preserve">
+    <value>gc_SpareHolidaysInc</value>
+  </metadata>
+  <data name="gc_SpareHolidaysInc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 6pt</value>
+  </data>
+  <data name="gc_SpareHolidaysInc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1442, 0</value>
+  </data>
+  <data name="gc_SpareHolidaysInc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 24</value>
+  </data>
+  <data name="gc_SpareHolidaysInc.Text" xml:space="preserve">
+    <value>Spare holidays inc</value>
+  </data>
+  <data name="xrDetailRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1475, 24</value>
+  </data>
+  <data name="tbDetail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1475, 24</value>
+  </data>
+  <data name="Detail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <metadata name="PageHeader.Name" xml:space="preserve">
+    <value>PageHeader</value>
+  </metadata>
+  <metadata name="tbHead.Name" xml:space="preserve">
+    <value>tbHead</value>
+  </metadata>
+  <data name="tbHead.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Gainsboro</value>
+  </data>
+  <data name="tbHead.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt, style=Bold</value>
+  </data>
+  <data name="tbHead.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <metadata name="xrRow1.Name" xml:space="preserve">
+    <value>xrRow1</value>
+  </metadata>
+  <metadata name="xr_Employee.Name" xml:space="preserve">
+    <value>xr_Employee</value>
+  </metadata>
+  <data name="xr_Employee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="xr_Employee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 29</value>
+  </data>
+  <data name="xr_Employee.Text" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <metadata name="xr_Old.Name" xml:space="preserve">
+    <value>xr_Old</value>
+  </metadata>
+  <data name="xr_Old.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xr_Old.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 0</value>
+  </data>
+  <data name="xr_Old.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 29</value>
+  </data>
+  <data name="xr_Old.Text" xml:space="preserve">
+    <value>Old</value>
+  </data>
+  <metadata name="xr_New2.Name" xml:space="preserve">
+    <value>xr_New2</value>
+  </metadata>
+  <data name="xr_New2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xr_New2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 0</value>
+  </data>
+  <data name="xr_New2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 29</value>
+  </data>
+  <data name="xr_New2.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <metadata name="xr_Avail.Name" xml:space="preserve">
+    <value>xr_Avail</value>
+  </metadata>
+  <data name="xr_Avail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xr_Avail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 0</value>
+  </data>
+  <data name="xr_Avail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 29</value>
+  </data>
+  <data name="xr_Avail.Text" xml:space="preserve">
+    <value>Avail</value>
+  </data>
+  <metadata name="xr_january.Name" xml:space="preserve">
+    <value>xr_january</value>
+  </metadata>
+  <data name="xr_january.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 0</value>
+  </data>
+  <data name="xr_january.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="xr_january.Text" xml:space="preserve">
+    <value>january</value>
+  </data>
+  <metadata name="xr_february.Name" xml:space="preserve">
+    <value>xr_february</value>
+  </metadata>
+  <data name="xr_february.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 0</value>
+  </data>
+  <data name="xr_february.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 29</value>
+  </data>
+  <data name="xr_february.Text" xml:space="preserve">
+    <value>february</value>
+  </data>
+  <metadata name="xr_march.Name" xml:space="preserve">
+    <value>xr_march</value>
+  </metadata>
+  <data name="xr_march.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 0</value>
+  </data>
+  <data name="xr_march.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="xr_march.Text" xml:space="preserve">
+    <value>march</value>
+  </data>
+  <metadata name="xr_april.Name" xml:space="preserve">
+    <value>xr_april</value>
+  </metadata>
+  <data name="xr_april.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 0</value>
+  </data>
+  <data name="xr_april.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 29</value>
+  </data>
+  <data name="xr_april.Text" xml:space="preserve">
+    <value>april</value>
+  </data>
+  <metadata name="xr_may.Name" xml:space="preserve">
+    <value>xr_may</value>
+  </metadata>
+  <data name="xr_may.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 0</value>
+  </data>
+  <data name="xr_may.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="xr_may.Text" xml:space="preserve">
+    <value>may</value>
+  </data>
+  <metadata name="xr_june.Name" xml:space="preserve">
+    <value>xr_june</value>
+  </metadata>
+  <data name="xr_june.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 0</value>
+  </data>
+  <data name="xr_june.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 29</value>
+  </data>
+  <data name="xr_june.Text" xml:space="preserve">
+    <value>june</value>
+  </data>
+  <metadata name="xr_july.Name" xml:space="preserve">
+    <value>xr_july</value>
+  </metadata>
+  <data name="xr_july.Location" type="System.Drawing.Point, System.Drawing">
+    <value>811, 0</value>
+  </data>
+  <data name="xr_july.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="xr_july.Text" xml:space="preserve">
+    <value>july</value>
+  </data>
+  <metadata name="xr_august.Name" xml:space="preserve">
+    <value>xr_august</value>
+  </metadata>
+  <data name="xr_august.Location" type="System.Drawing.Point, System.Drawing">
+    <value>905, 0</value>
+  </data>
+  <data name="xr_august.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 29</value>
+  </data>
+  <data name="xr_august.Text" xml:space="preserve">
+    <value>august</value>
+  </data>
+  <metadata name="xr_september.Name" xml:space="preserve">
+    <value>xr_september</value>
+  </metadata>
+  <data name="xr_september.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1000, 0</value>
+  </data>
+  <data name="xr_september.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="xr_september.Text" xml:space="preserve">
+    <value>september</value>
+  </data>
+  <metadata name="xr_october.Name" xml:space="preserve">
+    <value>xr_october</value>
+  </metadata>
+  <data name="xr_october.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1094, 0</value>
+  </data>
+  <data name="xr_october.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 29</value>
+  </data>
+  <data name="xr_october.Text" xml:space="preserve">
+    <value>october</value>
+  </data>
+  <metadata name="xr_november.Name" xml:space="preserve">
+    <value>xr_november</value>
+  </metadata>
+  <data name="xr_november.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1189, 0</value>
+  </data>
+  <data name="xr_november.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="xr_november.Text" xml:space="preserve">
+    <value>november</value>
+  </data>
+  <metadata name="xr_december.Name" xml:space="preserve">
+    <value>xr_december</value>
+  </metadata>
+  <data name="xr_december.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1283, 0</value>
+  </data>
+  <data name="xr_december.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 29</value>
+  </data>
+  <data name="xr_december.Text" xml:space="preserve">
+    <value>december</value>
+  </data>
+  <metadata name="xr_Used.Name" xml:space="preserve">
+    <value>xr_Used</value>
+  </metadata>
+  <data name="xr_Used.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xr_Used.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1378, 0</value>
+  </data>
+  <data name="xr_Used.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 29</value>
+  </data>
+  <data name="xr_Used.Text" xml:space="preserve">
+    <value>Used</value>
+  </data>
+  <metadata name="xr_Excl.Name" xml:space="preserve">
+    <value>xr_Excl</value>
+  </metadata>
+  <data name="xr_Excl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xr_Excl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1410, 0</value>
+  </data>
+  <data name="xr_Excl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 29</value>
+  </data>
+  <data name="xr_Excl.Text" xml:space="preserve">
+    <value>Excl</value>
+  </data>
+  <metadata name="xr_Incl.Name" xml:space="preserve">
+    <value>xr_Incl</value>
+  </metadata>
+  <data name="xr_Incl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="xr_Incl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1442, 0</value>
+  </data>
+  <data name="xr_Incl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 29</value>
+  </data>
+  <data name="xr_Incl.Text" xml:space="preserve">
+    <value>Incl</value>
+  </data>
+  <data name="xrRow1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1475, 29</value>
+  </data>
+  <data name="tbHead.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1475, 29</value>
+  </data>
+  <metadata name="xrControlStyle1.Name" xml:space="preserve">
+    <value>xrControlStyle1</value>
+  </metadata>
+  <metadata name="$this.SnapToGrid" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="$this.Name" xml:space="preserve">
+    <value>AbsenceQartly</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
