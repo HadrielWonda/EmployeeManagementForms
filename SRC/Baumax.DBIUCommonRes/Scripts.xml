@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scripts>
+  <drop assembly="Baumax.DBInstaller">
+    <script path="Scripts\db\db_Drop.sql"/>
+  </drop>
+  <db assembly="Baumax.DBInstaller">
+		<script path="Scripts\db\db_Create.sql"/>
+	</db>
+  <views assembly="Baumax.DBInstaller">
+		<script path="Scripts\views\vwCountry.sql"/>
+		<script path="Scripts\views\vwStore.sql"/>
+		<script path="Scripts\views\vwRegion.sql"/>
+		<script path="Scripts\views\vwWorld.sql"/>
+		<script path="Scripts\views\vwHWGR.sql"/>
+		<script path="Scripts\views\vwWGR.sql"/>
+		<script path="Scripts\views\vwUserRole.sql"/>
+		<script path="Scripts\views\vwWorkingModel.sql"/>
+		<script path="Scripts\views\vwAbsence.sql"/>
+    <script path="Scripts\views\vwWorld_HWGR.sql"/>
+		<script path="Scripts\views\vwEmployeeRelations.sql"/>
+	</views>
+	<udf assembly="Baumax.DBIUCommon">
+    <script path="Scripts\udf\getAustriaCountryID.sql"/>
+    <script path="Scripts\udf\rpt_GetTimeIntersection.sql"/>
+    <script path="Scripts\udf\rpt_GetAvgDaysInWeek.sql"/>
+    <script path="Scripts\udf\rpt_GetCroatianGesamtStdfond.sql"/>
+    <script path="Scripts\udf\rpt_GetSumAbsenceAbbr.sql"/>
+    <script path="Scripts\udf\rpt_GetSumAbsenceHolidays.sql"/>
+    <script path="Scripts\udf\rpt_GetSumAbsenceIllness.sql"/>
+    <script path="Scripts\udf\rpt_GetSumWorkedHoursInTimeRange.sql"/>
+    <script path="Scripts\udf\rpt_GetSumWorkedHoursOnFeast.sql"/>
+    <script path="Scripts\udf\rpt_GetSumWorkedHoursOnSaturday.sql"/>
+    <script path="Scripts\udf\rpt_GetSumWorkedHoursOnSunday.sql"/>
+    <script path="Scripts\udf\rpt_GetWorkingHoursByEmployee.sql"/>
+    <script path="Scripts\udf\rpt_GetDayType.sql"/>
+  </udf>
+	<sp assembly="Baumax.DBIUCommon">
+	  <script path="Scripts\sp\spDBVersionGet.sql"/>
+		<script path="Scripts\sp\spDBVersionSet.sql"/>
+		<script path="Scripts\sp\getNewID.sql"/>
+		<script path="Scripts\sp\spHWGR_WGR_ImportData3.sql"/>
+		<script path="Scripts\sp\spFeasts_ImportData.sql"/>
+		<script path="Scripts\sp\spHWGR_ImportData2.sql"/>
+		<script path="Scripts\sp\spStore_WorldDetailGet.sql"/>
+    <script path="Scripts\sp\spEmployee_ImportData.sql"/>
+    <script path="Scripts\sp\spLongTimeAbsence_ImportData.sql"/>
+    <script path="Scripts\sp\spEmlpoyeeDetailGet.sql"/>
+    <script path="Scripts\sp\spWGR_HWGR_Assign2.sql"/>
+    <script path="Scripts\sp\spHWGR_World_Assign.sql"/>
+    <script path="Scripts\sp\spStoreStructureGet.sql"/>
+    <script path="Scripts\sp\spUIResource_ImportData.sql"/>
+    <script path="Scripts\sp\spAbsence_ImportData.sql"/>
+    <script path="Scripts\sp\spEmployeeMerge.sql"/>
+    <script path="Scripts\sp\spEmployeeTimePlanning_ImportData.sql"/>
+    <script path="Scripts\sp\spEmlpoyeeDetailGetByEmpID.sql"/>
+    <script path="Scripts\sp\spEmployeeTimeRecording_ImportData.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_ImportData2.sql"/>
+    <script path="Scripts\sp\spStoreIDListEmptyOpenCloseTime.sql"/>
+    <script path="Scripts\sp\spEmlpoyeeHasWorkingAbsenceTime.sql"/>
+    <script path="Scripts\sp\spXmlResource_ImportData.sql"/>
+    <script path="Scripts\sp\spEmployeeToMergeList.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_ConvertData.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_EstimateWorkingHours.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_CanEstimateCashDeskPeople.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_CanEstimateWorkingHours.sql"/>
+    <script path="Scripts\sp\spAvgWorkingDaysInWeekUsingIDList.sql"/>
+    <script path="Scripts\sp\spAbsenceUsingIDList.sql"/>
+    <script path="Scripts\sp\spWorkingModelUsingIDList.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_EstimatedCashDeskPeopleGet.sql"/>
+    <script path="Scripts\sp\spEmployeeTimeSaldo.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_TargetedNetPerformanceGet.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_EstimatedWorkingHoursGet.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_EstimationWorkingHoursExists.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_EstimateCashDeskPeople.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_DeleteEstimatedCashDeskPeople.sql"/>
+    <script path="Scripts\sp\spBusinessVolume_DeleteEstimatedWorkingHours.sql"/>
+    <script path="Scripts\sp\spBV_ActualSumGet.sql"/>
+    <script path="Scripts\sp\spBV_TargetedSumGet.sql"/>
+    <script path="Scripts\sp\spBV_ActualAddFromStore.sql"/>
+    <script path="Scripts\sp\spBV_CRRAddFromStore.sql"/>
+    <script path="Scripts\sp\spBV_TargetAddFromStore.sql"/>
+    <script path="Scripts\sp\spBV_TargetStoreYearGet.sql"/>
+    <script path="Scripts\sp\spBV_ActualStoreYearGet.sql"/>
+    <script path="Scripts\sp\spBV_CRRStoreYearGet.sql"/>
+    <script path="Scripts\sp\spStoreStructureCopyForEmpties.sql"/>
+    <script path="Scripts\sp\spBV_CRRSumGet.sql"/>
+    <script path="Scripts\sp\spBV_CRRGet.sql"/>
+    <script path="Scripts\sp\spEmlpoyeeHolidaysSumInfoGet.sql"/>
+	  <script path="Scripts\sp\spEmployeeCoefficientGet.sql"/>
+    <script path="Scripts\sp\spStore_LastEmployeeWTRGet.sql"/>
+    <script path="Scripts\sp\spStore_LastEmployeeWTRUpdate.sql"/>
+    <script path="Scripts\sp\spStore_LastEmployeeWTRWarning.sql"/>
+    <script path="Scripts\sp\spBV_ActualDataExists.sql"/>
+    <script path="Scripts\sp\spEmployeeDayStateGetHoursSum.sql"/>
+    <script path="Scripts\sp\spStore_LastEmployeeWTPGet.sql"/>
+    <script path="Scripts\sp\spStore_LastEmployeeWTPUpdate.sql"/>
+    <script path="Scripts\sp\spEmployeeList_ContractEndOutsideChangedGet.sql"/>
+  </sp>
+  <sp_rpt assembly="Baumax.DBIUCommon">
+    <script path="Scripts\sp_rpt\sp_rptStoreGetList.sql"/>
+    <script path="Scripts\sp_rpt\sp_rptEmployeeGetList.sql"/>
+    <script path="Scripts\sp_rpt\sp_rptHungaryGetWTimes.sql"/>
+    <script path="Scripts\sp_rpt\sp_rptHungaryGetAvailableAbsences.sql"/>
+  </sp_rpt>
+	<triggers assembly="Baumax.DBIUCommon">
+    <script path="Scripts\triggers\trStore_insert.sql"/>
+    <script path="Scripts\triggers\trEmployee_Relations_insert.sql"/>
+    <script path="Scripts\triggers\ddlDatabaseTriggerLog.sql"/>
+  </triggers>
+  <data assembly="Baumax.DBInstaller">
+    <script path="Scripts\data\db_AddUsers.sql"/>
+    <script path="Scripts\data\addDBConsts.sql"/>
+  </data>
+  <run assembly="Baumax.DBInstaller">
+    <script path="Scripts\run\runAddbauMaxYearData.sql"/>
+    <script path="Scripts\run\runDBVersionSet.sql"/>
+    <script path="Scripts\run\run4BVACovertQueryIndStat.sql"/>
+  </run>
+</scripts>
