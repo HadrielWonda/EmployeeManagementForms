@@ -1,0 +1,144 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF5B3D11-A05F-4CBA-9CA4-A9B1D8A6FD07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baumax.Scheduler</RootNamespace>
+    <AssemblyName>Baumax.Scheduler</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseSetup|AnyCPU' ">
+    <OutputPath>bin\ReleaseSetup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net, Version=1.2.0.2, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.1.0.2, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Config\ConfigElement.cs" />
+    <Compile Include="Config\SchedulerSection.cs" />
+    <Compile Include="Config\TriggerConfigCollection.cs" />
+    <Compile Include="Config\ValuesCollection.cs" />
+    <Compile Include="IJob.cs" />
+    <Compile Include="IJobResolver.cs" />
+    <Compile Include="ITask.cs" />
+    <Compile Include="IScheduler.cs" />
+    <Compile Include="ITaskResolver.cs" />
+    <Compile Include="ITrigger.cs" />
+    <Compile Include="Job.cs" />
+    <Compile Include="Jobs.cs" />
+    <Compile Include="SerializeHelper.cs" />
+    <Compile Include="Specialized\AbsenceImportTask.cs" />
+    <Compile Include="Specialized\ActualBusinessVolumeImportTask.cs" />
+    <Compile Include="Specialized\CashRegisterReceiptImportTask.cs" />
+    <Compile Include="Specialized\CountryImport.cs" />
+    <Compile Include="Specialized\DeleteFilesOutOfDateTask.cs" />
+    <Compile Include="Specialized\EmployeeImportTask.cs" />
+    <Compile Include="Specialized\FeastImportTask.cs" />
+    <Compile Include="Specialized\HwgrImportTask.cs" />
+    <Compile Include="Specialized\LongTimeAbsenceImportTask.cs" />
+    <Compile Include="Specialized\MonthlyTrigger.cs" />
+    <Compile Include="Specialized\RegionImportTask.cs" />
+    <Compile Include="Specialized\StoreImportTask.cs" />
+    <Compile Include="Specialized\TargetBusinessVolumeImportTask.cs" />
+    <Compile Include="Specialized\TimePlanningImportTask.cs" />
+    <Compile Include="Specialized\TimeRecordingImportTask.cs" />
+    <Compile Include="Specialized\WeeklyTrigger.cs" />
+    <Compile Include="Specialized\WgrImportTask.cs" />
+    <Compile Include="Specialized\WorkingDaysImportTask.cs" />
+    <Compile Include="Specialized\WorldImportTask.cs" />
+    <Compile Include="Tasks.cs" />
+    <Compile Include="TriggerComparer.cs" />
+    <Compile Include="SchedulerEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scheduler.cs" />
+    <Compile Include="SchedulerException.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="Specialized\DailyTrigger.cs" />
+    <Compile Include="Specialized\OneTimeTrigger.cs" />
+    <Compile Include="Specialized\PeriodicTrigger.cs" />
+    <Compile Include="Trigger.cs" />
+    <Compile Include="Triggers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Baumax.AppServer.Environment\Baumax.AppServer.Environment.csproj">
+      <Project>{CE5412EA-50C1-454A-8C58-BA73A592FC48}</Project>
+      <Name>Baumax.AppServer.Environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Contract\Baumax.Contract.csproj">
+      <Project>{4EF2D774-5A51-41D1-8C9C-C0E6A64A8E48}</Project>
+      <Name>Baumax.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Import.Scheduler\Baumax.Import.Scheduler.csproj">
+      <Project>{6A154DCD-F96B-4C2F-B0B7-26D52D1CF722}</Project>
+      <Name>Baumax.Import.Scheduler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Import\Baumax.Import.csproj">
+      <Project>{6C77B42E-D586-4B85-935C-CF529B93766E}</Project>
+      <Name>Baumax.Import</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
