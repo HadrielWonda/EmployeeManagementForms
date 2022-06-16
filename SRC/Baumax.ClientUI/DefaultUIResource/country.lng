@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+<value key="200" keyname="newcountry">New country</value>
+<value key="201" keyname="editcountry">Edit country</value>
+<value key="202" keyname="deletecountry">Delete country</value>
+<value key="203" keyname="refreshlistofcountries">Refresh of countries</value>
+<value key="204" keyname="countrygroup">Country</value>
+<value key="205" keyname="countrymanager">Country manager</value>
+<value key="206" keyname="country">Country</value>
+<value key="207" keyname="countries">Countries</value>
+<value key="208" keyname="countryname">Country Name</value>
+<value key="209" keyname="systemid1">Code 1 </value>
+  <value key="210" keyname="systemid2">Code 2</value>
+
+  <value key="220" keyname="errorcountryname">Enter country name</value>
+  <value key="221" keyname="querydeletecountry">Are you sure to remove country?</value>
+
+
+  <value key="300" keyname="yearappearance">Year</value>
+  <value key="301" keyname="avgweeks">Average weeks</value>
+  <value key="302" keyname="avgcontracttimes">Avg contract times</value>
+  <value key="303" keyname="avgcashdeskamount">Cash desk amount</value>
+  <value key="304" keyname="newyearlyappearance">New yearly appearnce</value>
+  <value key="305" keyname="edityearlyappearance">Edit yearly appearance </value>
+  <value key="306" keyname="deleteyearlyappearance">Delete yearly appearnce</value>
+
+  <value key="400" keyname="feast">Feast</value>
+  <value key="401" keyname="feasts">Feasts</value>
+  <value key="402" keyname="feastdate">Feast date</value>
+  <value key="403" keyname="newfeast">New feasts</value>
+  <value key="404" keyname="deletefeast">Delete feast</value>
+  <value key="405" keyname="yearlyandfeast">Yearly appearnce and feasts</value>
+  <value key="406" keyname="questiondeletefeast">Are you sure to delete feast?</value>
+
+  <value key="500" keyname="absence">Absence</value>
+  <value key="501" keyname="absences">Absences</value>
+  <value key="502" keyname="newabsence">New absence1</value>
+  <value key="503" keyname="editabsence">Edit absence1</value>
+  <value key="504" keyname="deleteabsence">Delete absence1</value>
+  <value key="505" keyname="holiday">Holiday</value>
+  <value key="506" keyname="holidays">Holidays</value>
+  <value key="507" keyname="newholiday">New holiday1</value>
+  <value key="508" keyname="editholiday">Edit holiday1</value>
+  <value key="509" keyname="deleteholiday">Delete holiday1</value>
+  
+  <value key="510" keyname="abbreviation">Abbreviation</value>
+  <value key="511" keyname="absencename">Absence Name</value>
+  <value key="512" keyname="absenceaction">Action</value>
+  <value key="513" keyname="absencetype">Absence Type</value>
+  <value key="514" keyname="absencealiquottime">Count aliquot time</value>
+  <value key="515" keyname="absencecountfixedamount">Count fixed amount</value>
+  <value key="516" keyname="absencecolor">Color</value>
+  <value key="517" keyname="refreshabsences">Refresh absences/holidays</value>
+
+  <value key="518" keyname="err_enter_absence_name">Enter absence name</value>
+  <value key="519" keyname="err_enter_abbreviation">Enter abbreviation</value>
+  <value key="520" keyname="err_absence_select_country">Select country for absence</value>
+  <value key="521" keyname="questiondeleteabsence">Are you sure to remove absence</value>
+  <value key="522" keyname="questiondeleteholiday">Are you sure to remove holiday</value>
+
+
+  <value key="600" keyname="workingmodel">Working-Model1</value>
+  <value key="601" keyname="workingmodels">Working-Models1</value>
+  <value key="602" keyname="newworkingmodel">New working-model1</value>
+  <value key="603" keyname="editworkingmodel">Edit working-model1</value>
+  <value key="604" keyname="deleteworkingmodel">Delete working-model1</value>
+  <value key="605" keyname="refreshworkingmodel">Refresh working-models1</value>
+  <value key="606" keyname="workingmodelname">Working-model name</value>
+
+  <value key="607" keyname="wmconditionstate">State1</value>
+  <value key="608" keyname="wmconditionname">Condition Name1</value>
+  <value key="609" keyname="wmconditionvalue">Value1</value>
+  <value key="610" keyname="workingmodelmessage">Message1</value>
+  <value key="611" keyname="workingmodelmultiplyfactor">Multiply working time with a factor1</value>
+  <value key="612" keyname="workingmodelsubadd">Subtract / Add an fixed amount of time1</value>
+  <value key="613" keyname="applyadditionalcharge">Apply as additional charge1</value>
+  <value key="614" keyname="workingmodelaction">Action1</value>
+  
+  <value key="615" keyname="err_enter_model_name">Enter name of working model</value>
+  <value key="616" keyname="err_select_conditions">Select conditions</value>
+
+
+  <value key="620" keyname="durationofworkingtime">Duration Of Working Time</value>
+  <value key="621" keyname="durationofworkingtimesingleday">Duration Of Working Time Single Day</value>
+  <value key="622" keyname="durationofworkingtimebyweek">Duration Of Working Time By Week</value>
+  <value key="623" keyname="durationofworkingtimebymonth">Duration Of Working Time By Month</value>
+  <value key="624" keyname="durationofworkingday">Duration Of Working Day</value>
+  <value key="625" keyname="timebetweenpreviousdayworkingtime">Time Between Previous Day Working Time</value>
+  <value key="626" keyname="workingtimeoutofopeningtimeofstore">Working Time Out Of Opening Time Of Store</value>
+  <value key="627" keyname="workingtimebetweenseveralhours">Working Time Between Several Hours</value>
+
+  <value key="628" keyname="workingonspecialweekdays">Working On Special Weekdays</value>
+  <value key="629" keyname="workingoveremployeecontracttime">Working Over Employee Contract Time</value>
+  <value key="630" keyname="workingoveremployeecurrentbalancehours">Working Over Employee Current Balance Hours</value>
+  <value key="631" keyname="balancehoursreachescertainamount">Balance Hours Reaches Certain Amount</value>
+  <value key="632" keyname="balancehoursmustbezeroeveryweekmonthyear">Balance Hours Must Be Zero Every Week/Month/Year</value>
+
+  
+  <value key="700" keyname="sumofadditionalcharges">Sum of additional charges</value>
+  <value key="701" keyname="sumofstillavailableworkinghours">Sum of still available working hours</value>
+  <value key="702" keyname="sumofcurrentemployeebalancehours">Sum of current employee balance hours</value>
+  <value key="703" keyname="sumofadditionalchargesoverallemployee">Sum of additional charges over all employee</value>
+  <value key="704" keyname="sumofstillavailableworkinghoursoverallemployee">Sum of still available working hours over all employee</value>
+  <value key="705" keyname="sumofcurrentemployeebalancehoursoverallemployee">Sum of current employee balance hours over all employee</value>
+  <value key="706" keyname="differenceinpercentbetweenactualplannedhoursandestimatedhours">Difference in percent between actual planned hours and estimated hours</value>
+  <value key="707" keyname="benchmarkdifference">Benchmark difference</value>
+  <value key="708" keyname="absinpercentforestimatedworkingamount">Absolute in percent forEstimatedWorkingAmount</value>
+  <value key="709" keyname="totalinpercentforestimatedworkingamount">TotalInPercentForEstimatedWorkingAmount</value>
+  <value key="710" keyname="actualabsinpercentforestimatedworkingamount">ActualAbsInPercentForEstimatedWorkingAmount</value>
+  <value key="711" keyname="actualtotalinpercentforestimatedworkingamount">ActualTotalInPercentForEstimatedWorkingAmount</value>
+  <value key="712" keyname="actualabsinpercentforplannedworkingamount">ActualAbsInPercentForPlannedWorkingAmount</value>
+  <value key="713" keyname="actualtotalinpercentforplannedworkingamount">ActualTotalInPercentForPlannedWorkingAmount</value>
+
+  <value key="720" keyname="lowcriticalcolor">Low critical color</value>
+  <value key="721" keyname="lowcolor">Low color</value>
+  <value key="722" keyname="normalcolor">Normal color</value>
+  <value key="723" keyname="highcolor">High color</value>
+  <value key="724" keyname="highcriticalcolor">High critical color</value>
+  <value key="725" keyname="lowvalue">Low value</value>
+  <value key="726" keyname="normalxvalue">X value</value>
+  <value key="727" keyname="normalyvalue">Y value</value>
+  <value key="728" keyname="highvalue">High value</value>
+  <value key="729" keyname="colorname">Color Name</value>
+  <value key="730" keyname="modifycountrycolor">Modify country color</value>
+  
+
+
+
+
+</items>
