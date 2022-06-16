@@ -1,0 +1,213 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E1243EF-ED39-4305-89F0-BE0B374D5A5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baumax.Services</RootNamespace>
+    <AssemblyName>Baumax.Services</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseSetup|AnyCPU' ">
+    <OutputPath>bin\ReleaseSetup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.0.2.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net, Version=1.1.0.2, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="GenuineChannels, Version=2.5.9.5, Culture=neutral, PublicKeyToken=65fda4a3fde44959, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\GenuineChannels\GenuineChannels.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.1.0.1, Culture=neutral, PublicKeyToken=65e474d141e25e07">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.1.0.1, Culture=neutral, PublicKeyToken=65e474d141e25e07">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data, Version=1.1.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AuthorizationService\AuthorizationService.cs" />
+    <Compile Include="AuthorizationService\ServiceIDAttribute.cs" />
+    <Compile Include="AuthorizationService\UsersPermissions.cs" />
+    <Compile Include="BaseEntityService.cs" />
+    <Compile Include="CountryService\AbsenceService.cs" />
+    <Compile Include="CountryService\AvgAmountService.cs" />
+    <Compile Include="CountryService\AvgWorkingDaysInWeekService.cs" />
+    <Compile Include="CountryService\CountryAdditionalHourService.cs" />
+    <Compile Include="CountryService\FeastService.cs" />
+    <Compile Include="EmployeeDayStatePlanningInteface.cs" />
+    <Compile Include="EmployeeService\EmployeeAllInService.cs" />
+    <Compile Include="EmployeeService\EmployeeContractService.cs" />
+    <Compile Include="EmployeeService\EmployeeLongTimeAbsenceService.cs" />
+    <Compile Include="EmployeeService\EmployeeRelationService.cs" />
+    <Compile Include="EmployeeService\LongTimeAbsenceService.cs" />
+    <Compile Include="EmployeeTimeService\EmployeeDayStatePlanningService.cs" />
+    <Compile Include="EmployeeTimeService\EmployeeDayStateRecordingService.cs" />
+    <Compile Include="EmployeeTimeService\EmployeeHolidaysInfoService.cs" />
+    <Compile Include="EmployeeTimeService\EmployeePlanningWorkingModelService.cs" />
+    <Compile Include="EmployeeTimeService\EmployeeRecordingWorkingModelService.cs" />
+    <Compile Include="EmployeeTimeService\EmployeeTimeService.cs" />
+    <Compile Include="EmployeeTimeService\AbsenceTimePlanningService.cs" />
+    <Compile Include="EmployeeTimeService\AbsenceTimeRecordingService.cs" />
+    <Compile Include="EmployeeTimeService\EmployeeWeekTimePlanningService.cs" />
+    <Compile Include="EmployeeTimeService\EmployeeWeekTimeRecordingService.cs" />
+    <Compile Include="EmployeeTimeService\WorkingTimePlanningService.cs" />
+    <Compile Include="EntityChangeFilter.cs" />
+    <Compile Include="RemoteService.cs" />
+    <Compile Include="EmployeeTimeService\WorkingTimeRecordingService.cs" />
+    <Compile Include="RoleService\RoleService.cs" />
+    <Compile Include="ServerState\ServerStateService.cs" />
+    <Compile Include="ServerTimeContext.cs" />
+    <Compile Include="StoreService\BufferHourAvailableService.cs" />
+    <Compile Include="StoreService\HwgrToWgrService.cs" />
+    <Compile Include="StoreService\HwgrWgrInsert.cs" />
+    <Compile Include="StoreService\PersonMinMaxService.cs" />
+    <Compile Include="StoreService\StoreAdditionalHourService.cs" />
+    <Compile Include="StoreService\StoreToWorldService.cs" />
+    <Compile Include="StoreService\WorldToHwgrService.cs" />
+    <Compile Include="StoreService\BenchmarkService.cs" />
+    <Compile Include="StoreService\BufferHoursService.cs" />
+    <Compile Include="StoreService\StoreWorkingTimeService.cs" />
+    <Compile Include="CountryService\WorkingModelService.cs" />
+    <Compile Include="StoreService\TrendCorrectionService.cs" />
+    <Compile Include="CountryService\YearlyWorkingDayService.cs" />
+    <Compile Include="EmployeeService\EmployeeService.cs" />
+    <Compile Include="PermissionStorage.cs" />
+    <Compile Include="BaseService.cs" />
+    <Compile Include="AuthorizationService\AccessTypeAttribute.cs" />
+    <Compile Include="CountryService\ColouringService.cs" />
+    <Compile Include="CountryService\CountryService.cs" />
+    <Compile Include="LanguageService\LanguageService.cs" />
+    <Compile Include="RegionService\RegionService.cs" />
+    <Compile Include="SecurityBeforeAdvice.cs" />
+    <Compile Include="StoreService\HWGRService.cs" />
+    <Compile Include="StoreService\StoreService.cs" />
+    <Compile Include="StoreService\WGRService.cs" />
+    <Compile Include="StoreService\WorldService.cs" />
+    <Compile Include="TransactionInterceptor.cs" />
+    <Compile Include="UserService\UserService.cs" />
+    <Compile Include="_HelperObjects\AllInManagers.cs" />
+    <Compile Include="_HelperObjects\CacheListEmployeeContracts.cs" />
+    <Compile Include="_HelperObjects\CacheListEmployeeRelations.cs" />
+    <Compile Include="_HelperObjects\CountryStoreDaysManager.cs" />
+    <Compile Include="_HelperObjects\EmployeeBusinessObject.cs" />
+    <Compile Include="_HelperObjects\EmployeeMonthWorkingTime.cs" />
+    <Compile Include="_HelperObjects\EmployeesRelationIndexer.cs" />
+    <Compile Include="_HelperObjects\EmployeeWeekBuilder.cs" />
+    <Compile Include="_HelperObjects\EmployeeWeekCalculater.cs" />
+    <Compile Include="_HelperObjects\EmployeeWeekListBuilder.cs" />
+    <Compile Include="_HelperObjects\EmployeeWeekWrapper.cs" />
+    <Compile Include="_HelperObjects\EmployeeWorkingModelHelper.cs" />
+    <Compile Include="_HelperObjects\EstimatedWorldHoursBuilder.cs" />
+    <Compile Include="_HelperObjects\ExEntity\ExEmployeeHolidays.cs" />
+    <Compile Include="_HelperObjects\ExEntity\ExEmployeeRelation.cs" />
+    <Compile Include="_HelperObjects\ExEntity\ExPlanningWorkingTime.cs" />
+    <Compile Include="_HelperObjects\ExEntity\ExStore.cs" />
+    <Compile Include="_HelperObjects\ExEntity\ExStoreToWorld.cs" />
+    <Compile Include="_HelperObjects\LastSaldoBuilder.cs" />
+    <Compile Include="_HelperObjects\ResetsSaldo\ResetSaldoList.cs" />
+    <Compile Include="_HelperObjects\ServerEntitiesList\CloseDaysListEx.cs" />
+    <Compile Include="_HelperObjects\ServerEntitiesList\FeastListEx.cs" />
+    <Compile Include="_HelperObjects\ServerEntitiesList\SrvEmployeePlanningDayList.cs" />
+    <Compile Include="_HelperObjects\ServerEntitiesList\SrvEmployeeRecordingDayList.cs" />
+    <Compile Include="_HelperObjects\ServerEntitiesList\SrvEmployeeWeekPlanningList.cs" />
+    <Compile Include="_HelperObjects\ServerEntitiesList\SrvEmployeeWeekRecordingList.cs" />
+    <Compile Include="_HelperObjects\ServerEntitiesList\StoreWorldListSrv.cs" />
+    <Compile Include="_HelperObjects\StoreWorldEstimateInfoBuilder.cs" />
+    <Compile Include="_HelperObjects\TrendCorrectionHelper.cs" />
+    <Compile Include="_HelperObjects\WeekPair.cs" />
+    <Compile Include="_HelperObjects\WorldAvailableBufferHoursManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Baumax.AppServer.Environment\Baumax.AppServer.Environment.csproj">
+      <Project>{CE5412EA-50C1-454A-8C58-BA73A592FC48}</Project>
+      <Name>Baumax.AppServer.Environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Contract\Baumax.Contract.csproj">
+      <Project>{4EF2D774-5A51-41D1-8C9C-C0E6A64A8E48}</Project>
+      <Name>Baumax.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Dao\Baumax.Dao.csproj">
+      <Project>{621F016D-22E9-4AA5-8DFE-86C822DBC819}</Project>
+      <Name>Baumax.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Import.Scheduler\Baumax.Import.Scheduler.csproj">
+      <Project>{6A154DCD-F96B-4C2F-B0B7-26D52D1CF722}</Project>
+      <Name>Baumax.Import.Scheduler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Import\Baumax.Import.csproj">
+      <Project>{6C77B42E-D586-4B85-935C-CF529B93766E}</Project>
+      <Name>Baumax.Import</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Localizer\Baumax.Localization.csproj">
+      <Project>{8D7ABC5C-C00E-4B86-9E4C-80FDD86D3C72}</Project>
+      <Name>Baumax.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.ServerState\Baumax.ServerState.csproj">
+      <Project>{9CDBA984-C564-4223-8061-F65DB8C76284}</Project>
+      <Name>Baumax.ServerState</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Util\Baumax.Util.csproj">
+      <Project>{FF3ABC55-7CBB-47BF-BAE0-C67F11A6CBEB}</Project>
+      <Name>Baumax.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
