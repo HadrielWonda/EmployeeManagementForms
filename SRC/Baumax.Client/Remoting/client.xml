@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:r="http://www.springframework.net/remoting">
+
+  <!-- ============= ServerStateService =========================-->
+  <r:saoFactory id="serverStateService"
+              serviceInterface="Baumax.ServerState.IServerStateService, Baumax.ServerState"
+              serviceUrl="${host.url}:${host.port}/rServerStateService" />
+
+  <object type="Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer, Spring.Core">
+    <property name="ConfigSections" value="hostSettings"/>
+  </object>
+
+  <object
+    id="requestNotificationService"
+    type="Baumax.Environment.RemoteRequestNotificationService, Baumax.Environment"
+    singleton="true"
+    />
+
+  <object id="IOnIdleService"
+          type="Baumax.Environment.OnIdleService, Baumax.Environment"
+          singleton="true" />
+
+  <!-- ================= AuthorizationService ===============================-->
+  <r:saoFactory id="rAuthorizationService"
+              serviceInterface="Baumax.Contract.Interfaces.IAuthorizationService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rAuthorizationService" />
+  <object id="authorizationService" type="Baumax.LocalServices.LocalAuthorizationService, Baumax.LocalServices" singleton="true">
+    <property name="_RemoteSvc" ref="rAuthorizationService"/>
+  </object>
+
+
+  <!-- ================= RoleService ===============================-->
+  <r:saoFactory id="rRoleService"
+              serviceInterface="Baumax.Contract.Interfaces.IRoleService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rRoleService" />
+  <object id="roleService" type="Baumax.LocalServices.LocalRoleService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="rRoleService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <!-- ================= UserService ===============================-->
+  <r:saoFactory id="rUserService"
+              serviceInterface="Baumax.Contract.Interfaces.IUserService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rUserService" />
+
+  <object id="remUserService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IUserService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rUserService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="userService" type="Baumax.LocalServices.LocalUserService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remUserService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <!-- ================= LanguageService ===============================-->
+  <r:saoFactory id="rLanguageService"
+              serviceInterface="Baumax.Contract.Interfaces.ILanguageService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rLanguageService" />
+
+  <object id="remLanguageService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.ILanguageService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rLanguageService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  
+  <object id="languageService" type="Baumax.LocalServices.LocalLanguageService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remLanguageService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <!-- ========================== COUNTRY ============================= -->
+  <r:saoFactory id="rCountryService"
+              serviceInterface="Baumax.Contract.Interfaces.ICountryService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rCountryService" />
+  <object id="remCountryService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.ICountryService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rCountryService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="countryService" type="Baumax.LocalServices.LocalCountryService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remCountryService"/>
+    <property name="_cachingPolicy" value="2"/>
+    <property name="_avgAmountService" ref="avgAmountService"/>
+    <property name="_feastService" ref="feastService"/>
+    <property name="_absenceService" ref="absenceService"/>
+    <property name="_workingModelService" ref="workingModelService"/>
+    <property name="_colouringService" ref="colouringService"/>
+    <property name="_yearlyWorkingDayService" ref="yearlyWorkingDayService"/>
+    <property name="_avgWorkingDaysInWeekService" ref="avgWorkingDaysInWeekService"/>
+    <property name="_countryAdditionalHourService" ref="countryAdditionalHourService"/>
+  </object>
+  
+  <r:saoFactory id="rAvgAmountService"
+    serviceInterface="Baumax.Contract.Interfaces.IAvgAmountService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rAvgAmountService"/>
+  <object id="remAvgAmountService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAvgAmountService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rAvgAmountService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="avgAmountService" type="Baumax.LocalServices.LocalAvgAmountService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remAvgAmountService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rFeastService"
+    serviceInterface="Baumax.Contract.Interfaces.IFeastService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rFeastService"/>
+  <object id="remFeastService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IFeastService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rFeastService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="feastService" type="Baumax.LocalServices.LocalFeastService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remFeastService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+  
+  
+  <r:saoFactory id = "rAbsenceService"
+    serviceInterface="Baumax.Contract.Interfaces.IAbsenceService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rAbsenceService"/>
+  <object id="remAbsenceService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAbsenceService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rAbsenceService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="absenceService" type="Baumax.LocalServices.LocalAbsenceService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remAbsenceService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+  
+  <r:saoFactory id = "rWorkingModelService"
+    serviceInterface="Baumax.Contract.Interfaces.IWorkingModelService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rWorkingModelService"/>
+  <object id="remWorkingModelService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWorkingModelService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rWorkingModelService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="workingModelService" type="Baumax.LocalServices.LocalWorkingModelService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remWorkingModelService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rColouringService"
+    serviceInterface="Baumax.Contract.Interfaces.IColouringService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rColouringService"/>
+  <object id="remColouringService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IColouringService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rColouringService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="colouringService" type="Baumax.LocalServices.LocalColouringService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remColouringService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rYearlyWorkingDayService"
+    serviceInterface="Baumax.Contract.Interfaces.IYearlyWorkingDayService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rYearlyWorkingDayService"/>
+  <object id="remYearlyWorkingDayService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IYearlyWorkingDayService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rYearlyWorkingDayService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="yearlyWorkingDayService" type="Baumax.LocalServices.LocalYearlyWorkingDayService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remYearlyWorkingDayService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rAvgWorkingDaysInWeekService"
+    serviceInterface="Baumax.Contract.Interfaces.IAvgWorkingDaysInWeekService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rAvgWorkingDaysInWeekService"/>
+  <object id="remAvgWorkingDaysInWeekService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAvgWorkingDaysInWeekService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rAvgWorkingDaysInWeekService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="avgWorkingDaysInWeekService" type="Baumax.LocalServices.LocalAvgWorkingDaysInWeekService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remAvgWorkingDaysInWeekService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rCountryAdditionalHourService"
+    serviceInterface="Baumax.Contract.Interfaces.ICountryAdditionalHourService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rCountryAdditionalHourService"/>
+  <object id="countryAdditionalHourService" type="Baumax.LocalServices.LocalCountryAdditionalHourService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="rCountryAdditionalHourService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <!-- ========================== REGION ============================= -->
+  <r:saoFactory id="rRegionService"
+              serviceInterface="Baumax.Contract.Interfaces.IRegionService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rRegionService" />
+  <object id="remRegionService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IRegionService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rRegionService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="regionService" type="Baumax.LocalServices.LocalRegionService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remRegionService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <!-- ========================== STORE ============================= -->
+  <r:saoFactory id="rStoreService"
+             serviceInterface="Baumax.Contract.Interfaces.IStoreService, Baumax.Contract"
+             serviceUrl="${host.url}:${host.port}/rStoreService" />
+  <object id="remStoreService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IStoreService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rStoreService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="storeService" type="Baumax.LocalServices.LocalStoreService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService"               ref="remStoreService"/>
+    <property name="_cachingPolicy"             value="2"/>
+    <property name="_worldService"                ref="worldService"/>
+    <property name="_HWGRService"                 ref="HWGRService"/>
+    <property name="_WGRService"                  ref="WGRService"/>
+    <property name="_StoreToWorldService"         ref="store_WorldService"/>
+    <property name="_WorldToHwgrService"          ref="world_HWGRService"/>
+    <property name="_HwgrToWgrService"            ref="HWGR_WGRService"/>
+    <property name="_storeWorkingTimeService"     ref="storeWorkingTimeService" />
+    <property name="_storeAdditionalHourService"  ref="storeAdditionalHourService" />
+    <property name="_bufferHoursService"          ref="bufferHoursService"/>
+    <property name="_bufferHourAvailableService"  ref="bufferHourAvailableService"/>
+    <property name="_benchmarkService"            ref="benchmarkService" />
+    <property name="_trendCorrectionService"      ref="trendCorrectionService"/>
+    <property name="_personMinMaxService"         ref="personMinMaxService"/>
+  </object>
+
+  <r:saoFactory id = "rWorldService"
+    serviceInterface="Baumax.Contract.Interfaces.IWorldService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rWorldService"/>
+  <object id="remWorldService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWorldService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rWorldService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="worldService" type="Baumax.LocalServices.LocalWorldService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remWorldService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rHWGRService"
+    serviceInterface="Baumax.Contract.Interfaces.IHWGRService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rHWGRService"/>
+  <object id="remHWGRService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IHWGRService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rHWGRService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="HWGRService" type="Baumax.LocalServices.LocalHWGRService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remHWGRService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rWGRService"
+    serviceInterface="Baumax.Contract.Interfaces.IWGRService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rWGRService"/>
+  <object id="remWGRService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWGRService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rWGRService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="WGRService" type="Baumax.LocalServices.LocalWGRService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remWGRService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rStore_WorldService"
+    serviceInterface="Baumax.Contract.Interfaces.IStoreToWorldService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rStore_WorldService"/>
+  <object id="remStore_WorldService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IStoreToWorldService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rStore_WorldService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="store_WorldService" type="Baumax.LocalServices.LocalStoreToWorldService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remStore_WorldService"/>
+    <property name="_cachingPolicy" value="1"/>
+  </object>
+
+  <r:saoFactory id = "rWorld_HWGRService"
+    serviceInterface="Baumax.Contract.Interfaces.IWorldToHwgrService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rWorld_HWGRService"/>
+  <object id="remWorld_HWGRService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWorldToHwgrService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rWorld_HWGRService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="world_HWGRService" type="Baumax.LocalServices.LocalWorldToHwgrService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remWorld_HWGRService"/>
+    <property name="_cachingPolicy" value="1"/>
+  </object>
+
+  <r:saoFactory id = "rHWGR_WGRService"
+    serviceInterface="Baumax.Contract.Interfaces.IHwgrToWgrService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rHWGR_WGRService"/>
+  <object id="remHWGR_WGRService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IHwgrToWgrService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rHWGR_WGRService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="HWGR_WGRService" type="Baumax.LocalServices.LocalHwgrToWgrService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remHWGR_WGRService"/>
+    <property name="_cachingPolicy" value="1"/>
+  </object>
+
+  <r:saoFactory id = "rStoreWorkingTimeService"
+    serviceInterface="Baumax.Contract.Interfaces.IStoreWorkingTimeService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rStoreWorkingTimeService"/>
+  <object id="remStoreWorkingTimeService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IStoreWorkingTimeService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rStoreWorkingTimeService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="storeWorkingTimeService" type="Baumax.LocalServices.LocalStoreWorkingTimeService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remStoreWorkingTimeService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rStoreAdditionalHourService"
+    serviceInterface="Baumax.Contract.Interfaces.IStoreAdditionalHourService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rStoreAdditionalHourService"/>
+  <object id="remStoreAdditionalHourService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IStoreAdditionalHourService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rStoreAdditionalHourService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="storeAdditionalHourService" type="Baumax.LocalServices.LocalStoreAdditionalHourService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remStoreAdditionalHourService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rBufferHoursService"
+    serviceInterface="Baumax.Contract.Interfaces.IBufferHoursService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rBufferHoursService"/>
+  <object id="remBufferHoursService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IBufferHoursService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rBufferHoursService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="bufferHoursService" type="Baumax.LocalServices.LocalBufferHoursService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remBufferHoursService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rBufferHourAvailableService"
+    serviceInterface="Baumax.Contract.Interfaces.IBufferHourAvailableService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rBufferHourAvailableService"/>
+  <object id="remBufferHourAvailableService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IBufferHourAvailableService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rBufferHourAvailableService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="bufferHourAvailableService" type="Baumax.LocalServices.LocalBufferHourAvailableService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remBufferHourAvailableService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id = "rBenchmarkService"
+    serviceInterface="Baumax.Contract.Interfaces.IBenchmarkService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rBenchmarkService"/>
+  <object id="remBenchmarkService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IBenchmarkService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rBenchmarkService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="benchmarkService" type="Baumax.LocalServices.LocalBenchmarkService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remBenchmarkService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rTrendCorrectionService"
+    serviceInterface="Baumax.Contract.Interfaces.ITrendCorrectionService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rTrendCorrectionService"/>
+  <object id="remTrendCorrectionService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.ITrendCorrectionService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rTrendCorrectionService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="trendCorrectionService" type="Baumax.LocalServices.LocalTrendCorrectionService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remTrendCorrectionService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id = "rPersonMinMaxService"
+    serviceInterface="Baumax.Contract.Interfaces.IPersonMinMaxService, Baumax.Contract"
+    serviceUrl="${host.url}:${host.port}/rPersonMinMaxService"/>
+  <object id="remPersonMinMaxService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IPersonMinMaxService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rPersonMinMaxService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="personMinMaxService" type="Baumax.LocalServices.LocalPersonMinMaxService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remPersonMinMaxService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <!-- ========================== EMPLOYEE ============================= -->
+  <r:saoFactory id="rEmployeeService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeService" />
+  <object id="remEmployeeService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeService" type="Baumax.LocalServices.LocalEmployeeService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeService"/>
+    <property name="_cachingPolicy" value="1"/>
+    <property name="_employeeRelationService" ref="employeeRelationService"></property>
+    <property name="_employeeAllInService" ref="employeeAllInService"></property>
+    <property name="_employeeContractService" ref="employeeContractService"></property>
+    <property name="_longTimeAbsenceService" ref="longTimeAbsenceService"></property>
+    <property name="_employeeLongTimeAbsenceService" ref="employeeLongTimeAbsenceService"></property>
+    <property name="_employeeTimeService" ref="employeeTimeService"></property>
+  </object>
+
+  <r:saoFactory id="rEmployeeRelationService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeRelationService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeRelationService" />
+  <object id="remEmployeeRelationService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeRelationService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeRelationService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeRelationService" type="Baumax.LocalServices.LocalEmployeeRelationService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeRelationService"/>
+    <property name="_cachingPolicy" value="1"/>
+  </object>
+
+  <r:saoFactory id="rEmployeeAllInService"
+            serviceInterface="Baumax.Contract.Interfaces.IEmployeeAllInService, Baumax.Contract"
+            serviceUrl="${host.url}:${host.port}/rEmployeeAllInService" />
+  <object id="remEmployeeAllInService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeAllInService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeAllInService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeAllInService" type="Baumax.LocalServices.LocalEmployeeAllInService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeAllInService"/>
+    <property name="_cachingPolicy" value="1"/>
+  </object>
+
+
+  <r:saoFactory id="rEmployeeContractService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeContractService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeContractService" />
+  <object id="remEmployeeContractService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeContractService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeContractService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeContractService" type="Baumax.LocalServices.LocalEmployeeContractService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeContractService"/>
+    <property name="_cachingPolicy" value="1"/>
+  </object>
+
+  <r:saoFactory id="rLongTimeAbsenceService"
+              serviceInterface="Baumax.Contract.Interfaces.ILongTimeAbsenceService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rLongTimeAbsenceService" />
+  <object id="remLongTimeAbsenceService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.ILongTimeAbsenceService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rLongTimeAbsenceService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="longTimeAbsenceService" type="Baumax.LocalServices.LocalLongTimeAbsenceService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remLongTimeAbsenceService"/>
+    <property name="_cachingPolicy" value="2"/>
+  </object>
+
+  <r:saoFactory id="rEmployeeLongTimeAbsenceService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeLongTimeAbsenceService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeLongTimeAbsenceService" />
+  <object id="remEmployeeLongTimeAbsenceService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeLongTimeAbsenceService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeLongTimeAbsenceService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeLongTimeAbsenceService" type="Baumax.LocalServices.LocalEmployeeLongTimeAbsenceService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeLongTimeAbsenceService"/>
+    <property name="_cachingPolicy" value="1"/>
+  </object>
+
+  <!-- ========================== EMPLOYEETIME ============================= -->
+  <r:saoFactory id="rEmployeeTimeService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeTimeService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeTimeService" />
+  <object id="remEmployeeTimeService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeTimeService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeTimeService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeTimeService" type="Baumax.LocalServices.LocalEmployeeTimeService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeTimeService"/>
+    <property name="_absenceTimePlanningService" ref="absenceTimePlanningService" />
+    <property name="_absenceTimeRecordingService" ref="absenceTimeRecordingService" />
+    <property name="_workingTimePlanningService" ref="workingTimePlanningService" />
+    <property name="_workingTimeRecordingService" ref="workingTimeRecordingService" />
+    <property name="_employeeDayStatePlanningService" ref="employeeDayStatePlanningService" />
+    <property name="_employeeDayStateRecordingService" ref="employeeDayStateRecordingService" />
+    <property name="_employeeWeekTimePlanningService" ref="employeeWeekTimePlanningService" />
+    <property name="_employeeWeekTimeRecordingService" ref="employeeWeekTimeRecordingService" />
+    <property name="_employeePlanningWorkingModelService" ref="employeePlanningWorkingModelService" />
+    <property name="_employeeRecordingWorkingModelService" ref="employeeRecordingWorkingModelService" />
+    <property name="_employeeHolidaysInfoService" ref="employeeHolidaysInfoService" />
+  </object>
+
+  <r:saoFactory id="rWorkingTimePlanningService"
+              serviceInterface="Baumax.Contract.Interfaces.IWorkingTimePlanningService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rWorkingTimePlanningService" />
+  <object id="remWorkingTimePlanningService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWorkingTimePlanningService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rWorkingTimePlanningService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="workingTimePlanningService" type="Baumax.LocalServices.LocalWorkingTimePlanningService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remWorkingTimePlanningService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id="rAbsenceTimePlanningService"
+              serviceInterface="Baumax.Contract.Interfaces.IAbsenceTimePlanningService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rAbsenceTimePlanningService" />
+  <object id="remAbsenceTimePlanningService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAbsenceTimePlanningService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rAbsenceTimePlanningService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="absenceTimePlanningService" type="Baumax.LocalServices.LocalAbsenceTimePlanningService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remAbsenceTimePlanningService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id="rAbsenceTimeRecordingService"
+              serviceInterface="Baumax.Contract.Interfaces.IAbsenceTimeRecordingService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rAbsenceTimeRecordingService" />
+  <object id="remAbsenceTimeRecordingService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAbsenceTimeRecordingService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rAbsenceTimeRecordingService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="absenceTimeRecordingService" type="Baumax.LocalServices.LocalAbsenceTimeRecordingService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remAbsenceTimeRecordingService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id="rWorkingTimeRecordingService"
+              serviceInterface="Baumax.Contract.Interfaces.IWorkingTimeRecordingService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rWorkingTimeRecordingService" />
+  <object id="remWorkingTimeRecordingService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWorkingTimeRecordingService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rWorkingTimeRecordingService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="workingTimeRecordingService" type="Baumax.LocalServices.LocalWorkingTimeRecordingService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remWorkingTimeRecordingService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id="rEmployeeDayStatePlanningService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeDayStatePlanningService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeDayStatePlanningService" />
+  <object id="remEmployeeDayStatePlanningService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeDayStatePlanningService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeDayStatePlanningService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeDayStatePlanningService" type="Baumax.LocalServices.LocalEmployeeDayStatePlanningService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeDayStatePlanningService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id="rEmployeeDayStateRecordingService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeDayStateRecordingService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeDayStateRecordingService" />
+  <object id="remEmployeeDayStateRecordingService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeDayStateRecordingService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeDayStateRecordingService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeDayStateRecordingService" type="Baumax.LocalServices.LocalEmployeeDayStateRecordingService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeDayStateRecordingService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id="rEmployeeWeekTimePlanningService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeWeekTimePlanningService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeWeekTimePlanningService" />
+  <object id="remEmployeeWeekTimePlanningService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeWeekTimePlanningService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeWeekTimePlanningService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeWeekTimePlanningService" type="Baumax.LocalServices.LocalEmployeeWeekTimePlanningService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeWeekTimePlanningService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id="rEmployeeWeekTimeRecordingService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeWeekTimeRecordingService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeWeekTimeRecordingService" />
+  <object id="remEmployeeWeekTimeRecordingService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeWeekTimeRecordingService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeWeekTimeRecordingService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeWeekTimeRecordingService" type="Baumax.LocalServices.LocalEmployeeWeekTimeRecordingService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeWeekTimeRecordingService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id="rEmployeePlanningWorkingModelService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeePlanningWorkingModelService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeePlanningWorkingModelService" />
+  <object id="remEmployeePlanningWorkingModelService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeePlanningWorkingModelService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeePlanningWorkingModelService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeePlanningWorkingModelService" type="Baumax.LocalServices.LocalEmployeePlanningWorkingModelService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeePlanningWorkingModelService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id="rEmployeeRecordingWorkingModelService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeRecordingWorkingModelService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeRecordingWorkingModelService" />
+  <object id="remEmployeeRecordingWorkingModelService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeRecordingWorkingModelService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeRecordingWorkingModelService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeRecordingWorkingModelService" type="Baumax.LocalServices.LocalEmployeeRecordingWorkingModelService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeRecordingWorkingModelService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+  <r:saoFactory id="rEmployeeHolidaysInfoService"
+              serviceInterface="Baumax.Contract.Interfaces.IEmployeeHolidaysInfoService, Baumax.Contract"
+              serviceUrl="${host.url}:${host.port}/rEmployeeHolidaysInfoService" />
+  <object id="remEmployeeHolidaysInfoService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeHolidaysInfoService" />
+    <property name="isSingleton" value="true"/>
+    <property name="target" ref="rEmployeeHolidaysInfoService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>requestNotificationService</value>
+      </list>
+    </property>
+  </object>
+  <object id="employeeHolidaysInfoService" type="Baumax.LocalServices.LocalEmployeeHolidaysInfoService, Baumax.LocalServices" singleton="true">
+    <property name="_remoteService" ref="remEmployeeHolidaysInfoService"/>
+    <property name="_cachingPolicy" value="0"/>
+  </object>
+
+</objects>

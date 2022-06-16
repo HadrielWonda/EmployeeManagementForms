@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  <object id="securityBeforeAdvisor"
+              type="Baumax.Services.SecurityBeforeAdvice, Baumax.Services" >
+    <property name="AuthSvc" ref="authorizationService"/>
+  </object>
+
+  <!-- =================== Transaction =======================-->
+  <object id="transactionAdvisor"
+          type="Spring.Transaction.Interceptor.TransactionAttributeSourceAdvisor, Spring.Data">
+    <property name="TransactionInterceptor" ref="transactionInterceptor"/>
+  </object>
+
+  <!-- Transaction Interceptor -->
+  <object id="transactionInterceptor"
+          type="Baumax.Services.TransactionInterceptor, Baumax.Services">
+    <property name="TransactionManager" ref="HibernateTransactionManager"/>
+    <property name="TransactionAttributeSource" ref="attributeTransactionAttributeSource"/>
+  </object>
+
+  <object id="attributeTransactionAttributeSource"
+          type="Spring.Transaction.Interceptor.AttributesTransactionAttributeSource, Spring.Data">
+  </object>
+
+  <!-- ======================= Services Advices ==================-->
+  <object id="securedAuthorizationService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAuthorizationService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="authorizationService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedRoleService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IRoleService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="roleService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedUserService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IUserService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="userService" />
+   
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedLanguageService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.ILanguageService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="languageService" />
+   
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <!-- ============================ COUNTRY ===========================================================-->
+  <object id="securedAvgAmountService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAvgAmountService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="avgAmountService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedFeastService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IFeastService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="feastService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedAbsenceService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAbsenceService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="absenceService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedWorkingModelService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWorkingModelService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="workingModelService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedColouringService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IColouringService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="colouringService" />
+   
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedYearlyWorkingDayService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IYearlyWorkingDayService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="yearlyWorkingDayService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedCountryService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.ICountryService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="countryService" />
+   
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+  
+  <object id="securedAvgWorkingDaysInWeekService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAvgWorkingDaysInWeekService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="avgWorkingDaysInWeekService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedCountryAdditionalHourService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.ICountryAdditionalHourService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="countryAdditionalHourService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <!-- ============================ REGION ===========================================================-->
+  <object id="securedRegionService" type="Spring.Aop.Framework.ProxyFactoryObject">
+		<property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IRegionService" />
+		<property name="isSingleton" value="true"/>
+		<property name="targetName" value="regionService" />
+   
+		<property name="InterceptorNames">
+			<list>
+				<value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+			</list>
+		</property>
+	</object>
+
+  <!-- ============================ STORE ===========================================================-->
+  <object id="securedStoreService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IStoreService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="storeService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+  
+  <object id="securedWGRService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWGRService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="wGRService" />
+   
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedHWGRService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IHWGRService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="hWGRService" />
+   
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedWorldService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWorldService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="worldService" />
+   
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedStore_WorldService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IStoreToWorldService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="store_WorldService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedWorld_HWGRService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWorldToHwgrService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="world_HWGRService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedHWGR_WGRService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IHwgrToWgrService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="hWGR_WGRService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedStoreWorkingTimeService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IStoreWorkingTimeService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="storeWorkingTimeService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedBufferHoursService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IBufferHoursService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="bufferHoursService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedBufferHourAvailableService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IBufferHourAvailableService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="bufferHourAvailableService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedBenchmarkService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IBenchmarkService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="benchmarkService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedTrendCorrectionService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.ITrendCorrectionService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="trendCorrectionService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedPersonMinMaxService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IPersonMinMaxService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="personMinMaxService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedStoreAdditionalHourService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IStoreAdditionalHourService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="storeAdditionalHourService" />
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <!-- ============================ EMPLOYEE ===========================================================-->
+  <object id="securedEmployeeService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeService" />
+   
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeeRelationService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeRelationService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeRelationService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeeAllInService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeAllInService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeAllInService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeeContractService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeContractService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeContractService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedLongTimeAbsenceService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.ILongTimeAbsenceService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="longTimeAbsenceService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeeLongTimeAbsenceService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeLongTimeAbsenceService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeLongTimeAbsenceService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <!-- ============================ EMPLOYEETIME ===========================================================-->
+  <object id="securedEmployeeTimeService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeTimeService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeTimeService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedWorkingTimePlanningService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWorkingTimePlanningService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="workingTimePlanningService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedAbsenceTimePlanningService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAbsenceTimePlanningService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="absenceTimePlanningService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedAbsenceTimeRecordingService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IAbsenceTimeRecordingService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="absenceTimeRecordingService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedWorkingTimeRecordingService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IWorkingTimeRecordingService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="workingTimeRecordingService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeeDayStatePlanningService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeDayStatePlanningService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeDayStatePlanningService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeeDayStateRecordingService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeDayStateRecordingService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeDayStateRecordingService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeeWeekTimePlanningService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeWeekTimePlanningService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeWeekTimePlanningService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeeWeekTimeRecordingService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeWeekTimeRecordingService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeWeekTimeRecordingService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeePlanningWorkingModelService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeePlanningWorkingModelService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeePlanningWorkingModelService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeeRecordingWorkingModelService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeRecordingWorkingModelService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeRecordingWorkingModelService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="securedEmployeeHolidaysInfoService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IEmployeeHolidaysInfoService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="employeeHolidaysInfoService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <!-- ============================ BASEENTITY (DEPRECATED!) ===========================================================-->
+  <object id="securedBaseEntityService" type="Spring.Aop.Framework.ProxyFactoryObject">
+    <property name="proxyInterfaces" value="Baumax.Contract.Interfaces.IBaseEntityService" />
+    <property name="isSingleton" value="true"/>
+    <property name="targetName" value="baseEntityService" />
+
+    <property name="InterceptorNames">
+      <list>
+        <value>securityBeforeAdvisor</value>
+        <value>transactionAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+</objects>

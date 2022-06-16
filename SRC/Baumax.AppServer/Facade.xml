@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns="http://www.springframework.net"
+	xmlns:r="http://www.springframework.net/remoting">
+
+  <!-- ============================ AUTHORISATION ===========================================================-->
+  <object name="authorizationService" type="Baumax.Services.AuthorizationService, Baumax.Services" singleton="true">
+		<property name="_UserSvc" ref="userService" />
+    <property name="ServiceDao" ref="ServiceDao" />
+    <property name="_RoleSvc" ref="roleService" />
+	</object>
+
+  <!-- ============================ USER ===========================================================-->
+  <object name="userService" type="Baumax.Services.UserService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="UserDao" />
+    <property name="_RoleSvc" ref="roleService" />
+    <property name="_EmployeeSvc" ref="employeeService" />
+    <property name="_CountrySvc" ref="countryService" />
+    <property name="_RegionSvc" ref="regionService" />
+    <property name="_StoreSvc" ref="storeService" />
+  </object>
+
+  <!-- ============================ ROLE ===========================================================-->
+  <object name="roleService" type="Baumax.Services.RoleService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="UserRoleDao" />
+  </object>
+
+  <!-- ============================ LANGUAGE ===========================================================-->
+  <object name="languageService" type="Baumax.Services.LanguageService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="LanguageDao" />
+    <property name="ResDao" ref="UIResourceDao" />
+  </object>
+
+  <!-- ============================ COUNTRY ===========================================================-->
+  <object name="countryService" type="Baumax.Services.CountryService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="CountryDao" />
+    <property name="_feastService" ref="feastService" />
+    <property name="_absenceService" ref="absenceService" />
+    <property name="_workingModelService" ref="workingModelService" />
+    <property name="_colouringService" ref="colouringService" />
+    <property name="_yearlyWorkingDayService" ref="yearlyWorkingDayService" />
+    <property name="_avgAmountService" ref="avgAmountService" />
+    <property name="_avgWorkingDaysInWeekService" ref="avgWorkingDaysInWeekService" />
+    <property name="_countryAdditionalHourService" ref="countryAdditionalHourService" />
+  </object>
+  
+  <object name="avgAmountService" type="Baumax.Services.AvgAmountService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="AvgAmountDao" />
+  </object>
+
+  <object name="feastService" type="Baumax.Services.FeastService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="FeastDao" />
+  </object>
+
+  <object name="absenceService" type="Baumax.Services.AbsenceService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="AbsenceDao" />
+    <property name="_longTimeAbsenceService" ref="longTimeAbsenceService" />
+  </object>
+
+  <object name="workingModelService" type="Baumax.Services.WorkingModelService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="WorkingModelDao" />
+  </object>
+
+  <object name="colouringService" type="Baumax.Services.ColouringService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="ColouringDao" />
+  </object>
+
+  <object name="yearlyWorkingDayService" type="Baumax.Services.YearlyWorkingDayService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="YearlyWorkingDayDao" />
+  </object>
+
+  <object name="avgWorkingDaysInWeekService" type="Baumax.Services.AvgWorkingDaysInWeekService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="AvgWorkingDaysInWeekDao" />
+  </object>
+
+  <object name="countryAdditionalHourService" type="Baumax.Services.CountryAdditionalHourService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="CountryAdditionalHourDao" />
+  </object>
+
+
+  <!-- ============================ REGION ===========================================================-->
+  <object name="regionService" type="Baumax.Services.RegionService, Baumax.Services" singleton="true">
+	  <property name="Dao" ref="RegionDao" />
+  </object>
+
+  <!-- ============================ STORE ===========================================================-->
+  <object name="storeService" type="Baumax.Services.StoreService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="StoreDao" />
+    <property name="_worldService" ref="worldService" />
+    <property name="_HWGRService" ref="hWGRService" />
+    <property name="_WGRService" ref="wGRService" />
+    <property name="_StoreToWorldService" ref="store_WorldService" />
+    <property name="_WorldToHwgrService" ref="world_HWGRService" />
+    <property name="_HwgrToWgrService" ref="hWGR_WGRService" />
+    <property name="_storeWorkingTimeService" ref="storeWorkingTimeService" />
+    <property name="_bufferHoursService" ref="bufferHoursService" />
+    <property name="_bufferHourAvailableService" ref="bufferHourAvailableService" />
+    <property name="_benchmarkService" ref="benchmarkService" />
+    <property name="_trendCorrectionService" ref="trendCorrectionService" />
+    <property name="_personMinMaxService" ref="personMinMaxService" />
+    <property name="_storeAdditionalHourService" ref="storeAdditionalHourService" />
+    <!-- for internal use -->
+    <property name="_countryService" ref="countryService" />
+  </object>
+  
+  <object name="wGRService" type="Baumax.Services.WGRService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="WGRDao" />
+  </object>
+
+  <object name="hWGRService" type="Baumax.Services.HWGRService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="HWGRDao" />
+  </object>
+
+  <object name="worldService" type="Baumax.Services.WorldService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="WorldDao" />
+  </object>
+
+  <object name="store_WorldService" type="Baumax.Services.StoreToWorldService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="Store_WorldDao" />
+    <property name="_worldService" ref="worldService" />
+    <property name="_bufferHoursService" ref="bufferHoursService" />
+    <property name="_storeService" ref="storeService" />
+    <property name="_avgAmountService" ref="avgAmountService" />
+    <property name="_minmaxService" ref="personMinMaxService" />
+    <property name="_benchmarkService" ref="benchmarkService" />
+  </object>
+
+  <object name="world_HWGRService" type="Baumax.Services.WorldToHwgrService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="World_HWGRDao" />
+  </object>
+
+  <object name="hWGR_WGRService" type="Baumax.Services.HwgrToWgrService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="HWGR_WGRDao" />
+  </object>
+
+  <object name="storeWorkingTimeService" type="Baumax.Services.StoreWorkingTimeService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="StoreWorkingTimeDao" />
+  </object>
+
+  <object name="bufferHoursService" type="Baumax.Services.BufferHoursService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="BufferHoursDao" />
+  </object>
+
+  <object name="bufferHourAvailableService" type="Baumax.Services.BufferHourAvailableService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="BufferHourAvailableDao" />
+  </object>
+
+  <object name="benchmarkService" type="Baumax.Services.BenchmarkService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="BenchmarkDao" />
+  </object>
+
+  <object name="trendCorrectionService" type="Baumax.Services.TrendCorrectionService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="TrendCorrectionDao" />
+  </object>
+
+  <object name="personMinMaxService" type="Baumax.Services.PersonMinMaxService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="PersonMinMaxDao" />
+  </object>
+
+  <object name="storeAdditionalHourService" type="Baumax.Services.StoreAdditionalHourService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="StoreAdditionalHourDao" />
+  </object>
+
+  <!-- ============================ EMPLOYEE ===========================================================-->
+  <object name="employeeService" type="Baumax.Services.EmployeeService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeDao" />
+    <property name="_employeeRelationService" ref="employeeRelationService" />
+    <property name="_employeeContractService" ref="employeeContractService" />
+    <property name="_longTimeAbsenceService" ref="longTimeAbsenceService" />
+    <property name="_employeeLongTimeAbsenceService" ref="employeeLongTimeAbsenceService" />
+    <property name="_employeeTimeService" ref="employeeTimeService" />
+    <property name="_absenceService" ref="absenceService" />
+    <property name="_storeworldService" ref="store_WorldService" />
+    <property name="_storeService" ref="storeService" />
+    <property name="_employeeAllInService" ref="employeeAllInService" />
+	  <property name="_employeeHolidaysInfoService" ref="employeeHolidaysInfoService" />
+  </object>
+
+  <object name="employeeRelationService" type="Baumax.Services.EmployeeRelationService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeRelationDao" />
+    <property name="_employeeDao" ref="EmployeeDao" />
+  </object>
+
+  <object name="employeeContractService" type="Baumax.Services.EmployeeContractService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeContractDao" />
+  </object>
+
+  <object name="longTimeAbsenceService" type="Baumax.Services.LongTimeAbsenceService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="LongTimeAbsenceDao" />
+    <property name="_absenceService" ref="absenceService" />
+  </object>
+
+  <object name="employeeLongTimeAbsenceService" type="Baumax.Services.EmployeeLongTimeAbsenceService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeLongTimeAbsenceDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <object name="employeeAllInService" type="Baumax.Services.EmployeeAllInService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeAllInDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <!-- ============================ EMPLOYEETIME ===========================================================-->
+  <object name="employeeTimeService" type="Baumax.Services.EmployeeTimeService, Baumax.Services" singleton="true">
+    <property name="_absenceTimePlanningService" ref="absenceTimePlanningService" />
+    <property name="_absenceTimeRecordingService" ref="absenceTimeRecordingService" />
+    <property name="_workingTimePlanningService" ref="workingTimePlanningService" />
+    <property name="_workingTimeRecordingService" ref="workingTimeRecordingService" />
+    <property name="_employeeDayStatePlanningService" ref="employeeDayStatePlanningService" />
+    <property name="_employeeDayStateRecordingService" ref="employeeDayStateRecordingService" />
+    <property name="_employeeWeekTimePlanningService" ref="employeeWeekTimePlanningService" />
+    <property name="_employeeWeekTimeRecordingService" ref="employeeWeekTimeRecordingService" />
+    <property name="_employeePlanningWorkingModelService" ref="employeePlanningWorkingModelService" />
+    <property name="_employeeRecordingWorkingModelService" ref="employeeRecordingWorkingModelService" />
+    <property name="_employeeHolidaysInfoService" ref="employeeHolidaysInfoService" />
+    <property name="_EmployeeTimeDao" ref="EmployeeTimeDao" />
+    <property name="_employeeService" ref="employeeService" />
+    <property name="_absenceService" ref="absenceService" />
+    <property name="_countryService" ref="countryService" />
+    <property name="_storeService" ref="storeService" />
+	<property name="_employeeLongTimeAbsenceService" ref="employeeLongTimeAbsenceService"/>
+  </object>
+
+  <object name="workingTimePlanningService" type="Baumax.Services.WorkingTimePlanningService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="WorkingTimePlanningDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <object name="absenceTimePlanningService" type="Baumax.Services.AbsenceTimePlanningService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="AbsenceTimePlanningDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <object name="absenceTimeRecordingService" type="Baumax.Services.AbsenceTimeRecordingService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="AbsenceTimeRecordingDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <object name="workingTimeRecordingService" type="Baumax.Services.WorkingTimeRecordingService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="WorkingTimeRecordingDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+  
+  <object name="employeeDayStatePlanningService" type="Baumax.Services.EmployeeDayStatePlanningService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeDayStatePlanningDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <object name="employeeDayStateRecordingService" type="Baumax.Services.EmployeeDayStateRecordingService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeDayStateRecordingDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <object name="employeeWeekTimePlanningService" type="Baumax.Services.EmployeeWeekTimePlanningService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeWeekTimePlanningDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <object name="employeeWeekTimeRecordingService" type="Baumax.Services.EmployeeWeekTimeRecordingService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeWeekTimeRecordingDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <object name="employeePlanningWorkingModelService" type="Baumax.Services.EmployeePlanningWorkingModelService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeePlanningWorkingModelDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <object name="employeeRecordingWorkingModelService" type="Baumax.Services.EmployeeRecordingWorkingModelService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeRecordingWorkingModelDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <object name="employeeHolidaysInfoService" type="Baumax.Services.EmployeeHolidaysInfoService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="EmployeeHolidaysInfoDao" />
+    <property name="_employeeService" ref="employeeService" />
+  </object>
+
+  <!-- ============================ BASE ENTITY (DEPRECATED!) ===========================================================-->
+  <object name="baseEntityService" type="Baumax.Services.BaseEntityService, Baumax.Services" singleton="true">
+    <property name="Dao" ref="BaseEntityDao" />
+  </object>
+</objects>

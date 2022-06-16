@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects	
+	xmlns="http://www.springframework.net" 
+	xmlns:r="http://www.springframework.net/remoting">
+
+  <r:saoExporter 
+    targetName="securedAuthorizationService"
+    serviceName="rAuthorizationService"/>
+
+  <r:saoExporter
+    targetName="securedRoleService"
+    serviceName="rRoleService"/>
+  
+  <r:saoExporter 
+    targetName="securedUserService"
+    serviceName="rUserService"/>
+
+  <r:saoExporter 
+    targetName="securedLanguageService"
+    serviceName="rLanguageService"/>
+
+  <!-- =================== COUNTRY ================================ -->
+  <r:saoExporter 
+    targetName="securedCountryService"
+    serviceName="rCountryService"/>
+
+  <r:saoExporter 
+    targetName="securedAvgAmountService"
+    serviceName="rAvgAmountService"/>
+
+  <r:saoExporter 
+    targetName="securedFeastService"
+    serviceName="rFeastService"/>
+
+  <r:saoExporter 
+    targetName="securedAbsenceService"
+    serviceName="rAbsenceService"/>
+
+  <r:saoExporter 
+    targetName="securedWorkingModelService"
+    serviceName="rWorkingModelService"/>
+
+  <r:saoExporter 
+    targetName="securedColouringService"
+    serviceName="rColouringService"/>
+
+  <r:saoExporter 
+    targetName="securedYearlyWorkingDayService"
+    serviceName="rYearlyWorkingDayService"/>
+
+  <r:saoExporter 
+    targetName="securedAvgWorkingDaysInWeekService"
+    serviceName="rAvgWorkingDaysInWeekService"/>
+
+  <r:saoExporter
+    targetName="securedCountryAdditionalHourService"
+    serviceName="rCountryAdditionalHourService"/>
+
+  <!-- =================== REGION ================================ -->
+  <r:saoExporter 
+    targetName="securedRegionService"
+    serviceName="rRegionService"/>
+
+  <r:saoExporter 
+    targetName="securedBaseEntityService"
+    serviceName="rBaseEntityService"/>
+
+  <!-- =================== STORE ================================ -->
+  <r:saoExporter 
+    targetName="securedStoreService"
+    serviceName="rStoreService"/>
+
+  <r:saoExporter
+    targetName="securedWGRService"
+    serviceName="rWGRService"/>
+
+  <r:saoExporter
+    targetName="securedHWGRService"
+    serviceName="rHWGRService"/>
+
+  <r:saoExporter
+    targetName="securedWorldService"
+    serviceName="rWorldService"/>
+
+  <r:saoExporter
+    targetName="securedStore_WorldService"
+    serviceName="rStore_WorldService"/>
+
+  <r:saoExporter
+    targetName="securedWorld_HWGRService"
+    serviceName="rWorld_HWGRService"/>
+
+  <r:saoExporter
+    targetName="securedHWGR_WGRService"
+    serviceName="rHWGR_WGRService"/>
+
+  <r:saoExporter 
+    targetName="securedStoreWorkingTimeService"
+    serviceName="rStoreWorkingTimeService"/>
+
+  <r:saoExporter
+    targetName="securedBufferHoursService"
+    serviceName="rBufferHoursService"/>
+
+  <r:saoExporter
+    targetName="securedBufferHourAvailableService"
+    serviceName="rBufferHourAvailableService"/>
+
+  <r:saoExporter
+    targetName="securedBenchmarkService"
+  serviceName="rBenchmarkService"/>
+
+  <r:saoExporter
+    targetName="securedTrendCorrectionService"
+    serviceName="rTrendCorrectionService"/>
+
+  <r:saoExporter
+    targetName="securedPersonMinMaxService"
+    serviceName="rPersonMinMaxService"/>
+
+  <r:saoExporter
+    targetName="securedStoreAdditionalHourService"
+    serviceName="rStoreAdditionalHourService"/>
+
+  <!-- =================== EMPLOYEE ================================ -->
+  <r:saoExporter
+    targetName="securedEmployeeService"
+    serviceName="rEmployeeService"/>
+
+  <r:saoExporter
+    targetName="securedEmployeeRelationService"
+    serviceName="rEmployeeRelationService"/>
+
+  <r:saoExporter
+  targetName="securedEmployeeAllInService"
+  serviceName="rEmployeeAllInService"/>
+
+  <r:saoExporter
+    targetName="securedEmployeeContractService"
+    serviceName="rEmployeeContractService"/>
+
+  <r:saoExporter
+    targetName="securedLongTimeAbsenceService"
+    serviceName="rLongTimeAbsenceService"/>
+
+  <r:saoExporter
+    targetName="securedEmployeeLongTimeAbsenceService"
+    serviceName="rEmployeeLongTimeAbsenceService"/>
+
+  <!-- =================== EMPLOYEETIME ================================ -->
+  <r:saoExporter 
+    targetName="securedWorkingTimeRecordingService"
+    serviceName="rWorkingTimeRecordingService"/>
+
+  <r:saoExporter
+    targetName="securedWorkingTimePlanningService"
+    serviceName="rWorkingTimePlanningService"/>
+
+  <r:saoExporter
+    targetName="securedEmployeeTimeService"
+    serviceName="rEmployeeTimeService"/>
+
+  <r:saoExporter
+    targetName="securedAbsenceTimePlanningService"
+    serviceName="rAbsenceTimePlanningService"/>
+  <r:saoExporter
+    targetName="securedAbsenceTimeRecordingService"
+    serviceName="rAbsenceTimeRecordingService"/>
+
+  <r:saoExporter
+  targetName="securedEmployeeDayStatePlanningService"
+  serviceName="rEmployeeDayStatePlanningService"/>
+
+  <r:saoExporter
+  targetName="securedEmployeeDayStateRecordingService"
+  serviceName="rEmployeeDayStateRecordingService"/>
+
+  <r:saoExporter
+  targetName="securedEmployeeWeekTimePlanningService"
+  serviceName="rEmployeeWeekTimePlanningService"/>
+
+  <r:saoExporter
+  targetName="securedEmployeeWeekTimeRecordingService"
+  serviceName="rEmployeeWeekTimeRecordingService"/>
+
+  <r:saoExporter
+  targetName="securedEmployeePlanningWorkingModelService"
+  serviceName="rEmployeePlanningWorkingModelService"/>
+
+  <r:saoExporter
+  targetName="securedEmployeeRecordingWorkingModelService"
+  serviceName="rEmployeeRecordingWorkingModelService"/>
+
+  <r:saoExporter
+  targetName="securedEmployeeHolidaysInfoService"
+  serviceName="rEmployeeHolidaysInfoService"/>
+
+</objects>

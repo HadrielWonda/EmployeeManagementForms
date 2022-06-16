@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:db="http://www.springframework.net/database">
+
+  <!-- Referenced by main application context configuration file -->
+  <description>
+    The Baumax object definitions for the Data Access Objects.
+  </description>
+
+  <!-- Property placeholder configurer for database settings -->
+  <object type="Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer, Spring.Core">
+    <property name="ConfigSections" value="databaseSettings"/>
+  </object>
+
+  <!-- Database and NHibernate Configuration -->
+  <db:provider id="DbProvider"
+                   provider="SqlServer-2.0"
+                   connectionString="${db.connection_string}"/>
+
+  <object id="SessionFactory" type="Spring.Data.NHibernate.LocalSessionFactoryObject, Spring.Data.NHibernate12">
+    <property name="DbProvider" ref="DbProvider"/>
+    <property name="MappingAssemblies">
+      <list>
+        <value>Baumax.Dao.NHibernate</value>
+      </list>
+    </property>
+    <property name="HibernateProperties">
+      <dictionary>
+
+        <entry key="hibernate.connection.provider"
+               value="NHibernate.Connection.DriverConnectionProvider"/>
+
+        <entry key="hibernate.dialect"
+               value="NHibernate.Dialect.MsSql2005Dialect"/>
+
+        <entry key="hibernate.connection.driver_class"
+               value="NHibernate.Driver.SqlClientDriver"/>
+
+        <entry key="hibernate.use_outer_join"
+               value="True"/>
+        
+        <entry key="hibernate.show_sql"
+               value="True"/>
+      </dictionary>
+    </property>
+
+  </object>
+
+  <!-- Important!!! this is a workaround for spring's bug. check in the new version if it persists -->
+  <object id="AdoExceptionTranslator" type="Spring.Data.Support.ErrorCodeExceptionTranslator, Spring.Data" >
+    <constructor-arg name="provider" ref="DbProvider"/>
+  </object>
+  
+  <object id="HibernateTransactionManager"
+        type="Spring.Data.NHibernate.HibernateTransactionManager, Spring.Data.NHibernate12">
+    <property name="DbProvider" ref="DbProvider"/>
+    <property name="SessionFactory" ref="SessionFactory"/>
+    <!-- workaround -->
+    <property name="AdoExceptionTranslator" ref="AdoExceptionTranslator" />
+  </object>
+
+  <object id="HibernateTemplate" type="Spring.Data.NHibernate.HibernateTemplate">
+    <property name="SessionFactory" ref="SessionFactory" />
+    <property name="TemplateFlushMode" value="Auto" />
+    <property name="CacheQueries" value="true" />
+  </object>
+
+  <!-- ============================ Data Access Objects ============================================== -->
+  <object id="PKGenDao" type="Baumax.Dao.NHibernate.HibernatePKGenEntityDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+  <!-- for import. for common use more specific daos instead. -->
+  <object id="BaseEntityDao" type="Baumax.Dao.NHibernate.HibernateBaseEntityDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+  <object id="UserDao" type="Baumax.Dao.NHibernate.HibernateUserDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="FeastDao" type="Baumax.Dao.NHibernate.HibernateFeastDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="AvgAmountDao" type="Baumax.Dao.NHibernate.HibernateAvgAmountDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="AbsenceDao" type="Baumax.Dao.NHibernate.HibernateAbsenceDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="WorkingModelDao" type="Baumax.Dao.NHibernate.HibernateWorkingModelDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="ColouringDao" type="Baumax.Dao.NHibernate.HibernateColouringDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="YearlyWorkingDayDao" type="Baumax.Dao.NHibernate.HibernateYearlyWorkingDayDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="CountryAdditionalHourDao" type="Baumax.Dao.NHibernate.HibernateCountryAdditionalHourDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="CountryDao" type="Baumax.Dao.NHibernate.HibernateCountryDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+	  <property name="AuthorizationService" ref="authorizationService"/>
+    <property name="_colouringDao" ref="ColouringDao"/>
+    <property name="_countryAdditionalHourDao" ref="CountryAdditionalHourDao"/>
+  </object>
+
+  <object id="RegionDao" type="Baumax.Dao.NHibernate.HibernateRegionDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="WGRDao" type="Baumax.Dao.NHibernate.HibernateWGRDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="HWGRDao" type="Baumax.Dao.NHibernate.HibernateHWGRDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="WorldDao" type="Baumax.Dao.NHibernate.HibernateWorldDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="Store_WorldDao" type="Baumax.Dao.NHibernate.HibernateStoreToWorldDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+    <property name="_HwgrWgrDao" ref="HWGR_WGRDao"/>
+    <property name="_WorldToHwgrDao" ref="World_HWGRDao"/>
+  </object>
+
+  <object id="World_HWGRDao" type="Baumax.Dao.NHibernate.HibernateWorldToHwgrDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="HWGR_WGRDao" type="Baumax.Dao.NHibernate.HibernateHwgrToWgrDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="StoreWorkingTimeDao" type="Baumax.Dao.NHibernate.HibernateStoreWorkingTimeDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="BufferHoursDao" type="Baumax.Dao.NHibernate.HibernateBufferHoursDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="BufferHourAvailableDao" type="Baumax.Dao.NHibernate.HibernateBufferHourAvailableDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="BenchmarkDao" type="Baumax.Dao.NHibernate.HibernateBenchmarkDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="TrendCorrectionDao" type="Baumax.Dao.NHibernate.HibernateTrendCorrectionDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="PersonMinMaxDao" type="Baumax.Dao.NHibernate.HibernatePersonMinMaxDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="StoreAdditionalHourDao" type="Baumax.Dao.NHibernate.HibernateStoreAdditionalHourDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="StoreDao" type="Baumax.Dao.NHibernate.HibernateStoreDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="LanguageDao" type="Baumax.Dao.NHibernate.HibernateLanguageDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="UIResourceDao" type="Baumax.Dao.NHibernate.HibernateUIResourceDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeDao" type="Baumax.Dao.NHibernate.HibernateEmployeeDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  	<property name="_EmployeeContractDao" ref="EmployeeContractDao"/>
+  	<property name="_EmployeeRelationDao" ref="EmployeeRelationDao"/>
+    <property name="_EmployeeLongTimeAbsenceDao" ref="EmployeeLongTimeAbsenceDao"/>
+    <property name="_EmployeeHolidaysInfoDao" ref="EmployeeHolidaysInfoDao"/>
+    <property name="_EmployeeAllInDao" ref="EmployeeAllInDao"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeRelationDao" type="Baumax.Dao.NHibernate.HibernateEmployeeRelationDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeContractDao" type="Baumax.Dao.NHibernate.HibernateEmployeeContractDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="LongTimeAbsenceDao" type="Baumax.Dao.NHibernate.HibernateLongTimeAbsenceDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeLongTimeAbsenceDao" type="Baumax.Dao.NHibernate.HibernateEmployeeLongTimeAbsenceDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="UserRoleDao" type="Baumax.Dao.NHibernate.HibernateUserRoleDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="ServiceDao" type="Baumax.Dao.NHibernate.HibernateServiceDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="WorkingTimePlanningDao" type="Baumax.Dao.NHibernate.HibernateWorkingTimePlanningDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="AbsenceTimePlanningDao" type="Baumax.Dao.NHibernate.HibernateAbsenceTimePlanningDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="AbsenceTimeRecordingDao" type="Baumax.Dao.NHibernate.HibernateAbsenceTimeRecordingDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="WorkingTimeRecordingDao" type="Baumax.Dao.NHibernate.HibernateWorkingTimeRecordingDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeDayStatePlanningDao" type="Baumax.Dao.NHibernate.HibernateEmployeeDayStatePlanningDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeDayStateRecordingDao" type="Baumax.Dao.NHibernate.HibernateEmployeeDayStateRecordingDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeWeekTimePlanningDao" type="Baumax.Dao.NHibernate.HibernateEmployeeWeekTimePlanningDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeWeekTimeRecordingDao" type="Baumax.Dao.NHibernate.HibernateEmployeeWeekTimeRecordingDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeePlanningWorkingModelDao" type="Baumax.Dao.NHibernate.HibernateEmployeePlanningWorkingModelDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+  
+  <object id="EmployeeRecordingWorkingModelDao" type="Baumax.Dao.NHibernate.HibernateEmployeeRecordingWorkingModelDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeHolidaysInfoDao" type="Baumax.Dao.NHibernate.HibernateEmployeeHolidaysInfoDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeTimeDao" type="Baumax.Dao.NHibernate.HibernateEmployeeTimeDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="_AuthorizationService" ref="authorizationService"/>
+    <property name="_AbsenceTimePlanningDao" ref="AbsenceTimePlanningDao"/>
+    <property name="_AbsenceTimeRecordingDao" ref="AbsenceTimeRecordingDao"/>
+    <property name="_WorkingTimePlanningDao" ref="WorkingTimePlanningDao"/>
+    <property name="_WorkingTimeRecordingDao" ref="WorkingTimeRecordingDao"/>
+    <property name="_EmployeeDayStatePlanningDao" ref="EmployeeDayStatePlanningDao"/>
+    <property name="_EmployeeDayStateRecordingDao" ref="EmployeeDayStateRecordingDao"/>
+    <property name="_EmployeeWeekTimePlanningDao" ref="EmployeeWeekTimePlanningDao" />
+    <property name="_EmployeeWeekTimeRecordingDao" ref="EmployeeWeekTimeRecordingDao" />
+    <property name="_EmployeePlanningWorkingModelDao" ref="EmployeePlanningWorkingModelDao" />
+    <property name="_EmployeeRecordingWorkingModelDao" ref="EmployeeRecordingWorkingModelDao" />
+    <property name="_EmployeeHolidaysInfoDao" ref="EmployeeHolidaysInfoDao" />
+    <property name="_EmployeeDao" ref="EmployeeDao" />
+  </object>
+
+  <object id="AvgWorkingDaysInWeekDao" type="Baumax.Dao.NHibernate.HibernateAvgWorkingDaysInWeekDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+  <object id="EmployeeAllInDao" type="Baumax.Dao.NHibernate.HibernateEmployeeAllInDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+
+
+  <object id="dbPropertiesDao" type="Baumax.Dao.NHibernate.DbPropertiesDao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+  <!-- template .} -->
+  <!--
+  <object id="{!}Dao" type="Baumax.Dao.NHibernate.Hibernate{!}Dao, Baumax.Dao.NHibernate" singleton="true">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+    <property name="AuthorizationService" ref="authorizationService"/>
+  </object>
+  -->
+
+</objects>
+
