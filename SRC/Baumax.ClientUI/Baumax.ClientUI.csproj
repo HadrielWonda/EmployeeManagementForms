@@ -1,0 +1,1726 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8D00CA3-4FBD-4BCB-B658-F272E37F4D89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baumax.ClientUI</RootNamespace>
+    <AssemblyName>Baumax.ClientUI</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseSetup|AnyCPU' ">
+    <OutputPath>bin\ReleaseSetup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v7.2.Design, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraCharts.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraEditors.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v7.2.Design, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraGrid.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraNavBar.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v7.2.Core, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v7.2.Core, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraTreeList.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Admin\ChangePasswordCtrl.cs">
+    </Compile>
+    <Compile Include="Admin\ChangePasswordCtrl.Designer.cs">
+      <DependentUpon>ChangePasswordCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChangePasswordForm.cs">
+    </Compile>
+    <Compile Include="Admin\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CountrySelectFrm.cs">
+    </Compile>
+    <Compile Include="Admin\CountrySelectFrm.Designer.cs">
+      <DependentUpon>CountrySelectFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EmployeeGridCtrl.cs">
+    </Compile>
+    <Compile Include="Admin\EmployeeGridCtrl.Designer.cs">
+      <DependentUpon>EmployeeGridCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EmployeeListCtrl.cs">
+    </Compile>
+    <Compile Include="Admin\EmployeeListCtrl.Designer.cs">
+      <DependentUpon>EmployeeListCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RegionSelectForm.cs">
+    </Compile>
+    <Compile Include="Admin\RegionSelectForm.Designer.cs">
+      <DependentUpon>RegionSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StoreSelectFrm.cs">
+    </Compile>
+    <Compile Include="Admin\StoreSelectFrm.Designer.cs">
+      <DependentUpon>StoreSelectFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserGridCtrl.cs">
+    </Compile>
+    <Compile Include="Admin\UserGridCtrl.Designer.cs">
+      <DependentUpon>UserGridCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserListCtrl.cs">
+    </Compile>
+    <Compile Include="Admin\UserListCtrl.Designer.cs">
+      <DependentUpon>UserListCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AbsencePlanning\AbsencePlanningHelpClasses.cs" />
+    <Compile Include="FormEntities\AbsencePlanning\MonthsName.cs" />
+    <Compile Include="FormEntities\AbsencePlanning\SelectAbsenceForm.cs">
+    </Compile>
+    <Compile Include="FormEntities\AbsencePlanning\SelectAbsenceForm.Designer.cs">
+      <DependentUpon>SelectAbsenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AbsencePlanning\UCAbsencePlanning.cs">
+    </Compile>
+    <Compile Include="FormEntities\AbsencePlanning\UCAbsencePlanning.Designer.cs">
+      <DependentUpon>UCAbsencePlanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\FormAssignHwgrToWorld.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\FormAssignHwgrToWorld.Designer.cs">
+      <DependentUpon>FormAssignHwgrToWorld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\FormAssignWgrToHwgr.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\FormAssignWgrToHwgr.Designer.cs">
+      <DependentUpon>FormAssignWgrToHwgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\FormViewHistory.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\FormViewHistory.Designer.cs">
+      <DependentUpon>FormViewHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\FormWorldMinMax.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\FormWorldMinMax.Designer.cs">
+      <DependentUpon>FormWorldMinMax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\FormWorldMinMaxEdit.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\FormWorldMinMaxEdit.Designer.cs">
+      <DependentUpon>FormWorldMinMaxEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\StoreStructureContext.cs" />
+    <Compile Include="FormEntities\AnotherWorld\UCEditWgrToHwgr.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCEditWgrToHwgr.Designer.cs">
+      <DependentUpon>UCEditWgrToHwgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCEditWorldToHwgr.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCEditWorldToHwgr.Designer.cs">
+      <DependentUpon>UCEditWorldToHwgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCStoreTree.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCStoreTree.Designer.cs">
+      <DependentUpon>UCStoreTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCWorldDetail.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCWorldDetail.Designer.cs">
+      <DependentUpon>UCWorldDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCWorldList2.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCWorldList2.Designer.cs">
+      <DependentUpon>UCWorldList2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCWorldMinMax.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCWorldMinMax.Designer.cs">
+      <DependentUpon>UCWorldMinMax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCWorldMinMaxEntity.cs">
+    </Compile>
+    <Compile Include="FormEntities\AnotherWorld\UCWorldMinMaxEntity.Designer.cs">
+      <DependentUpon>UCWorldMinMaxEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Controls\HwgrLookUpCtrl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Controls\LanguageLookUpCtrl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Controls\LanguageLookUpList.cs">
+    </Compile>
+    <Compile Include="FormEntities\Controls\LanguageLookUpList.Designer.cs">
+      <DependentUpon>LanguageLookUpList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="FormEntities\Controls\StoreWorldLookUpCtrl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Controls\StoreWorldPanleInfo.cs">
+    </Compile>
+    <Compile Include="FormEntities\Controls\StoreWorldPanleInfo.Designer.cs">
+      <DependentUpon>StoreWorldPanleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Controls\UCSelectIgnore.cs">
+    </Compile>
+    <Compile Include="FormEntities\Controls\UCSelectIgnore.Designer.cs">
+      <DependentUpon>UCSelectIgnore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Controls\UCWeekSelector.cs">
+    </Compile>
+    <Compile Include="FormEntities\Controls\UCWeekSelector.Designer.cs">
+      <DependentUpon>UCWeekSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Controls\WeekSelectorCtrl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Controls\WgrLookUpCtrl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\AvgWorkingDaysInWeek\FormAvgWorkingDaysInWeek.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\AvgWorkingDaysInWeek\FormAvgWorkingDaysInWeek.Designer.cs">
+      <DependentUpon>FormAvgWorkingDaysInWeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\AvgWorkingDaysInWeek\ECAvgWorkingDaysInWeek.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\AvgWorkingDaysInWeek\ECAvgWorkingDaysInWeek.Designer.cs">
+      <DependentUpon>ECAvgWorkingDaysInWeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\AvgWorkingDaysInWeek\UCAvgWorkingDaysInWeek.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\AvgWorkingDaysInWeek\UCAvgWorkingDaysInWeek.Designer.cs">
+      <DependentUpon>UCAvgWorkingDaysInWeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\CountryDetailControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\CountryDetailControl.Designer.cs">
+      <DependentUpon>CountryDetailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\CountryEntityControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\CountryEntityControl.Designer.cs">
+      <DependentUpon>CountryEntityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\EstimateBufferHoursCopyForm.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\EstimateBufferHoursCopyForm.Designer.cs">
+      <DependentUpon>EstimateBufferHoursCopyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\EstimatePreconditionsForm.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\EstimatePreconditionsForm.Designer.cs">
+      <DependentUpon>EstimatePreconditionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\Feasts\FeastEntityControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\Feasts\FeastEntityControl.Designer.cs">
+      <DependentUpon>FeastEntityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\Feasts\FeastList.cs" />
+    <Compile Include="FormEntities\Country\Feasts\FeastListControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\Feasts\FeastListControl.Designer.cs">
+      <DependentUpon>FeastListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\Feasts\FormFeast.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\Feasts\FormFeast.Designer.cs">
+      <DependentUpon>FormFeast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\FormCountry2.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\FormCountry2.Designer.cs">
+      <DependentUpon>FormCountry2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\FormCountryEdit.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\FormCountryEdit.Designer.cs">
+      <DependentUpon>FormCountryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\FormCountryRegions.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\FormCountryRegions.Designer.cs">
+      <DependentUpon>FormCountryRegions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\LunchBrakes\ECLunchModel.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\LunchBrakes\ECLunchModel.Designer.cs">
+      <DependentUpon>ECLunchModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\LunchBrakes\FormLunchModel.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\LunchBrakes\FormLunchModel.Designer.cs">
+      <DependentUpon>FormLunchModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\LunchBrakes\UCLunchBrakes.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\LunchBrakes\UCLunchBrakes.Designer.cs">
+      <DependentUpon>UCLunchBrakes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UCCountryEdit.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UCCountryEdit.Designer.cs">
+      <DependentUpon>UCCountryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UCCountryList2.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UCCountryList2.Designer.cs">
+      <DependentUpon>UCCountryList2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UCCountryProperties.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UCCountryProperties.Designer.cs">
+      <DependentUpon>UCCountryProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIClosedDay\UCClosedDays.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIClosedDay\UCClosedDays.Designer.cs">
+      <DependentUpon>UCClosedDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIAbsence\AbsenceForm.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIAbsence\AbsenceForm.Designer.cs">
+      <DependentUpon>AbsenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIAbsence\AbsenceListControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIAbsence\AbsenceListControl.Designer.cs">
+      <DependentUpon>AbsenceListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIColoring\ColorEntityControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIColoring\ColorEntityControl.Designer.cs">
+      <DependentUpon>ColorEntityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIColoring\ColoringListControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIColoring\ColoringListControl.Designer.cs">
+      <DependentUpon>ColoringListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIColoring\ColouringHelpers.cs" />
+    <Compile Include="FormEntities\Country\UIColoring\FormColour.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIColoring\FormColour.Designer.cs">
+      <DependentUpon>FormColour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIClosedDay\ClosedDayEntityControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIClosedDay\ClosedDayEntityControl.Designer.cs">
+      <DependentUpon>ClosedDayEntityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIClosedDay\ClosedDayList.cs" />
+    <Compile Include="FormEntities\Country\UIUnavoidableAddHours\ECadditionHours.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIUnavoidableAddHours\ECadditionHours.Designer.cs">
+      <DependentUpon>ECadditionHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIUnavoidableAddHours\FormUnavoidableAddHours .cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIUnavoidableAddHours\FormUnavoidableAddHours .Designer.cs">
+      <DependentUpon>FormUnavoidableAddHours .cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIUnavoidableAddHours\UCUnavoidableAddHours .cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIUnavoidableAddHours\UCUnavoidableAddHours .Designer.cs">
+      <DependentUpon>UCUnavoidableAddHours .cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIWorkingModel\Conditions.cs" />
+    <Compile Include="FormEntities\Country\UIWorkingModel\ItemDay.cs" />
+    <Compile Include="FormEntities\Country\UIWorkingModel\WModelList.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIWorkingModel\WModelList.Designer.cs">
+      <DependentUpon>WModelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIWorkingModel\WorkingModelForm.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIWorkingModel\WorkingModelForm.Designer.cs">
+      <DependentUpon>WorkingModelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIWorkingModel\WorkModelControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIWorkingModel\WorkModelControl.Designer.cs">
+      <DependentUpon>WorkModelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIYearlyAppearance\YearAppearanceEntityControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIYearlyAppearance\YearAppearanceEntityControl.Designer.cs">
+      <DependentUpon>YearAppearanceEntityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIYearlyAppearance\YearlyAppearanceForm.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIYearlyAppearance\YearlyAppearanceForm.Designer.cs">
+      <DependentUpon>YearlyAppearanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIYearlyAppearance\YearlyAppearanceListControl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIYearlyAppearance\YearlyAppearanceListControl.Designer.cs">
+      <DependentUpon>YearlyAppearanceListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\UIClosedDay\ClosedDaysForm.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\UIClosedDay\ClosedDaysForm.Designer.cs">
+      <DependentUpon>ClosedDaysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\EmployeeCtrl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\EmployeeCtrl.Designer.cs">
+      <DependentUpon>EmployeeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\EmployeeFrm.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\EmployeeFrm.Designer.cs">
+      <DependentUpon>EmployeeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\EmployeeHelper.cs" />
+    <Compile Include="FormEntities\Employee\EmployeeInfoDebugForm.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\EmployeeInfoDebugForm.Designer.cs">
+      <DependentUpon>EmployeeInfoDebugForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\EmployeeLongTimeAbsence.cs" />
+    <Compile Include="FormEntities\Employee\FormAssignEmployeeToHwgr.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormAssignEmployeeToHwgr.Designer.cs">
+      <DependentUpon>FormAssignEmployeeToHwgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormAssignEmployeeToStore.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormAssignEmployeeToStore.Designer.cs">
+      <DependentUpon>FormAssignEmployeeToStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormAssignEmployeeToWorld.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormAssignEmployeeToWorld.Designer.cs">
+      <DependentUpon>FormAssignEmployeeToWorld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormAssignToEmployee.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormAssignToEmployee.Designer.cs">
+      <DependentUpon>FormAssignToEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormEmployeeLongTimeAbsence.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormEmployeeLongTimeAbsence.Designer.cs">
+      <DependentUpon>FormEmployeeLongTimeAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormEmployeeWorkHistory.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormEmployeeWorkHistory.Designer.cs">
+      <DependentUpon>FormEmployeeWorkHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormExternalEmployee.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormExternalEmployee.Designer.cs">
+      <DependentUpon>FormExternalEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\LongAbsence\FormLongTimeAbsence.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\LongAbsence\FormLongTimeAbsence.Designer.cs">
+      <DependentUpon>FormLongTimeAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormLongTimeAbsenceEmployees.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormLongTimeAbsenceEmployees.Designer.cs">
+      <DependentUpon>FormLongTimeAbsenceEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\LongAbsence\FormLongTimeAbsenceList.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\LongAbsence\FormLongTimeAbsenceList.Designer.cs">
+      <DependentUpon>FormLongTimeAbsenceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormMergeTwoEmployees.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormMergeTwoEmployees.Designer.cs">
+      <DependentUpon>FormMergeTwoEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormSelectEmployee.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\FormSelectEmployee.Designer.cs">
+      <DependentUpon>FormSelectEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCAssignEmployeeToHWGR.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCAssignEmployeeToHWGR.Designer.cs">
+      <DependentUpon>UCAssignEmployeeToHWGR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCAssignEmployeeToWorld.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCAssignEmployeeToWorld.Designer.cs">
+      <DependentUpon>UCAssignEmployeeToWorld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCAssignToEmployee.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCAssignToEmployee.Designer.cs">
+      <DependentUpon>UCAssignToEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCEmployeeList.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCEmployeeList.Designer.cs">
+      <DependentUpon>UCEmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCEmployeeLongTimeHolidays.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCEmployeeLongTimeHolidays.Designer.cs">
+      <DependentUpon>UCEmployeeLongTimeHolidays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCEmployeeSelectGrid.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCEmployeeSelectGrid.Designer.cs">
+      <DependentUpon>UCEmployeeSelectGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCEmployeeWorkingHistory.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCEmployeeWorkingHistory.Designer.cs">
+      <DependentUpon>UCEmployeeWorkingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCExternalEmployee.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCExternalEmployee.Designer.cs">
+      <DependentUpon>UCExternalEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\LongAbsence\UCLongTimeAbsence.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\LongAbsence\UCLongTimeAbsence.Designer.cs">
+      <DependentUpon>UCLongTimeAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCLongTimeAbsenceEmployees.cs">
+    </Compile>
+    <Compile Include="FormEntities\Employee\UCLongTimeAbsenceEmployees.Designer.cs">
+      <DependentUpon>UCLongTimeAbsenceEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Country\LongAbsence\UCLongTimeAbsenceList.cs">
+    </Compile>
+    <Compile Include="FormEntities\Country\LongAbsence\UCLongTimeAbsenceList.Designer.cs">
+      <DependentUpon>UCLongTimeAbsenceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\CopyingWaitForm.cs">
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\CopyingWaitForm.Designer.cs">
+      <DependentUpon>CopyingWaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\FormExtendOpenCloseHours.cs">
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\FormExtendOpenCloseHours.Designer.cs">
+      <DependentUpon>FormExtendOpenCloseHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\FormStore.cs">
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\FormStore.Designer.cs">
+      <DependentUpon>FormStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\FormViewEstimateData.cs">
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\FormViewEstimateData.Designer.cs">
+      <DependentUpon>FormViewEstimateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\StoreEstimatioPreconditionForm.cs">
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\StoreEstimatioPreconditionForm.Designer.cs">
+      <DependentUpon>StoreEstimatioPreconditionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\StoreHelper.cs" />
+    <Compile Include="FormEntities\EntityStore\StoreOpenCloseView.cs" />
+    <Compile Include="FormEntities\EntityStore\UCGetValueFromStore.cs">
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\UCGetValueFromStore.Designer.cs">
+      <DependentUpon>UCGetValueFromStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\UCOpenCloseHours.cs">
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\UCOpenCloseHours.Designer.cs">
+      <DependentUpon>UCOpenCloseHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\UCOpenCloseHoursList.cs">
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\UCOpenCloseHoursList.Designer.cs">
+      <DependentUpon>UCOpenCloseHoursList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\UCStoreList.cs">
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\UCStoreList.Designer.cs">
+      <DependentUpon>UCStoreList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\UCStoreStructure.cs">
+    </Compile>
+    <Compile Include="FormEntities\EntityStore\UCStoreStructure.Designer.cs">
+      <DependentUpon>UCStoreStructure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\FormatProviders.cs" />
+    <Compile Include="FormEntities\FormBaseEntity.cs">
+    </Compile>
+    <Compile Include="FormEntities\FormBaseEntity.Designer.cs">
+      <DependentUpon>FormBaseEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Language\FormLanguage2.cs">
+    </Compile>
+    <Compile Include="FormEntities\Language\FormLanguage2.Designer.cs">
+      <DependentUpon>FormLanguage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Language\UCLanguageEntity.cs">
+    </Compile>
+    <Compile Include="FormEntities\Language\UCLanguageEntity.Designer.cs">
+      <DependentUpon>UCLanguageEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Language\UCLanguageList2.cs">
+    </Compile>
+    <Compile Include="FormEntities\Language\UCLanguageList2.Designer.cs">
+      <DependentUpon>UCLanguageList2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\OkCancelPanel.cs">
+    </Compile>
+    <Compile Include="FormEntities\OkCancelPanel.Designer.cs">
+      <DependentUpon>OkCancelPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\FormBenchmark.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\FormBenchmark.Designer.cs">
+      <DependentUpon>FormBenchmark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\FormBufferHours.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\FormBufferHours.Designer.cs">
+      <DependentUpon>FormBufferHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\FormRegionEdit.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\FormRegionEdit.Designer.cs">
+      <DependentUpon>FormRegionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\FormRegionStores.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\FormRegionStores.Designer.cs">
+      <DependentUpon>FormRegionStores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\FormSelectYear.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\FormSelectYear.Designer.cs">
+      <DependentUpon>FormSelectYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\FormTrendCorrection.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\FormTrendCorrection.Designer.cs">
+      <DependentUpon>FormTrendCorrection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\RegionHelper.cs" />
+    <Compile Include="FormEntities\Region\RegionListCtrl.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\RegionListCtrl.Designer.cs">
+      <DependentUpon>RegionListCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\UCBenchmarksView.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\UCBenchmarksView.Designer.cs">
+      <DependentUpon>UCBenchmarksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\UCBufferHours.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\UCBufferHours.Designer.cs">
+      <DependentUpon>UCBufferHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\UCBufferHoursView.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\UCBufferHoursView.Designer.cs">
+      <DependentUpon>UCBufferHoursView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\UCRegionList.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\UCRegionList.Designer.cs">
+      <DependentUpon>UCRegionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\UCRegionStores.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\UCRegionStores.Designer.cs">
+      <DependentUpon>UCRegionStores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\Region\UCTrendCorrectionsView.cs">
+    </Compile>
+    <Compile Include="FormEntities\Region\UCTrendCorrectionsView.Designer.cs">
+      <DependentUpon>UCTrendCorrectionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\CashDeskDailyPlanningCalculator.cs" />
+    <Compile Include="FormEntities\TimePlanning\Daily\UCWorldDailyView.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\Daily\UCWorldDailyView.Designer.cs">
+      <DependentUpon>UCWorldDailyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\DebugFormViewAllWorkingModel.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\DebugFormViewAllWorkingModel.Designer.cs">
+      <DependentUpon>DebugFormViewAllWorkingModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\FormEmployeeWorkingModelApplied.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\FormEmployeeWorkingModelApplied.Designer.cs">
+      <DependentUpon>FormEmployeeWorkingModelApplied.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\FormEnterAbsenceTime.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\FormEnterAbsenceTime.Designer.cs">
+      <DependentUpon>FormEnterAbsenceTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\FormEnterWorkingTime.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\FormEnterWorkingTime.Designer.cs">
+      <DependentUpon>FormEnterWorkingTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\FormSelectAbsence.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\FormSelectAbsence.Designer.cs">
+      <DependentUpon>FormSelectAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\GridDelegates.cs" />
+    <Compile Include="FormEntities\TimePlanning\Painters.cs" />
+    <Compile Include="FormEntities\TimePlanning\PlanningInterfaces.cs" />
+    <Compile Include="FormEntities\TimePlanning\UCCashDeskDailyPlannedInfo.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\UCCashDeskDailyPlannedInfo.Designer.cs">
+      <DependentUpon>UCCashDeskDailyPlannedInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\UCCashDeskWeeklyInfo.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\UCCashDeskWeeklyInfo.Designer.cs">
+      <DependentUpon>UCCashDeskWeeklyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\UCStoreWorldPlanningInfo.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\UCStoreWorldPlanningInfo.Designer.cs">
+      <DependentUpon>UCStoreWorldPlanningInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\UCTimePlanning.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\UCTimePlanning.Designer.cs">
+      <DependentUpon>UCTimePlanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\UCWeekTimePlanning.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\UCWeekTimePlanning.Designer.cs">
+      <DependentUpon>UCWeekTimePlanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimeRecording\PlanningRecordingStoreWorldStatictic.cs" />
+    <Compile Include="FormEntities\TimeRecording\RecordingDayRow.cs" />
+    <Compile Include="FormEntities\TimeRecording\RecordingDaySum.cs" />
+    <Compile Include="FormEntities\TimeRecording\UCActualCashDeskDailyInfo.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimeRecording\UCActualCashDeskDailyInfo.Designer.cs">
+      <DependentUpon>UCActualCashDeskDailyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimeRecording\UCActualCashDeskWeeklyInfo.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimeRecording\UCActualCashDeskWeeklyInfo.Designer.cs">
+      <DependentUpon>UCActualCashDeskWeeklyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimeRecording\UCDayTimeRecording.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimeRecording\UCDayTimeRecording.Designer.cs">
+      <DependentUpon>UCDayTimeRecording.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimeRecording\UCTimeRecording.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimeRecording\UCTimeRecording.Designer.cs">
+      <DependentUpon>UCTimeRecording.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimePlanning\WorldPlanningContext.cs" />
+    <Compile Include="FormEntities\TimePlanning\WorldPlanningStatisticClasses.cs" />
+    <Compile Include="FormEntities\TimeRecording\UCWeekTimeRecording.cs">
+    </Compile>
+    <Compile Include="FormEntities\TimeRecording\UCWeekTimeRecording.Designer.cs">
+      <DependentUpon>UCWeekTimeRecording.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\TimeRecording\WeeklyDaysSumView.cs" />
+    <Compile Include="FormEntities\TimeRecording\WorldRecordingContext.cs" />
+    <Compile Include="FormEntities\UCBaseEntity.cs">
+    </Compile>
+    <Compile Include="FormEntities\UCBaseEntity.Designer.cs">
+      <DependentUpon>UCBaseEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\UCBaseEntityList.cs">
+    </Compile>
+    <Compile Include="FormEntities\UCBaseEntityList.Designer.cs">
+      <DependentUpon>UCBaseEntityList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\User\FormUser.cs">
+    </Compile>
+    <Compile Include="FormEntities\User\FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\User\UserCtrl.cs">
+    </Compile>
+    <Compile Include="FormEntities\User\UserCtrl.Designer.cs">
+      <DependentUpon>UserCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\World\FormWorld.cs">
+    </Compile>
+    <Compile Include="FormEntities\World\FormWorld.Designer.cs">
+      <DependentUpon>FormWorld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\World\UCStoreTree.cs">
+    </Compile>
+    <Compile Include="FormEntities\World\UCStoreTree.Designer.cs">
+      <DependentUpon>UCStoreTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\World\UCWorldDetails.cs">
+    </Compile>
+    <Compile Include="FormEntities\World\UCWorldDetails.Designer.cs">
+      <DependentUpon>UCWorldDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\World\UCWorldList.cs">
+    </Compile>
+    <Compile Include="FormEntities\World\UCWorldList.Designer.cs">
+      <DependentUpon>UCWorldList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntities\World\WorldClasses.cs" />
+    <Compile Include="General\EstimationWaitForm.cs">
+    </Compile>
+    <Compile Include="General\EstimationWaitForm.Designer.cs">
+      <DependentUpon>EstimationWaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmEntityExceptionDetails.cs">
+    </Compile>
+    <Compile Include="General\FrmEntityExceptionDetails.Designer.cs">
+      <DependentUpon>FrmEntityExceptionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localizer\Import\ImportUI.cs" />
+    <Compile Include="interfaces.cs" />
+    <Compile Include="Localizer\ControlLocalizer.cs" />
+    <Compile Include="Localizer\DbUIProvider.cs" />
+    <Compile Include="Localizer\DevExLocalizer.cs" />
+    <Compile Include="ManageEntityControls\CountryManageControl.cs">
+    </Compile>
+    <Compile Include="ManageEntityControls\CountryManageControl.Designer.cs">
+      <DependentUpon>CountryManageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEntityControls\LanguageManageControl.cs">
+    </Compile>
+    <Compile Include="ManageEntityControls\LanguageManageControl.designer.cs">
+      <DependentUpon>LanguageManageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEntityControls\StoreManagerControl.cs">
+    </Compile>
+    <Compile Include="ManageEntityControls\StoreManagerControl.Designer.cs">
+      <DependentUpon>StoreManagerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEntityControls\UCEmployeeManagerControl.cs">
+    </Compile>
+    <Compile Include="ManageEntityControls\UCEmployeeManagerControl.Designer.cs">
+      <DependentUpon>UCEmployeeManagerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEntityControls\WorldManagerControl.cs">
+    </Compile>
+    <Compile Include="ManageEntityControls\WorldManagerControl.Designer.cs">
+      <DependentUpon>WorldManagerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationService.cs" />
+    <Compile Include="NotificationServiceUI\FormNotificationServiceWarning.cs">
+    </Compile>
+    <Compile Include="NotificationServiceUI\FormNotificationServiceWarning.Designer.cs">
+      <DependentUpon>FormNotificationServiceWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationServiceUI\NotificationsCheckController.cs" />
+    <Compile Include="NotificationServiceUI\UCCountriesListNotification.cs">
+    </Compile>
+    <Compile Include="NotificationServiceUI\UCCountriesListNotification.Designer.cs">
+      <DependentUpon>UCCountriesListNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationServiceUI\UCStoresListNotification.cs">
+    </Compile>
+    <Compile Include="NotificationServiceUI\UCStoresListNotification.Designer.cs">
+      <DependentUpon>UCStoresListNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printout\FormPrintAbsencePlanning.cs">
+    </Compile>
+    <Compile Include="Printout\FormPrintAbsencePlanning.Designer.cs">
+      <DependentUpon>FormPrintAbsencePlanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printout\FormPrintTimePlanning.cs">
+    </Compile>
+    <Compile Include="Printout\FormPrintTimePlanning.Designer.cs">
+      <DependentUpon>FormPrintTimePlanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printout\FormPrintWorldsTimeRecording.cs">
+    </Compile>
+    <Compile Include="Printout\FormPrintWorldsTimeRecording.Designer.cs">
+      <DependentUpon>FormPrintWorldsTimeRecording.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TranslationUI\TranslationUIControl.cs">
+    </Compile>
+    <Compile Include="TranslationUI\TranslationUIControl.Designer.cs">
+      <DependentUpon>TranslationUIControl.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\CountrySelectFrm.resx">
+      <DependentUpon>CountrySelectFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EmployeeListCtrl.resx">
+      <DependentUpon>EmployeeListCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UserListCtrl.resx">
+      <DependentUpon>UserListCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Controls\LanguageLookUpList.resx">
+      <DependentUpon>LanguageLookUpList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\ChangePasswordCtrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangePasswordCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ChangePasswordForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\RegionSelectForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegionSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StoreSelectFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StoreSelectFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UserGridCtrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserGridCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AbsencePlanning\SelectAbsenceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelectAbsenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AbsencePlanning\UCAbsencePlanning.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCAbsencePlanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\FormAssignHwgrToWorld.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAssignHwgrToWorld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\FormAssignWgrToHwgr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAssignWgrToHwgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\FormViewHistory.resx">
+      <DependentUpon>FormViewHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\FormWorldMinMax.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWorldMinMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\FormWorldMinMaxEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWorldMinMaxEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\UCEditWgrToHwgr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCEditWgrToHwgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\UCEditWorldToHwgr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCEditWorldToHwgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\UCStoreTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCStoreTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\UCWorldDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWorldDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\UCWorldList2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWorldList2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\UCWorldMinMax.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWorldMinMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\AnotherWorld\UCWorldMinMaxEntity.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWorldMinMaxEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Controls\StoreWorldPanleInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StoreWorldPanleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Controls\UCSelectIgnore.resx">
+      <DependentUpon>UCSelectIgnore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Controls\UCWeekSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWeekSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Controls\WeekSelectorCtrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WeekSelectorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\AvgWorkingDaysInWeek\FormAvgWorkingDaysInWeek.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAvgWorkingDaysInWeek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\AvgWorkingDaysInWeek\ECAvgWorkingDaysInWeek.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ECAvgWorkingDaysInWeek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\AvgWorkingDaysInWeek\UCAvgWorkingDaysInWeek.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCAvgWorkingDaysInWeek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\CountryDetailControl.resx">
+      <DependentUpon>CountryDetailControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\CountryEntityControl.resx">
+      <DependentUpon>CountryEntityControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\EstimateBufferHoursCopyForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EstimateBufferHoursCopyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\EstimatePreconditionsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EstimatePreconditionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\Feasts\FeastEntityControl.resx">
+      <DependentUpon>FeastEntityControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\Feasts\FeastListControl.resx">
+      <DependentUpon>FeastListControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\Feasts\FormFeast.resx">
+      <DependentUpon>FormFeast.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\FormCountry2.resx">
+      <DependentUpon>FormCountry2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\FormCountryEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCountryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\FormCountryRegions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCountryRegions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\LunchBrakes\ECLunchModel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ECLunchModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\LunchBrakes\FormLunchModel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLunchModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\LunchBrakes\UCLunchBrakes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCLunchBrakes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UCCountryEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCountryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UCCountryList2.resx">
+      <DependentUpon>UCCountryList2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UCCountryProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCountryProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIClosedDay\UCClosedDays.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCClosedDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIAbsence\AbsenceForm.resx">
+      <DependentUpon>AbsenceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIAbsence\AbsenceListControl.resx">
+      <DependentUpon>AbsenceListControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIColoring\ColorEntityControl.resx">
+      <DependentUpon>ColorEntityControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIColoring\ColoringListControl.resx">
+      <DependentUpon>ColoringListControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIColoring\FormColour.resx">
+      <DependentUpon>FormColour.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIClosedDay\ClosedDayEntityControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClosedDayEntityControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIClosedDay\ClosedDaysForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClosedDaysForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIUnavoidableAddHours\ECadditionHours.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ECadditionHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIUnavoidableAddHours\FormUnavoidableAddHours .resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormUnavoidableAddHours .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIUnavoidableAddHours\UCUnavoidableAddHours .resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCUnavoidableAddHours .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIWorkingModel\WModelList.resx">
+      <DependentUpon>WModelList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIWorkingModel\WorkingModelForm.resx">
+      <DependentUpon>WorkingModelForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIWorkingModel\WorkModelControl.resx">
+      <DependentUpon>WorkModelControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIYearlyAppearance\YearAppearanceEntityControl.resx">
+      <DependentUpon>YearAppearanceEntityControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIYearlyAppearance\YearlyAppearanceForm.resx">
+      <DependentUpon>YearlyAppearanceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\UIYearlyAppearance\YearlyAppearanceListControl.resx">
+      <DependentUpon>YearlyAppearanceListControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\EmployeeCtrl.resx">
+      <DependentUpon>EmployeeCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\EmployeeFrm.resx">
+      <DependentUpon>EmployeeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\EmployeeInfoDebugForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmployeeInfoDebugForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\FormAssignEmployeeToHwgr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAssignEmployeeToHwgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\FormAssignEmployeeToStore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAssignEmployeeToStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\FormAssignEmployeeToWorld.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAssignEmployeeToWorld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\FormAssignToEmployee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAssignToEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\FormEmployeeLongTimeAbsence.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormEmployeeLongTimeAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\FormEmployeeWorkHistory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormEmployeeWorkHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\FormExternalEmployee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormExternalEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\LongAbsence\FormLongTimeAbsence.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLongTimeAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\FormLongTimeAbsenceEmployees.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLongTimeAbsenceEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\LongAbsence\FormLongTimeAbsenceList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLongTimeAbsenceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\FormMergeTwoEmployees.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMergeTwoEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\FormSelectEmployee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\UCAssignEmployeeToHWGR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCAssignEmployeeToHWGR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\UCAssignEmployeeToWorld.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCAssignEmployeeToWorld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\UCAssignToEmployee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCAssignToEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\UCEmployeeList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCEmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\UCEmployeeLongTimeHolidays.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCEmployeeLongTimeHolidays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\UCEmployeeSelectGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCEmployeeSelectGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\UCEmployeeWorkingHistory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCEmployeeWorkingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\UCExternalEmployee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCExternalEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\LongAbsence\UCLongTimeAbsence.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCLongTimeAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Employee\UCLongTimeAbsenceEmployees.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCLongTimeAbsenceEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Country\LongAbsence\UCLongTimeAbsenceList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCLongTimeAbsenceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\EntityStore\CopyingWaitForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CopyingWaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\EntityStore\FormExtendOpenCloseHours.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormExtendOpenCloseHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\EntityStore\FormStore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\EntityStore\FormViewEstimateData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormViewEstimateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\EntityStore\StoreEstimatioPreconditionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StoreEstimatioPreconditionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\EntityStore\UCGetValueFromStore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCGetValueFromStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\EntityStore\UCOpenCloseHours.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCOpenCloseHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\EntityStore\UCOpenCloseHoursList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCOpenCloseHoursList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\EntityStore\UCStoreList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCStoreList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\EntityStore\UCStoreStructure.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCStoreStructure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\FormBaseEntity.resx">
+      <DependentUpon>FormBaseEntity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Language\FormLanguage2.resx">
+      <DependentUpon>FormLanguage2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Language\UCLanguageEntity.resx">
+      <DependentUpon>UCLanguageEntity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Language\UCLanguageList2.resx">
+      <DependentUpon>UCLanguageList2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\OkCancelPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OkCancelPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\FormBenchmark.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBenchmark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\FormBufferHours.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBufferHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\FormRegionEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRegionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\FormRegionStores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRegionStores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\FormSelectYear.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\FormTrendCorrection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTrendCorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\RegionListCtrl.resx">
+      <DependentUpon>RegionListCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\UCBenchmarksView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCBenchmarksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\UCBufferHours.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCBufferHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\UCBufferHoursView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCBufferHoursView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\UCRegionList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCRegionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\UCRegionStores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCRegionStores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\Region\UCTrendCorrectionsView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCTrendCorrectionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\Daily\UCWorldDailyView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWorldDailyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\DebugFormViewAllWorkingModel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DebugFormViewAllWorkingModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\FormEmployeeWorkingModelApplied.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormEmployeeWorkingModelApplied.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\FormEnterAbsenceTime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormEnterAbsenceTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\FormEnterWorkingTime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormEnterWorkingTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\FormSelectAbsence.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\UCCashDeskDailyPlannedInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCashDeskDailyPlannedInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\UCCashDeskWeeklyInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCashDeskWeeklyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\UCStoreWorldPlanningInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCStoreWorldPlanningInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\UCTimePlanning.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCTimePlanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimePlanning\UCWeekTimePlanning.resx">
+      <DependentUpon>UCWeekTimePlanning.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimeRecording\UCActualCashDeskDailyInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCActualCashDeskDailyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimeRecording\UCActualCashDeskWeeklyInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCActualCashDeskWeeklyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimeRecording\UCDayTimeRecording.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCDayTimeRecording.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimeRecording\UCTimeRecording.resx">
+      <DependentUpon>UCTimeRecording.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\TimeRecording\UCWeekTimeRecording.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWeekTimeRecording.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\UCBaseEntity.resx">
+      <DependentUpon>UCBaseEntity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\UCBaseEntityList.resx">
+      <DependentUpon>UCBaseEntityList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\User\FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\User\UserCtrl.resx">
+      <DependentUpon>UserCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\World\FormWorld.resx">
+      <DependentUpon>FormWorld.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\World\UCStoreTree.resx">
+      <DependentUpon>UCStoreTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\World\UCWorldDetails.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWorldDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntities\World\UCWorldList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWorldList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\EstimationWaitForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EstimationWaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmEntityExceptionDetails.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmEntityExceptionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEntityControls\CountryManageControl.resx">
+      <DependentUpon>CountryManageControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEntityControls\LanguageManageControl.resx">
+      <DependentUpon>LanguageManageControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEntityControls\StoreManagerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StoreManagerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEntityControls\UCEmployeeManagerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCEmployeeManagerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEntityControls\WorldManagerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorldManagerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotificationServiceUI\FormNotificationServiceWarning.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormNotificationServiceWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotificationServiceUI\UCCountriesListNotification.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCountriesListNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotificationServiceUI\UCStoresListNotification.resx">
+      <DependentUpon>UCStoresListNotification.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printout\FormPrintAbsencePlanning.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPrintAbsencePlanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printout\FormPrintTimePlanning.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPrintTimePlanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printout\FormPrintWorldsTimeRecording.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPrintWorldsTimeRecording.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TranslationUI\TranslationUIControl.resx">
+      <DependentUpon>TranslationUIControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Baumax.AppServer\Baumax.AppServer.csproj">
+      <Project>{99FFB80C-F00F-49C3-879A-BE3B1E1B0FB8}</Project>
+      <Name>Baumax.AppServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Contract\Baumax.Contract.csproj">
+      <Project>{4EF2D774-5A51-41D1-8C9C-C0E6A64A8E48}</Project>
+      <Name>Baumax.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Dao\Baumax.Dao.csproj">
+      <Project>{621F016D-22E9-4AA5-8DFE-86C822DBC819}</Project>
+      <Name>Baumax.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.EntityListManager\Baumax.EntityListManager.csproj">
+      <Project>{6720E098-D9AE-4FDF-BFBF-6B443B5D0AF3}</Project>
+      <Name>Baumax.EntityListManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BauMax.Environment\Baumax.Environment.csproj">
+      <Project>{C6FC3B60-10EB-4E8D-A58F-D6B1B8A804E6}</Project>
+      <Name>Baumax.Environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Import\Baumax.Import.csproj">
+      <Project>{6C77B42E-D586-4B85-935C-CF529B93766E}</Project>
+      <Name>Baumax.Import</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Localizer\Baumax.Localization.csproj">
+      <Project>{8D7ABC5C-C00E-4B86-9E4C-80FDD86D3C72}</Project>
+      <Name>Baumax.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.LocalServices\Baumax.LocalServices.csproj">
+      <Project>{26FFEB42-2EA8-4448-A7EE-29937BD3EAA3}</Project>
+      <Name>Baumax.LocalServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Printouts\Baumax.Printouts.csproj">
+      <Project>{8D365F7D-405A-4A87-8373-224A5CA70CBC}</Project>
+      <Name>Baumax.Printouts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Templates\Baumax.Templates.csproj">
+      <Project>{F14ED940-AB30-41D7-8006-49C620156F88}</Project>
+      <Name>Baumax.Templates</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breakpoint_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_attachment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\structure_world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_EDIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_all_minmax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_REFRESH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_NEW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_into.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tables_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffeebean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffeebean_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffeebean_enterprise_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffeebean_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_DELETE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_histoty_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FormEntities\TimePlanning\AbsencePlanning\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
