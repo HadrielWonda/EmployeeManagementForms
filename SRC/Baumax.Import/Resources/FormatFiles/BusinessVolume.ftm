@@ -1,0 +1,7 @@
+9.0
+5
+1       SQLCHAR       0       8      ";"     2     Date       ""
+2       SQLCHAR       0       4      ";"     3     StoreID    ""
+3       SQLCHAR       0       3      ";"     4     WGR_ID     ""
+4       SQLCHAR       0       12     ";"     9     VolumeBC   ""
+5       SQLCHAR       0       12     "\r\n"  10     VolumeCC   ""
