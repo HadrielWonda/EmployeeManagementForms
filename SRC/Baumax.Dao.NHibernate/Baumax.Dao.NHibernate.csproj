@@ -1,0 +1,298 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56C022AE-3852-4092-B4C9-8D8362429125}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baumax.Dao.NHibernate</RootNamespace>
+    <AssemblyName>Baumax.Dao.NHibernate</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseSetup|AnyCPU' ">
+    <OutputPath>bin\ReleaseSetup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="antlr.runtime, Version=2.7.6.2, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\antlr.runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy, Version=1.1.5.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\NHibernate\Castle.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.0.1, Culture=neutral, PublicKeyToken=154fdcb44c4484fc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=1.0.4.0, Culture=neutral, PublicKeyToken=154fdcb44c4484fc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Rsdn.Framework.Data.2, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\BLToolkit\Rsdn.Framework.Data.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.1.0.2, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data, Version=1.1.0.2, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate12, Version=1.1.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirtdParty\Spring\Spring.Data.NHibernate12.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Dao\NHibernate\DbPropertiesDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateAbsenceDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateAbsenceTimePlanningDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateAbsenceTimeRecordingDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateAvgAmountDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateAvgWorkingDaysInWeekDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateBaseEntityDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateBenchmarkDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateBufferHourAvailableDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateBufferHoursDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateColouringDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateCountryAdditionalHourDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateCountryDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeAllInDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeContractDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeDayStatePlanningDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeDayStateRecordingDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeHolidaysInfoDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeLongTimeAbsenceDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeePlanningWorkingModelDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeRecordingWorkingModelDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeRelationDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeTimeDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeWeekTimePlanningDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateEmployeeWeekTimeRecordingDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateFeastDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateHWGRDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateHwgrToWgrDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateLanguageDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateLongTimeAbsenceDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernatePersonMinMaxDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernatePKGenEntityDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateServiceDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateStoreAdditionalHourDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateStoreDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateStoreWorkingTimeDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateStoreToWorldDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateTrendCorrectionDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateUIResourceDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateUserDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateRegionDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateUserRoleDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateWGRDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateWorkingModelDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateWorkingTimePlanningDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateWorkingTimeRecordingDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateWorldDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateWorldToHwgrDao.cs" />
+    <Compile Include="Dao\NHibernate\HibernateYearlyWorkingDayDao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Baumax.AppServer.Environment\Baumax.AppServer.Environment.csproj">
+      <Project>{CE5412EA-50C1-454A-8C58-BA73A592FC48}</Project>
+      <Name>Baumax.AppServer.Environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Cache\Baumax.Cache.csproj">
+      <Project>{B736D49C-3C12-4ADD-8CFE-58B9892462DE}</Project>
+      <Name>Baumax.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Contract\Baumax.Contract.csproj">
+      <Project>{4EF2D774-5A51-41D1-8C9C-C0E6A64A8E48}</Project>
+      <Name>Baumax.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Dao\Baumax.Dao.csproj">
+      <Project>{621F016D-22E9-4AA5-8DFE-86C822DBC819}</Project>
+      <Name>Baumax.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Import\Baumax.Import.csproj">
+      <Project>{6C77B42E-D586-4B85-935C-CF529B93766E}</Project>
+      <Name>Baumax.Import</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baumax.Util\Baumax.Util.csproj">
+      <Project>{FF3ABC55-7CBB-47BF-BAE0-C67F11A6CBEB}</Project>
+      <Name>Baumax.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Absence.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AbsenceName.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AbsenceTimeRecording.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AbsenceTimePlanning.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Benchmark.hbm.xml" />
+    <EmbeddedResource Include="Mappings\BufferHours.hbm.xml" />
+    <EmbeddedResource Include="Mappings\BusinessVolumeActual.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Colouring.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Country.hbm.xml" />
+    <EmbeddedResource Include="Mappings\CountryName.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Employee.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Feasts.hbm.xml" />
+    <EmbeddedResource Include="Mappings\HWGR.hbm.xml" />
+    <EmbeddedResource Include="Mappings\HWGR_Name.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Language.hbm.xml" />
+    <EmbeddedResource Include="Mappings\PersonMinMax.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Region.hbm.xml" />
+    <EmbeddedResource Include="Mappings\RegionName.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Store.hbm.xml" />
+    <EmbeddedResource Include="Mappings\StoreName.hbm.xml" />
+    <EmbeddedResource Include="Mappings\StoreWorkingTime.hbm.xml" />
+    <EmbeddedResource Include="Mappings\WorkingTimeRecording.hbm.xml" />
+    <EmbeddedResource Include="Mappings\TrendCorrection.hbm.xml" />
+    <EmbeddedResource Include="Mappings\User.hbm.xml" />
+    <EmbeddedResource Include="Mappings\UserRole.hbm.xml" />
+    <EmbeddedResource Include="Mappings\UserRoleName.hbm.xml" />
+    <EmbeddedResource Include="Mappings\WGR.hbm.xml" />
+    <EmbeddedResource Include="Mappings\WGR_Name.hbm.xml" />
+    <EmbeddedResource Include="Mappings\WorkingModel.hbm.xml" />
+    <EmbeddedResource Include="Mappings\WorkingModelName.hbm.xml" />
+    <EmbeddedResource Include="Mappings\WorkingTimePlanning.hbm.xml" />
+    <EmbeddedResource Include="Mappings\World.hbm.xml" />
+    <EmbeddedResource Include="Mappings\WorldName.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\PKGenEntity.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\UIResources.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AvgAmounts.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\YearlyWorkingDays.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\UserCountry.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\ServiceList.hbm.xml" />
+    <EmbeddedResource Include="Mappings\UserRole_ServiceList.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\UserRegion.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\UserStore.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\HWGR_WGR.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Store_World.hbm.xml" />
+    <EmbeddedResource Include="Mappings\World_HWGR.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\StoreWTWeekday.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Employee_Relations.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\EmployeeContract.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\LongTimeAbsence.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Employee_LongTimeAbsence.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AvgWorkingDaysInWeek.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\StoreStructure.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\EmployeeDayStatePlanning.hbm.xml" />
+    <EmbeddedResource Include="Mappings\EmployeeDayStateRecording.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\EmployeePlanningWorkingModel.hbm.xml" />
+    <EmbeddedResource Include="Mappings\EmployeeWeekTimePlanning.hbm.xml" />
+    <EmbeddedResource Include="Mappings\EmployeeWeekTimeRecording.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\CashDeskPeoplePerHourEstimate.hbm.xml" />
+    <EmbeddedResource Include="Mappings\CountryAdditionalHours.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\EmployeeRecordingWorkingModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\StoreAdditionalHours.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\EmployeeHolidaysInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\BufferHourAvailable.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\EmployeeAllIn.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\EmployeeDayTime.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\StoreDelayInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
