@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.BufferHourAvailable, Baumax.Contract" table="BufferHourAvailable">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="BufferHourAvailableID" sql-type="bigint" not-null="true" unique="true" index="PK_BufferHourAvailable"/>
+			<generator class="native" />
+		</id>
+		<property name="Year" type="Int16">
+			<column name="`Year`" sql-type="smallint" not-null="true"/>
+		</property>
+		<property name="WeekBegin" type="DateTime">
+			<column name="WeekBegin" sql-type="smalldatetime" not-null="true"/>
+		</property>
+		<property name="WeekEnd" type="DateTime">
+			<column name="WeekEnd" sql-type="smalldatetime" not-null="true"/>
+		</property>
+		<property name="WeekNumber" type="Byte">
+			<column name="WeekNumber" sql-type="tinyint" not-null="true"/>
+		</property>
+    <property name="AvailableBufferHour" type="Double">
+      <column name="AvailableBufferHour" sql-type="float" not-null="true"/>
+    </property>
+    <property name="SumFromPlanning" type="Double">
+      <column name="SumFromPlanning" sql-type="float" not-null="false"/>
+    </property>
+    <property name="SumFromRecording" type="Double">
+      <column name="SumFromRecording" sql-type="float" not-null="false"/>
+    </property>
+    <property name="SumActualBVEstimated" type="Double">
+      <column name="SumActualBVEstimated" sql-type="float" not-null="false"/>
+    </property>
+    <property name="StoreWorldID" type="Int64">
+      <column name="Store_WorldID" sql-type="bigint" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

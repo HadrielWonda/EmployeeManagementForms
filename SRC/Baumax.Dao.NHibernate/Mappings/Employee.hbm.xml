@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Baumax.Domain.Employee, Baumax.Contract" table="Employee">
+    <id name="ID" type="Int64" unsaved-value="0">
+      <column name="EmployeeID" sql-type="bigint" not-null="true" unique="true" index="PK_Employee"/>
+      <generator class="Baumax.AppServer.PKGen, Baumax.AppServer" />
+    </id>
+
+	  <property name="PersID" type="String">
+		  <column name="PersID" length="25" sql-type="nvarchar" not-null="false"/>
+	  </property>
+
+    <property name="PersNumber" type="Int32">
+      <column name="PersNumber" sql-type="int" not-null="false"/>
+    </property>
+
+    <property name="Import" type="Boolean">
+		  <column name="Import" sql-type="bit" not-null="true"/>
+	  </property>
+
+	  <property name="LastName" type="String">
+      <column name="LastName" length="50" sql-type="nvarchar" not-null="false"/>
+    </property>
+    
+    <property name="FirstName" type="String">
+      <column name="FirstName" length="50" sql-type="nvarchar" not-null="false"/>
+    </property>
+
+	 <property name="MainStoreID" type="Int64">
+		<column name="MainStoreID" sql-type="bigint" not-null="false"/>
+    </property>
+	  <property name="OldHolidays" type="Decimal">
+		  <column name="OldHolidays" sql-type="decimal" not-null="true"/>
+	  </property>
+	  <property name="NewHolidays" type="Decimal">
+		  <column name="NewHolidays" sql-type="decimal" not-null="true"/>
+	  </property>
+	  <property name="BalanceHours" type="Decimal">
+		  <column name="BalanceHours" sql-type="decimal" not-null="true"/>
+	  </property>
+	  <property name="CreateDate" type="DateTime">
+		  <column name="CreateDate" sql-type="smalldatetime" not-null="false"/>
+	  </property>
+    <property name="AvailableHolidays" type="Decimal">
+      <column name="AvailableHolidays" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="OrderHwgrID" type="Int64">
+      <column name="OrderHwgrID" sql-type="bigint" not-null="false"/>
+    </property>
+    <property name="WeekState" type="Baumax.Domain.WeekStateType, Baumax.Contract">
+      <column name="WeekState" sql-type="tinyint" not-null="true"/>
+    </property>
+
+  </class>
+</hibernate-mapping>

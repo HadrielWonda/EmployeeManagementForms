@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.WorldName, Baumax.Contract" table="WorldName">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="Id" sql-type="bigint" not-null="true" unique="true" index="PK_WorldName"/>
+			<generator class="Baumax.AppServer.PKGen, Baumax.AppServer" />
+		</id>
+		<property name="LanguageID" type="Int64">
+			<column name="LanguageID" sql-type="bigint" not-null="true" index="UniqueRec"/>
+		</property>
+		<property name="Name" type="String">
+			<column name="Name" length="50" sql-type="utName" not-null="false"/>
+		</property>
+		<many-to-one name="World" class="Baumax.Domain.World, Baumax.Contract">
+			<column name="WorldID" sql-type="bigint" not-null="true" index="UniqueRec"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

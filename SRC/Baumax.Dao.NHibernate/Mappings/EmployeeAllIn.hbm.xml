@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.EmployeeAllIn, Baumax.Contract" table="EmployeeAllIn">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="EmployeeAllInID" sql-type="bigint" not-null="true" unique="true" index="PK_EmployeeAllIn"/>
+			<generator class="native" />
+		</id>
+		<property name="BeginTime" type="DateTime">
+			<column name="BeginTime" sql-type="smalldatetime" not-null="true"/>
+		</property>
+		<property name="EndTime" type="DateTime">
+			<column name="EndTime" sql-type="smalldatetime" not-null="true"/>
+		</property>
+		<property name="AllIn" type="Boolean">
+			<column name="AllIn" sql-type="bit" not-null="true"/>
+		</property>
+		<property name="EmployeeID" type="Int64">
+			<column name="EmployeeID" sql-type="bigint" not-null="true"/>
+		</property>
+	</class>
+</hibernate-mapping>

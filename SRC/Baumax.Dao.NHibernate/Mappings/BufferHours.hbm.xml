@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.BufferHours, Baumax.Contract" table="BufferHours">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="BufferHoursID" sql-type="bigint" not-null="true" unique="true" index="PK_BufferHours"/>
+			<generator class="Baumax.AppServer.PKGen, Baumax.AppServer" />
+		</id>
+		<property name="Year" type="Int16">
+			<column name="`Year`" sql-type="smallint" not-null="true" index="UniqueRec"/>
+		</property>
+    <property name="Value" type="Double">
+      <column name="`Value`" sql-type="float" not-null="false"/>
+    </property>
+    <property name="ValueWeek" type="Double">
+      <column name="ValueWeek" sql-type="float" not-null="true"/>
+    </property>
+    <property name="StoreWorldID" type="Int64">
+			<column name="Store_WorldID" sql-type="bigint" not-null="true" index="UniqueRec"/>
+		</property>
+</class>
+</hibernate-mapping>

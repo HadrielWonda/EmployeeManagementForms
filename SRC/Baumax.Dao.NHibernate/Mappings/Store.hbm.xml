@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+    <class name="Baumax.Domain.Store, Baumax.Contract" table="vwStore">
+            <id name="ID" type="Int64" unsaved-value="0">
+                    <column name="StoreID" sql-type="bigint" not-null="true" unique="true" index="PK_Store"/>
+                    <generator class="Baumax.AppServer.PKGen, Baumax.AppServer" />
+            </id>
+		  <property name="SystemID" type="Int32">
+			  <column name="SystemID" sql-type="int" not-null="false"/>
+      </property>
+      <property name="Number" type="String">
+         <column name="Number" length="30" sql-type="nvarchar" not-null="false"/>
+      </property>
+      <property name="City" type="String">
+	      <column name="City" length="30" sql-type="nvarchar" not-null="false"/>
+      </property>
+			<property name="Address" type="String">
+				<column name="Address" length="30" sql-type="nvarchar" not-null="false"/>
+			</property>
+			<property name="Area" type="Int32">
+				<column name="Area" sql-type="int" not-null="false"/>
+			</property>
+			<property name="LanguageID" type="Int64">
+				<column name="LanguageID" sql-type="bigint" not-null="true" index="UniqueRec"/>
+			</property>
+			<property name="Name" type="String">
+				<column name="Name" length="50" sql-type="utName" not-null="false"/>
+			</property>
+			<property name="RegionID" type="Int64">
+				<column name="RegionID" sql-type="bigint" not-null="false"/>
+      </property>
+			<property name="Import" type="Boolean">
+				<column name="Import" sql-type="bit" not-null="false"/>
+			</property>
+      <property name="CountryID" update="false" insert="false" type="Int64">
+        <column name="CountryID" sql-type="bigint" not-null="true"/>
+      </property>
+
+   </class>
+</hibernate-mapping>

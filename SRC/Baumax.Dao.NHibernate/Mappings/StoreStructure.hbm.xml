@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Baumax.Contract.QueryResult.StoreStructure, Baumax.Contract">
+    <!--
+    <id name="StoreID" type="Int64" unsaved-value="0">
+      <column name="StoreID" sql-type="bigint" not-null="true" unique="false"/>
+      <generator class="increment" />
+    </id>
+    -->
+    
+    <composite-id>
+      <key-property name="StoreID" column="StoreID" type="Int64"/>
+      <key-property name="WorldID" column="WorldID" type="Int64"/>
+      <key-property name="HWGR_ID" column="HWGR_ID" type="Int64"/>
+      <key-property name="WGR_ID" column="WGR_ID" type="Int64"/>
+    </composite-id>
+    
+    
+    <property name="Store_WorldID">
+      <column name="Store_WorldID"/>
+    </property>
+
+    <property name="World_HWGR_ID">
+      <column name="World_HWGR_ID"/>
+    </property>
+
+    <property name="HWGR_WGR_ID">
+      <column name="HWGR_WGR_ID"/>
+    </property>
+
+    <property name="StoreID">
+      <column name="StoreID"/>
+    </property>
+
+    <property name="WorldID">
+      <column name="WorldID"/>
+    </property>
+
+    <property name="HWGR_ID">
+      <column name="HWGR_ID"/>
+    </property>
+
+    <property name="HWGR_BeginTime">
+      <column name="HWGR_BeginTime"/>
+    </property>
+
+    <property name="HWGR_EndTime">
+      <column name="HWGR_EndTime"/>
+    </property>
+
+    <property name="WGR_ID">
+      <column name="WGR_ID"/>
+    </property>
+
+    <property name="WGR_BeginTime">
+      <column name="WGR_BeginTime"/>
+    </property>
+
+    <property name="WGR_EndTime">
+      <column name="WGR_EndTime"/>
+    </property>
+  </class>
+</hibernate-mapping>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.AbsenceTimePlanning, Baumax.Contract" table="AbsenceTimePlanning">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="AbsenceTimePlanningID" sql-type="bigint" not-null="true" unique="true" index="PK_AbsenceTime"/>
+			<generator class="native" />
+		</id>
+		<property name="Begin" type="Int16">
+			<column name="`Begin`" sql-type="utsMinutes" not-null="true"/>
+		</property>
+		<property name="End" type="Int16">
+			<column name="`End`" sql-type="utsMinutes" not-null="true"/>
+		</property>
+		<property name="Time" type="Int16">
+			<column name="`Time`" sql-type="utsMinutes" not-null="true"/>
+		</property>
+    <property name="AbsenceID" type="Int64">
+      <column name="AbsenceID" sql-type="bigint" not-null="true"/>
+    </property>
+    <property name="EmployeeID" type="Int64">
+      <column name="EmployeeID" sql-type="bigint" not-null="true"/>
+    </property>
+    <property name="Date" type="DateTime">
+      <column name="`Date`" sql-type="smalldatetime" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Baumax.Domain.UserCountry, Baumax.Contract" table="User_Country">
+    <id name="ID" type="Int64" unsaved-value="0">
+      <column name="Id" sql-type="bigint" not-null="true" unique="true"/>
+      <generator class="Baumax.AppServer.PKGen, Baumax.AppServer" />
+    </id>
+    <!--property name="UserID" column="UserID" type="Int64"/-->
+    <property name="CountryID" column="CountryID" type="Int64"/>
+    <many-to-one name="User" column="UserID" class="Baumax.Domain.User, Baumax.Contract" />
+  </class>
+</hibernate-mapping>

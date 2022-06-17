@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Baumax.Contract.QueryResult.StoreDelayInfo, Baumax.Contract">
+
+    <id name="StoreID" type="Int64" unsaved-value="0">
+      <column name="StoreID" sql-type="bigint" not-null="true" unique="true"/>
+      <generator class="increment" />
+    </id>
+    <property name="StoreID">
+      <column name="StoreID"/>
+    </property>
+    <property name="LastChange">
+      <column name="LastChange"/>
+    </property>
+  </class>
+</hibernate-mapping>

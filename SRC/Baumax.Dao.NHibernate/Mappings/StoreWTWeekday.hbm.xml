@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.StoreWTWeekday, Baumax.Contract" table="StoreWTWeekday">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="StoreWTWeekdayID" sql-type="bigint" not-null="true" unique="true" index="PK_StoreWTWeekday"/>
+			<generator class="Baumax.AppServer.PKGen, Baumax.AppServer" />
+		</id>
+		<property name="Weekday" type="Byte">
+			<column name="Weekday" sql-type="tinyint" not-null="false"/>
+		</property>
+		<property name="Opentime" type="Int16">
+			<column name="Opentime" sql-type="utsMinutes" not-null="false"/>
+		</property>
+		<property name="Closetime" type="Int16">
+			<column name="Closetime" sql-type="utsMinutes" not-null="false"/>
+		</property>
+    <many-to-one name="StoreWorkingTime" column="StoreWorkingTimeID" class="Baumax.Domain.StoreWorkingTime, Baumax.Contract" />
+  </class>
+</hibernate-mapping>

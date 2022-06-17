@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.EmployeeHolidaysInfo, Baumax.Contract" table="EmployeeHolidaysInfo">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="EmployeeHolidaysInfoID" sql-type="bigint" not-null="true" unique="true" index="PK_EmployeeHolidaysInfo"/>
+			<generator class="native" />
+		</id>
+		<property name="Year" type="Int16">
+			<column name="`Year`" sql-type="smallint" not-null="true"/>
+		</property>
+		<property name="OldHolidays" type="Decimal">
+			<column name="SpareHolidays" sql-type="decimal" not-null="true"/>
+		</property>
+		<property name="NewHolidays" type="Decimal">
+			<column name="NewHolidays" sql-type="decimal" not-null="true"/>
+		</property>
+		<property name="UsedHolidays" type="Decimal">
+			<column name="UsedHolidays" sql-type="decimal" not-null="true"/>
+		</property>
+    <property name="EmployeeID" type="Int64">
+      <column name="EmployeeID" sql-type="bigint" not-null="true"/>
+    </property>
+
+    <property name="TakenHolidays" type="Decimal">
+      <column name="TakenHolidays" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="PlannedHolidays" type="Decimal">
+      <column name="PlannedHolidays" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="SpareHolidaysExc" type="Decimal">
+      <column name="SpareHolidaysExc" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="SpareHolidaysInc" type="Decimal">
+      <column name="SpareHolidaysInc" sql-type="decimal" not-null="true"/>
+    </property>
+
+  </class>
+</hibernate-mapping>

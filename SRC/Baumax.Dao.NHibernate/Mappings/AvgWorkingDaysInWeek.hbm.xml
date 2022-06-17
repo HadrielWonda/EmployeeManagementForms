@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.AvgWorkingDaysInWeek, Baumax.Contract" table="AvgWorkingDaysInWeek">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="AvgWorkingDaysInWeekID" sql-type="bigint" not-null="true" unique="true" index="PK_AvgWorkingDaysInWeek"/>
+			<generator class="native" />
+		</id>
+		<property name="Year" type="Int16">
+			<column name="`Year`" sql-type="smallint" not-null="true"/>
+		</property>
+		<property name="DaysCount" type="Decimal">
+			<column name="DaysCount" sql-type="decimal" not-null="true"/>
+		</property>
+    <property name="CountryID" type="Int64">
+      <column name="CountryID" sql-type="bigint" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

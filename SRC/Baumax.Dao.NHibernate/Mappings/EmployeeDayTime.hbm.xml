@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+<class name="Baumax.Contract.QueryResult.EmployeeDayTimeResult, Baumax.Contract">
+	
+	<id name="EmployeeID" type="Int64" unsaved-value="0">
+		<column name="EmployeeID" sql-type="bigint" not-null="true" unique="false"/>
+		<generator class="increment" />
+	</id>
+	<property name="EmployeeID">
+			<column name="EmployeeID"/>
+		</property>
+
+		<property name="Coefficient">
+			<column name="Coefficient"/>
+		</property>
+
+		<property name="ContractBegin">
+			<column name="ContractBegin"/>
+		</property>
+
+		<property name="ContractEnd">
+			<column name="ContractEnd"/>
+		</property>
+
+	</class>
+</hibernate-mapping>
+

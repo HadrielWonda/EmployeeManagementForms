@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0">
+        <class name="Baumax.Domain.AbsenceType, Baumax.Dao" table="AbsenceType">
+                <id name="ID" type="Int64" unsaved-value="0">
+                        <column name="AbsenceTypeID" sql-type="bigint" not-null="true" unique="true" index="PK_AbsenceType"/>
+                        <generator class="Baumax.AppServer.PKGen, Baumax.AppServer" />
+                </id>
+		<bag name="AbsenceTypeNames" inverse="true" cascade="all-delete-orphan">
+                        <key column="AbsenceTypeID"/>
+			<one-to-many class="Baumax.Domain.AbsenceTypeName, Baumax.Dao"/>
+                </bag>
+		<bag name="Absences" inverse="true" cascade="all-delete-orphan">
+                        <key column="AbsenceTypeID"/>
+			<one-to-many class="Baumax.Domain.Absence, Baumax.Dao"/>
+                </bag>
+        </class>
+</hibernate-mapping>

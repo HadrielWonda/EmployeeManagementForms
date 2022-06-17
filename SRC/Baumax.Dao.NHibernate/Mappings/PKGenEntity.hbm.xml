@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Baumax.Domain.PKGenEntity, Baumax.Contract" table="PKGen">
+    <id name="DomainName" column="DomainName" type="String">
+      <generator class="assigned"/>
+    </id>
+    <property column="Value" type="Int64" name="Value" not-null="true" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.CountryAdditionalHour, Baumax.Contract" table="CountryAdditionalHours">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="CountryAdditionalHoursID" sql-type="bigint" not-null="true" unique="true" index="PK_CountryAdditionalHours"/>
+			<generator class="native" />
+		</id>
+		<property name="Year" type="Int16">
+			<column name="`Year`" sql-type="smallint" not-null="true"/>
+		</property>
+		<property name="WeekDay" type="Byte">
+			<column name="WeekDay" sql-type="tinyint" not-null="true"/>
+		</property>
+		<property name="BeginTime" type="Int16">
+			<column name="BeginTime" sql-type="utsMinutes" not-null="true"/>
+		</property>
+		<property name="EndTime" type="Int16">
+			<column name="EndTime" sql-type="utsMinutes" not-null="true"/>
+		</property>
+    <property name="FactorEarly" type="Decimal">
+      <column name="FactorEarly" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="FactorLate" type="Decimal">
+      <column name="FactorLate" sql-type="decimal" not-null="true"/>
+    </property>
+    <property name="CountryID" type="Int64">
+      <column name="CountryID" sql-type="bigint" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

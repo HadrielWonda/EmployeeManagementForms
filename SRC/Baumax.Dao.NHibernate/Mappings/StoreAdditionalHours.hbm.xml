@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.StoreAdditionalHour, Baumax.Contract" table="StoreAdditionalHours">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="StoreAdditionalHoursID" sql-type="bigint" not-null="true" unique="true" index="PK_StoreAdditionalHours"/>
+			<generator class="native" />
+		</id>
+		<property name="BeginDate" type="DateTime">
+			<column name="BeginDate" sql-type="smalldatetime" not-null="true"/>
+		</property>
+		<property name="EndDate" type="DateTime">
+			<column name="EndDate" sql-type="smalldatetime" not-null="true"/>
+		</property>
+		<property name="WeekDay" type="Byte">
+			<column name="WeekDay" sql-type="tinyint" not-null="true"/>
+		</property>
+		<property name="AdditionalHours" type="Decimal">
+			<column name="AdditionalHours" sql-type="decimal" not-null="true"/>
+		</property>
+    <property name="StoreID" type="Int64">
+      <column name="StoreID" sql-type="bigint" not-null="true"/>
+		</property>
+  </class>
+</hibernate-mapping>

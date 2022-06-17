@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Baumax.Domain.UserRoleServiceList, Baumax.Contract" table="UserRole_ServiceList">
+    
+    <composite-id>
+      <key-property name="UserRoleID" column="UserRoleID" type="Int64"/>
+      <key-property name="ServiceListID" column="ServiceListID" type="Int64"/>
+    </composite-id>
+    
+    <property name="Operation" type="Int32">
+      <column name="`Operation`" sql-type="int" not-null="false"/>
+    </property>
+
+    <many-to-one name="Service" column="ServiceListID" insert="false" update="false" lazy="false" fetch="join" class="Baumax.Domain.ServiceList, Baumax.Contract" />
+  </class>
+</hibernate-mapping>

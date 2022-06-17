@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.EmployeeRelation, Baumax.Contract" table="Employee_Relations">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="Employee_RelationsID" sql-type="bigint" not-null="true" unique="true" index="PK_Employee_Relations"/>
+      <generator class="native" />
+    </id>
+		<property name="BeginTime" type="DateTime">
+			<column name="BeginTime" sql-type="smalldatetime" not-null="false"/>
+		</property>
+		<property name="EndTime" type="DateTime">
+			<column name="EndTime" sql-type="smalldatetime" not-null="false"/>
+		</property>
+		<property name="HWGR_ID" type="Int64">
+			<column name="HWGR_ID" sql-type="bigint" not-null="false"/>
+		</property>
+		<property name="StoreID" type="Int64">
+			<column name="StoreID" sql-type="bigint" not-null="false"/>
+		</property>
+		<property name="EmployeeID" type="Int64">
+			<column name="EmployeeID" sql-type="bigint" not-null="false"/>
+		</property>
+		<property name="WorldID" type="Int64">
+			<column name="WorldID" sql-type="bigint" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>

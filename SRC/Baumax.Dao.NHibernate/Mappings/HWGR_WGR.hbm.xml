@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.HwgrToWgr, Baumax.Contract" table="HWGR_WGR">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="HWGR_WGR_ID" sql-type="bigint" not-null="true" unique="true" index="PK_HWGR_WGR"/>
+			<generator class="Baumax.AppServer.PKGen, Baumax.AppServer" />
+		</id>
+		<property name="BeginTime" type="DateTime">
+			<column name="BeginTime" sql-type="datetime" not-null="true"/>
+		</property>
+		<property name="EndTime" type="DateTime">
+			<column name="EndTime" sql-type="datetime" not-null="true"/>
+		</property>
+		<property name="WGR_ID" type="Int64">
+			<column name="WGR_ID" sql-type="bigint" not-null="true"/>
+		</property>
+		<property name="Import" type="Boolean">
+			<column name="Import" sql-type="bit" not-null="true"/>
+		</property>
+    <property name="StoreID" type="Int64">
+      <column name="StoreID" sql-type="bigint" not-null="true"/>
+    </property>
+    <property name="HWGR_ID" type="Int64">
+      <column name="HWGR_ID" sql-type="bigint" not-null="true"/>
+    </property>
+
+  </class>
+</hibernate-mapping>

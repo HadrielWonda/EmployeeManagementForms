@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.PersonMinMax, Baumax.Contract" table="PersonMinMax">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="PersonMinMaxID" sql-type="bigint" not-null="true" unique="true" index="PK_PersonMinMax"/>
+			<generator class="Baumax.AppServer.PKGen, Baumax.AppServer" />
+		</id>
+		<property name="Year" type="Int16">
+			<column name="`Year`" sql-type="smallint" not-null="true" index="UniqueRec"/>
+		</property>
+		<property name="Min" type="Int16">
+			<column name="Min" sql-type="smallint" not-null="false"/>
+		</property>
+		<property name="Max" type="Int16">
+			<column name="Max" sql-type="smallint" not-null="false"/>
+		</property>
+    <property name="Store_WorldID" type="Int64">
+      <column name="Store_WorldID" sql-type="bigint" not-null="true" index="UniqueRec"/>
+		</property>
+  </class>
+</hibernate-mapping>

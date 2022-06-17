@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Baumax.Domain.AvgAmount, Baumax.Contract" table="AvgAmounts">
+		<id name="ID" type="Int64" unsaved-value="0">
+			<column name="AvgAmountsId" sql-type="bigint" not-null="true" unique="true" index="PK_Absence"/>
+			<generator class="Baumax.AppServer.PKGen, Baumax.AppServer" />
+		</id>
+		<property name="Year" type="Int16">
+			<column name="`Year`" sql-type="smallint" not-null="true" index="UniqueRec"/>
+		</property>
+		<property name="AvgWeeks" type="Byte">
+			<column name="AvgWeeks" sql-type="tinyint" not-null="false"/>
+		</property>
+		<property name="AvgContractTime" type="Int16">
+			<column name="AvgContractTime" sql-type="smallint" not-null="false"/>
+		</property>
+    <property name="CashDeskAmount" type="Int16">
+      <column name="CashDeskAmount" sql-type="smallint" not-null="false"/>
+    </property>
+    <property name="AvgRestingTime" type="Int16">
+      <column name="AvgRestingTime" sql-type="smallint" not-null="true"/>
+    </property>
+    <property name="CountryID" type="Int64">
+			<column name="CountryID" sql-type="bigint" not-null="true" index="UniqueRec"/>
+		</property>
+		</class>
+</hibernate-mapping>
